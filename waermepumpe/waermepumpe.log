@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  25 NOV 2020 14:09
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  25 NOV 2020 15:26
  restricted system commands enabled.
 **waermepumpe.tex
 (./waermepumpe.tex
@@ -749,12 +749,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
+(polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            righthyphenmin	2 on input line 10
+(polyglossia)            synonyms	 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -780,12 +780,12 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
+(polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            righthyphenmin	2 on input line 22
+(polyglossia)            synonyms	 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
 )
@@ -1105,7 +1105,7 @@ Here is how much of LuaTeX's memory you used:
  649 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 31 attribute, 65 glue_spec
 , 31 attribute_list, 1 write nodes
-   avail lists: 1:1,2:1432,3:246,4:52,5:432,6:53,7:6197,8:83,9:833,10:21,11:603
+   avail lists: 1:1,2:1432,3:246,4:46,5:428,6:53,7:6197,8:83,9:833,10:21,11:603
  40571 multiletter control sequences out of 65536+600000
  79 fonts using 8383307 bytes
  106i,12n,113p,10627b,804s stack positions out of 5000i,500n,10000p,200000b,200000s
@@ -1123,7 +1123,7 @@ ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/timt/.local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/timt/.loca
 l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/timt/
 .local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on waermepumpe.pdf (13 pages, 260342 bytes).
+Output written on waermepumpe.pdf (13 pages, 260300 bytes).
 
 PDF statistics: 255 PDF objects out of 1000 (max. 8388607)
  208 compressed objects within 3 object streams
