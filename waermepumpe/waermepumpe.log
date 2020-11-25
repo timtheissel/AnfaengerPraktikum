@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  25 NOV 2020 13:55
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  25 NOV 2020 14:09
  restricted system commands enabled.
 **waermepumpe.tex
 (./waermepumpe.tex
@@ -750,11 +750,11 @@ braces):
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	 on input line 10
+(polyglossia)            synonyms	
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            righthyphenmin	2 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -781,11 +781,11 @@ LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	 on input line 22
+(polyglossia)            synonyms	
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            righthyphenmin	2 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
 )
