@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  24 NOV 2020 18:21
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  25 NOV 2020 13:55
  restricted system commands enabled.
 **waermepumpe.tex
 (./waermepumpe.tex
@@ -749,12 +749,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            synonyms	
-(polyglossia)            lefthyphenmin	2 on input line 10
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            hyphenation	
+(polyglossia)            synonyms	 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -780,12 +780,12 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            synonyms	
-(polyglossia)            lefthyphenmin	2 on input line 22
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            hyphenation	
+(polyglossia)            synonyms	 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
 )
@@ -1044,12 +1044,7 @@ File: plot2.png Graphic file (type png)
 <use plot2.png>
 Package luatex.def Info: plot2.png  used on input line 263.
 (luatex.def)             Requested size: 303.49796pt x 227.62204pt.
- [9<./plot2.png>]
-Overfull \hbox (0.60887pt too wide) in paragraph at lines 371--382
- [] 
- []
-
-[10]
+ [9<./plot2.png>] [10]
 <massendurchsatz.png, id=123, 462.528pt x 346.896pt>
 File: massendurchsatz.png Graphic file (type png)
 <use massendurchsatz.png>
@@ -1060,7 +1055,7 @@ Overfull \hbox (44.2713pt too wide) in paragraph at lines 391--392
  [] 
  []
 
-[11<./massendurchsatz.png>]
+[11<./massendurchsatz.png>] [12]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1095,7 +1090,7 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [12] (./waermepumpe.aux
+ [13] (./waermepumpe.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
@@ -1105,12 +1100,12 @@ Package rerunfilecheck Info: File `waermepumpe.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 21930 strings out of 479059
+ 21931 strings out of 479059
  100000,1144653 words of node,token memory allocated
  649 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 31 attribute, 65 glue_spec
 , 31 attribute_list, 1 write nodes
-   avail lists: 1:1,2:1432,3:246,4:46,5:385,6:53,7:6197,8:83,9:833,10:21,11:603
+   avail lists: 1:1,2:1432,3:246,4:52,5:432,6:53,7:6197,8:83,9:833,10:21,11:603
  40571 multiletter control sequences out of 65536+600000
  79 fonts using 8383307 bytes
  106i,12n,113p,10627b,804s stack positions out of 5000i,500n,10000p,200000b,200000s
@@ -1128,10 +1123,10 @@ ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/timt/.local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/timt/.loca
 l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/timt/
 .local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on waermepumpe.pdf (12 pages, 257433 bytes).
+Output written on waermepumpe.pdf (13 pages, 260342 bytes).
 
-PDF statistics: 251 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 41 named destinations out of 1000 (max. 131072)
+PDF statistics: 255 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 131072)
  137 words of extra memory for PDF output out of 10000 (max. 100000000)
 

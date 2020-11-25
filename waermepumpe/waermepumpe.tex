@@ -140,15 +140,15 @@ Für die Komprimierung des Gasvolumens von V\textsubscript{a} auf V\textsubscrip
     = \frac{1}{\kappa -1} \left(p_b\sqrt[\kappa]{\frac{p_a}{p_b}}-p_a\right) \frac{1}{\rho} \frac{\Delta m}{\Delta t}
 \end{equation}
 
-mit \rho \: als Dichte des Mediums im gasförmigen Zustand und \kappa , dem Verhältnis der Molwärmen, c\textsubscript{p} und c\textsubscript{v}.
+\noindent mit \rho \: als Dichte des Mediums im gasförmigen Zustand und \kappa , dem Verhältnis der Molwärmen, c\textsubscript{p} und c\textsubscript{v}.
 
 \subsection{Gauß-Fehler}
 
 Der Gauß- Fehler wird in verschiedenen Abschnitten berechnet, jedoch immer nach der folgenden Formel der Gauß'schen Fehlerfortpflanzung:
 
 \begin{equation} \label{4}
-    \Delta f = \sqrt{\left(\frac{(\partial f)²}{(\partial x)²}\right) (\Delta x)²
-                     \left(\frac{(\partial f)²}{(\partial y)²}\right) (\Delta y)²
+    \Delta f = \sqrt{\left(\frac{(\partial f)²}{(\partial x)²}\right) (\Delta x)² +
+                     \left(\frac{(\partial f)²}{(\partial y)²}\right) (\Delta y)² + ... +
                      \left(\frac{(\partial f)²}{(\partial z)²}\right) (\Delta z)²
     }
 \end{equation}
@@ -199,9 +199,9 @@ Die Messung wird abgebrochen, wenn die Temperatur T\textsubscript{1} einen Wert 
 
 \section{Messwerte/Auswertung}
 
-Zu Beginn der Auswertung werden in diesm Abschnitt alle gemessenen Werte in einer Tabelle dargestellt. Außerdem wurden hier die Temperaturen von °C in °K umgerechnet,
+Zu Beginn der Auswertung werden in diesem Abschnitt alle gemessenen Werte in einer Tabelle dargestellt. Außerdem wurden hier die Temperaturen von °C in °K umgerechnet,
 da diese im weiteren Verlauf der Rechnung auch in dieser Einheit verwendet werden.
-Die Auswertung beschäftigt sich dann mit derBerechnung aller wichtigen Kenngrößen aus den gemessenen Größen unter Betrachtung des Gauß-Fehlers, 
+Die Auswertung beschäftigt sich dann mit der Berechnung aller wichtigen Kenngrößen aus den gemessenen Größen unter Betrachtung des Gauß-Fehlers, 
 der durch die Messungenauigkeiten bei der Durchführung des Versuchs entsteht und sich durch weitere Rechnungen fortpflanzt. 
 \noindent
 \begin{minipage}{\linewidth}
@@ -278,7 +278,7 @@ Für T\textsubscript{1}:
     {Parameter} & {T\textsubscript{1}(t)} & {Fehler} \\
     \midrule
     A & -$3.47 * 10^{-6}$ &  $0.227 *10^{-6}$ \\
-    B &  0.0209&  $0.0475 * 10^{-2} $ \\
+    B & $2.09 * 10^{-2} $&  $0.0475 * 10^{-2} $ \\
     C & 294.54 &  0.1732 \\
     \bottomrule
 \end{tabular}
@@ -297,7 +297,7 @@ Und für T\textsubscript{2}:(5)
     {Parameter} & {T\textsubscript{2}(t)} & {Fehler} \\
     \midrule
     A & $9.563 * 10^{-6} $ &  $0.4694 * 10^{-6} $ \\
-    B &  -0.0111&  $ 0.094 * 10^{-2} $ \\
+    B & $ -1.11 * 10^{-2} $&  $ 0.094 * 10^{-2} $ \\
     C & 295.88 &  0.3465 \\
     \bottomrule
 \end{tabular}
@@ -326,10 +326,10 @@ Für T\textsubscript{1}:
         \toprule
         {Zeit t (s)} & {T\textsubscript{1}(K)} & {$\frac{dT_1}{dt} $} & {Gauß-Fehler} \\
         \midrule
-        300 & 300.65 &  0.0188 & $4.941 * 10^{-4}$ \\
-        600 & 306.05 &  0.0167 & $5.476 * 10^{-4}$\\
-        900 & 310.75 &  0.0147 & $6.266 * 10^{-4}$\\
-        1200 & 314.55 & 0.0126 & $7.228 * 10^{-4}$ \\
+        300 & 300.65 &  $1.88  * 10^{-2}$& $0.04941 * 10^{-2}$ \\
+        600 & 306.05 &  $1.67  * 10^{-2}$& $0.05476 * 10^{-2}$\\
+        900 & 310.75 &  $1.47  * 10^{-2}$& $0.06266 * 10^{-2}$\\
+        1200 & 314.55 & $ 1.26 * 10^{-2}$ & $0.07228 * 10^{-2}$ \\
         \midrule
         Mittelwert & & $1.57*10^{-2}$ & \\
         Standardabweichung & & $2.6595*10^{-3}$ \\
@@ -348,7 +348,7 @@ Für T\textsubscript{1}:
             \toprule
             {Zeit t (s)} & {T\textsubscript{2}(K)} & {$\frac{dT_2}{dt} $} & {Gauß-Fehler} \\
             \midrule
-            300 & 293.25 & $-1.05*10^{-2}$ & $9.813 * 10^{-4}$\\
+            300 & 293.25 & $-1.05*10^{-2}$ & $0.09813 * 10^{-2}$\\
             600 & 289.35 & $-9.952*10^{-3}$ & $1.096 * 10^{-3}$\\
             900 & 286.15 & $-9.3787*10^{-3}$ & $1.264 * 10^{-3}$\\
             1200 & 283.55 & $-8.8099*10^{-3}$ & $1.467 * 10^{-3}$\\
@@ -368,14 +368,14 @@ Für T\textsubscript{1}:
         von 4184J/kg*K mit der Masse von 4kg. 
 
         \begin{center}
-            \begin{tabular}{lrrrr}
+            \begin{tabular}{lr@{${}\pm{}$}lrr}
                 \toprule
-                {Zeit t} & { Güteziffer (empirisch)} & {Güteziffer (ideal)} & {Abweichung in \%} & {Gauß Fehler}\\
+                {Zeit t} & { Güteziffer (real)} & {Gauß Fehler} & {Güteziffer (ideal)} & {Abweichung in \%} \\
                 \midrule
-                300 & 2.739 & 40.628 & 93.26 & $7.035 * 10^{-2}$\\
-                600 & 2.433 & 18.326 & 86.72 & $7.797 * 10^{-2}$\\
-                900 & 2.142 & 12.632 & 83.04 & $8.922 * 10^{-2}$\\
-                1200 & 1.836 & 10.147 & 81.91& $1.029 * 10^{-1}$\\
+                300 & 2.739 & 0.07035  & 40.628 & 93.26 \\
+                600 & 2.433 & 0.07797  & 18.326 & 86.72 \\
+                900 & 2.142 & 0.08922 & 12.632 & 83.04 \\
+                1200 & 1.836 & 0.10290 & 10.147 & 81.91\\
                 \bottomrule
                 
             \end{tabular}
@@ -432,7 +432,7 @@ Um dies zu erreichen wird Gleichung \eqref{kompressorleistung} mit den Parameter
 dem Umgebungsdruck p\textsubscript{0} = 1 bar, der auf die gemessenen Drücke noch addiert werden muss. 
 Der Gauß-Fehler berechnet sich mit \ref{4}.
 \begin{center}
-    \begin{tabular}{lrr}
+    \begin{tabular}{lr}
         \toprule
         {Zeit t (s)}  & {Leistung (W)} \\
         \midrule
@@ -447,10 +447,44 @@ Der Gauß-Fehler berechnet sich mit \ref{4}.
 \section{Diskussion}
 \subsection{Aufgabe 5g)}
 
-Die, im Vergleich zur idealen Wärmepumpe, relativ schlechte Güteziffer liegt an der nicht idealen Isolation.
-Deshalb geht Wärme während des Prozesses verloren.
-Dies hat zur Folge, dass der Prozess nicht reversibel ist. 
-Außerdem funktioniert der Kompressor nicht adiabatisch.
+Im Folgenden werden die errechneten Werte der realen Güteziffer mit denen der idelen verglichen.
+Dabei werden auch mögliche Gründe für Abweichungen erörtert. 
+
+Zu Beginn sind hier noch einmal wichtige Ergebnisse im Zusammenhang mit der Güteziffer dargestellt.
+\begin{center}
+    \begin{tabular}{lr@{${}\pm{}$}lrr}
+        \toprule
+        {Zeit t} & { Güteziffer (real)} & {Gauß Fehler} & {Güteziffer (ideal)} & {Abweichung in \%} \\
+        \midrule
+        300 & 2.739 & 0.07035  & 40.628 & 93.26 \\
+        600 & 2.433 & 0.07797  & 18.326 & 86.72 \\
+        900 & 2.142 & 0.08922 & 12.632 & 83.04 \\
+        1200 & 1.836 & 0.10290 & 10.147 & 81.91\\
+        \bottomrule
+        
+    \end{tabular}
+\end{center}
+
+Bei Betrachtung dieser Werte fällt schnell auf, dass der Unterschied zwischen realer und idealer Güteziffer enorm ist.
+Die prozentuale Abweichung wird zwar mit der Zeit kleiner, ist aber auch am Ende über 80\% .
+Um nun die Frage zu beantworten warum diese Abweichungen so groß sind lohnt es sich die reale und die ideale Wärmepumpe einmal zu vergleichen.
+Die ideale Wärmepumpe kommt mit einer perfekten Isolation daher. 
+Das hat zur Folge, dass es keinen Wärmeverlust beim Transport des Gases durch die Apperatur gibt.
+Nun ist aber die im Versuch verwendete Wärmepumpe eben keine ideale. 
+Das kann sie auch nicht sein denn so eine perfekte Isolation wie sie die ideale Wärmepumpe fordert ist praktisch nicht umsetzbar.
+Einerseits sorgt dies für eine schlechtere Güteziffer andererseits wird die Arbeit einer solchen realen Wärmepumpe irreversibel.
+Mit einer idealen Wärmepumpe könnte man also genauso gut die transportierte Wäme wieder zurück zum Anfang bringen.
+
+Des Weiteren arbeitet auch der verwendete Kompressor nicht adiabatisch, 
+d.h. das Komprimieren des Transportgases findet nicht statt ohne einen Wärmeaustausch mit der Umgebung.
+Auch hier ist das System also nicht komplett thermisch abgeschlossen.
+Daher wird hierdurch die Güteziffer der realen Wärmepumpe noch kleiner.
+
+Außerdem müssen bei der Durchführung des Versuches verschiedene Messwerte wie beispielsweise die Temperatur genommen werden.
+Dies ist eine Fehlerquelle, denn hier können Ungenauigkeiten durch Fehler der Messgeräte oder auch ungenaues Ablesen der Werte, die die Messgeräte liefern.
+Ein weiterer Punkt wären auch eventuelle Rundungsfehler die durch automatisches Runden verwendeter Taschenrechner entstanden sein können.
+Aufgrund der Tatsache, dass der Gauß-Fehler für die reale Güteziffer zwei Größenordnungen kleiner ist als der Wert der Güteziffer,
+sind es vermutlich die Wärmeverluste, welche hauptsächlich für die hohe Abweichung verantwortlich sind. 
 
 \section{Literatur}
 TU Dortmund.Versuchsanleitung zum Experiment V206 - Die Wärmepumpe.\\
