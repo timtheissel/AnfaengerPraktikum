@@ -1,4 +1,7 @@
 \selectlanguage *{german}
 \contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
 \contentsline {section}{\numberline {2}Theoretische Grundlagen}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Einfaches Fadenpendel}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Schwingungsarten}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Kopplungskonstante K}{5}{subsection.2.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

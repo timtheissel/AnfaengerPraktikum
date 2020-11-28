@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  27 NOV 2020 13:24
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  28 NOV 2020 12:30
  restricted system commands enabled.
 **gekoppeltesPendel.tex
 (./gekoppeltesPendel.tex
@@ -826,12 +826,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
+(polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            synonyms	
 (polyglossia)            hyphenation	
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            righthyphenmin	2 on input line 10
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	
+(polyglossia)            patterns	hyph-de-1901.pat.txt on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -859,12 +859,12 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
+(polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            synonyms	
 (polyglossia)            hyphenation	
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            righthyphenmin	2 on input line 22
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	
+(polyglossia)            patterns	hyph-de-1996.pat.txt on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
 )
@@ -1088,7 +1088,26 @@ LaTeX Info: Redefining \ttfamily on input line 1.
 \tf@toc=\write4
 
 \openout4 = gekoppeltesPendel.toc
- [2]
+ [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 48--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--72
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
+
+ []
+
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1123,25 +1142,31 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [3] (./gekoppeltesPendel.aux
+[5] (./gekoppeltesPendel.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 )
 Package rerunfilecheck Info: File `gekoppeltesPendel.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 21808 strings out of 479058
+ 21838 strings out of 479058
  100000,1144653 words of node,token memory allocated
- 547 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 63 glue_spec,
- 8 attribute_list, 1 write nodes
-   avail lists: 1:2,2:111,3:54,4:20,5:220,6:12,7:2656,8:14,9:146,10:4,11:276
- 40484 multiletter control sequences out of 65536+600000
- 70 fonts using 7481899 bytes
- 94i,6n,109p,10633b,749s stack positions out of 5000i,500n,10000p,200000b,200000s
+ 597 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 17 attribute, 64 glue_spec
+, 17 attribute_list, 1 write nodes
+   avail lists: 1:2,2:281,3:112,4:31,5:392,6:18,7:4536,8:23,9:380,10:18,11:456
+ 40505 multiletter control sequences out of 65536+600000
+ 71 fonts using 7613587 bytes
+ 94i,9n,109p,10633b,763s stack positions out of 5000i,500n,10000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'subsection.1.1'
 </home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmr
 oman8-regular.otf></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/open
 type/public/lm/lmroman10-regular.otf></home/cptflashpoint/.local/texlive/2020/te
@@ -1152,11 +1177,14 @@ tflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10
 onts/cm/cmmi10.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmmi8.pfb></home/cptflashpoint/.local/texlive/2020/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/cptflashpoint/.local/texlive
-/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on gekoppeltesPendel.pdf (3 pages, 59994 bytes).
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/cptflashpoint/.l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/cp
+tflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb>
+Output written on gekoppeltesPendel.pdf (5 pages, 86265 bytes).
 
-PDF statistics: 85 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 131072)
- 17 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 120 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 131072)
+ 41 words of extra memory for PDF output out of 10000 (max. 100000000)
 
