@@ -53,9 +53,9 @@ Beide Pendel werden um den selben Winkel \alpha aus ihrer Ruhelage in die selbe 
     \omega_+=\sqrt{\frac{g}{l}}
 \end{displaymath}
 Die Schwingungsdauer bei einer gleichsinnigen Schwingung beträgt dann 
-\begin{displaymath}
+\begin{equation}\label{T+}
     T_+ =2\pi\sqrt{\frac{l}{g}}
-\end{displaymath}
+\end{equation}
 \\\\
 \noindent Gegensinnige Schwingung für \alpha\textsubscript{1}=-\alpha\textsubscript{2}:\\
 Beide Pendel werden um betragsmäßig gleiche Winkel \alpha\textsubscript{1}=-\alpha\textsubscript{2} entgegengesetzt ausgelenkt. Auf beide Pendel wirkt dabei die gleiche, aber entgegengesetzte Kraft durch die Kopplungsfeder. Die entstehende Schwingung ist daher symmetrisch. Die Schwingungsfrequenz ergibt sich dabei zu 
@@ -63,16 +63,16 @@ Beide Pendel werden um betragsmäßig gleiche Winkel \alpha\textsubscript{1}=-\a
     \omega_-=\sqrt{\frac{g}{l}+\frac{2K}{l}}
 \end{displaymath}
 Die Schwingungsdauer ist folglich
-\begin{displaymath}
+\begin{equation}\label{T-}
     T_-=2\pi\sqrt{\frac{l}{g+2K}}
-\end{displaymath}
+\end{equation}
 Die Kopplungskonstante der Feder wird K genannt.
 \\\\
 Gekoppelte Schwingung für \alpha\textsubscript{1}=0, \alpha\textsubscript{2}\neq0:\\
 Bei der gekoppelten Schwingung ist eines der Pendel zu Beginn in seiner Ruhelage, wobei das andere um den Winkel \alpha  ausgelenkt wird. Wird das ausgelenkte Pendel schwingen gelassen, fängt es an seine Energie über die Feder an das andere Pendel zu übertragen. Das andere Pendel beginnt zu schwingen mit steigender Amplitude. Die Amplitude erreicht ihr Maximum in dem Moment in dem das erste Pendel wieder in Ruhe ist. Die Energie wird vollständig übertragen. Der Prozess wiederholt sich immer wieder. Die Schwebungsdauer T\textsubscript{S} -die Zeit zwischen zwei Stillständen eines Pendels- berechnet sich zu 
-\begin{displaymath}
+\begin{equation}\label{TS}
     T_S=\frac{T_+*T_-}{T_+-T_-}
-\end{displaymath}
+\end{equation}
 mit der Schwebungsfrequenz
 \begin{displaymath}
     \omega_S=\omega_+-\omega_-
@@ -80,9 +80,9 @@ mit der Schwebungsfrequenz
 mit der Schwingungsdauer der gleichsinnigen Schwingung T\textsubscript{+} und der Schwingungsdauer der gegensinnigen Schwingung T\textsubscript{-}. \\
 \subsection{Kopplungskonstante K}
 \noindent Die Kopplungskonstante K ist ein Maß für die Kopplung der Pendel durch die Feder und berechnet sich zu 
-\begin{displaymath}
+\begin{equation}\label{K}
     K=\frac{\omega_-^2-\omega_+^2}{\omega_-^2+\omega_+^2}=\frac{T_+^2-T_-^2}{T_+^2+T_-^2}
-\end{displaymath}
+\end{equation}
 \subsection{Weitere Formeln}
 \noindent Arithmetischer Mittelwert:\\
 \begin{equation} \label{Mittelwert}  
@@ -273,7 +273,7 @@ Um von den Schwingungsdauern/der Schwebungsdauer auf die Frequenzen zu kommen wi
 Dabei ist mit T jeweils die Schwingungsdauer der zu berechnenden Frequenz gemeint.
 Also für \omega\textsubscript{+} auch T\textsubscript{+} usw.
 
-Die Kopplungskonstante K wird nach ? berechnet.
+Die Kopplungskonstante K wird nach \ref{K} berechnet.
 
 \begin{minipage}{\linewidth}
     \centering
@@ -300,7 +300,7 @@ Die Kopplungskonstante K wird nach ? berechnet.
     \end{tabular}
 \end{minipage}
 
-Die Kopplungskonstante ergibt sich nach ? zu 0.1048 Hz.
+Die Kopplungskonstante ergibt sich nach \ref{K} zu 0.1048 Hz.
 Mit \omega\textsubscript{+}=3.254 \omega\textsubscript{-}=3.615.
 
 \subsection{Aufgabe 1}
@@ -311,7 +311,7 @@ Dazu werden die Messwerte aus \ref{tab:1} und \ref{tab:2} verwendet.
 
 Die gemessenen Zeiten (t) wurden durch 5 geteilt, um die datsächliche Schwingungsdauer zu erhalten.
 Die Schwingungsdauern T\textsubscript{1} und T\textsubscript{2} ergeben sich dann jeweils als Mittelwert der 10 gemessenen Schwingungsdauern.
-Die Mittelwerte wurden nach der Formel ? berechnet.
+Die Mittelwerte wurden nach der Formel \ref{Mittelwert} berechnet.
 
 Das Ergebnis ist dann:
 
@@ -328,7 +328,7 @@ Das Ergebnis ist dann:
 
 \subsection{Aufgabe 2}
 
-Die Schwingungsdauer T\textsubscript{+} ergibt sich nach ? zu: 
+Die Schwingungsdauer T\textsubscript{+} ergibt sich nach \ref{T+} zu: 
 
 \begin{center}
     \begin{tabular}{ll}
@@ -344,7 +344,7 @@ Mit $g=9.81\frac{m}{s²}$ und $l=1m$.
 
 \subsection{Aufgabe 3}
 
-T\textsubscript{-} lässt sich nach ? berechnen.
+T\textsubscript{-} lässt sich nach \ref{T-} berechnen.
 Mit K = 0.1048 folgt:
 \begin{center}
     \begin{tabular}{ll}
@@ -361,7 +361,7 @@ Mit K = 0.1048 folgt:
 
 Die Schwingungs- sowie Schwebungsdauern sind gemessen worden 10 mal für 2 Pendellängen gemessen worden und stehen in \ref{tab:4}.
 
-Als Vergleichswert lässt sich die Schwebungsdauer auch berechnen nach ?.
+Als Vergleichswert lässt sich die Schwebungsdauer auch berechnen nach \ref{TS}.
 Mit den in Aufgabe 2 berechneten Schwingungsdauern ergibt sich für die Schwebungsdauer 189,61s für 1m Pendellänge.
 Für das 0,5m lange Pendel beträgt die Schwebungsdauer 132.82s.
 

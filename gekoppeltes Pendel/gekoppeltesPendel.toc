@@ -6,4 +6,10 @@
 \contentsline {subsection}{\numberline {2.3}Kopplungskonstante K}{5}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Weitere Formeln}{5}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Aufbau des Versuchs}{5}{section.3}%
+\contentsline {section}{\numberline {4}Messwerte}{5}{section.4}%
+\contentsline {section}{\numberline {5}Auswertung}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Aufgabe 1}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Aufgabe 2}{10}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Aufgabe 3}{10}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Aufgabe 4}{10}{subsection.5.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
