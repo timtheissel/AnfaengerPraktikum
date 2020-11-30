@@ -8,15 +8,36 @@
 \usepackage{hyperref}
 \usepackage{caption}
 \usepackage{float}
+\usepackage{parskip}
 \begin{document}
-\begin{center}
+
+
+\section{Messwerte}
+In diesem Abschnitt werden einige Messreihen aufgestellt.
+Dabei werden die Schingungsdauern (T) und, falls vorhanden, auch die Schwebungsdauern, für alle bereits genannten Schwingungsarten,
+jewils 10 mal gemessen.
+
+\noindent Um den Messfehler zu verringern, wurden bei der Durchführung des Versuchs die verschiedenen Schwingungsdauern
+nicht für eine Schwingung sondern für 5 Schwingungen gemessen. In den Tabellen zu den Messwerten werden daher für die Schwingungsdauern
+immer 2 Werte pro Schwingungsdauer angegeben. Der eine bezieht sich auf die gemessene Zeit (t) und 
+der andere auf die tatsächliche Schwingungsdauer (T), welche nur ein fünftel der gemessen Zeit ist.
+In den Tabellen, in denen Werte verschiedener Pendellängen dargestellt sind, geben die Indicees der Zeiten in der oberen Zeile die Pendellängen eindeutig an.
+Außerdem sind in den Tabellen auch Mittelwerte angegeben. Diese stehen dann jeweils in der gleichen Spalte wie die Werte, auf die sich der Mittelwert bezieht.
+
+\noindent Dies sind alle Tabellen einmal hintereinander dargestellt.
+
+
+
+    \begin{minipage}{\linewidth}
+        \centering
+    \captionof{table}{1m Pendellänge, Pendel nicht durch Feder verbunden}
     \begin{tabular}{llll}
         \toprule
         t\textsubscript{1} (s) & T\textsubscript{1} (s) & t\textsubscript{2} (s) & T\textsubscript{2} (s) \\
         \midrule
         9.9400  &    1.9880  & 9.4000 & 1.8800 \\
         9.3400  &    1.8680  & 9.5700 & 1.9140 \\
-        9.2600  &    1.8520  &	9.3800 & 1.8760 \\
+        9.2600  &    1.8520  & 9.3800 & 1.8760 \\
         9.2000  &    1.8400  & 9.3300 & 1.8660 \\
         9.4500  &    1.8900  & 9.6000 & 1.9200 \\
         9.5500  &    1.9100  & 9.4500 & 1.8900 \\
@@ -30,9 +51,11 @@
         \bottomrule
         
     \end{tabular}
-\end{center}
+\end{minipage}
 
-\begin{center}
+\begin{minipage}{\linewidth}
+    \centering
+    \captionof{table}{0,5m Pendellänge, Pendel nicht durch Feder verbunden}
     \begin{tabular}{llll}
         \toprule
         t\textsubscript{1} (s) & T\textsubscript{1} (s) & t\textsubscript{2} (s) & T\textsubscript{2} (s) \\
@@ -53,16 +76,21 @@
         \bottomrule
         
     \end{tabular}
-\end{center}
+\end{minipage}
+\leavevmode
+\newline
+\vspace*{1 cm}
+\newline
 
 
 
-
-\begin{center}
+\begin{minipage}{\linewidth}
+    \centering
+    \captionof{table}{Gleichphasige Schwingung bei verschidenen Pendellängen}
     \begin{tabular}{lllr}
         \toprule
-        t\textsubscript{+ (1)} (s) & T\textsubscript{+ (1)} (s) 
-        & t\textsubscript{+ (0,5)} (s) & T\textsubscript{+ (0,5)} (s) \\
+        t\textsubscript{+ (1m)} (s) & T\textsubscript{+ (1m)} (s) 
+        & t\textsubscript{+ (0,5m)} (s) & T\textsubscript{+ (0,5m)} (s) \\
         \midrule
         9.470 & 1.8940 & 7.2900 & 1.4580 \\
         9.670 & 1.9340 & 7.1800 & 1.4360 \\
@@ -81,15 +109,17 @@
         \bottomrule
         
     \end{tabular}
-\end{center}
+\end{minipage}
 
 
 
-\begin{center}
+\begin{minipage}{\linewidth}
+    \centering
+    \captionof{table}{Gegenphasige Schwingung bei verschidenen Pendellängen}
     \begin{tabular}{lllr}
         \toprule 
-        t\textsubscript{- (1)} (s) & T\textsubscript{- (1)} (s) 
-        & t\textsubscript{- (0,5)} (s) & T\textsubscript{- (0,5)} (s) \\
+        t\textsubscript{- (1m)} (s) & T\textsubscript{- (1m)} (s) 
+        & t\textsubscript{- (0,5m)} (s) & T\textsubscript{- (0,5m)} (s) \\
         \midrule
         8.87 & 1.774 & 5.97 & 1.194 \\
         8.45 & 1.690 & 5.90 & 1.180 \\
@@ -108,34 +138,41 @@
         \bottomrule
         
     \end{tabular}
-\end{center}
+\end{minipage}
 
-\begin{center}
+\leavevmode
+\newline
+\vspace*{1 cm}
+\newline
+
+\begin{minipage}{\linewidth}
+    \centering
+    \captionof{table}{gekoppelte Schwingung verschiedener Pendellängen}
     \begin{tabular}{lllllr}
         \toprule 
-        T\textsubscript{S (1)} & 
-        T\textsubscript{S (0,5)} &
-        t\textsubscript{K (1)} (s) &
-        T\textsubscript{(1)} & 
-        t\textsubscript{K (0,5)} (s)
-        T\textsubscript{(1)} & \\
+        T\textsubscript{S (1m)} & 
+        T\textsubscript{S (0,5m)} &
+        t\textsubscript{K (1m)} (s) &
+        T\textsubscript{(1m)} & 
+        t\textsubscript{K (0,5m)} (s)
+        T\textsubscript{(1m)} & \\
         \midrule
-        14.42 & 6.31 &  9.83 & 1.966 & 6.30 & \\
-        14.83 & 6.08 &  9.91 & 1.982 & 7.00 & \\
-        14.8  & 5.9  & 10.14 & 2.028 & 5.50 & \\
-        14.42 & 6.41 &  9.64 & 1.928 & 6.58 & \\
-        14.88 & 5.98 &  9.62 & 1.924 & 6.41 & \\
-        14.66 & 5.99 &  9.37 & 1.874 & 5.83 & \\
-        14.40 & 6.08 &  9.74 & 1.948 & 6.30 & \\
-        14.03 & 5.97 &  9.37 & 1.874 & 6.53 & \\
-        15.03 & 6.26 &  9.23 & 1.846 & 6.56 & \\
-        14.16 & 6.01 &  9.31 & 1.862 & 5.50 & \\
+        14.42 &  9.83 & 1.966 & 6.31 & 6.30 & 1.26 \\
+        14.83 &  9.91 & 1.982 & 6.08 & 7.00 & 1.60 \\
+        14.8  & 10.14 & 2.028 & 5.90 & 5.50 & 1.10 \\
+        14.42 &  9.64 & 1.928 & 6.41 & 6.58 & 1.316\\
+        14.88 &  9.62 & 1.924 & 5.98 & 6.41 & 1.282\\
+        14.66 &  9.37 & 1.874 & 5.99 & 5.83 & 1.166\\
+        14.40 &  9.74 & 1.948 & 6.08 & 6.30 & 1.26\\
+        14.03 &  9.37 & 1.874 & 5.97 & 6.53 & 1.306\\
+        15.03 &  9.23 & 1.846 & 6.26 & 6.56 & 1.312\\
+        14.16 &  9.31 & 1.862 & 6.01 & 5.50 & 1.1\\
         \midrule
         Mittelwerte:\\
-        8.693 & 1.7386 & 5.31 & 1.062 & 6.251\\
+        14.563 & 9.616 & 1.9232 & 6.099 & 6.251 & 1.2502\\
         
         \bottomrule
         
     \end{tabular}
-\end{center}
+\end{minipage}
 \end{document}

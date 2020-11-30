@@ -1,6 +1,6 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  25 NOV 2020 11:40
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  30 NOV 2020 10:47
  restricted system commands enabled.
-**waermepumpe.tex
+**tabellen.tex
 (/home/timt/.local/texlive/2020/texmf-dist/tex/latex/tools/x.tex
 LaTeX2e <2020-10-01> patch level 1
 Lua module: luaotfload-main 2020-09-02 3.15 luaotfload entry point
@@ -95,7 +95,7 @@ Here is how much of LuaTeX's memory you used:
    avail lists: 2:10,3:3,4:1,5:1
  19570 multiletter control sequences out of 65536+600000
  24 fonts using 3127019 bytes
- 13i,0n,15p,94b,15s stack positions out of 5000i,500n,10000p,200000b,200000s
+ 13i,0n,15p,91b,15s stack positions out of 5000i,500n,10000p,200000b,200000s
 
 warning  (pdf backend): no pages of output.
 
