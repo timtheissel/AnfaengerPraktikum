@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  27 NOV 2020 14:12
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  28 NOV 2020 15:52
  restricted system commands enabled.
 **tabellen.tex
 (./tabellen.tex
@@ -917,6 +917,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+
+[1
+
+{/home/timt/.local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -935,11 +939,7 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-
-[1
-
-{/home/timt/.local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] 
-(./tabellen.aux
+ [2] (./tabellen.aux
 LaTeX Info: Redefining \rmfamily on input line 21.
 LaTeX Info: Redefining \sffamily on input line 21.
 LaTeX Info: Redefining \ttfamily on input line 21.
@@ -949,22 +949,22 @@ Package rerunfilecheck Info: File `tabellen.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 21370 strings out of 479059
+ 21371 strings out of 479059
  100000,1144653 words of node,token memory allocated
  529 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 6 attribute, 61 glue_spec,
  6 attribute_list, 1 write nodes
-   avail lists: 1:1,2:590,3:26,4:2,5:64,6:4,7:2600,8:4,9:454,10:1,11:28
+   avail lists: 1:1,2:1053,3:37,4:2,5:39,6:7,7:4076,8:4,9:668,10:1,11:21
  40091 multiletter control sequences out of 65536+600000
  46 fonts using 5172739 bytes
- 106i,10n,113p,10624b,738s stack positions out of 5000i,500n,10000p,200000b,200000s
+ 106i,10n,113p,10624b,795s stack positions out of 5000i,500n,10000p,200000b,200000s
 </home/timt/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-reg
 ular.otf></home/timt/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmr
 oman10-regular.otf>
-Output written on tabellen.pdf (1 page, 8599 bytes).
+Output written on tabellen.pdf (2 pages, 10081 bytes).
 
-PDF statistics: 27 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 131072)
+PDF statistics: 31 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
+ 3 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
