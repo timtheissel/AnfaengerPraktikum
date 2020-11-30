@@ -9,88 +9,8 @@
 \usepackage{caption}
 \usepackage{float}
 \usepackage{parskip}
-\setdefaultlanguage{german}
-\title{106 gekoppeltes Pendel}
-\author{
-Connor Magnus Böckmann \\ email: \href{mailto:connormagnus.boeckmann@tu-dortmund.de}{connormagnus.boeckmann@tu-dortmund.de}
-\and Tim Theissel \\ email: \href{mailto:tim.theissel@tu-dortmund.de}{tim.theissel@tu-dortmund.de}  
-}
 \begin{document}
-\maketitle
-\newpage
-\tableofcontents
-\newpage
-\section{Zielsetzung}
-Das Ziel des Versuchs ist die Bestimmung der Schwingungs- und Schwebungsdauer bei gleichsinnigen-, gegensinnigen-, sowie gekoppelten Schwingungen.
-\section{Theoretische Grundlagen}
-\subsection{Einfaches Fadenpendel}
-Zur Betrachtung zweier gekoppelter Pendel bedarf es zuerst der Betrachtung eines einfachen Pendels der Länge l und der Masse m. Außerdem sei es reibungsfrei aufgehängt. Bei Auslenkung des Pendels wirkt die Gewichtskraft $\vec{F}\textsubscript{g} = m\cdot\vec{a}$ als Rückstellkraft der Bewegung entgegen. Dadurch wird ein Drehmoment M = D\textsubscript{p}\cdot\Phi  auf das Pendel mit der Winkelrichtgröße D\textsubscript{p} und der Auslenkung \Phi   aus der Ruhelage. Die Bewegungsgleichung für ein einzelnes, reibungsfreies Pendel unter Annahme der Kleinwinkelnäherung (sin\theta=\theta) ergibt sich somit zu 
-\begin{equation}
-    J\cdot\ddot{\Phi}+D\textsubscript{p}\cdot\Phi=0 \label{(1)}
-\end{equation}
-mit dem Trägheitsmoment J des Pendels. Gelöst wird die Differentialgleichung durch eine harmonische Schwingung. Die Schwingungsfrequenz des Einzelpendels ergibt sich dabei zu  
-\begin{displaymath}
-    \omega=\sqrt{\frac{D_p}{J}}=\sqrt{\frac{g}{l}}
-\end{displaymath}
-Aus der Formel lässt sich bereits erkennen, dass die Schwingungsdauer vollkommen unabhängig von der Masse m des Pendels und dem Auslenkungswinkel \Phi ist, vorausgesetzt die Auslenkung genügt der Kleinwinkelnäherung.
-Werden zwei Pendel gekoppelt durch eine Feder, wirkt auf das Pendel ein weiteres Drehmoment
-\begin{align}
-    M_1=D_F(\Phi_2-\Phi_1) \label{(2)}\\
-    M_2=D_F(\Phi_1-\Phi_2) \label{(3)}
-\end{align}
-Die Bewegungsgleichungen für das gekoppelte System werden durch 
-\begin{align}
-    J\ddot{\Phi_1}+D\Phi_1=D_F(\Phi_2-\Phi_1) \notag\\
-    J\ddot{\Phi_2}+D\Phi_2=D_F(\Phi_1-\Phi_2) \notag
-\end{align} 
-beschrieben. Dabei ist erkennbar, dass die linke Seite der Gleichungen, die vom Einzelpendel bekannte Differentialgleichung aus \ref*{(1)} dargestellt wird. Erweitert wird die rechte Seite durch das Drehmoment aus \ref*{(2)} und \ref*{(3)}, welches durch die Kopplung über die Feder dazu kommt. Gelöst wird das Differentialgleichungssystem erneut durch harmonische Schwingungen mit den Kreisfrequenzen \omega\textsubscript{1} und \omega\textsubscript{2}. \alpha\textsubscript{1} und \alpha\textsubscript{2} bezeichnen dabei die Auslenkungswinkel der Pendel aus der Ruhelage.
-\newpage
-\subsection{Schwingungsarten}
-Es werden verschiedene Arten von Schwingungen bei gekoppelten Pendeln unterschieden, je nach dem wie die Anfangsbedingungen \alpha(t=0) und $\dot{\alpha}(t=0)$ gewählt werden.\\\\
-\noindent Gleichsinnige Schwingung für \alpha\textsubscript{1}=\alpha\textsubscript{2}:\\
-Beide Pendel werden um den selben Winkel \alpha aus ihrer Ruhelage in die selbe Richtung ausgelenkt, also \alpha\textsubscript{1}=\alpha\textsubscript{2}. Da die Feder dabei weder gestreckt noch gestaucht wird, übt sie dabei keine Kraft auf die Pendel aus. Beide Pendel schwingen also, als wären sie nicht über die Feder verbunden. Die rücktreibende Kraft ist also nur die Gravitationskraft. Genau wie beim Einzelpendel schwingen beide Pendel mit der Schwingungsfrequenz
-\begin{displaymath}
-    \omega_+=\sqrt{\frac{g}{l}}
-\end{displaymath}
-Die Schwingungsdauer bei einer gleichsinnigen Schwingung beträgt dann 
-\begin{displaymath}
-    T_+ =2\pi\sqrt{\frac{l}{g}}
-\end{displaymath}
-\\\\
-\noindent Gegensinnige Schwingung für \alpha\textsubscript{1}=-\alpha\textsubscript{2}:\\
-Beide Pendel werden um betragsmäßig gleiche Winkel \alpha\textsubscript{1}=-\alpha\textsubscript{2} entgegengesetzt ausgelenkt. Auf beide Pendel wirkt dabei die gleiche, aber entgegengesetzte Kraft durch die Kopplungsfeder. Die entstehende Schwingung ist daher symmetrisch. Die Schwingungsfrequenz ergibt sich dabei zu 
-\begin{displaymath}
-    \omega_-=\sqrt{\frac{g}{l}+\frac{2K}{l}}
-\end{displaymath}
-Die Schwingungsdauer ist folglich
-\begin{displaymath}
-    T_-=2\pi\sqrt{\frac{l}{g+2K}}
-\end{displaymath}
-Die Kopplungskonstante der Feder wird K genannt.
-\\\\
-Gekoppelte Schwingung für \alpha\textsubscript{1}=0, \alpha\textsubscript{2}\neq0:\\
-Bei der gekoppelten Schwingung ist eines der Pendel zu Beginn in seiner Ruhelage, wobei das andere um den Winkel \alpha  ausgelenkt wird. Wird das ausgelenkte Pendel schwingen gelassen, fängt es an seine Energie über die Feder an das andere Pendel zu übertragen. Das andere Pendel beginnt zu schwingen mit steigender Amplitude. Die Amplitude erreicht ihr Maximum in dem Moment in dem das erste Pendel wieder in Ruhe ist. Die Energie wird vollständig übertragen. Der Prozess wiederholt sich immer wieder. Die Schwebungsdauer T\textsubscript{S} -die Zeit zwischen zwei Stillständen eines Pendels- berechnet sich zu 
-\begin{displaymath}
-    T_S=\frac{T_+*T_-}{T_+-T_-}
-\end{displaymath}
-mit der Schwebungsfrequenz
-\begin{displaymath}
-    \omega_S=\omega_+-\omega_-
-\end{displaymath}
-mit der Schwingungsdauer der gleichsinnigen Schwingung T\textsubscript{+} und der Schwingungsdauer der gegensinnigen Schwingung T\textsubscript{-}. \\
-\subsection{Kopplungskonstante K}
-\noindent Die Kopplungskonstante K ist ein Maß für die Kopplung der Pendel durch die Feder und berechnet sich zu 
-\begin{displaymath}
-    K=\frac{\omega_-^2-\omega_+^2}{\omega_-^2+\omega_+^2}=\frac{T_+^2-T_-^2}{T_+^2+T_-^2}
-\end{displaymath}
-\subsection{Weitere Formeln}
-\noindent Arithmetischer Mittelwert:\\
-\begin{equation} \label{Mittelwert}  
-    x_{arithm}=\frac{1}{N}\cdot \sum \limits_{i=1}^{N}x_i
-\end{equation}
-Dabei ist N die Anzahl aufgenommener Messwerte und x\textsubscript{i} die Messwerte.
-\section{Aufbau des Versuchs}
-\noindent Der Aufbau des Versuchs besteht aus zwei Stabpendeln. Die Massen (m=1kg) sind dabei über die Länge des Stabes verschiebbar, um verschiedene Pendellängen einstellbar zu machen und genau gleich lange Pendel zu ermöglichen. Die Pendel sind dabei reibungsarm auf einer Spitzenlagerung gelagert. Das bedeutet, dass am oberen Ende eines jeden Pendels eine Spitze in einer keilförmigen Nut liegt, was die Kontaktfläche und dadurch die Reibung minimiert. Beide Pendel sind über eine Kopplungsfeder mit Kopplungskonstante K verbunden. Diese Feder kann aber auch entfernt werden. Die Schwingungsdauern werden händisch mit einer Stoppuhr gemessen. Ebenso erfolgt die Auslenkung der Pendel nach Augenmaß. 
+
 
 \section{Messwerte}
 In diesem Abschnitt werden einige Messreihen aufgestellt.
@@ -364,6 +284,7 @@ Die Schwingungs- sowie Schwebungsdauern sind gemessen worden 10 mal für 2 Pende
 Als Vergleichswert lässt sich die Schwebungsdauer auch berechnen nach ?.
 Mit den in Aufgabe 2 berechneten Schwingungsdauern ergibt sich für die Schwebungsdauer 189,61s für 1m Pendellänge.
 Für das 0,5m lange Pendel beträgt die Schwebungsdauer 132.82s.
+
 
 
 \end{document}
