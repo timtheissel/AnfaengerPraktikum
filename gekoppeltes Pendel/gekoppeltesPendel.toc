@@ -4,5 +4,6 @@
 \contentsline {subsection}{\numberline {2.1}Einfaches Fadenpendel}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Schwingungsarten}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Kopplungskonstante K}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Weitere Formeln}{5}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Aufbau des Versuchs}{5}{section.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
