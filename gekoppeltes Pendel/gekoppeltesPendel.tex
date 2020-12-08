@@ -24,7 +24,11 @@ Connor Magnus Böckmann \\ email: \href{mailto:connormagnus.boeckmann@tu-dortmun
 Das Ziel des Versuchs ist die Bestimmung der Schwingungs- und Schwebungsdauer bei gleichsinnigen-, gegensinnigen-, sowie gekoppelten Schwingungen.
 \section{Theoretische Grundlagen}
 \subsection{Einfaches Fadenpendel}
-Zur Betrachtung zweier gekoppelter Pendel bedarf es zuerst der Betrachtung eines einfachen Pendels der Länge l und der Masse m. Außerdem sei es reibungsfrei aufgehängt. Bei Auslenkung des Pendels wirkt die Gewichtskraft $\vec{F}\textsubscript{g} = m\cdot\vec{a}$ als Rückstellkraft der Bewegung entgegen. Dadurch wird ein Drehmoment M = D\textsubscript{p}\cdot\Phi  auf das Pendel mit der Winkelrichtgröße D\textsubscript{p} und der Auslenkung \Phi   aus der Ruhelage. Die Bewegungsgleichung für ein einzelnes, reibungsfreies Pendel unter Annahme der Kleinwinkelnäherung (sin\theta=\theta) ergibt sich somit zu 
+Zur Betrachtung zweier gekoppelter Pendel bedarf es zuerst der Betrachtung eines einfachen Pendels der Länge l und der Masse m. 
+Außerdem sei es reibungsfrei aufgehängt. 
+Bei Auslenkung des Pendels wirkt die Gewichtskraft $\vec{F}\textsubscript{g} = m\cdot\vec{a}$ als Rückstellkraft der Bewegung entgegen. 
+Dadurch wird ein Drehmoment M = D\textsubscript{p}\cdot\Phi \; auf das Pendel mit der Winkelrichtgröße D\textsubscript{p} und der Auslenkung \Phi \;  aus der Ruhelage. 
+Die Bewegungsgleichung für ein einzelnes, reibungsfreies Pendel unter Annahme der Kleinwinkelnäherung (sin\theta=\theta) ergibt sich somit zu 
 \begin{equation}
     J\cdot\ddot{\Phi}+D\textsubscript{p}\cdot\Phi=0 \label{(1)}
 \end{equation}
@@ -32,7 +36,7 @@ mit dem Trägheitsmoment J des Pendels. Gelöst wird die Differentialgleichung d
 \begin{displaymath}
     \omega=\sqrt{\frac{D_p}{J}}=\sqrt{\frac{g}{l}}
 \end{displaymath}
-Aus der Formel lässt sich bereits erkennen, dass die Schwingungsdauer vollkommen unabhängig von der Masse m des Pendels und dem Auslenkungswinkel \Phi ist, vorausgesetzt die Auslenkung genügt der Kleinwinkelnäherung.
+Aus der Formel lässt sich bereits erkennen, dass die Schwingungsdauer vollkommen unabhängig von der Masse m des Pendels und dem Auslenkungswinkel \Phi \; ist, vorausgesetzt die Auslenkung genügt der Kleinwinkelnäherung.
 Werden zwei Pendel gekoppelt durch eine Feder, wirkt auf das Pendel ein weiteres Drehmoment
 \begin{align}
     M_1=D_F(\Phi_2-\Phi_1) \label{(2)}\\
@@ -48,20 +52,21 @@ beschrieben. Dabei ist erkennbar, dass die linke Seite der Gleichungen, die vom 
 \subsection{Schwingungsarten}
 Es werden verschiedene Arten von Schwingungen bei gekoppelten Pendeln unterschieden, je nach dem wie die Anfangsbedingungen \alpha(t=0) und $\dot{\alpha}(t=0)$ gewählt werden.\\\\
 \noindent Gleichsinnige Schwingung für \alpha\textsubscript{1}=\alpha\textsubscript{2}:\\
-Beide Pendel werden um den selben Winkel \alpha aus ihrer Ruhelage in die selbe Richtung ausgelenkt, also \alpha\textsubscript{1}=\alpha\textsubscript{2}. Da die Feder dabei weder gestreckt noch gestaucht wird, übt sie dabei keine Kraft auf die Pendel aus. Beide Pendel schwingen also, als wären sie nicht über die Feder verbunden. Die rücktreibende Kraft ist also nur die Gravitationskraft. Genau wie beim Einzelpendel schwingen beide Pendel mit der Schwingungsfrequenz
-\begin{displaymath}
+Beide Pendel werden um den selben Winkel \alpha \; aus ihrer Ruhelage in die selbe Richtung ausgelenkt, also \alpha\textsubscript{1}=\alpha\textsubscript{2}. Da die Feder dabei weder gestreckt noch gestaucht wird, übt sie dabei keine Kraft auf die Pendel aus. Beide Pendel schwingen also, als wären sie nicht über die Feder verbunden. Die rücktreibende Kraft ist also nur die Gravitationskraft. Genau wie beim Einzelpendel schwingen beide Pendel mit der Schwingungsfrequenz
+\begin{equation}\label{w+}
     \omega_+=\sqrt{\frac{g}{l}}
-\end{displaymath}
+\end{equation}
 Die Schwingungsdauer bei einer gleichsinnigen Schwingung beträgt dann 
 \begin{equation}\label{T+}
     T_+ =2\pi\sqrt{\frac{l}{g}}
 \end{equation}
 \\\\
 \noindent Gegensinnige Schwingung für \alpha\textsubscript{1}=-\alpha\textsubscript{2}:\\
-Beide Pendel werden um betragsmäßig gleiche Winkel \alpha\textsubscript{1}=-\alpha\textsubscript{2} entgegengesetzt ausgelenkt. Auf beide Pendel wirkt dabei die gleiche, aber entgegengesetzte Kraft durch die Kopplungsfeder. Die entstehende Schwingung ist daher symmetrisch. Die Schwingungsfrequenz ergibt sich dabei zu 
-\begin{displaymath}
+Beide Pendel werden um betragsmäßig gleiche Winkel \alpha\textsubscript{1}=-\alpha\textsubscript{2} entgegengesetzt ausgelenkt. 
+Auf beide Pendel wirkt dabei die gleiche, aber entgegengesetzte Kraft durch die Kopplungsfeder. Die entstehende Schwingung ist daher symmetrisch. Die Schwingungsfrequenz ergibt sich dabei zu 
+\begin{equation}\label{w-}
     \omega_-=\sqrt{\frac{g}{l}+\frac{2K}{l}}
-\end{displaymath}
+\end{equation}
 Die Schwingungsdauer ist folglich
 \begin{equation}\label{T-}
     T_-=2\pi\sqrt{\frac{l}{g+2K}}
@@ -69,7 +74,7 @@ Die Schwingungsdauer ist folglich
 Die Kopplungskonstante der Feder wird K genannt.
 \\\\
 Gekoppelte Schwingung für \alpha\textsubscript{1}=0, \alpha\textsubscript{2}\neq0:\\
-Bei der gekoppelten Schwingung ist eines der Pendel zu Beginn in seiner Ruhelage, wobei das andere um den Winkel \alpha  ausgelenkt wird. Wird das ausgelenkte Pendel schwingen gelassen, fängt es an seine Energie über die Feder an das andere Pendel zu übertragen. Das andere Pendel beginnt zu schwingen mit steigender Amplitude. Die Amplitude erreicht ihr Maximum in dem Moment in dem das erste Pendel wieder in Ruhe ist. Die Energie wird vollständig übertragen. Der Prozess wiederholt sich immer wieder. Die Schwebungsdauer T\textsubscript{S} -die Zeit zwischen zwei Stillständen eines Pendels- berechnet sich zu 
+Bei der gekoppelten Schwingung ist eines der Pendel zu Beginn in seiner Ruhelage, wobei das andere um den Winkel \alpha \; ausgelenkt wird. Wird das ausgelenkte Pendel schwingen gelassen, fängt es an seine Energie über die Feder an das andere Pendel zu übertragen. Das andere Pendel beginnt zu schwingen mit steigender Amplitude. Die Amplitude erreicht ihr Maximum in dem Moment in dem das erste Pendel wieder in Ruhe ist. Die Energie wird vollständig übertragen. Der Prozess wiederholt sich immer wieder. Die Schwebungsdauer T\textsubscript{S} -die Zeit zwischen zwei Stillständen eines Pendels- berechnet sich zu 
 \begin{equation}\label{TS}
     T_S=\frac{T_+*T_-}{T_+-T_-}
 \end{equation}
@@ -83,55 +88,53 @@ mit der Schwingungsdauer der gleichsinnigen Schwingung T\textsubscript{+} und de
 \begin{equation}\label{K}
     K=\frac{\omega_-^2-\omega_+^2}{\omega_-^2+\omega_+^2}=\frac{T_+^2-T_-^2}{T_+^2+T_-^2}
 \end{equation}
-\subsection{Weitere Formeln}
-\noindent Arithmetischer Mittelwert:\\
-\begin{equation} \label{Mittelwert}  
-    x_{arithm}=\frac{1}{N}\cdot \sum \limits_{i=1}^{N}x_i
-\end{equation}
-Dabei ist N die Anzahl aufgenommener Messwerte und x\textsubscript{i} die Messwerte.
+
 \section{Aufbau des Versuchs}
 \noindent Der Aufbau des Versuchs besteht aus zwei Stabpendeln. Die Massen (m=1kg) sind dabei über die Länge des Stabes verschiebbar, um verschiedene Pendellängen einstellbar zu machen und genau gleich lange Pendel zu ermöglichen. Die Pendel sind dabei reibungsarm auf einer Spitzenlagerung gelagert. Das bedeutet, dass am oberen Ende eines jeden Pendels eine Spitze in einer keilförmigen Nut liegt, was die Kontaktfläche und dadurch die Reibung minimiert. Beide Pendel sind über eine Kopplungsfeder mit Kopplungskonstante K verbunden. Diese Feder kann aber auch entfernt werden. Die Schwingungsdauern werden händisch mit einer Stoppuhr gemessen. Ebenso erfolgt die Auslenkung der Pendel nach Augenmaß. 
 
-\section{Messwerte}
-In diesem Abschnitt werden einige Messreihen aufgestellt.
-Dabei werden die Schingungsdauern (T) und, falls vorhanden, auch die Schwebungsdauern, für alle bereits genannten Schwingungsarten,
-jewils 10 mal gemessen.
+\section{Auswertung}
 
-\noindent Um den Messfehler zu verringern, wurden bei der Durchführung des Versuchs die verschiedenen Schwingungsdauern
-nicht für eine Schwingung sondern für 5 Schwingungen gemessen. In den Tabellen zu den Messwerten werden daher für die Schwingungsdauern
-immer 2 Werte pro Schwingungsdauer angegeben. Der eine bezieht sich auf die gemessene Zeit (t) und 
-der andere auf die tatsächliche Schwingungsdauer (T), welche nur ein fünftel der gemessen Zeit ist.
-In den Tabellen, in denen Werte verschiedener Pendellängen dargestellt sind, geben die Indicees der Zeiten in der oberen Zeile die Pendellängen eindeutig an.
-Außerdem sind in den Tabellen auch Mittelwerte angegeben. Diese stehen dann jeweils in der gleichen Spalte wie die Werte, auf die sich der Mittelwert bezieht.
+\subsection{Aufgabe 1}
 
-\noindent Dies sind alle Tabellen einmal hintereinander dargestellt.
+Ziel der Aufgabe ist die Bestimmung der Schwingungsdauern T\textsubscript{1} und T\textsubscript{2}.
+Dazu werden gemessenen Zeiten (t) durch 5 geteilt, um so die gemessenen Schwingungsdauern zu erhalten und 
+die Schwingungsdauern T\textsubscript{1} und T\textsubscript{2} ergeben sich dann jeweils als Mittelwert der 10 gemessenen Schwingungsdauern.
+Die Mittelwerte werden nach der Formel \ref{Mittelwert} berechnet.
+
+Allerdings muss in diesem Fall noch die Standardabweichung bestimmt werden, da die gemssenen Werte Unsicherheiten besitzen.
+Diese werden nach der Formel \ref{Standardabweichung}
 
 
+Es wurden die folgenden Messwerte verwendet: 
 
-    \begin{minipage}{\linewidth}
-        \centering
-    \captionof{table}{1m Pendellänge, Pendel nicht durch Feder verbunden}
-    \begin{tabular}{llll}
-        \toprule
-        t\textsubscript{1} (s) & T\textsubscript{1} (s) & t\textsubscript{2} (s) & T\textsubscript{2} (s) \\
-        \midrule
-        9.9400  &    1.9880  & 9.4000 & 1.8800 \\
-        9.3400  &    1.8680  & 9.5700 & 1.9140 \\
-        9.2600  &    1.8520  & 9.3800 & 1.8760 \\
-        9.2000  &    1.8400  & 9.3300 & 1.8660 \\
-        9.4500  &    1.8900  & 9.6000 & 1.9200 \\
-        9.5500  &    1.9100  & 9.4500 & 1.8900 \\
-        9.4400  &    1.8880  & 9.7700 & 1.9540 \\
-        9.5100  &    1.9020  & 9.8700 & 1.9740 \\
-        9.3900  &    1.8780  & 9.9100 & 1.9820 \\
-        9.5000  &    1.9000  & 9.8900 & 1.9780 \\
-        \midrule
-        Mittelwerte:\\
-        9.4580 & 1.8916 & 9.6170 & 1.9234  \\
-        \bottomrule
-        
-    \end{tabular}
-    \label{tab:1}
+\begin{minipage}{\linewidth}
+    \centering
+\captionof{table}{1m Pendellänge, Pendel nicht durch Feder verbunden}
+\begin{tabular}{llll}
+    \toprule
+    t\textsubscript{1} (s) & T\textsubscript{1} (s) & t\textsubscript{2} (s) & T\textsubscript{2} (s) \\
+    \midrule
+    9.9400  &    1.9880  & 9.4000 & 1.8800 \\
+    9.3400  &    1.8680  & 9.5700 & 1.9140 \\
+    9.2600  &    1.8520  & 9.3800 & 1.8760 \\
+    9.2000  &    1.8400  & 9.3300 & 1.8660 \\
+    9.4500  &    1.8900  & 9.6000 & 1.9200 \\
+    9.5500  &    1.9100  & 9.4500 & 1.8900 \\
+    9.4400  &    1.8880  & 9.7700 & 1.9540 \\
+    9.5100  &    1.9020  & 9.8700 & 1.9740 \\
+    9.3900  &    1.8780  & 9.9100 & 1.9820 \\
+    9.5000  &    1.9000  & 9.8900 & 1.9780 \\
+    \midrule
+    Mittelwerte:\\
+    9.4580 & 1.8916 & 9.6170 & 1.9234  \\
+    \bottomrule
+    
+\end{tabular}
+\label{tab:1}
+\leavevmode
+\newline
+\vspace*{1 cm}
+\newline
 \end{minipage}
 
 \begin{minipage}{\linewidth}
@@ -159,12 +162,25 @@ Außerdem sind in den Tabellen auch Mittelwerte angegeben. Diese stehen dann jew
     \end{tabular}
     \label{tab:2}
 \end{minipage}
-\leavevmode
-\newline
-\vspace*{1 cm}
-\newline
 
+\pagebreak
 
+Daraus ergibt sich als Ergebnis:
+\begin{center}
+    \begin{tabular}{ll @{$\pm$} l l@{$\pm$}l }
+        \toprule
+        Pendellänge (m) & T\textsubscript{1} (s) & \sigma\textsubscript{1} & T\textsubscript{2} (s) & \sigma\textsubscript{2}\\
+        \midrule 
+        1 &1.8916 & 0.0802 & 1.9234 & 0.1292\\
+        0.5 & 1.4504 & 0.0299 & 1.4514 & 0.0379\\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\subsection{Aufgabe 2}
+
+Analog zu Aufgabe 1 lässt sich auch die die Schwingungsdauer für eine gleichphasige Schwingung der gekoppelten Pendel bestimmen.
+Auch wird für die Standardabweichung die Formel \ref{Standardabweichung} und für den Mittelwert die Formel \ref{Mittelwert} verwendet.
 
 \begin{minipage}{\linewidth}
     \centering
@@ -194,62 +210,96 @@ Außerdem sind in den Tabellen auch Mittelwerte angegeben. Diese stehen dann jew
     \label{tab:3}
 \end{minipage}
 
+Mit den Messwerten aus der obigen Tabelle ergibt sich für T\textsubscript{+}:
+
+\begin{center}
+    \begin{tabular}{ll@{$\pm$}l}
+        \toprule
+        Pendellänge (m) & T\textsubscript{+} (s) & \sigma\\
+        \midrule 
+        1 & 1.9314 & 0.0958 \\
+        0.5 & 1.4504 & 0.0645 \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\subsection{Aufgabe 3}
+
+Auch die gegenphasige Schwingungsdauer T\textsubscript{-} lässt sich auf die gleiche Weise bestimmen.
+Wieder wurden die Formeln \ref{Mittelwert} und \ref{Standardabweichung} verwendet.
+
+Die Messwerte sind: 
 
 
 \begin{minipage}{\linewidth}
     \centering
-    \captionof{table}{Gegenphasige Schwingung bei verschidenen Pendellängen}
+    \captionof{table}{Gegenphasige Schwingung bei verschiedenen Pendellängen}
     \begin{tabular}{lllr}
         \toprule 
         t\textsubscript{- (1m)} (s) & T\textsubscript{- (1m)} (s) 
         & t\textsubscript{- (0,5m)} (s) & T\textsubscript{- (0,5m)} (s) \\
         \midrule
-        8.87 & 1.774 & 5.97 & 1.194 \\
-        8.45 & 1.690 & 5.90 & 1.180 \\
-        8.64 & 1.728 & 5.92 & 1.184 \\
-        8.52 & 1.704 & 5.86 & 1.172 \\
-        8.98 & 1.796 & 5.85 & 1.170 \\
-        8.55 & 1.710 & 5.93 & 1.186 \\
-        8.66 & 1.732 & 5.93 & 1.186 \\
-        8.75 & 1.750 & 5.92 & 1.184 \\
-        8.85 & 1.770 & 5.84 & 1.168 \\
-        8.66 & 1.732 & 5.91 & 1.182 \\
+        8.870 & 1.7740 & 5.97 & 1.1940 \\
+        8.450 & 1.6900 & 5.90 & 1.1800 \\
+        8.640 & 1.7280 & 5.92 & 1.1840 \\
+        8.520 & 1.7040 & 5.86 & 1.1720 \\
+        8.980 & 1.7960 & 5.85 & 1.1700 \\
+        8.550 & 1.7100 & 5.93 & 1.1860 \\
+        8.660 & 1.7320 & 5.93 & 1.1860 \\
+        8.750 & 1.7500 & 5.92 & 1.1840 \\
+        8.850 & 1.7700 & 5.84 & 1.1680 \\
+        8.660 & 1.7320 & 5.91 & 1.1820 \\
         \midrule
         Mittelwerte:\\
-        8.693 & 1.7386 & 5.31 & 1.062\\
+        8.693 & 1.7386 & 5.31 & 1.1806\\
         
         \bottomrule
         
     \end{tabular}
 \end{minipage}
 
-\leavevmode
-\newline
-\vspace*{1 cm}
-\newline
+Daraus lässt sich T\textsubscript{-} berechnen zu:
+
+\begin{center}
+    \begin{tabular}{ll@{$\pm$}l}
+        \toprule
+        Pendellänge (m) & T\textsubscript{-} (s) & \sigma\\
+        \midrule 
+        1 & 1.7386 & 0.1010 \\
+        0.5 & 1.1806 & 0.0246 \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\subsection{Aufgabe 4}
+
+In dieser Aufgabe sollen die Schwingungsdauern T\textsubscript{K} und Schwebungsdauern T\textsubscript{S} für eine gekoppelte Schwingung bestimmt werden.
+T\textsubscript{K} lässt sich, nach dem in Aufgabe 1 vorgestellten Verfahren, bestimmen.
+Für T\textsubscript{S} gilt es zu beachten, dass die gemessenen Schwebungsdauern nicht durch 5 geteilt werden müssen, da diese in einer Schwebung gemessen wurden und nicht in 5.
+Für T\textsubscript{K} und T\textsubscript{S} müssen auch hier wieder Mittelwert und Standardabweichung nach \ref{Mittelwert} und \ref{Standardabweichung} berechnet werden.
 
 \begin{minipage}{\linewidth}
     \centering
     \captionof{table}{gekoppelte Schwingung verschiedener Pendellängen}
     \begin{tabular}{lllllr}
         \toprule 
-        T\textsubscript{S (1m)} & 
-        T\textsubscript{S (0,5m)} &
+        T\textsubscript{S (1m)} (s) & 
         t\textsubscript{K (1m)} (s) &
-        T\textsubscript{(1m)} & 
-        t\textsubscript{K (0,5m)} (s)
-        T\textsubscript{(1m)} & \\
+        T\textsubscript{(1m)} (s) & 
+        T\textsubscript{S (0,5m)} (s) &
+        t\textsubscript{K (0,5m)} (s) &
+        T\textsubscript{(0.5m)} (s)\\
         \midrule
-        14.42 &  9.83 & 1.966 & 6.31 & 6.30 & 1.26 \\
-        14.83 &  9.91 & 1.982 & 6.08 & 7.00 & 1.60 \\
-        14.8  & 10.14 & 2.028 & 5.90 & 5.50 & 1.10 \\
-        14.42 &  9.64 & 1.928 & 6.41 & 6.58 & 1.316\\
-        14.88 &  9.62 & 1.924 & 5.98 & 6.41 & 1.282\\
-        14.66 &  9.37 & 1.874 & 5.99 & 5.83 & 1.166\\
-        14.40 &  9.74 & 1.948 & 6.08 & 6.30 & 1.26\\
-        14.03 &  9.37 & 1.874 & 5.97 & 6.53 & 1.306\\
-        15.03 &  9.23 & 1.846 & 6.26 & 6.56 & 1.312\\
-        14.16 &  9.31 & 1.862 & 6.01 & 5.50 & 1.1\\
+        14.420 &  9.830 & 1.9660 & 6.310 & 6.300 & 1.2600 \\
+        14.830 &  9.910 & 1.9820 & 6.080 & 7.000 & 1.6000 \\
+        14.800 & 10.140 & 2.0280 & 5.900 & 5.500 & 1.1000 \\
+        14.420 &  9.640 & 1.9280 & 6.410 & 6.580 & 1.3160 \\
+        14.880 &  9.620 & 1.9240 & 5.980 & 6.410 & 1.2820 \\
+        14.660 &  9.370 & 1.8740 & 5.990 & 5.830 & 1.1660 \\
+        14.400 &  9.740 & 1.9480 & 6.080 & 6.300 & 1.2600 \\
+        14.030 &  9.370 & 1.8740 & 5.970 & 6.530 & 1.3060 \\
+        15.030 &  9.230 & 1.8460 & 6.260 & 6.560 & 1.3120 \\
+        14.160 &  9.310 & 1.8620 & 6.010 & 5.500 & 1.1000 \\
         \midrule
         Mittelwerte:\\
         14.563 & 9.616 & 1.9232 & 6.099 & 6.251 & 1.2502\\
@@ -260,110 +310,171 @@ Außerdem sind in den Tabellen auch Mittelwerte angegeben. Diese stehen dann jew
     \label{tab:4}
 \end{minipage}
 
-\pagebreak
-
-\section{Auswertung}
-
-Zu beginn dieser Auswertung gilt es, die Schwingungsfrequenzen und den Kopplungsgrad zu bestimmen.
-Um von den Schwingungsdauern/der Schwebungsdauer auf die Frequenzen zu kommen wird Folgende Gleichung benötigt:
-\begin{displaymath}
-    \omega = \frac{2\pi}{T}
-\end{displaymath}
-
-Dabei ist mit T jeweils die Schwingungsdauer der zu berechnenden Frequenz gemeint.
-Also für \omega\textsubscript{+} auch T\textsubscript{+} usw.
-
-Die Kopplungskonstante K wird nach \ref{K} berechnet.
-
-\begin{minipage}{\linewidth}
-    \centering
-    \captionof{table}{Frequenzen der drei Schwingungsarten und die Kopplungskonstante}
-    \begin{tabular}{lllllr}
-        \toprule 
-        T\textsubscript{+} & \omega\textsubscript{+} & T\textsubscript{-} & \omega\textsubscript{-} & T\textsubscript{S} & \omega\textsubscript{S} \\
-        \midrule 
-        1.8940 & 3.317 & 1.774 & 3.542 & 14.42 & 0.436 \\ 
-        1.9340 & 3.249 & 1.690 & 3.718 & 14.83 & 0.424 \\ 
-        1.9260 & 3.262 & 1.728 & 3.636 & 14.80 & 0.425 \\ 
-        1.8920 & 3.321 & 1.704 & 3.687 & 14.42 & 0.436 \\ 
-        1.9420 & 3.235 & 1.796 & 3.498 & 14.88 & 0.422 \\ 
-        1.9640 & 3.199 & 1.710 & 3.674 & 14.66 & 0.429 \\ 
-        1.8740 & 3.353 & 1.732 & 3.628 & 14.40 & 0.436 \\ 
-        1.9520 & 3.219 & 1.750 & 3.590 & 14.03 & 0.448 \\ 
-        1.9660 & 3.196 & 1.770 & 3.550 & 15.03 & 0.418 \\ 
-        1.9700 & 3.189 & 1.732 & 3.628 & 14.16 & 0.444 \\ 
-        \midrule
-        Mittelwerte \\
-               & 3.254 &       & 3.615 &       & 0.432 \\
-        \bottomrule
-        
-    \end{tabular}
-\end{minipage}
-
-Die Kopplungskonstante ergibt sich nach \ref{K} zu 0.1048 Hz.
-Mit \omega\textsubscript{+}=3.254 \omega\textsubscript{-}=3.615.
-
-\subsection{Aufgabe 1}
-
-Hier werden die Schwingungsdauern T\textsubscript{1} und T\textsubscript{2} bestimmt.
-
-Dazu werden die Messwerte aus \ref{tab:1} und \ref{tab:2} verwendet.
-
-Die gemessenen Zeiten (t) wurden durch 5 geteilt, um die datsächliche Schwingungsdauer zu erhalten.
-Die Schwingungsdauern T\textsubscript{1} und T\textsubscript{2} ergeben sich dann jeweils als Mittelwert der 10 gemessenen Schwingungsdauern.
-Die Mittelwerte wurden nach der Formel \ref{Mittelwert} berechnet.
-
-Das Ergebnis ist dann:
+Als Ergebnis ergeben sich folgende Werte:
 
 \begin{center}
-    \begin{tabular}{lll}
+    \begin{tabular}{
+        l
+        l@{$\pm$}l
+        l@{$\pm$}l
+        }
         \toprule
-        Pendellänge (m) & T\textsubscript{1} (s) & T\textsubscript{2} (s)\\
+        Pendellänge (m) & T\textsubscript{S} (s) & \sigma & T\textsubscript{K} (s) & \sigma \\
         \midrule 
-        1 &1.8916 & 1.9234 \\
-        0.5 & 1.4504 & 1.4514 \\
+        1 & 14.563 & 0.9743 & 1.9232 & 0.1722\\
+        0.5 & 6.099 & 0.4627 & 1.2502 & 0.4324 \\
         \bottomrule
     \end{tabular}
 \end{center}
 
-\subsection{Aufgabe 2}
+\subsection{Aufgabe 5}
 
-Die Schwingungsdauer T\textsubscript{+} ergibt sich nach \ref{T+} zu: 
+Der Kopplungsgrad K kann aus den Schwingungsdauern nach Gleichung \ref{K} brechnet werden.
+Da diese Formel allerdings bedeutet, dass der Kopplungsgrad durch fehlerbehaftete Größen berechnet wird, muss hier der Gauß-Fehler nach \ref{Gauß} bestimmt werden.
+Mit den Schwingungsdauern aus Aufgabe 2 und 3 erhält man folgende Werte für den Kopplungsgrad:
 
 \begin{center}
-    \begin{tabular}{ll}
+    \begin{tabular}{ll@{$\pm$}l}
         \toprule
-        Pendellänge (m) & T\textsubscript{+} (s) \\
+        Pendellänge (m) & K & Gauß-Fehler\\
         \midrule 
-        1 & 2.006 \\
-        0.5 & 1.419 \\
-        \bottomrule
-    \end{tabular}
-\end{center}
-Mit $g=9.81\frac{m}{s²}$ und $l=1m$.
-
-\subsection{Aufgabe 3}
-
-T\textsubscript{-} lässt sich nach \ref{T-} berechnen.
-Mit K = 0.1048 folgt:
-\begin{center}
-    \begin{tabular}{ll}
-        \toprule
-        Pendellänge (m) & T\textsubscript{-} (s) \\
-        \midrule 
-        1 & 1.985 \\
-        0.5 & 1.404 \\
+        1 & 0.1048 & 0.0755 \\
+        0.5 & 0.2030 & 0.0471 \\
         \bottomrule
     \end{tabular}
 \end{center}
 
-\subsection{Aufgabe 4}
+Der Kopplungsgrad lässt sich auch durch die Frequenzen bestimmen.
+Dafür müssen aus den Schwingungsdauern noch die Frequenzen bestimmt werden.
+Um die Frequenzen aus den Schwingungsdauern zu berechnen lohnt sich ein Vergleich zwischen \ref{T+} und \ref{w+}, sowie \ref{T-} und \ref{w-}.
 
-Die Schwingungs- sowie Schwebungsdauern sind gemessen worden 10 mal für 2 Pendellängen gemessen worden und stehen in \ref{tab:4}.
+\noindent Es fällt auf, dass gilt:
+\begin{align}
+    T_{+/-} = \frac{2\pi}{\omega_{+/-}}\\
+    \omega_{+/-} = \frac{2\pi}{T_{+/-}}
+\end{align}
 
-Als Vergleichswert lässt sich die Schwebungsdauer auch berechnen nach \ref{TS}.
-Mit den in Aufgabe 2 berechneten Schwingungsdauern ergibt sich für die Schwebungsdauer 189,61s für 1m Pendellänge.
-Für das 0,5m lange Pendel beträgt die Schwebungsdauer 132.82s.
+Der Gauß-Fehler lässt sich nach \ref{Gauß} berechnen.
+Mit den Mittelwerten der Schwingungsdauern und deren Unsicherheit aus Aufgabe 2 und Aufgabe 3 ergibt sich für die Frequenzen:
+
+\begin{center}
+    \begin{tabular}{ll@{$\pm$}ll@{$\pm$}l}
+        \toprule
+        Pendellänge (m) & \omega\textsubscript{+} & Gauß-Fehler & \omega\textsubscript{-} & Gauß-Fehler\\
+        \midrule 
+        1 & 3.2532 & 0.1614 & 3.6139 & 0.2099\\
+        0.5 & 4.3320 & 0.1926 & 5.3220 & 0.4553\\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+Werden diese Werte nun in \ref{K} eingesetzt ist K aus \omega :
+
+\begin{center}
+    \begin{tabular}{ll@{$\pm$}l}
+        \toprule
+        Pendellänge (m) & K & Gauß-Fehler\\
+        \midrule 
+        1 & 0.1048 & 4.8516 \\
+        0.5 & 0.2030 & 3.2161 \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\subsection{Aufgabe 6}
+
+Die Schwebungsdauer T\textsubscript{S} lässt sich nach \ref{TS} berechnen.
+Da T\textsubscript{+} und T\textsubscript{-} fehlerbehaftete Größen sind, muss auch hier der Gauß-Fehler berechnet werden.
+Die Werte für die Schwingungsdauern sind:
+
+\begin{center}
+    \begin{tabular}{ll @{$\pm$} l l@{$\pm$}l }
+        \toprule
+        Pendellänge (m) & T\textsubscript{+} (s) & \sigma & T\textsubscript{-} (s) & \sigma \\
+        \midrule 
+        1 & 1.9314 & 0.0958 & 1.7386 & 0.1010\\
+        0.5 & 1.4504 & 0.0645 & 1.1806 & 0.0246\\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+Für die Schwebungsdauer ergibt sich dann:
+
+\begin{center}
+    \begin{tabular}{ll@{$\pm$}l}
+        \toprule
+        Pendellänge (m) & T\textsubscript{S} & Gauß-Fehler\\
+        \midrule 
+        1 & 17.4167 & 12.7836 \\
+        0.5 & 6.3467 & 1.4250 \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+ 
+\subsection{Fehlerrechnung}
+\noindent Arithmetischer Mittelwert:\\
+\begin{equation} \label{Mittelwert}  
+    x_{arithm}=\frac{1}{N}\cdot \sum \limits_{k=1}^{N}x_k
+\end{equation}
+Dabei ist N die Anzahl aufgenommener Messwerte und x\textsubscript{k} sind die Messwerte.
+
+Standardabweichung: \\
+\begin{equation}\label{Standardabweichung}
+    \sigma = \sqrt{\frac{1}{N(N-1)} \sum_{k=1}^{n} (x_k - \bar{x})^2}
+\end{equation}
+Hier ist N wider die Anzahl aufgenommener Messwerte, x\textsubscript{k} sind die Messwerte und $\bar{x}$ ist der arithmetische Mittelwert.   
+
+\begin{equation} \label{Gauß}
+    \Delta f = \sqrt{\left(\frac{(\partial f)}{(\partial x)}\right)^2 (\Delta x)² +
+                     \left(\frac{(\partial f)}{(\partial y)}\right)^2 (\Delta y)² + ... +
+                     \left(\frac{(\partial f)}{(\partial z)}\right)^2 (\Delta z)²
+    }
+\end{equation}
+
+\section{Diskussion}
+
+\subsection{Aufgabe 6 Vergleich}
+
+Für einen Vergleich der Messwerte mit den berechneten Schwebungsdauern sind hier nocheinmal die zu vergleichenden Werte dargestellt:
+
+\begin{center}
+    \begin{tabular}{ll@{$\pm$}ll@{$\pm$}l}
+        \toprule
+        Pendellänge (m) & T\textsubscript{S} (berechnet) & Gauß-Fehler & T\textsubscript{S} (gemessen) & \sigma\\
+        \midrule 
+        1   & 17.4167 & 12.7836 & 14.563 & 0.9743 \\
+        0.5 &  6.3467 &  1.4250 &  6.099 & 0.4627 \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\subsection{Schwebungsdauer}
+
+Die gemssenen Werte liegen nah zwar an den berechneten Werten, jedoch ist eine Abweichung festzustellen.
+Diese ist darauf zurückzuführen, dass bei diesem Versuch die Schwebungsdauer mit bloßem Auge gemessen wurde.
+Ebenso wurde auch die zum Start benötigte Auslenkung mit der Hand bis zu einem Punkt ausgeführt.
+Auch dabei ist es nicht möglich immer genau den gleichen Punkt zu treffen.
+Eine weitere Schwierigkeit dieses Vergleichs sind die Gauß-Fehler der berechneten Werte.
+Die Gauß-Fehler sind so groß, weil die Werte aus vier (zwei verschiedenen) fehlerbehafteten Größen bestimmt wurden 
+und sich die Unsicherheit der gemessenen Schwingungsdauern so vervielfältigt.
+Die berechneten Schwebungsdauern an sich liegen dabei sehr nah an den gemessenen Schwebungsdauern aber die Gauß-Fehler lassen,
+durch den großen Bereich, den sie für die berechneten Werte zulassen,
+kaum eine qualifizierte Aussage über die Abweicheng dieser Schwebungsdauern zu.
+
+\subsection{allgemeine Probleme des Versuchs und Verbesserungsvorschläge}
+
+Um alle Messwerte genauer zu bestimmen könnte bei der Durchführung des Versuchs auf Lichtschranken zurückgegriffen werden. 
+Dann stoppt die Zeit immmer an genau an dem Punkt an dem gestoppt werden soll und die Reaktionszeit bis zum Stoppen ist geringer.
+Ebenso könnte eine mechanische Sperre anbringen, die es ermöglicht präzise die Pendel auszulenken. 
+Dies würde es ermöglichen, eine nahezu perfekt gleichphasige oder nahezu perfekt gegenphasige Schwingung zu erhalten. 
+Bei der Auslenkung mit der Hand kommt es häufig zu Schwingungen die in gekoppelten Schwingungen enden anstatt gleichphasig oder gegenphasig zu bleiben 
+und wenn die Schwingung in eine gekoppelten Schwingung endet, war sie auch von Anfang an eine.
+Man bekommt also einen Messfehler, weil es nahezu nicht möglich ist mit der Hand die Pendel so exakt auszulenken.
+
+Ein weiteres Problem dieses Versuchs liegt bei den berechneten Werten. Diese werden nahezu ausschließlich aus den fehlerbehafteten Messwerten berechnet,
+was dazu führt, dass die Gauß-Fehler bei einigen Werten sehr hoch ausfallen.
+
+
 
 
 \end{document}
