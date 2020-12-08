@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  8 DEC 2020 14:10
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  8 DEC 2020 14:43
  restricted system commands enabled.
 **gekoppeltesPendel.tex
 (./gekoppeltesPendel.tex
@@ -762,12 +762,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
 (polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            hyphenation	 on input line 10
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            lefthyphenmin	2 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -793,12 +793,12 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
 (polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            hyphenation	 on input line 22
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            lefthyphenmin	2 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
 )
@@ -1008,7 +1008,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 {/home/timt/.local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 21.
 
- (./gekoppeltesPendel.toc)
+ (./gekoppeltesPendel.toc
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+)
 \tf@toc=\write4
 
 \openout4 = gekoppeltesPendel.toc
@@ -1033,13 +1037,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--86
  []
 
 
-LaTeX Warning: Reference `Mittelwert' on page 5 undefined on input line 102.
-
-
-LaTeX Warning: Reference `Standardabweichung' on page 5 undefined on input line 
-105.
-
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 112.
 See the caption package documentation for explanation.
@@ -1047,66 +1044,47 @@ See the caption package documentation for explanation.
 [5]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 142.
+(caption)                particular \caption on input line 143.
 See the caption package documentation for explanation.
 
 [6]
 
-LaTeX Warning: Reference `Standardabweichung' on page 7 undefined on input line 
-183.
-
-
-LaTeX Warning: Reference `Mittelwert' on page 7 undefined on input line 183.
-
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 187.
+(caption)                particular \caption on input line 189.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `Mittelwert' on page 7 undefined on input line 229.
-
-
-LaTeX Warning: Reference `Standardabweichung' on page 7 undefined on input line 
-229.
-
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 236.
+(caption)                particular \caption on input line 238.
 See the caption package documentation for explanation.
 
 [7]
 
-LaTeX Warning: Reference `Mittelwert' on page 8 undefined on input line 279.
-
-
-LaTeX Warning: Reference `Standardabweichung' on page 8 undefined on input line 
-279.
-
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 283.
+(caption)                particular \caption on input line 285.
 See the caption package documentation for explanation.
 
-[8]
-
-LaTeX Warning: Reference `Gauß' on page 9 undefined on input line 333.
-
-[9]
-
-LaTeX Warning: Reference `Gauß' on page 10 undefined on input line 357.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
 [10] [11]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 491.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 513.
+See the caption package documentation for explanation.
+
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1141,49 +1119,41 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [12] (./gekoppeltesPendel.aux
+[12] [13] (./gekoppeltesPendel.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 )
 Package rerunfilecheck Info: File `gekoppeltesPendel.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 )
 
 Here is how much of LuaTeX's memory you used:
- 21927 strings out of 479059
+ 21936 strings out of 479059
  100000,1144653 words of node,token memory allocated
- 635 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 29 attribute, 62 glue_spec
+ 650 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 29 attribute, 65 glue_spec
 , 29 attribute_list, 1 write nodes
-   avail lists: 1:2,2:814,3:121,4:31,5:411,6:31,7:5190,8:73,9:505,10:16,11:512
- 40567 multiletter control sequences out of 65536+600000
+   avail lists: 1:2,2:812,3:288,4:31,5:404,6:62,7:5089,8:73,9:499,10:16,11:504
+ 40571 multiletter control sequences out of 65536+600000
  71 fonts using 7613587 bytes
  106i,12n,113p,10633b,761s stack positions out of 5000i,500n,10000p,200000b,200000s
-</home/timt/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bo
-ld.otf></home/timt/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmrom
-an8-regular.otf></home/timt/.local/texlive/2020/texmf-dist/fonts/opentype/public
-/lm/lmroman10-regular.otf></home/timt/.local/texlive/2020/texmf-dist/fonts/opent
-ype/public/lm/lmroman12-regular.otf></home/timt/.local/texlive/2020/texmf-dist/f
-onts/opentype/public/lm/lmsans10-bold.otf></home/timt/.local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/timt/.local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/timt/.local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/timt/.local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/timt/.local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/timt/.loca
-l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/timt/
-.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on gekoppeltesPendel.pdf (12 pages, 112986 bytes).
+</home/timt/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-reg
+ular.otf></home/timt/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmr
+oman10-regular.otf></home/timt/.local/texlive/2020/texmf-dist/fonts/opentype/pub
+lic/lm/lmroman12-regular.otf></home/timt/.local/texlive/2020/texmf-dist/fonts/op
+entype/public/lm/lmsans10-bold.otf></home/timt/.local/texlive/2020/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb></home/timt/.local/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/timt/.local/texlive/2020/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/timt/.local/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/timt/.local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/timt/.local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/timt/.local/
+texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on gekoppeltesPendel.pdf (13 pages, 115770 bytes).
 
-PDF statistics: 230 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
- 51 named destinations out of 1000 (max. 131072)
- 145 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 274 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 131072)
+ 161 words of extra memory for PDF output out of 10000 (max. 100000000)
 

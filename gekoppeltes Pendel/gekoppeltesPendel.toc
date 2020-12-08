@@ -14,7 +14,9 @@
 \contentsline {subsection}{\numberline {4.6}Aufgabe 6}{10}{subsection.4.6}%
 \contentsline {subsection}{\numberline {4.7}Fehlerrechnung}{10}{subsection.4.7}%
 \contentsline {section}{\numberline {5}Diskussion}{11}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Aufgabe 6 Vergleich}{11}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}Vergleich Aufgabe 6}{11}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Schwebungsdauer}{11}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}allgemeine Probleme des Versuchs und Verbesserungsvorschläge}{11}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Allgemeine Probleme des Versuchs und Verbesserungsvorschläge}{11}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Literatur}{12}{section.6}%
+\contentsline {section}{\numberline {7}Originalwerte}{12}{section.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -101,16 +101,17 @@ Dazu werden gemessenen Zeiten (t) durch 5 geteilt, um so die gemessenen Schwingu
 die Schwingungsdauern T\textsubscript{1} und T\textsubscript{2} ergeben sich dann jeweils als Mittelwert der 10 gemessenen Schwingungsdauern.
 Die Mittelwerte werden nach der Formel \ref{Mittelwert} berechnet.
 
-Allerdings muss in diesem Fall noch die Standardabweichung bestimmt werden, da die gemssenen Werte Unsicherheiten besitzen.
+Allerdings muss in diesem Fall noch die Standardabweichung bestimmt werden, da die gemessenen Werte Unsicherheiten besitzen.
 Diese werden nach der Formel \ref{Standardabweichung}
 
 
 Es wurden die folgenden Messwerte verwendet: 
 
 \begin{minipage}{\linewidth}
+\centering
+    \captionof{table}{1m Pendellänge, Pendel nicht durch Feder verbunden}
     \centering
-\captionof{table}{1m Pendellänge, Pendel nicht durch Feder verbunden}
-\begin{tabular}{llll}
+    \begin{tabular}{llll}
     \toprule
     t\textsubscript{1} (s) & T\textsubscript{1} (s) & t\textsubscript{2} (s) & T\textsubscript{2} (s) \\
     \midrule
@@ -180,6 +181,7 @@ Daraus ergibt sich als Ergebnis:
 \subsection{Aufgabe 2}
 
 Analog zu Aufgabe 1 lässt sich auch die die Schwingungsdauer für eine gleichphasige Schwingung der gekoppelten Pendel bestimmen.
+Diesesmal wird die Formel \ref{T+}
 Auch wird für die Standardabweichung die Formel \ref{Standardabweichung} und für den Mittelwert die Formel \ref{Mittelwert} verwendet.
 
 \begin{minipage}{\linewidth}
@@ -225,7 +227,7 @@ Mit den Messwerten aus der obigen Tabelle ergibt sich für T\textsubscript{+}:
 
 \subsection{Aufgabe 3}
 
-Auch die gegenphasige Schwingungsdauer T\textsubscript{-} lässt sich auf die gleiche Weise bestimmen.
+Auch die gegenphasige Schwingungsdauer T\textsubscript{-} lässt sich auf die gleiche Weise mit \ref{T-} bestimmen.
 Wieder wurden die Formeln \ref{Mittelwert} und \ref{Standardabweichung} verwendet.
 
 Die Messwerte sind: 
@@ -346,7 +348,7 @@ Mit den Schwingungsdauern aus Aufgabe 2 und 3 erhält man folgende Werte für de
 
 Der Kopplungsgrad lässt sich auch durch die Frequenzen bestimmen.
 Dafür müssen aus den Schwingungsdauern noch die Frequenzen bestimmt werden.
-Um die Frequenzen aus den Schwingungsdauern zu berechnen lohnt sich ein Vergleich zwischen \ref{T+} und \ref{w+}, sowie \ref{T-} und \ref{w-}.
+Um die Frequenzen aus den Schwingungsdauern zu berechnen lohnt sich ein Vergleich zwischen \ref{w+} und \ref{T+}, sowie \ref{w-} und \ref{T-}.
 
 \noindent Es fällt auf, dass gilt:
 \begin{align}
@@ -433,7 +435,7 @@ Hier ist N wider die Anzahl aufgenommener Messwerte, x\textsubscript{k} sind die
 
 \section{Diskussion}
 
-\subsection{Aufgabe 6 Vergleich}
+\subsection{Vergleich Aufgabe 6}
 
 Für einen Vergleich der Messwerte mit den berechneten Schwebungsdauern sind hier nocheinmal die zu vergleichenden Werte dargestellt:
 
@@ -450,7 +452,7 @@ Für einen Vergleich der Messwerte mit den berechneten Schwebungsdauern sind hie
 
 \subsection{Schwebungsdauer}
 
-Die gemssenen Werte liegen nah zwar an den berechneten Werten, jedoch ist eine Abweichung festzustellen.
+Die gemessenen Werte liegen nah zwar an den berechneten Werten, jedoch ist eine Abweichung festzustellen.
 Diese ist darauf zurückzuführen, dass bei diesem Versuch die Schwebungsdauer mit bloßem Auge gemessen wurde.
 Ebenso wurde auch die zum Start benötigte Auslenkung mit der Hand bis zu einem Punkt ausgeführt.
 Auch dabei ist es nicht möglich immer genau den gleichen Punkt zu treffen.
@@ -461,20 +463,72 @@ Die berechneten Schwebungsdauern an sich liegen dabei sehr nah an den gemessenen
 durch den großen Bereich, den sie für die berechneten Werte zulassen,
 kaum eine qualifizierte Aussage über die Abweicheng dieser Schwebungsdauern zu.
 
-\subsection{allgemeine Probleme des Versuchs und Verbesserungsvorschläge}
+\subsection{Allgemeine Probleme des Versuchs und Verbesserungsvorschläge}
 
 Um alle Messwerte genauer zu bestimmen könnte bei der Durchführung des Versuchs auf Lichtschranken zurückgegriffen werden. 
-Dann stoppt die Zeit immmer an genau an dem Punkt an dem gestoppt werden soll und die Reaktionszeit bis zum Stoppen ist geringer.
+Dann stoppt die Zeit immer genau zu dem Zeitpunkt an dem gestoppt werden soll und die Reaktionszeit bis zum Stoppen ist geringer.
 Ebenso könnte eine mechanische Sperre anbringen, die es ermöglicht präzise die Pendel auszulenken. 
 Dies würde es ermöglichen, eine nahezu perfekt gleichphasige oder nahezu perfekt gegenphasige Schwingung zu erhalten. 
-Bei der Auslenkung mit der Hand kommt es häufig zu Schwingungen die in gekoppelten Schwingungen enden anstatt gleichphasig oder gegenphasig zu bleiben 
-und wenn die Schwingung in eine gekoppelten Schwingung endet, war sie auch von Anfang an eine.
-Man bekommt also einen Messfehler, weil es nahezu nicht möglich ist mit der Hand die Pendel so exakt auszulenken.
+Bei der Auslenkung mit der Hand kommt es häufig zu Schwingungen, die in gekoppelten Schwingungen enden, anstatt gleichphasig oder gegenphasig zu bleiben.
+Es entsteht also ein Messfehler, weil es nahezu nicht möglich ist mit der Hand die Pendel so exakt auszulenken.
 
 Ein weiteres Problem dieses Versuchs liegt bei den berechneten Werten. Diese werden nahezu ausschließlich aus den fehlerbehafteten Messwerten berechnet,
 was dazu führt, dass die Gauß-Fehler bei einigen Werten sehr hoch ausfallen.
 
+\section{Literatur}
 
+Anleitung V106 Gekoppelte Pendel TU Dortmund
+%https://moodle.tu-dortmund.de/pluginfile.php/1368482/mod_resource/content/2/V106.pdf
+Formelsammlung zur Berechnung von Messunsicherheiten
+%https://moodle.tu-dortmund.de/pluginfile.php/1277100/mod_resource/content/1/FehlerFormeln.pdf
+
+\section{Originalwerte}
+
+In diesem Kapitel sind alle, bei dem Versuch aufgenommenen unbearbeiteten, Messwerte:
+
+\begin{minipage}{\linewidth}
+    \centering
+\captionof{table}{Gemessene Zeiten für alle Schwingungsarten bei einer Pendellänge von einem Meter}
+\begin{tabular}{llllll}
+    \toprule
+    t\textsubscript{1} (s) & t\textsubscript{2} & t\textsubscript{+} & t\textsubscript{-} & T\textsubscript{S} & t\textsubscript{K}\\
+    \midrule
+    9.9400 & 9.4000 & 9.47 & 8.87 & 14.42 & 9.83 \\
+    9.3400 & 9.5700 & 9.67 & 8.45 & 14.83 & 9.91 \\
+    9.2600 & 9.3800 & 9.63 & 8.64 & 14.80 & 10.14 \\
+    9.2000 & 9.3300 & 9.46 & 8.52 & 14.42 & 9.64 \\
+    9.4500 & 9.6000 & 9.71 & 8.98 & 14.88 & 9.62 \\
+    9.5500 & 9.4500 & 9.82 & 8.55 & 14.66 & 9.37 \\
+    9.4400 & 9.7700 & 9.37 & 8.66 & 14.40 & 9.74 \\
+    9.5100 & 9.8700 & 9.76 & 8.75 & 14.03 & 9.37 \\
+    9.3900 & 9.9100 & 9.83 & 8.85 & 15.03 & 9.23 \\
+    9.5000 & 9.8900 & 9.85 & 8.66 & 14.16 & 9.31  \\
+    \bottomrule
+    
+\end{tabular}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+    \centering
+\captionof{table}{Gemessene Zeiten für alle Schwingungsarten bei einer Pendellänge von einem halben Meter}
+\begin{tabular}{llllll}
+    \toprule
+    t\textsubscript{1} (s) & t\textsubscript{2} & t\textsubscript{+} & t\textsubscript{-} & T\textsubscript{S} & t\textsubscript{K}\\
+    \midrule
+    7.21 & 	7.26 & 7.29  & 5.97 & 6.31 & 6.3  \\
+    7.18 & 	7.39 & 7.18  & 5.9 &  6.08 & 7.0 \\
+    7.23 & 	7.25 & 7.04  & 5.92 & 5.9  & 5.5 \\
+    7.17 & 	7.19 & 7.19  & 5.86 & 6.41 & 6.58  \\
+    7.3  &  7.26 & 7.39  & 5.85 & 5.98 & 6.41  \\
+    7.25 & 	7.34 & 7.4  &  5.93 & 5.99 & 5.83 \\
+    7.22 & 	7.19 & 7.3  &  5.93 & 6.08 & 6.3 \\
+    7.3  &  7.3  & 7.25  & 5.92 & 5.97 & 6.53  \\
+    7.25 & 	7.24 & 7.18  & 5.84 & 6.26 & 6.56  \\
+    7.41 & 	7.15 & 7.3  &  5.91 & 6.01 & 5.5 \\
+    \bottomrule
+    
+\end{tabular}
+\end{minipage}
 
 
 \end{document}
