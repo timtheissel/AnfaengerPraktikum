@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  13 DEC 2020 09:46
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  13 DEC 2020 11:40
  restricted system commands enabled.
 **Halleffekt.tex
 (./Halleffekt.tex
@@ -827,11 +827,11 @@ braces):
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	
 (polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            righthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2 on input line 10
+(polyglossia)            synonyms	
+(polyglossia)            lefthyphenmin	2 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -860,11 +860,11 @@ LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	
 (polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            righthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2 on input line 22
+(polyglossia)            synonyms	
+(polyglossia)            lefthyphenmin	2 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
 )
@@ -1080,11 +1080,44 @@ Package microtype Info: Loading generic protrusion settings for font family
 x.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 20.
 
- (./Halleffekt.toc)
+ (./Halleffekt.toc
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+)
 \tf@toc=\write4
 
 \openout4 = Halleffekt.toc
- [2] [3] [4]
+ [2] [3]
+<Versuchsanordnung_HallEffekt.png, id=43, 410.2828pt x 208.52907pt>
+File: Versuchsanordnung_HallEffekt.png Graphic file (type png)
+<use Versuchsanordnung_HallEffekt.png>
+Package luatex.def Info: Versuchsanordnung_HallEffekt.png  used on input line 73
+.
+(luatex.def)             Requested size: 503.8936pt x 256.0748pt.
+
+Overfull \hbox (85.63805pt too wide) in paragraph at lines 73--74
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--75
+
+ []
+
+[4] [5<./Versuchsanordnung_HallEffekt.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 108.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 108.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 108.
+
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1119,7 +1152,7 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [5] (./Halleffekt.aux
+[6] (./Halleffekt.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
@@ -1129,30 +1162,35 @@ Package rerunfilecheck Info: File `Halleffekt.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 21843 strings out of 479058
+ 21887 strings out of 479058
  100000,1144653 words of node,token memory allocated
- 649 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 36 attribute, 61 glue_spec
-, 36 attribute_list, 1 write nodes
-   avail lists: 1:1,2:383,3:113,4:35,5:398,6:19,7:6376,8:46,9:613,10:8,11:768
- 40499 multiletter control sequences out of 65536+600000
- 71 fonts using 7613587 bytes
+ 709 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 46 attribute, 65 glue_spec
+, 46 attribute_list, 1 write nodes
+   avail lists: 1:1,2:349,3:121,4:35,5:397,6:22,7:6376,8:46,9:603,10:8,11:768
+ 40531 multiletter control sequences out of 65536+600000
+ 79 fonts using 8383307 bytes
  94i,7n,109p,10626b,755s stack positions out of 5000i,500n,10000p,200000b,200000s
 </home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmr
 oman8-regular.otf></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/open
 type/public/lm/lmroman10-regular.otf></home/cptflashpoint/.local/texlive/2020/te
 xmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/cptflashpoint/.lo
 cal/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/cp
-tflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
+tflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10
 .pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></home/cptflashpoint/.local/texlive/2020/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/cptflashpoint/.local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Halleffekt.pdf (5 pages, 73837 bytes).
+onts/cm/cmmi10.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi6.pfb></home/cptflashpoint/.local/texlive/2020/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/cptflashpoint/.local/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/cptflashpoint/.
+local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/cpt
+flashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
+b></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy6.pfb>
+Output written on Halleffekt.pdf (6 pages, 131319 bytes).
 
-PDF statistics: 117 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 131072)
- 41 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 159 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 131072)
+ 49 words of extra memory for PDF output out of 10000 (max. 100000000)
 
