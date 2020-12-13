@@ -5,4 +5,6 @@
 \contentsline {subsection}{\numberline {2.2}Zur Berechnung der elektrischen Leitfähigkeit eines Metalles}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Der Hall-Effekt}{5}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Weitere Leitfähigkeitsparameter aus R und U\textsubscript {H}}{6}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Elektrizitätsleitung bei Metallen mit positiven Ladungsträgern}{7}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Durchführung}{7}{section.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
