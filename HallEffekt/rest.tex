@@ -1,0 +1,73 @@
+\documentclass[titlepage=firstcover, captions=tableheading]{scrartcl}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{polyglossia}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+
+\begin{document}
+\section{Ladungsträger pro Atom}
+
+Die Ladungsträger pro Atom berechnen sich nach:
+
+\begin{displaymath}
+    
+    Z= \frac{n*m}{\rho * N_A}
+\end{displaymath}
+Dabei ist m die molare Masse von Kupfer, $\rho$ ist die Dichte von Kupfer und N\textsubscript{A} ist die Avogadro-Konstante.
+$\rho = 8.96$
+$m = 63.546e-3$
+
+Die Rechnung ergibt:
+\begin{center}
+    \begin{tabular}{l @{${}\pm{}$}ll @{${}\pm{}$}l}\\
+        \toprule
+        Ladungsträger pro Volumen & Gauß-Fehler & Ladungsträger pro Atom & Gauß-Fehler\\
+        \midrule
+        $-2.6088847454095256*10^{30}$ &  $2.608884745409526 *10^{27} $  &   -30724.4558 &  30.7244\\
+        $-9.375861670676898 *10^{30}$  & $9.375861670676899  *10^{27}$    &  -110418.1579 &  110.4181\\
+        $-1.7340192518405735*10^{31}$ &  $1.7340192518405736*10^{28} $ &  -204212.9228 &   04.2129   \\   
+        $-2.8998249303089926*10^{31}$ &  $2.899824930308992 *10^{28} $  &  -341508.1603 &  341.5081\\
+        $-4.108537223356665 *10^{31}$  & $4.108537223356666  *10^{28}$    &  -483856.4474 &   483.8564\\
+        $-5.506911710141514 *10^{31}$  & $5.506911710141516  *10^{28}$     &  -648540.9748 &   648.5409\\
+        $-6.565587430250072 *10^{31}$  & $6.5655874302500725 *10^{28}$   &  -773219.6731 &   773.2196 \\
+        $-7.809670538066778 *10^{31}$  & $7.8096705380667795 *10^{28}$   &  -919733.5295 &    919.7335 \\ 
+        $-8.963167117987643 *10^{31}$  & $8.963167117987643  *10^{28}$    &  -1055579.1425 &  1055.5791 \\
+        $-1.001706478691359 *10^{32}$  & $1.001706478691359  *10^{29}$   &  -1179695.1366 &  1179.6951 \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\section{mittlere Flugzeit}
+
+Die mittlere Flugzeit berechnet sich nach:
+
+\begin{displaymath}
+    \tau = \frac{2m_0}{ne_0^2*\rho}
+\end{displaymath}
+
+Die Rechnung ergibt:
+\begin{center}
+    \begin{tabular}{l @{${}\pm{}$}lll}\\
+    \toprule
+    Mittlere Flugzeit & Gauß-Fehler\\
+    \midrule
+    $-3.036*10^{24}$ &  $3.0362*10^{27}$ \\
+    $-8.448*10^{25}$ &  $8.4484*10^{28}$ \\
+    $-4.568*10^{25}$ &  $4.5681*10^{28}$ \\
+    $-2.731*10^{25}$ &  $2.7316*10^{28}$ \\
+    $-1.927*10^{25}$ &  $1.9279*10^{28}$ \\
+    $-1.438*10^{25}$ &  $1.4384*10^{28}$ \\
+    $-1.206*10^{25}$ &  $1.2064*10^{28}$ \\
+    $-1.014*10^{25}$ &  $1.0142*10^{28}$ \\
+    $-8.837*10^{26}$ &  $8.8374*10^{29}$ \\
+    $-7.907*10^{26}$ &  $7.9076*10^{29}$ \\
+    \bottomrule
+    \end{tabular}
+\end{center}
+
+\end{document}
