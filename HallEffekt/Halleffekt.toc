@@ -12,6 +12,9 @@
 \contentsline {subsection}{\numberline {4.2}Widerstand}{8}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Hall Effekt}{9}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Ladungsträger pro Volumen}{9}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Diskussion}{12}{section.5}%
-\contentsline {section}{\numberline {6}Literaturverzeichnis}{12}{section.6}%
+\contentsline {subsection}{\numberline {4.5}Driftgeschwindigkeit}{10}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Beweglichkeit \mu }{10}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Diskussion}{11}{section.5}%
+\contentsline {section}{\numberline {6}Messwerte}{11}{section.6}%
+\contentsline {section}{\numberline {7}Literaturverzeichnis}{13}{section.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

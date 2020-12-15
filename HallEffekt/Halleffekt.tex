@@ -194,6 +194,62 @@ Die Ladungsträger pro Volumen berechnen sich nach Formel \ref{Ladungsträger n}
     \end{tabular}
 \end{center}
 
+\subsection{Driftgeschwindigkeit}
+Die Driftgeschwindigkeit errechnet sich nach
+\begin{equation}
+    \bar{v_d}=\frac{-n*e_0}{j}
+\end{equation}
+mit Stromdichte $j=1 A/mm^2$:
+\begin{center}
+    \captionof{table}{Driftgeschwindigkeit}
+    \begin{tabular}{ll}
+        \toprule
+        Probenstrom (A) & V\textsubscript{d} (m/s) \\
+        \midrule  
+        0.5       & 417989417989.418+/-417989417.989     \\
+        1         &  1502178649237.4727+/-1502178649.237  \\
+        1.5       &   2778205128205.128+/-2778205128.2051  \\
+        2         &   4646031746031.746+/-4646031746.0317  \\
+        2.5       &   6582602339181.287+/-6582602339.1812 \\
+        3         &  8823045267489.715+/-8823045267.4897  \\
+        3.5       &   10519230769230.77+/-10519230769.230 \\
+        4         &   12512471655328.799+/-12512471655.3288    \\
+        4.5       &   14360576923076.922+/-14360576923.0769  \\
+        5         &   16049107142857.143+/-16049107142.8571   \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\subsection{Beweglichkeit \mu}
+Die Beweglichkeit \mu errechnet sich nach der Formel 
+\begin{equation}
+    \mu=-\frac{e_0}{2m_0}*\tau
+\end{equation}
+Sie stellt eine Beziehung zwischen \tau und \mu auf.
+\begin{center}
+    \captionof{table}{Bewglichkeit \mu}
+    \begin{tabular}{ll}
+        \toprule
+        Mittlere Driftgeschwindigkeit & Bewglichkeit \\
+        \midrule  
+               & 2.6700949367088606e-13+/-2.6700949367088604e-16\\
+               & 7.429685071998344e-14+/-7.429685071998343e-17\\
+               & 4.017239106071593e-14+/-4.0172391060715934e-17\\
+               & 2.4022036214554153e-14+/-2.4022036214554153e-17\\
+               & 1.6954866344094545e-14+/-1.6954866344094548e-17\\
+               & 1.2649503598081023e-14+/-1.2649503598081026e-17\\
+               & 1.060981979629146e-14+/-1.0609819796291459e-17\\
+               & 8.919671982602391e-15+/-8.919671982602392e-18   \\
+               & 7.771772920751831e-15+/-7.771772920751833e-18 \\
+               & 6.9541029207232255e-15+/-6.954102920723227e-18  \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\section{Diskussion}
+Die nach den oben beschriebenen Formeln errechneten Werte weichen sehr stark von realistischen oder gar physikalisch möglichen Werten ab. Dabei liegen die Fehler schon zu Beginn der Rechnungen bei sehr großen Werten. Diese Fehler vermehren sich daraufhin gravierend und führen dadurch zu kumalativ immer größer werdenden Fehlern. Es fällt besonders bei den Geschwindigkeiten v\textsubscript{d} und der Totalgeschwindigkeit auf, dass diese mit Werten größer als die Lichtgeschwindigkeit natürlich fern jeder physikalischen Sinnhaftigkeit liegen. Die Vermutung liegt nahe, dass es sich dabei um signifikante Messfehler oder systematische Ungereimtheiten an der Messapparatur handelt, so dass solch großen Fehler möglich werden. Besonders Zweiteres ist wahrscheinlich, da es bei der Durchführung des Versuchs immer wieder Probleme mit dem Teslameter und dem Generator gegeben hat. Auch das Messgerät zur Messung der Hall-Spannung stellte die Messwerte sehr unzuverlässig und mit für die Messwerte sehr großer, relativer Fluktuation dar. Es gab auch zwischendurch immer mal wieder komplette Aussetzer des Messgeräts, in denen es mitten in einer Messreihe plötzlich das Vorzeichen ohne Grund änderte. Diese Umstände erschwerten ein genaues und zuverlässiges Ablesen und Aufnehmen der Messwerte sehr. Außerdem kommt dazu, dass die gemessenen Hall-Spannungen so klein sind, dass selbst ein scheinbar geringer Fehler schon eine signifikante Abweichung bedeutet und dadurch das weitere Rechnen stark beeinflusst. Alles zusammen sorgt dann für die zum Teil abstrusen Ergebnisse.
+
+\section{Messwerte}
 \begin{center}
     \captionof{table}{Magnetfeld}
     \begin{tabular}{lll}
@@ -295,9 +351,6 @@ Die Ladungsträger pro Volumen berechnen sich nach Formel \ref{Ladungsträger n}
         \bottomrule
     \end{tabular}
 \end{center}
-
-\section{Diskussion}
-Die nach den oben beschriebenen Formeln errechneten Werte weichen sehr stark von realistischen oder gar physikalisch möglichen Werten ab. Dabei liegen die Fehler schon zu Beginn der Rechnungen bei sehr großen Werten. Diese Fehler vermehren sich daraufhin gravierend und führen dadurch zu kumalativ immer größer werdenden Fehlern. Es fällt besonders bei den Geschwindigkeiten v\textsubscript{d} und der Totalgeschwindigkeit auf, dass diese mit Werten größer als die Lichtgeschwindigkeit natürlich fern jeder physikalischen Sinnhaftigkeit liegen. Die Vermutung liegt nahe, dass es sich dabei um signifikante Messfehler oder systematische Ungereimtheiten an der Messapparatur handelt, so dass solch großen Fehler möglich werden. Besonders Zweiteres ist wahrscheinlich, da es bei der Durchführung des Versuchs immer wieder Probleme mit dem Teslameter und dem Generator gegeben hat. Auch das Messgerät zur Messung der Hall-Spannung stellte die Messwerte sehr unzuverlässig und mit für die Messwerte sehr großer, relativer Fluktuation dar. Es gab auch zwischendurch immer mal wieder komplette Aussetzer des Messgeräts, in denen es mitten in einer Messreihe plötzlich das Vorzeichen ohne Grund änderte. Diese Umstände erschwerten ein genaues und zuverlässiges Ablesen und Aufnehmen der Messwerte sehr. Außerdem kommt dazu, dass die gemessenen Hall-Spannungen so klein sind, dass selbst ein scheinbar geringer Fehler schon eine signifikante Abweichung bedeutet und dadurch das weitere Rechnen stark beeinflusst. Alles zusammen sorgt dann für die zum Teil abstrusen Ergebnisse.
 
 \section{Literaturverzeichnis}
 Anleitung V311 Halleffekt und Elektrizitätsleitung bei Metallen: $https://moodle.tu-dortmund.de/pluginfile.php/1368594/mod_resource/content/1/V311.pdf$\\
