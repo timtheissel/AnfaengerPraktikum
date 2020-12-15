@@ -94,8 +94,8 @@ Also gilt:
     U_H=-\frac{1}{ne_0}\frac{B*I_q}{d}
 \end{equation}
 Die benötigte Ladungsträgerdichte n errechnet sich also nach:
-\begin{equation}
-    n=-\frac{1}{U_He_0}\frac{B*I_q}{d}
+\begin{equation}\label{Ladungsträger n}
+    n=-\frac{1}{U_He_0}\frac{B*I_q}{d} 
 \end{equation}
 Mit bekanntem n lässt sich nun die mittlere Flugzeit $\bar{\tau}$ berechnen:
 \begin{equation}
@@ -140,4 +140,167 @@ Zuerst wurde der Widerstand mit einem digitalen Multimeter auf der Widerstandsei
 Im Anschluss wurde an die magnetfelderzeugenden Spulen ein Strom angelegt und mit Hilfe eines Teslameters das resultierende, möglichst homogene Magnetfeld gemessen. Dabei wurde mit dem geringsten möglichen Strom von 1mA gestartet und in 500mA-Schritten der Spulenstrom erhöht bis zu einem Strom von 5A. Alle Messwerte wurden notiert.\\
 Wie in Abb.1 wird an den Punkten A und B ein Spannungsmessgerät angeschlossen. Dort wird die Hallspannung U\textsubscript{H} abgegriffen. Daraufhin wird die Probe in die Messarmatur gesteckt und zunächst mit einem konstanten Querstrom I\textsubscript{q} von 5A durchflossen. Der Spulenstrom wird erneut von 1mA bis 5A erhöht und jeweils die induzierte Hallspannung notiert. Danach wird die Messung mit einem umgepolten Magnetfeld wiederholt.\\
 Danch wird eine Messreihe gemacht bei der der Spulenstrom konstant 5A beträgt und der Probenstrom von 1mA in 500mA-Schritten bis 5A erhöht wird. Auch hier werden die gemessenen Hallspannungen natürlich notiert.
+
+\section{Auswertung}
+
+\subsection{Geometrische Abmessungen}
+
+In der Folgenden Tabelle werden die geometrischen Abmessungen der verwendeten Kupferproben dargestellt.
+Dabei gibt es für die Kupferfolie eine Höhe (H), eine Breite(b) und eine Dicke (d) sowie einen Durchmesser (D) und eine Länge (L) des Kupferdrahtes.
+
+\begin{center}
+    \captionof{table}{Ladungsträger pro Volumen}
+    \begin{tabular}{lllll}
+        \toprule
+        H & b & d & D & L \\
+        \midrule 
+        0.026 & 0.028 & 0.00043 & 0.000263 & 173 \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\subsection{Widerstand}
+
+Der Widerstand wurde bei der Durchführung des Versuchs direkt mit einem Multimeter gemessen.
+Dafür musste lediglich das Messgerät an den Kupferdraht angeschlossen werden und mit den richtigen Einstellungen zeigt es einen Widerstand von 9.7 \Omega \; an.
+
+\subsection{Hall Effekt}
+
+\includegraphics{plothall.png}
+
+In den Koordinatensystemen sind die gemessenen Hall-Spannungen aufgetragen.
+Zu den Geaphen ist zu sagen, dass auf der x-Achse entweder der Spulenstrom oder der Probenstrom abgebildet wird.
+Die jewils andere Stromstärke wird konstant bei 5A gehalten.
+
+\subsection{Ladungsträger pro Volumen}
+Die Ladungsträger pro Volumen berechnen sich nach Formel \ref{Ladungsträger n}:
+\begin{center}
+    \captionof{table}{Geometrische Abmessungen in cm}
+    \begin{tabular}{ll@{${}\pm{}$}lll}
+        \toprule
+        I\textsubscript{q}[A]&n&Fehler \\
+        \midrule
+        0.5 &$ -2.608884*10^{31}$&$2.60888*10^{27} $\\
+        1   &$  -9.37586*10^{31}$&$9.37586*10^{27}$\\
+        1.5 &$  -1.73401*10^{31}$&$-1.734036*10^{28}$\\
+        2   &$  -2.89982*10^{31}$&$-2.89982*10^{28}$\\
+        2.5 &$  -4.10853*10^{31}$&$4.10853*10^{28} $\\
+        3   &$  -5.50691*10^{31}$&$5.50691*10^{28} $\\
+        3.5 &$  -6.56558*10^{31}$&$6.565585*10^{28}$\\
+        4   &$  -7.80967*10^{31}$&$7.809675*10^{28}$\\    
+        4.5 &$  -8.96316*10^{31}$&$8.96316*10^{28} $\\
+        5   &$  -1.00170*10^{31}$&$1.001702*10^{28}$\\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \captionof{table}{Magnetfeld}
+    \begin{tabular}{lll}
+        \toprule
+        Spulenstrom (A) & B (mT) & B\textsubscript{0}(mT) \\
+        \midrule 
+        0.001     &      0.3  &   0\\
+        0.5       &      63.5 &   63.2 \\
+        1         &      138.2&   137.9\\
+        1.5       &      217  &   216.7\\
+        2         &      293  &   292.7\\
+        2.5       &      360.5&   360.2\\
+        3         &      429.1&   428.8\\
+        3.5       &      492.6&   492.3\\
+        4         &      552.1&   551.8\\
+        4.5       &      597.7&   597.4\\
+        5         &      647.4&   647.1\\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \captionof{table}{Magnetfeld umgepolt}
+    \begin{tabular}{lll}
+        \toprule
+        Spulenstrom (A) & B (mT) & B\textsubscript{0}(mT) \\
+        \midrule 
+        0.001     &   -32    & -0 \\
+        0.5       &   -95    & -63 \\
+        1         &   -169   & -137\\ 
+        1.5       &   -244   & -212\\ 
+        2         &   -315   & -283\\ 
+        2.5       &   -385   & -353\\ 
+        3         &   -450   & -418\\ 
+        3.5       &   -517   & -485\\ 
+        4         &   -572   & -540\\ 
+        4.5       &   -628   & -596\\ 
+        5         &   -676   & -644\\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \captionof{table}{Hallspannungen 5A Probenstrom}
+    \begin{tabular}{lll}
+        \toprule
+        Stromstärke Spule (A) & Hall-Spannung (mV) \\
+        \midrule 
+          0.5      & 0.0042\\
+          1        & 0.0051\\
+          1.5      & 0.0065\\ 
+          2        & 0.007\\ 
+          2.5      & 0.0076\\ 
+          3        & 0.0081\\ 
+          3.5      & 0.0091\\ 
+          4        & 0.0098\\ 
+          4.5      & 0.0104\\ 
+          5        & 0.0112\\ 
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \captionof{table}{Hallspannungen 5A Probenstrom}
+    \begin{tabular}{lll}
+        \toprule
+        Stromstärke Spule umgepolt (A) & Hall-Spannung (mV) \\
+        \midrule 
+          0.5      &  -0.0023\\
+          1        &  -0.0009\\
+          1.5      &  -0.0003\\ 
+          2        &  0.0012\\ 
+          2.5      &  0.002\\ 
+          3        &  0.0031\\ 
+          3.5      &  0.004\\ 
+          4        &  0.0047\\ 
+          4.5      &  0.0056\\ 
+          5        &  0.0061 \\ 
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \captionof{table}{Hallspannungen 5A Spulenstrom}
+    \begin{tabular}{lll}
+        \toprule
+        Stromstärke Probe (A) & Hall-Spannung (mV) \\
+        \midrule 
+          0.5      & 0.0009 \\
+          1        & 0.001 \\
+          1.5      & 0.0012 \\ 
+          2        & 0.0013 \\ 
+          2.5      & 0.0014\\  
+          3        & 0.0014 \\ 
+          3.5      & 0.0016 \\ 
+          4        & 0.0017 \\ 
+          4.5      & 0.0018 \\ 
+          5        & 0.0019 \\ 
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\section{Diskussion}
+Die nach den oben beschriebenen Formeln errechneten Werte weichen sehr stark von realistischen oder gar physikalisch möglichen Werten ab. Dabei liegen die Fehler schon zu Beginn der Rechnungen bei sehr großen Werten. Diese Fehler vermehren sich daraufhin gravierend und führen dadurch zu kumalativ immer größer werdenden Fehlern. Es fällt besonders bei den Geschwindigkeiten v\textsubscript{d} und der Totalgeschwindigkeit auf, dass diese mit Werten größer als die Lichtgeschwindigkeit natürlich fern jeder physikalischen Sinnhaftigkeit liegen. Die Vermutung liegt nahe, dass es sich dabei um signifikante Messfehler oder systematische Ungereimtheiten an der Messapparatur handelt, so dass solch großen Fehler möglich werden. Besonders Zweiteres ist wahrscheinlich, da es bei der Durchführung des Versuchs immer wieder Probleme mit dem Teslameter und dem Generator gegeben hat. Auch das Messgerät zur Messung der Hall-Spannung stellte die Messwerte sehr unzuverlässig und mit für die Messwerte sehr großer, relativer Fluktuation dar. Es gab auch zwischendurch immer mal wieder komplette Aussetzer des Messgeräts, in denen es mitten in einer Messreihe plötzlich das Vorzeichen ohne Grund änderte. Diese Umstände erschwerten ein genaues und zuverlässiges Ablesen und Aufnehmen der Messwerte sehr. Außerdem kommt dazu, dass die gemessenen Hall-Spannungen so klein sind, dass selbst ein scheinbar geringer Fehler schon eine signifikante Abweichung bedeutet und dadurch das weitere Rechnen stark beeinflusst. Alles zusammen sorgt dann für die zum Teil abstrusen Ergebnisse.
+
+\section{Literaturverzeichnis}
+Anleitung V311 Halleffekt und Elektrizitätsleitung bei Metallen: $https://moodle.tu-dortmund.de/pluginfile.php/1368594/mod_resource/content/1/V311.pdf$\\
+Literaturwerte für Dichte und molare Masse von Kupfer: $https://www.chemie.de/lexikon/Kupfer.html$\\
+SciPy-Bibliothek für Naturkonstanten (Python-Erweiterung)
 \end{document}
