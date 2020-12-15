@@ -12,4 +12,6 @@
 \contentsline {subsection}{\numberline {4.2}Widerstand}{8}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Hall Effekt}{9}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Ladungsträger pro Volumen}{9}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Diskussion}{12}{section.5}%
+\contentsline {section}{\numberline {6}Literaturverzeichnis}{12}{section.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
