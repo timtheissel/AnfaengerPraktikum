@@ -37,7 +37,7 @@ tau = (2*const.m_e)/(n*const.e**2*rho)
 
 j=1
 vd = (-n*const.e)/j
-print(vd)
+#print(vd)
 
 mu = -(const.e*tau)/(2*const.m_e)
 #print(mu)
@@ -49,4 +49,4 @@ v = ((2*EF)/const.m_e)
 #print(v)
 
 l = -tau * v
-#print(l)
+print(l)
