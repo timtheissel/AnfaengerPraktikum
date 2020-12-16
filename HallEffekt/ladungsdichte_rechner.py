@@ -40,7 +40,7 @@ vd = (-n*const.e)/j
 #print(vd)
 
 mu = -(const.e*tau)/(2*const.m_e)
-#print(mu)
+print(mu)
 
 EF=const.h*(3/(8*math.pi)**(1/3))/(2*const.m_e)
 #print(EF)
