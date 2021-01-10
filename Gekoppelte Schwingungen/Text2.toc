@@ -1,0 +1,8 @@
+\selectlanguage *{german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theoretische Grundlagen}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Differentialgleichung für eine gedämpfte Schwingung-Herleitung und Lösung}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}1. Fall: $\frac {1}{LC}>\frac {R^2}{4L^2}$}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}2. Fall: Aperiodische Daempfung fuer $\frac {1}{LC}<\frac {R^2}{4L^2}$}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Differentialgleichung fuer erzwungene Schwingungen}{6}{section.3}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
