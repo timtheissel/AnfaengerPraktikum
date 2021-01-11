@@ -24,10 +24,10 @@ Das Ziel des Versuchs ist die Untersuchung eines RCL-Schwingkreises. Dabei soll 
 Beim in diesem Versuch untersuchten Schwingkreis handelkt es sich um einen RCL-Schwingkreis. Dieser enthält, verglichen mit dem RC-Kreis, neben dem Kondensator und dem Widerstand noch eine Spule mit Induktivität L. Dadurch ergibt sich ein zweiter Energiespeicher in Form der Spule. Diese ermöglicht ein Pendeln der Energie zwischen den beiden Energiespeichern, Spule und Kondensator. Das RCL-System schwingt also periodisch hin und her. Ohne Energieverbraucher, zum Beispiel den Widerstand, würde das System unendlich lange ungedämpft schwingen. Da der Widerstand aber elektrische Energie in Wärme umwandelt, geht darüber Energie verloren und der Schwingkreis wird gedämpft. Besonders von Interesse ist dabei das Zeitgesetz.
 \subsection{Differentialgleichung für eine gedämpfte Schwingung-Herleitung und Lösung}
 Vereinfacht lässt sich der RCl-Schwingkreis darstellen wie in Abb. 1. Daraus lässt sich erkennen, dass die zweite Kirchhoffsche Regel hier verwendet werden kann.
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics{"Schaltkreis_RCL.png"}
-    \caption{Abb.1: RCL-Schwingkreis}
+    \caption{RCL-Schwingkreis}
 \end{figure}
 Mit der zweiten Kirchhoffschen Regel lässt sich die Spannung im System darstellen:
 \begin{align}
@@ -119,7 +119,7 @@ Dadurch ist $v=0$ und
     I(t)=Ae^{-\frac{Rt}{2L}}=Ae^{-\frac{t}{\sqrt{LC}}}\nonumber
 \end{equation} 
 Der aperiodische Grenzfall stellt einen Fall ohne Ueberschwingen dar fuer den die Schwingung am schnellsten gegen null geht.
-\section{Differentialgleichung fuer erzwungene Schwingungen}
+\subsection{Differentialgleichung fuer erzwungene Schwingungen}
 Im Folgenden wird das schwingfaehige System durch eine aeussere, periodische Kraft ausgelenkt. Im Fall des RCL-Schwingkreises handelt es sich dabei um eine sinusfoermige Wechselspannung u(t).
 \begin{equation}
     u(t)=U_0e^{j\omega t}\nonumber
@@ -184,6 +184,70 @@ Somit besteht zwischen der Guete q und der Breite der Resonanzkurve die folgende
 \end{equation}
 Das Verhalten aendert sich fuer starke Daempfung, also $\frac{R^2}{2L^2}>>\frac{1}{LC}$, grundlegend. Es existiert keine Frequenzueberhoehung mehr. Stattdessen geht $U_C$ von $U_0$ aus mit wachsender Frequenz monoton gegen 0. Bei hinreichend hohen Frequenzen faellt $U_C$ proportional zu $\frac{1}{\omega^2}$.\\
 Im Folgenden soll ausserdem noch die Frequenzabhaengigkeit der Phase zwischen Erreger- und Kondensatorspannung untersucht werden. Nach dem Ansatz aus \ref{Ansatz} gibt Gleichung \ref{phi} den Zusammenhang zwischen $\phi$ und $\omega$ wieder. Gleichung \ref{phi} sagt dabei aus, dass bei kleinen Frequenzen Kondensator- und Erregerspannung praktisch in Phase sind. Im Gegensatz dazu verschiebt sich die Kondensatorspannung bei sehr grossen Frequenzen um $\pi$ und hinkt dadurch der Erregerspannung hinterher. 
-\section{Impedanz des Schwingkreises}
+\subsection{Impedanz eines Schwingkreises}
+Ein RCL-Serienschwingkreis kann auch als ein Zweipol aufgefasst werden. 
+\begin{figure}[H]
+    \centering
+    \includegraphics{"Schaltkreis_RCL.png"}
+    \caption{Serienschwingkreis als Zweipol}
+\end{figure}
+An den Enden des Zweipols laesst sich ein Widerstand feststellen. Dieser ist frequenzabhaengig und wird Impedanz. Sie wird auf Grund der haeufig vorhandenen Phasenverschiebung zwischen Strom und Spannung als komplexe Zahl definiert.
+\begin{equation}
+    z=x+iy \nonumber
+\end{equation}
+Dabei sind x und y reelle Widerstaende. Sie werden Blindwiderstand (Reaktanz) und Wirkwiderstand genannt. Der Betrag der Impedanz 
+\begin{equation}
+    |z|=\sqrt{x^2+y^2} \nonumber
+\end{equation}
+nennt sich Scheinwiderstand. Die Darstellung der Impedanz $z(\omega)$ in der komplexen Zahlenebene wird Ortskurve genannt und laesst sich duch einen Vektor aus dem Ursprung darstellen. Die Laenge des Vektors entspricht dem Scheinwiderstand. Der Winkel $\alpha$ zwischen dem Vektor und der reellen Achse ist genauso gross wie die Phasenverschiebung zwischen Spannung und Strom im Serienschwingkreis als Zweipol.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{"RCL_Serienschwingkreis_komplex.png"}
+    \caption{Darstellung der Impedanz des Serienschwingkreises als Zweipol in der komplexen Zahlenebene}
+\end{figure}
+Die Impedanz z errechnet sich nun folgendermassen mit den Widerstandsoperatoren
+\begin{align}
+    z_C&=-i\frac{1}{C\omega} \text{ (Widerstand der Kapazitaet)} \nonumber \\
+    z_L&=iL\omega \text{ (Widerstand der Induktivitaet)}\nonumber \\
+    z_R&=R_S \text{ (ohmscher Widerstand)} \nonumber\\
+\end{align}
+zu 
+\begin{equation}
+    z_S=R_S+i(L\omega-\frac{1}{C\omega}) \nonumber
+\end{equation}
+$x_S$ und $y_S$ sind dann
+\begin{align}
+    x_S&=R_S \nonumber \\
+    y_S&=iL\omega-\frac{1}{C\omega} \nonumber \\
+    |z_S|&=\sqrt{R_S^2+(L\omega-\frac{1}{C\omega})^2} \label{Scheinwiderstand}
+\end{align}
+Die Frequenzunabhaengigkeit von $x_S$ sorgt fuer eine Ortskurve, welche immer parallel zur imaginaeren Achse verlaeuft und an der Stelle $R_S$ die reelle Achse schneidet. Der Scheinwiderstand erreicht auf Grund von \ref{Scheinwiderstand} an der Stelle $\omega=\omega_0=\frac{1}{\sqrt{LC}}$ sein Minimum $R_S$. Fuer $\omega\rightarrow 0$ und $\omega\rightarrow\infty$ geht der Widerstand gegen $\infty$. 
+\subsection{Parallelschwingkreis als Zweipol}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{"RCL_Parallelschwingkreis.png"}
+    \caption{Parallelschwingkreis als Zweipol}
+\end{figure}
+\noindent Die Impedanz eines Parallelschwingkreises soll der Vollstaendigkeit halber auch noch kurz erwaeht werden. Diese errechnet sich dann zu
+\begin{equation}\label{Impedanz_parallel}
+    z_p=\frac{\frac{1}{R_p}+i(\frac{1}{\omega L}-C\omega)}{\frac{1}{R_p^2}+(\frac{1}{L\omega}-C\omega)^2} 
+\end{equation}
+und der Scheinwiderstand dementsprechend zu
+\begin{equation}
+    |z_p|=\frac{1}{\sqrt{\frac{1}{R_p^2}+(\frac{1}{L\omega}-C\omega)^2}}
+\end{equation}
+$|z_p|$ durchlauft also nun bei $\omega_0=\frac{1}{\sqrt{LC}}$ ein Maximum mit dem Wert $R_p$. $|z_p|$ geht fuer $\omega\rightarrow 0$ gegen 0. Die Abhaengigkeit des Scheinwiderstandes von der Frequenz laesst sich wie folgt darstellen:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{"RCL_Parallelschwingkreis_Abhaengigkeit.png"}
+    \caption{Abhaengigkeit des Scheinwiderstandes von der Frequenz im Parallelschwingkreis}
+\end{figure}
+Aus \ref{Impedanz_parallel} ergibt sich fuer die Ortskurve des parallel geschalteten RCL-Schwingkreises ein Kreis mit dem Radius $\frac{1}{2}R_p$. Der Mittelpunkt ist dabei der Punkt $(0,\frac{1}{2}R_p)$, siehe ~\ref{fig:Parallel_Ortskurve}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{"RCL_Parallelschwingkreis_Ortskurve.png"} 
+    \caption{Ortskurve eines Parallelschwingkreis}
+    \label{fig:Parallel_Ortskurve}
+\end{figure}
 \end{document}
 
