@@ -33,8 +33,8 @@ Mit der zweiten Kirchhoffschen Regel lässt sich die Spannung im System darstell
 \begin{align}
     U_R(t)+U_C(t)+U_L(t)&=0\nonumber\\
     U_R(t)&=R\cdot I(t)\nonumber\\
-    U_C(t)&=\frac{Q(t)}{C} \text{(Q(t)=Ladung des Kondensators)}\nonumber\\
-    U_L(t)&=L\frac{dI}{dt} \text{(Induktionsgesetz)}\nonumber\\\nonumber
+    U_C(t)&=\frac{Q(t)}{C} \text{ (Q(t)=Ladung des Kondensators)}\nonumber\\
+    U_L(t)&=L\frac{dI}{dt} \text{ (Induktionsgesetz)}\nonumber\\\nonumber
 \end{align}
 Es folgt also daraus:
 \begin{equation}
@@ -50,12 +50,12 @@ aus der ersten Ableitung zu
 \end{equation}
 Geloest wird diese lineare, homogene DGL mit dem Ansatz 
 \begin{equation}
-    \tau(t)=\xi e^(j\omega t)\nonumber
+    \tau(t)=\xi e^{j\omega t}\nonumber
 \end{equation}
 Dabei sind \xi und \omega komplexe Zahlen und $j=\sqrt{-1}$.
 Daraus erhaelt man 
 \begin{equation}
-    (-\omega^2+j\frac{R}{L}\omega+\frac{1}{LC})\xi e^j\omega t \nonumber
+    (-\omega^2+j\frac{R}{L}\omega+\frac{1}{LC})\xi e^{j\omega t} \nonumber
 \end{equation}
 Die DGL wird nun fuer beliebige \xi und beliebige t erfuellt, solange \omega die charakteristische Gleichung 
 \begin{equation}
@@ -78,17 +78,17 @@ $\tau(t)$ laest sich dann schreiben als
 \begin{equation}\label{Klammer}
     \tau(t)=e^{-2\pi\mu t}(\xi_1e^{j2\pi vt}+\xi_2e^{-j2\pi vt})
 \end{equation}
-Die Loesung haengt nun massgebend davon ab, ob $\frac{1}{LC}$ groesser oder kleinr als $\frac{R^2}{4L^2}$. Dieser Umstand entscheide nun, ob v reell oder imaginaer ist. Daher ist eine Fallunterscheidung notwendig.
+Die Loesung haengt nun massgebend davon ab, ob $\frac{1}{LC}$ groesser oder kleiner als $\frac{R^2}{4L^2}$. Dieser Umstand entscheide nun, ob v reell oder imaginaer ist. Daher ist eine Fallunterscheidung notwendig.
 \subsection{1. Fall: $\frac{1}{LC}>\frac{R^2}{4L^2}$}
 Unter diesen Bedingungen ist dann $\xi_1 =\bar{\xi_2}$, damit die Loesung $\tau(t)$ reell wird.
 Das laesst sich ausdruecken durch den Ansatz
 \begin{align}
-    \xi_1&=\frac{1}{2}A_0e^{j\eta}\nonumber
+    \xi_1&=\frac{1}{2}A_0e^{j\eta}\nonumber\\
     \xi_2&=\frac{1}{2}A_0e^{-j\eta}\nonumber
 \end{align}
 Fuer $\tau(t)$ unter Benutzung der Euler-Identitaet gilt
 \begin{equation}
-    \frac{e^{j\phi}+e{-j\phi}}{2}=\cos\phi \nonumber
+    \frac{e^{j\varphi}+e^{-j\varphi}}{2}=\cos\varphi \nonumber
 \end{equation}
 Daher ergibt sich fuer den geklammerten Ausdruck aus \ref{Klammer} eine reine oszillatorische Funktion.
 \begin{equation}
@@ -106,18 +106,15 @@ der ungedaempften Schwingung an, wenn $\frac{R^2}{4L^2}$ klein gegen $\frac{1}{L
 Die Amplitudenabnahmmegeschwindigkeit wird charakterisiert durch $2\pi\mu=\frac{R}{2L}$.
 Die Amplitude geht dabei nach der Zeit 
 \begin{equation}
-    T_ex=\frac{1}{2\pi\mu}=2\pi\sqrt{LC}\nonumber
+    T_{ex}=\frac{1}{2\pi\mu}=2\pi\sqrt{LC}\nonumber
 \end{equation}
 auf den e-ten Teil des Startwerts zurueck. $T_ex$ wird Abklingdauer genannt.
 \subsection{2. Fall: Aperiodische Daempfung fuer $\frac{1}{LC}<\frac{R^2}{4L^2}$}
-Die Loesung I(t) enthaelt fuer diesen Fall keinen oszillatorischen Anteil mehr. Dieser Fall nennt sich aperiodiche Daempfung. Von besonderer Bedeutung ist der Spezialfall des aperiodischen Grenzfalls.
+Die Loesung I(t) enthaelt fuer diesen Fall keinen oszillatorischen Anteil mehr. Dieser Fall nennt sich aperiodische Daempfung. Von besonderer Bedeutung ist der Spezialfall des aperiodischen Grenzfalls.
 \begin{equation}
     \frac{1}{LC}=\frac{R_ap^2}{4L^2}\nonumber
 \end{equation}
-Dadurch ist $v=0$ und 
-\begin{equation}
-    I(t)=Ae^{-\frac{Rt}{2L}}=Ae^{-\frac{t}{\sqrt{LC}}}\nonumber
-\end{equation} 
+Dadurch ist $v=0$ und $I(t)=Ae^{-\frac{Rt}{2L}}=Ae^{-\frac{t}{\sqrt{LC}}}$
 Der aperiodische Grenzfall stellt einen Fall ohne Ueberschwingen dar fuer den die Schwingung am schnellsten gegen null geht.
 \subsection{Differentialgleichung fuer erzwungene Schwingungen}
 Im Folgenden wird das schwingfaehige System durch eine aeussere, periodische Kraft ausgelenkt. Im Fall des RCL-Schwingkreises handelt es sich dabei um eine sinusfoermige Wechselspannung u(t).
@@ -133,7 +130,7 @@ oder
     LC\frac{d^2u_C}{dt^2}+RC\frac{du_C}{dt}+u_C=U_0e^{j\omega t}
 \end{equation}
 an. 
-Q(t) stellt hierbei die Ladung auf dem Kondensator dar, weshalb damit die Spannung folgendes ist:
+Q(t) stellt hierbei die Ladung auf dem Kondensator dar, weshalb damit die Spannung folgende ist:
 \begin{equation}
     u_C(t)=\frac{Q(t)}{C}\nonumber
 \end{equation}
@@ -141,8 +138,8 @@ Betrachtet wird im Folgenden vorallem die Amplitude der Kondensatorspannung $u_C
 Der Ansatz ist
 \begin{equation}\label{Ansatz}
     u_C(\omega, t)=\xi(\omega)e^{j\omega t} (\xi komplex) 
-\end{equation}.
-Nun wird \ref{Ansatz} in \ref{DGL 2} eingesetzt und die Bestimmungsgleichung $-LC\omega^2\xi+j\omega RC\xi+\xi=U_0$ nach \xi aufgeloest.
+\end{equation}
+Nun wird \ref{Ansatz} in \ref{DGL 2} eingesetzt und die Bestimmungsgleichung $-LC\omega^2\xi+j\omega RC\xi+\xi=U_0$ nach \xi  aufgeloest.
 \begin{equation}
     \xi=\frac{U_0}{1-LC\omega^2+j\omega RC}=\frac{U_0(1-LC\omega^2-j\omega RC)}{(1-LC\omega^2)^2+\omega^2R^2C^2} \nonumber
 \end{equation}
@@ -152,11 +149,11 @@ Der Betrag betraegt dann
 \end{equation}
 mit der Phase
 \begin{equation}
-    \tan \phi(\omega)=\frac{Im(\xi)}{Re(\xi)}=\frac{-\omega RC}{1-LC\omega^2}\nonumber
+    \tan \varphi(\omega)=\frac{Im(\xi)}{Re(\xi)}=\frac{-\omega RC}{1-LC\omega^2}\nonumber
 \end{equation}
 beziehungsweise
 \begin{equation}\label{phi}
-    \phi(\omega)=\arctan(\frac{-\omega RC}{1-LC\omega^2})
+    \varphi(\omega)=\arctan(\frac{-\omega RC}{1-LC\omega^2})
 \end{equation}
 Der Betrag der Loesungsfunktion nach \ref{Ansatz} entspricht dabei dem Betrag von \xi. Somit erhaelt man aus \ref{Betrag} als Ergebnis
 \begin{equation} \label{Resonanzkurve}
@@ -164,7 +161,7 @@ Der Betrag der Loesungsfunktion nach \ref{Ansatz} entspricht dabei dem Betrag vo
 \end{equation}
 Durch diese Beziehung laesst sich also nun die gesuchte Frequenzabhaengigkeit zwischen der Kondensatorspannung und der Frequenz $\omega$. Dieser Zusammenhang nennt sich Resonanzkurve. Fuer $\omega\rightarrow\infty$ geht $U_C\rightarrow 0$ und fuer $\omega\rightarrow 0$ geht $U_C\rightarrow U_0$. Bei einer bestimmten Frequenz gibt es ein $U_C$, welches groesser als die urspruengliche Erregeramplitude $U_0$ ist. Diese Frequenz nennt sich Resonanzfrequenz und das zugehoerige Phaenomen nennt sich Resonanz. Gegeben wird die Resonanzfrequenz durch
 \begin{equation}
-    \omega_res=\sqrt{\frac{1}{LC}-\frac{R^2}{2L^2}} \nonumber
+    \omega_{res}=\sqrt{\frac{1}{LC}-\frac{R^2}{2L^2}} \nonumber
 \end{equation}
 Besonderer Betrachtung wird der Fall der schwachen Daempfung, also $\frac{R^2}{2L^2}<<\frac{1}{LC}$, unterzogen. Dort naehert sich die Resonanzfrequenz naemlich der Kreisfrequenz des ungedaempften Schwingkreises an. Die Kondensatorspannung uebertrift die Erregerspannung um den Faktor $\frac{1}{\omega_0RC}$, die so genannte Resonanzueberhoehung oder Guete q eines Schwingkreises.
 \begin{equation}\label{Umax}
@@ -183,7 +180,7 @@ Somit besteht zwischen der Guete q und der Breite der Resonanzkurve die folgende
     q=\frac{\omega_0}{\omega_+-\omega_-}\nonumber
 \end{equation}
 Das Verhalten aendert sich fuer starke Daempfung, also $\frac{R^2}{2L^2}>>\frac{1}{LC}$, grundlegend. Es existiert keine Frequenzueberhoehung mehr. Stattdessen geht $U_C$ von $U_0$ aus mit wachsender Frequenz monoton gegen 0. Bei hinreichend hohen Frequenzen faellt $U_C$ proportional zu $\frac{1}{\omega^2}$.\\
-Im Folgenden soll ausserdem noch die Frequenzabhaengigkeit der Phase zwischen Erreger- und Kondensatorspannung untersucht werden. Nach dem Ansatz aus \ref{Ansatz} gibt Gleichung \ref{phi} den Zusammenhang zwischen $\phi$ und $\omega$ wieder. Gleichung \ref{phi} sagt dabei aus, dass bei kleinen Frequenzen Kondensator- und Erregerspannung praktisch in Phase sind. Im Gegensatz dazu verschiebt sich die Kondensatorspannung bei sehr grossen Frequenzen um $\pi$ und hinkt dadurch der Erregerspannung hinterher. 
+Im Folgenden soll ausserdem noch die Frequenzabhaengigkeit der Phase zwischen Erreger- und Kondensatorspannung untersucht werden. Nach dem Ansatz aus \ref{Ansatz} gibt Gleichung \ref{phi} den Zusammenhang zwischen $\varphi$ und $\omega$ wieder. Gleichung \ref{phi} sagt dabei aus, dass bei kleinen Frequenzen Kondensator- und Erregerspannung praktisch in Phase sind. Im Gegensatz dazu verschiebt sich die Kondensatorspannung bei sehr grossen Frequenzen um $\pi$ und hinkt dadurch der Erregerspannung hinterher. 
 \subsection{Impedanz eines Schwingkreises}
 Ein RCL-Serienschwingkreis kann auch als ein Zweipol aufgefasst werden. 
 \begin{figure}[H]
