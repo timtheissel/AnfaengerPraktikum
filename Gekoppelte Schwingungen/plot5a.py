@@ -30,8 +30,14 @@ plt.plot(l, sigmoid(l, 0.0012, 4.034) ,label=r'Ausgleichsrechnung')
 
 plt.xlabel(r'Zeit [µs]')
 plt.ylabel(r'Spannungsamplituden [V]')
-plt.title(r"Zeitabhängigkeit der Spannungsamplituden")
+
 plt.legend()
 plt.grid()
-
-plt.show()
+plt.savefig('5a.png')
+#plt.show()
+a = ufloat(1218, 17)
+L = ufloat(0.01678,0.00009)
+R = 4 * np.pi * L *a
+T = 1 / ( 2 * np.pi * a)
+print(R)
+print(T)

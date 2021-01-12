@@ -5,12 +5,19 @@ import uncertainties as unc
 import uncertainties.unumpy as unp 
 from uncertainties import ufloat
 import scipy.constants as const 
+R = ufloat(117.2,0.2)
+L = ufloat(16.78,0.09)*10**-3
+C = ufloat(2.066, 0.006)*10**-9
 
-L = ufloat(0.001678,0.00009)
-C = ufloat(0.000000002066,0.00000000006)
+r = ((4*L)/C)
+#print(r)
 
-R = ((4*L)/C)
-print(R)
+U = unp.sqrt(r)
+#print(U)
 
-U = unp.sqrt(R)
-print(U)
+
+v = R/L
+#print(v)
+
+p = unp.sqrt(L/(R**2*C))
+print(p)

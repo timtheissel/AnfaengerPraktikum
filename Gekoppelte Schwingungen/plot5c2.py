@@ -7,13 +7,13 @@ from uncertainties import ufloat
 import scipy.constants as const 
 
 x, y = np.genfromtxt('DatenGES5c2.txt', unpack=True)
-plt.plot(x, y, 'r.', label=r'$u_C/U$')
+plt.plot(x, y, 'r.', label=r'$U_C/U$')
 
 
 def sigmoid(x):
     return 3.8/np.sqrt(2) +0*x
 
-plt.plot(x, sigmoid(x),label=r'$ q * \frac{1}{\sqrt{2}} $')
+plt.plot(x, sigmoid(x),label=r'$ U(q) * \frac{1}{\sqrt{2}} $')
 
 
 
@@ -41,6 +41,8 @@ v2 = (n-c)/a
 v = np.sqrt((n-c)/a)+b
 v1 = -np.sqrt((n-c)/a)+b
 print(v)
+print(v1)
+print(v-v1)
 def trick4(x):
     return 21.74181111446039+ 0*x
 i = np.linspace(2.4, 3, 8)
@@ -53,11 +55,11 @@ plt.plot(trick5(y), i, label=r'$v_+$')
 
 
 
-plt.xlabel(r'Frequenz [Hz]')
+plt.xlabel(r'Frequenz [kHz]')
 plt.ylabel(r'$U_C/U$')
 plt.title(r"Lineare Darstellung um die Resonanzfrequenz")
 plt.legend()
 plt.grid()
-plt.savefig('5c.png')
+plt.savefig('5c2.png')
 
 plt.show()

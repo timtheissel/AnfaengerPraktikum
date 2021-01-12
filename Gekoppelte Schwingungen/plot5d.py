@@ -90,10 +90,11 @@ i = np.linspace(1, 2, 7)
 plt.plot(trick5(p), i,label=r'$v_{res} $')
 
 
-plt.xlabel(r'Frequenz [Hz]')
+plt.xlabel(r'Frequenz [kHz]')
 plt.ylabel(r'Phasenverschiebung [rad]')
 plt.title(r"Halblogarithmische Darstellung der Phasenverschiebung")
 plt.legend()
+plt.savefig('5d.png')
 
 plt.show()
 

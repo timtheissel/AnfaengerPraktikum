@@ -7,7 +7,7 @@ from uncertainties import ufloat
 import scipy.constants as const 
 
 x, y = np.genfromtxt('DatenGES5c.txt', unpack=True)
-plt.plot(x, y, 'r.', label=r'$u_C/U$')
+plt.plot(x, y, 'r.', label=r'$U_C/U$')
 
 
 def trick4(x):
@@ -17,9 +17,9 @@ plt.plot(trick4(y), i, label=r'Resonanzüberhöhung')
 
 
 plt.xscale('log')
-plt.xlabel(r'Frequenz [Hz]')
+plt.xlabel(r'Frequenz [kHz]')
 plt.ylabel(r'$U_C/U$')
 plt.title(r"Halblogarithmische Darstellung")
 plt.legend()
-
+plt.savefig('5c.png')
 plt.show()
