@@ -12,3 +12,5 @@ C = ufloat(0.000000002066,0.00000000006)
 R = ((4*L)/C)
 print(R)
 
+U = unp.sqrt(R)
+print(U)
