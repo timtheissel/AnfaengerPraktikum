@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  10 JAN 2021 16:08
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  11 JAN 2021 14:52
  restricted system commands enabled.
-**text2.tex
-(./text2.tex
+**Text2.tex
+(./Text2.tex
 LaTeX2e <2020-10-01>
 Lua module: luaotfload-main 2020-09-02 3.15 luaotfload entry point
 Lua module: luaotfload-init 2020-09-02 3.15 luaotfload submodule / initializatio
@@ -826,12 +826,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            synonyms	
 (polyglossia)            righthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1901.tex on input line 10
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	
+(polyglossia)            hyphenation	
+(polyglossia)            patterns	hyph-de-1901.pat.txt on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -854,21 +854,21 @@ Package polyglossia Info: Default language is german.
 LaTeX Warning: Unused global option(s):
     [titlepage=firstcover].
 
-(./text2.aux
+(./Text2.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            synonyms	
 (polyglossia)            righthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1996.tex on input line 22
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	
+(polyglossia)            hyphenation	
+(polyglossia)            patterns	hyph-de-1996.pat.txt on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
 )
-\openout1 = text2.aux
+\openout1 = Text2.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
@@ -1026,10 +1026,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 16.
 LaTeX Info: Redefining \pageref on input line 16.
 LaTeX Info: Redefining \nameref on input line 16.
- (./text2.out) (./text2.out)
+ (./Text2.out) (./Text2.out)
 \@outlinefile=\write3
 
-\openout3 = text2.out
+\openout3 = Text2.out
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
 (scrartcl)           because of handling of possible bookmark level gaps.
@@ -1080,16 +1080,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 x.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 19.
 
- (./text2.toc
+ (./Text2.toc
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
 )
 \tf@toc=\write4
 
-\openout4 = text2.toc
+\openout4 = Text2.toc
  [2]
-<Schaltkreis_RCL.png, id=37, 162.6075pt x 97.86563pt>
+<Schaltkreis_RCL.png, id=41, 162.6075pt x 97.86563pt>
 File: Schaltkreis_RCL.png Graphic file (type png)
 <use Schaltkreis_RCL.png>
 Package luatex.def Info: Schaltkreis_RCL.png  used on input line 29.
@@ -1228,28 +1228,111 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 .4'
+]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.4'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 .4'
-] [6
-warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 .4'
 
-warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 .4'
 
-warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.4'
+[6
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 .5'
 
-warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 .6'
 
-warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
-.7'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 .7'
 ]
+File: Schaltkreis_RCL.png Graphic file (type png)
+<use Schaltkreis_RCL.png>
+Package luatex.def Info: Schaltkreis_RCL.png  used on input line 188.
+(luatex.def)             Requested size: 162.6071pt x 97.86537pt.
+ [7
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.9'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.10'
+]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.10'
+<RCL_Serienschwingkreis_komplex.png, id=95, 529.98pt x 305.64188pt>
+File: RCL_Serienschwingkreis_komplex.png Graphic file (type png)
+<use RCL_Serienschwingkreis_komplex.png>
+Package luatex.def Info: RCL_Serienschwingkreis_komplex.png  used on input line 
+202.
+(luatex.def)             Requested size: 188.21371pt x 108.54326pt.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.10'
+[8<./RCL_Serienschwingkreis_komplex.png>]
+<RCL_Parallelschwingkreis.png, id=104, 414.04688pt x 252.945pt>
+File: RCL_Parallelschwingkreis.png Graphic file (type png)
+<use RCL_Parallelschwingkreis.png>
+Package luatex.def Info: RCL_Parallelschwingkreis.png  used on input line 225.
+(luatex.def)             Requested size: 188.21371pt x 114.98209pt.
+<RCL_Parallelschwingkreis_Abhaengigkeit.png, id=105, 472.01344pt x 284.56313pt>
+File: RCL_Parallelschwingkreis_Abhaengigkeit.png Graphic file (type png)
+<use RCL_Parallelschwingkreis_Abhaengigkeit.png>
+Package luatex.def Info: RCL_Parallelschwingkreis_Abhaengigkeit.png  used on inp
+ut line 239.
+(luatex.def)             Requested size: 188.21371pt x 113.46718pt.
+ [9
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
+.11'
+<./RCL_Parallelschwingkreis.png>]
+<RCL_Parallelschwingkreis_Ortskurve.png, id=117, 676.02562pt x 360.59718pt>
+File: RCL_Parallelschwingkreis_Ortskurve.png Graphic file (type png)
+<use RCL_Parallelschwingkreis_Ortskurve.png>
+Package luatex.def Info: RCL_Parallelschwingkreis_Ortskurve.png  used on input l
+ine 245.
+(luatex.def)             Requested size: 188.21371pt x 100.39429pt.
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1284,34 +1367,26 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [7
-warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
-.8'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
-.9'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
-.9'
-] (./text2.aux
+ [10<./RCL_Parallelschwingkreis_Abhaengigkeit.png><./RCL_Parallelschwingkreis_Or
+tskurve.png>] (./Text2.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 )
-Package rerunfilecheck Info: File `text2.out' has not changed.
+Package rerunfilecheck Info: File `Text2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 21882 strings out of 479058
+ 21946 strings out of 479058
  100000,1144653 words of node,token memory allocated
- 709 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 45 attribute, 64 glue_spec
-, 45 attribute_list, 1 write nodes
-   avail lists: 1:1,2:348,3:164,4:34,5:459,6:28,7:3871,8:63,9:646,10:15,11:394
- 40535 multiletter control sequences out of 65536+600000
+ 737 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 52 attribute, 64 glue_spec
+, 52 attribute_list, 1 write nodes
+   avail lists: 1:1,2:451,3:166,4:35,5:465,6:28,7:5690,8:61,9:657,10:15,11:589
+ 40566 multiletter control sequences out of 65536+600000
  78 fonts using 8251619 bytes
- 94i,10n,109p,10621b,764s stack positions out of 5000i,500n,10000p,200000b,200000s
+ 94i,10n,109p,10621b,774s stack positions out of 5000i,500n,10000p,200000b,200000s
 </home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmr
 oman10-regular.otf></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/ope
 ntype/public/lm/lmroman12-regular.otf></home/cptflashpoint/.local/texlive/2020/t
@@ -1329,10 +1404,10 @@ home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy6.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on text2.pdf (7 pages, 138789 bytes).
+Output written on Text2.pdf (10 pages, 229242 bytes).
 
-PDF statistics: 163 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 131072)
- 49 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 211 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 131072)
+ 65 words of extra memory for PDF output out of 10000 (max. 100000000)
 
