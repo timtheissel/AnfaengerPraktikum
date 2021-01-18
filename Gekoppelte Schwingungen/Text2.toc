@@ -7,4 +7,12 @@
 \contentsline {subsection}{\numberline {2.4}Differentialgleichung fuer erzwungene Schwingungen}{6}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Impedanz eines Schwingkreises}{8}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Parallelschwingkreis als Zweipol}{9}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Auswertung}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Aufgabe 5a}{11}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Aufgabe 5b}{12}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Aufgabe 5c}{13}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Aufgabe 5d}{16}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Diskussion}{18}{section.4}%
+\contentsline {section}{\numberline {5}Tabellen}{19}{section.5}%
+\contentsline {section}{\numberline {6}Quellen}{20}{section.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
