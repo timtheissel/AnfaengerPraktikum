@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  18 JAN 2021 10:54
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  18 JAN 2021 14:33
  restricted system commands enabled.
 **GeigerMueller2.tex
 (./GeigerMueller2.tex
@@ -826,12 +826,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            righthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2 on input line 10
+(polyglossia)            synonyms	 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -854,9 +854,22 @@ Package polyglossia Info: Default language is german.
 LaTeX Warning: Unused global option(s):
     [titlepage=firstcover].
 
-No file GeigerMueller2.aux.
-
+(./GeigerMueller2.aux
+LaTeX Info: Redefining \rmfamily on input line 22.
+LaTeX Info: Redefining \sffamily on input line 22.
+LaTeX Info: Redefining \ttfamily on input line 22.
+Module polyglossia Info: Language data for ngerman
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            righthyphenmin	2
+(polyglossia)            hyphenation	
+(polyglossia)            synonyms	 on input line 22
+Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
+on input line 22
+)
 \openout1 = GeigerMueller2.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
@@ -868,6 +881,7 @@ LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 16
 .
+
 (/home/cptflashpoint/.local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1012,6 +1026,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 16.
 LaTeX Info: Redefining \pageref on input line 16.
 LaTeX Info: Redefining \nameref on input line 16.
+ (./GeigerMueller2.out) (./GeigerMueller2.out)
 \@outlinefile=\write3
 
 \openout3 = GeigerMueller2.out
@@ -1042,15 +1057,8 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Info: Redefining \rmfamily on input line 16.
 LaTeX Info: Redefining \sffamily on input line 16.
 LaTeX Info: Redefining \ttfamily on input line 16.
-Module polyglossia Info: Language data for ngerman
-(polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2 on input line 16
-Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
-on input line 16
+Module polyglossia Info: Language ngerman already loaded; id is 3 on input line 
+16
 
 (/home/cptflashpoint/.local/texlive/2020/texmf-dist/tex/latex/microtype/mt-cmr.
 cfg
@@ -1072,10 +1080,31 @@ Package microtype Info: Loading generic protrusion settings for font family
 x.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 19.
 
+ (./GeigerMueller2.toc
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+)
 \tf@toc=\write4
 
 \openout4 = GeigerMueller2.toc
  [2]
+<Aufbau_Geiger.png, id=30, 469.755pt x 175.40532pt>
+File: Aufbau_Geiger.png Graphic file (type png)
+<use Aufbau_Geiger.png>
+Package luatex.def Info: Aufbau_Geiger.png  used on input line 28.
+(luatex.def)             Requested size: 469.75386pt x 175.40488pt.
+
+Overfull \hbox (51.4983pt too wide) in paragraph at lines 28--29
+ [][] 
+ []
+
+<Spannung_Geiger.png, id=32, 521.69907pt x 577.40718pt>
+File: Spannung_Geiger.png Graphic file (type png)
+<use Spannung_Geiger.png>
+Package luatex.def Info: Spannung_Geiger.png  used on input line 37.
+(luatex.def)             Requested size: 250.95587pt x 277.75142pt.
+[3<./Aufbau_Geiger.png>] [4<./Spannung_Geiger.png>]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1110,43 +1139,40 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [3] (./GeigerMueller2.aux
+ [5] [6]
+(./GeigerMueller2.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 )
-
-Package rerunfilecheck Warning: File `GeigerMueller2.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `GeigerMueller2.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `GeigerMueller2.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 21787 strings out of 479058
+ 21861 strings out of 479058
  100000,1144653 words of node,token memory allocated
- 529 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 6 attribute, 61 glue_spec,
- 6 attribute_list, 1 write nodes
-   avail lists: 1:2,2:114,3:34,4:7,5:82,6:8,7:1572,8:9,9:74,10:5,11:180
- 40483 multiletter control sequences out of 65536+600000
- 70 fonts using 7481899 bytes
- 94i,6n,109p,10630b,749s stack positions out of 5000i,500n,10000p,200000b,200000s
+ 548 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 64 glue_spec,
+ 7 attribute_list, 1 write nodes
+   avail lists: 1:1,2:211,3:100,4:47,5:494,6:23,7:8070,8:23,9:205,10:25,11:1009
+ 40521 multiletter control sequences out of 65536+600000
+ 71 fonts using 7613587 bytes
+ 94i,6n,109p,10630b,772s stack positions out of 5000i,500n,10000p,200000b,200000s
 </home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmr
 oman10-regular.otf></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/ope
 ntype/public/lm/lmroman12-regular.otf></home/cptflashpoint/.local/texlive/2020/t
 exmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/cptflashpoint/.local
 /texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/cptfla
-shpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb>
-Output written on GeigerMueller2.pdf (3 pages, 40485 bytes).
+shpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
+</home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on GeigerMueller2.pdf (6 pages, 147543 bytes).
 
-PDF statistics: 67 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 131072)
- 17 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 116 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 131072)
+ 41 words of extra memory for PDF output out of 10000 (max. 100000000)
 
