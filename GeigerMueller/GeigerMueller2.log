@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  18 JAN 2021 14:33
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  19 JAN 2021 19:34
  restricted system commands enabled.
 **GeigerMueller2.tex
 (./GeigerMueller2.tex
@@ -826,12 +826,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            hyphenation	
 (polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            synonyms	 on input line 10
+(polyglossia)            synonyms	
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            righthyphenmin	2 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -859,12 +859,12 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            hyphenation	
 (polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            synonyms	 on input line 22
+(polyglossia)            synonyms	
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            righthyphenmin	2 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
 )
@@ -1089,7 +1089,7 @@ LaTeX Info: Redefining \ttfamily on input line 1.
 
 \openout4 = GeigerMueller2.toc
  [2]
-<Aufbau_Geiger.png, id=30, 469.755pt x 175.40532pt>
+<Aufbau_Geiger.png, id=44, 469.755pt x 175.40532pt>
 File: Aufbau_Geiger.png Graphic file (type png)
 <use Aufbau_Geiger.png>
 Package luatex.def Info: Aufbau_Geiger.png  used on input line 28.
@@ -1099,12 +1099,27 @@ Overfull \hbox (51.4983pt too wide) in paragraph at lines 28--29
  [][] 
  []
 
-<Spannung_Geiger.png, id=32, 521.69907pt x 577.40718pt>
+<Spannung_Geiger.png, id=46, 521.69907pt x 577.40718pt>
 File: Spannung_Geiger.png Graphic file (type png)
 <use Spannung_Geiger.png>
 Package luatex.def Info: Spannung_Geiger.png  used on input line 37.
 (luatex.def)             Requested size: 250.95587pt x 277.75142pt.
 [3<./Aufbau_Geiger.png>] [4<./Spannung_Geiger.png>]
+<Charakteristik_Geiger.png, id=67, 507.39563pt x 301.125pt>
+File: Charakteristik_Geiger.png Graphic file (type png)
+<use Charakteristik_Geiger.png>
+Package luatex.def Info: Charakteristik_Geiger.png  used on input line 50.
+(luatex.def)             Requested size: 250.95587pt x 148.93556pt.
+ [5] [6<./Charakteristik_Geiger.png>]
+<Apparatur_Geiger.png, id=81, 572.1375pt x 261.97874pt>
+File: Apparatur_Geiger.png Graphic file (type png)
+<use Apparatur_Geiger.png>
+Package luatex.def Info: Apparatur_Geiger.png  used on input line 63.
+(luatex.def)             Requested size: 250.95587pt x 114.91122pt.
+ [7<./Apparatur_Geiger.png>] [8
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3
+.2'
+]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1139,8 +1154,7 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [5] [6]
-(./GeigerMueller2.aux
+ [9] (./GeigerMueller2.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
@@ -1150,29 +1164,32 @@ Package rerunfilecheck Info: File `GeigerMueller2.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 21861 strings out of 479058
+ 21903 strings out of 479058
  100000,1144653 words of node,token memory allocated
- 548 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 64 glue_spec,
- 7 attribute_list, 1 write nodes
-   avail lists: 1:1,2:211,3:100,4:47,5:494,6:23,7:8070,8:23,9:205,10:25,11:1009
- 40521 multiletter control sequences out of 65536+600000
+ 582 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 12 attribute, 65 glue_spec
+, 12 attribute_list, 1 write nodes
+   avail lists: 1:1,2:386,3:164,4:47,5:508,6:35,7:8432,8:52,9:603,10:25,11:1053
+ 40541 multiletter control sequences out of 65536+600000
  71 fonts using 7613587 bytes
- 94i,6n,109p,10630b,772s stack positions out of 5000i,500n,10000p,200000b,200000s
+ 94i,10n,109p,10630b,774s stack positions out of 5000i,500n,10000p,200000b,200000s
 </home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmr
 oman10-regular.otf></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/ope
 ntype/public/lm/lmroman12-regular.otf></home/cptflashpoint/.local/texlive/2020/t
 exmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/cptflashpoint/.local
-/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/cptfla
-shpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
-</home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on GeigerMueller2.pdf (6 pages, 147543 bytes).
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/cptfla
+shpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi6.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></home/cptflashpoint/.local/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/cptflashpoint/.local/
+texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/cptflashp
+oint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on GeigerMueller2.pdf (9 pages, 229187 bytes).
 
-PDF statistics: 116 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 131072)
- 41 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 187 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 131072)
+ 89 words of extra memory for PDF output out of 10000 (max. 100000000)
 

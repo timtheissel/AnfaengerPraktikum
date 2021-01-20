@@ -4,4 +4,10 @@
 \contentsline {subsection}{\numberline {2.1}Aufbau und prinzipielle Funktionsweise}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Totzeit und Nachentladungen}{5}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Charakteristik des Zaehlrohrs}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Ansprechvermoegen eines Zaehlrohres}{6}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Experimementelle Untersuchungen am Zaehlrohr}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Aufnahme der Charakteristik}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Sichtbarmachung von Nachentladungen}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Bestimmung der Totzeit mit der Zwei-Quellen-Methode}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Messung der freigesetzten Ladungsmenge pro Teilchen}{8}{subsection.3.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
