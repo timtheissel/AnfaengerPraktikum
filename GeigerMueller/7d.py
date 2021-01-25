@@ -7,10 +7,10 @@ from uncertainties import ufloat
 import scipy.constants as const 
 
 
-U , I2, N = np.genfromtxt('Zaehlrohrstrom.dat', unpack=True)
+U , I2, N2 = np.genfromtxt('Zaehlrohrstrom.dat', unpack=True)
 
-N = unp.uarray(N, np.ones(8)*np.sqrt(N))
-#print(N)
+N = unp.uarray(N2/60, np.ones(8)*np.sqrt(N2/60))
+print(N)
 I = unp.uarray(I2 * 1e-6, np.ones(8)*0.05 * 1e-6)
 #print(I)
 #print(const.e)

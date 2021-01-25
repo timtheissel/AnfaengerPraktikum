@@ -9,7 +9,7 @@
 \usepackage{caption}
 \usepackage{float}
 \setdefaultlanguage{german}
-\title{V703 Das Geiger-Mueller-Zaehlrohr}
+\title{V703 Das Geiger-Müller-Zählrohr}
 \author{
 Connor Magnus Böckmann \\ email: \href{mailto:connormagnus.boeckmann@tu-dortmund.de}{connormagnus.boeckmann@tu-dortmund.de}
 \and Tim Theissel \\ email: \href{mailto:tim.theissel@tu-dortmund.de}{tim.theissel@tu-dortmund.de}}
@@ -26,29 +26,29 @@ Der prinzipielle Aufbau des Zaehlrohrs ist in \ref{Fig:Aufbau} zu sehen.
 \begin{figure}[H]
     \centering
     \includegraphics{"Aufbau_Geiger.png"}
-    \caption{Aufbau eines Geiger-Mueller-Zaehlrohrs mit Endfenster}
+    \caption{Aufbau eines Geiger-Mueller-Zaehlrohrs mit Endfenster\\ Aus: Anleitung V703 Seite 220}
     \label{Fig:Aufbau}
 \end{figure}
- \noindent Das Zaehlrohr besteht aus einem Stahlzylinder mit dem Radius $r_k$, welcher die Kathode darstellt. In seinem Inneren befindet sich ein Draht, welcher die Anode (Radius $r_a$) darstellt. Der Zylinder ist versiegelt und mit einem Gasgemisch gefuellt. Durch das Anlegen einer ausseren Spannung U (ca. 300 bis 2000V) bildet sich ein elektrisches, radialsymmetrisches Feld aus. Die Feldstaerke betraegt im Abstand r von der Mittelachse $E(r)=\frac{U}{rln(\frac{r_k}{r_a})}$.
+ \noindent Das Zaehlrohr besteht aus einem Stahlzylinder mit dem Radius $r_k$, welcher die Kathode darstellt. In seinem Inneren befindet sich ein Draht, welcher die Anode (Radius $r_a$) darstellt. Der Zylinder ist versiegelt und mit einem Gasgemisch gefuellt. Durch das Anlegen einer ausseren Spannung U (ca. 300 bis 2000V) bildet sich ein elektrisches, radialsymmetrisches Feld aus. Die Feldstaerke betraegt im Abstand r von der Mittelachse $E(r)=\frac{U}{r\ln(\frac{r_k}{r_a})}$.
  Wenn ein geladenes Teilchen in das Zaehlrohr eintritt, wird es in dem E-Feld beschleunigt. Diese Beschleunigung steigt bei Annaeherung an den Draht mit $\frac{1}{r} \text{mit} (r_a < r < r_k)$. Theoretisch kann diese als beliebig gross werden, wenn nur der Drahtradius $r_a$ hinreichend klein gewaehlt wird.\\
  Sollte nun ein geladenes Teilchen ins Zaehlrohr gelangen, bewegt es sich so lange durch den Gasraum bis seine Energie durch Ionisation aufgebraucht ist. Da eine Ionenpaarbildung im Mittel nur etwa 26eV benoetigt, gegenueber einer Teilchenenergie von etwa 100keV, ist die Anzahl der positiven Ionen und Elektronen proportional zur Energie des ins Zaehlrohr eingefallenen Teilchens. Die angelegte Spannung hat nun einen grossen Einfluss auf die nach der Primaerionisation stattfindenden Prozesse. Eine Visualisierung findet sich in dem Diagramm in \ref{Fig:Spannung}.
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{"Spannung_Geiger.png"}
-    \caption{Anzahl der erzeugten Ionenpaare gegenueber der angelegten Spannung}
+    \caption{Anzahl der erzeugten Ionenpaare gegenueber der angelegten Spannung\\ Aus: Anleitung V703 Seite 221}
     \label{Fig:Spannung}
 \end{figure}
 \noindent Das Diagramm laesst sich dabei in verschiedene Bereiche einteilen. Zu Beobachten ist zum Beispiel der Bereich fuer sehr kleine Spannungen. Dabei werden die Ionen nicht stark genug beschleunigt, um den Draht zu erreichen. Viele rekombinieren sich vorher bereits (Bereich I). Je groesser die Spannung wird, desto groesser wird die Wahrscheinlichkeit, dass die Ionen sich nicht vor Erreichen des Drahtes rekombinieren. Es erreichen somit quasi alle Elektronen den Draht. In diesem Bereich ist der Ionisationsstrom zwischen Kathodenzylinder und Anodendraht proportional zur Energie und Intensitaet der einfallenden Teilchen. Dieser Zustand nennt sich Ionisationskammer und ist in Bereich II zu sehen. Zur tadellosen Funktion wird hierbei aber eine grosse Strahlungsintensitaet benoetigt. Bei noch hoerer Spannung wird die Feldstaerke in Drahtnaehe so gross, dass die entstehenden Elektronen zwischen zwei Zusammenstoessen genuegend Energie aufnehmen, um ihrerseits andere Gasteilchen ionisieren zu koennen. Dieser Vorgang nennt sich Stossionisation. Unter ausreichend grosser Spannung koennen die freigesetzten Elektronen selbst andere Teilchen ionisieren. Es bildet sich eine so genannte Townsend-Lawine. Hier ist nun auch die pro Teilchen einfallende Ladung gross genug, um sie als Ladungsimpuls zu messen. Durch die vorhandene Proportionalitaet zwischen der Ladung Q und der Teilchenenergie, laesst sich am Ladungsimpuls ein Mass fuer die Teilchenenergie festmachen. Eine Apparatur, die sich diese Proportionalitaet zu Nutze macht, nennt sich Proportionalitaetszaehlrohr (Bereich III).
 Bei wiederum hoeheren Spannungen U ist die Ladung nicht mehr proportional zur Primaerionisation. Dieser Bereich nennt sich Ausloesebereich (Bereich IV). In diesem Bereich arbeitet ein Geiger-Mueller-Zaehlrohr unter normalen Bedingungen. Statt einer lokalen Elektronenlawine breitet sich die Lawine nicht nur in radialer Richtung, sondern auch entlang des Drahtes aus. Ausgeloest wird dieser Prozess durch die in der primaeren Lawine entstandenen UV-Photonen, welche durch die Anregung von Argon-Atomen im Fuellgas freisetzen. Diese Photonen koennen sich auf Grund ihrer Ladungsneutralitaet auch senkrecht zum E-Feld bewegen. Ihre Energie, welche sie durch Zusammenstoesse abgeben koennen, bildet den Grundstein fuer neue Elektronenlawinen im vollstaendigen Zaehlvolumen. Die am Draht gemessene Ladung haengt dann nicht mehr von der ersten Ionisation ab, sondern bloss vom Volumen des benutzten Zaehlrohrs und der angelegten Spannung. Bei dieser Spannung kann das Zaehlrohr nur noch als Intensitaetsmessgeraet benutzt werden. Eine Energiemessung ist nicht mehr moeglich. Dafuer kann die freigesetzte Ladung eines einfallenden Teilchens nun auf Grund ihrer nun relativ grossen Groesse mit geringem elektronischem Aufwand gut gemessen werden. Der so genannte Ausloesebereich beginnt in \ref{Fig:Spannung} dort, wo \alpha- und \beta-Kurve in einander uebergehen. Dort ist der Ladungsimpuls abgekoppelt vom Ionisationsvermoegen der einfallenden Strahlung.
 \subsection{Totzeit und Nachentladungen}
 Die entstehenden positiven Ionen haben eine bedeutend hoehere Masse als die Elektronen, weshalb sie deutlich langsamer abwandern. Sie halten sich also laenger im Raum zwischen Anode und Kathode. Aus diesem Grund bilden sie eine temporaere, radialsymmetrische, positive Raumladung aus. Diese wird auf Grund der zylindrischen Form des Rohrs auch Ionenschlauch genannt. Dadurch wird kurzzeitig fuer eine Zeit T die Feldstaerke in Drahtnaehe soweit herab, dass praktisch keine Stossionisation mehr moeglich ist. In dieser Zeit ist das Zaehlrohr nicht in der Lage eintreffende Teilchen zu detektieren, weshalb man diese Zeit auch Totzeit T nennt. Der Zustand loest sich durch Wandern der positiven Ladung in Richtung des Mantels auf. Die normale Feldstaerke stellt sich wieder her nachdem die Ionen vollstaendig neutralisiert wurden. Diese Zeit der Wiederherrstellung des Normalzustandes nennt sich treffenderweise Erholungszeit $T_E$, welche sich an die Totzeit anschliesst, bis das Zaehlrohr wieder unter Normalbedingungen detektieren kann.\\
-Auf der Manteloberflaeche koennen die auftreffenden Ionen, durch ihre Neutralisationsenergie, Elektronen freisetzen. Diese Sekundaerelektronen werden zum Messdraht hin beschleunigt durch das E-Feld und sorgen auf diesem dann fuer ein erneutes Ausloesen des Messgeraets. Dadurch kann durch ein einzelnes eintreffendes Teilchen mehrere Entladungen am  Zaehlrohrdraht hervorgerufen werden. Diese zusaetzlichen Entladungen nennen sich Nachentladungen. Der zeitliche Abstand der Nachentladungen entspricht der Laufzeit $T_L$ der Elektronen von der Zylinderwand zum Draht. Diese Nachentladungen sind sehr unerwuenscht, da sie das Vorhandensein von ionisierender Strahlung vortaeuschen. Sie sollten also so weit wie moeglich unterbunden werden, was durch eine kleine Beimengung von Alkoholdaempfen zum Fuellgas gut gelingt.
+Auf der Manteloberflaeche koennen die auftreffenden Ionen, durch ihre Neutralisationsenergie, Elektronen freisetzen. Diese Sekundaerelektronen werden zum Messdraht hin beschleunigt durch das E-Feld und sorgen auf diesem dann fuer ein erneutes Ausloesen des Messgeraets. Dadurch kann durch ein einzelnes eintreffendes Teilchen mehrere Entladungen am  Zaehlrohrdraht hervorgerufen werden. Diese zusaetzlichen Entladungen nennen sich Nachentladungen. Der zeitliche Abstand der Nachentladungen entspricht der Laufzeit $T_L$ der Elektronen von der Zylinderwand zum Draht. Diese Nachentladungen sind sehr unerwuenscht, da sie das Vorhandensein von ionisierender Strahlung vortaeuschen. Sie sollten also so weit wie moeglich unterbunden werden, was durch eine kleine Beimengung von Alkoholdaempfen zum Fuellgas gut gelingt, denn diese Alkoholdämpfe werden von den Edelgasionen ionisiert und wandern dann zur Kathode. Das Gute daran ist, dass die Alkoholionen an der Kathode keine Elektronen emittieren. Es gibt also keine weiteren Entladungen und die Messung wird nicht durch weitere Elektronen, die von der Kathode aus kommen beeinflusst.
 \subsection{Charakteristik des Zaehlrohrs}
 Die Charakteristik eines Geiger-Mueller-Zaehlrohr wird gegeben durch eine Auftragung der eintreffenden Teilchenzahl N gegen die Betriebsspannung U. In etwa sieht eine Charakteristik so aus:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{"Charakteristik_Geiger.png"}
-    \caption{Charakteristik eines Geiger-Mueller-Zaehlrohres bei konstanter Strahlungsintensitaet}
+    \caption{Charakteristik eines Geiger-Mueller-Zaehlrohres bei konstanter Strahlungsintensitaet \\ Aus: Anleitung V703 Seite 224}
     \label{Fig:Charakteristik}
 \end{figure}
 \noindent Der Ausloesebereich beginnt hierbei etwa bei der Spannung $U_E$. Der linear steigende, abgeflachte Teil nennt sich Plateau. Die Steigung in diesem Bereich der Kurve ist bestenfalls moeglichst klein. Idealerweise waere diese also null, was aber nicht erreichbar ist. Diese Unmoeglichkeit ruegt von vereinzelten Nachentladungen her, welche trotz des Alkoholdampfes vorkommen. Am Ende des Plateaus nimmt die Zahl der Nachentladungen extrem zu, was den starken Anstieg erklaert. Je hoeher die Qualitaet des Zaehlrohres, desto laenger und flacher ist das Plateau.\\
@@ -61,7 +61,7 @@ Fuer die gemachten Messungen wurde die im folgende skizzierte Messapparatur verw
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{"Apparatur_Geiger.png"}
-    \caption{Aufbau der Messapparatur}
+    \caption{Aufbau der Messapparatur \\ Aus: Anleitung V703 Seite 226}
     \label{Fig:Apparatur}
 \end{figure}
 \noindent Ueber den Widerstand R fliesst die am Zaehldraht gesammelte Ladung Q ab. Ein Spannungsimpuls wird erzeugt. Nach Auskoppelung im Kondensator C wird dieser verstaerkt und im Zaehlgeraet gezaehlt. Auf dem Schirm eines Oszillographen kann dieser Impuls dann sichtbar gemacht werden.
@@ -85,7 +85,7 @@ Stattdessen laesst sich aber beobachten, dass $N_{1+2}<N_1+N_2$ ist. Gemaess \re
     N_{W_2}&=\frac{N_2}{1-TN_2}\nonumber\\
     N_{W_{1+2}}&=\frac{N_{1+2}}{1-TN_{1+2}}\nonumber
 \end{align}
-Ausserdem ist $N_{W_{1+2}}=N_{W_1}+N_{W_2}$. Daraus erhaelt man dann
+Ausserdem ist $N_{W_{1+2}}=N_{W_1}+N_{W_2}$. Daraus ergibt sich dann
 \begin{equation}\label{Totzeit}
     \frac{N_{1+2}}{1-TN_{1+2}}=\frac{N_1}{1-TN_1}+\frac{N_{1+2}}{1-TN_{1+2}}
 \end{equation}
@@ -106,4 +106,4 @@ Daraus laesst sich nun die pro eindringendes Teilchen freigesetzte Ladungsmenge 
 Dabei ist \Delta Q die pro Zeitintervall \Delta t transportierte Ladungsmenge, wenn Z die Anzahl der registrierten Teilchen ist.
 
 \input{Aufgaben.tex}
-\end{document}
+%\end{document}

@@ -39,16 +39,22 @@ Dafür wurde eine Funktion der folgenden Form verwendet:
 
 \noindent Dabei ist zu sagen, dass der Parameter m den Wert $\frac{1}{60Vs}$ und der Parameter n die Einheit $\frac{1}{60s}$ hat.
 
-\noindent Die geforderte Plateau-Steigung ergibt sich durch folgende Gleichung:
+\noindent Die geforderte Plateau-Steigung ergibt sich durch folgende Vorgehensweise:
 \begin{align}
-    PS &= \frac{m}{60} \;\;\;\;\;\;\;\;  \text{Umrechnung auf 1/V} \nonumber \\
-    PS &= \frac{m}{60}  * 100\%  \nonumber 
+     m_{\%} = \frac{N(U_2)-N(U_1)}{N(U_2)}
 \end{align}
+
+\noindent Dabei ist $m_{\%}$ die prozentuale Steigung des gesamten Plateaus, 
+N ist die Ausgleichsfunktion,
+U\textsubscript{1} ist die Spannung, bei der das Plateau beginnt (370 V)
+und U\textsubscript{2} ist die Spannung, bei der das Plateau endet (640 V).
+Weil das Plateau eine Länge von 270 V hat besitzt $m_{\%}$ die Einheit $\frac{\%}{270V}$.
+Deshalb muss $m_{\%}$ noch durch 2,7 geteilt werden um die geforderte Einheit von $\frac{\%}{100V}$ zu erreichen.
 
 \noindent Die Plateau-Steigung in $\frac{\%}{100V}$ hat den Wert:
 
 \begin{displaymath}
-    (1.9198 \pm 0.3728) \frac{\%}{100V}
+    (1.12 \pm 0.2) \frac{\%}{100V}
 \end{displaymath}
 
 
@@ -70,6 +76,9 @@ Dafür wurde eine Funktion der folgenden Form verwendet:
 
 \noindent ergibt  sich die Totzeit zu $(115 \pm 4)\mu s$.
 
+\noindent Ein weiterer Weg die Totzeit zu bestimmen ist das Ablesen am Oszilloskop.
+Dieser Weg liefert eine Totzeit von 100$\mu s$.
+
 \subsection{Freigesetzte Ladungen pro einfallendem Teilchen}
 
 Die Zahl der freigesetzten Ladungen pro einfallendem Teilchen lässt sich mit der folgenden Formel berechnen:
@@ -78,7 +87,7 @@ Die Zahl der freigesetzten Ladungen pro einfallendem Teilchen lässt sich mit de
     Z = \frac{I}{e_0N}
 \end{displaymath}
 
-Bei der Rechnung mit den Werten aus \ref{tab:7d2} ergeben sich die Folgenden Werte für Z:
+\noindent Bei der Rechnung ergeben sich die Folgenden Werte für Z:
 
 \begin{minipage}{\linewidth}
     \begin{table}[H]
@@ -86,16 +95,16 @@ Bei der Rechnung mit den Werten aus \ref{tab:7d2} ergeben sich die Folgenden Wer
     
     \begin{tabular}{ll@{${}\pm{}$}l}
         \toprule
-        U [V] & Z & $\Delta$Z\\
+        U [V] & Z [$e^{10}$] & $\Delta$Z [$e^{9}$]\\
         \midrule
-        350 & 190347943.7164 & 31782654.8798 \\
-        400 & 249785255.6062 & 31322961.5228 \\
-        450 & 425668000.0119 & 30693787.9059 \\
-        500 & 491893139.5496 & 31128568.2739 \\
-        550 & 612874025.3791 & 31239706.1572 \\
-        600 & 791374407.1782 & 31424862.6028 \\
-        650 & 832756380.8486 & 30832368.7565 \\
-        700 & 972955428.5987 & 28502903.5459 \\
+        350 & 1.14 & 2.10 \\
+        400 & 1.50 & 2.20 \\
+        450 & 2.55 & 2.67 \\
+        500 & 2.95 & 2.92 \\
+        550 & 3.68 & 3.37 \\
+        600 & 4.75 & 4.07 \\
+        650 & 5.00 & 4.18 \\
+        700 & 5.84 & 4.51 \\
         \bottomrule
         
     \end{tabular}
@@ -103,6 +112,8 @@ Bei der Rechnung mit den Werten aus \ref{tab:7d2} ergeben sich die Folgenden Wer
     \label{tab:7d}
     \end{table}
 \end{minipage}
+
+\noindent Die benötigten Werte stehen in der Tabelle \ref{tab:7d2}.
 
 \noindent Diese Werte werden nun zur Veranschaulichung graphisch dargestellt.
 Dafür werden sie gegen die Spannung in einem Diagramm aufgetragen.
@@ -140,11 +151,14 @@ denn es fehlt ein Vergleichswert um eine genauere Bewertung vorzunehmen.
 \subsection{Totzeit}
 
 Bei der Totzeit gilt: Je kleiner diese ist, desto besser.
-Die gemessene Totzeit liegt im Breich von 100$\mu s$ 
+Die gemessene Totzeit beträgt 115$\mu s$ 
 und weist einen sehr geringen Fehler von >4$\%$ auf.
-Da die Toteit sehr kurz und der Fehler gering ist,
-scheint die Bestimmung der Totzeit ein Erfolg gewesen zu sein,
-jedoch fehlt für eine genauere Bewertung auch hier der Vergleichswert.
+Da die Totzeit sehr kurz und der Fehler gering ist,
+scheint die Bestimmung der Totzeit ein Erfolg gewesen zu sein.
+Mit dem Oszilloskop ergab sich eine Totzeit von 100$\mu s$.
+Dieser Wert weicht von dem durch die Zwei-Quellen-Methode bestimmten Wert um 15\% ab.
+Außerdem ist durch das graphische Ablesen am Oszilloskop die Unsicherheit dieses Wertes um ein vielfaches größer.
+Die zwei Quellen Methode ist also die wesentlich genauere Methode zur Bestimmung der Totzeit.
 
 \subsection{freigesetzte Ladungen pro einfallendem Teilchen}
 
@@ -237,18 +251,18 @@ DantenHinweiseGeigerMueller:\\
         \begin{table}[H]
             \centering
         
-        \begin{tabular}{ll}
+        \begin{tabular}{lll}
             \toprule
-            Stromstärke [A] & Impulse [$Imp/60s$]\\
+            Stromstärke [A] & Impulse [$Imp/60s$] & Impulse [$Imp/s$]\\
             \midrule
-            0.3 &  9837  \\ 
-            0.4 &  9995  \\ 
-            0.7 &  10264 \\
-            0.8 &  10151 \\
-            1.0 &  10184 \\
-            1.3 &  10253 \\
-            1.4 &  10493 \\
-            1.8 &  11547 \\
+            0.3 &  9837  & 164 \\ 
+            0.4 &  9995  & 167 \\
+            0.7 &  10264 & 171 \\
+            0.8 &  10151 & 169 \\
+            1.0 &  10184 & 170 \\
+            1.3 &  10253 & 171 \\
+            1.4 &  10493 & 175 \\
+            1.8 &  11547 & 192 \\
             \bottomrule
             
         \end{tabular}
@@ -257,7 +271,6 @@ DantenHinweiseGeigerMueller:\\
         \end{table}
         \end{minipage}
 
-
-
+       
 
 \end{document}

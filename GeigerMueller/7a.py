@@ -31,11 +31,14 @@ l = np.linspace(370, 640, 28)
 plt.plot(l, sigmoid(l, 1.151888, 9584.296388), label=r'Ausgleichsrechnung')
 
 m = ufloat(1.151888 , 0.223673)
-ps = (m/60)*100
-print(ps.n)
-print(ps.s)
-plt.xlabel(r'Gemessene Impulse [$\frac{Imp}{60s}$]')
-plt.ylabel(r'Auslenkung x [m]')
+n = ufloat(9584.296388 , 114.390865)
+b = (sigmoid(370, m, n))
+a = (sigmoid(640, m, n))
+
+print((a-b)/(a*2.7))
+
+plt.xlabel(r'Spannung U [V]')
+plt.ylabel(r'Zählrate N')
 plt.legend()
 plt.title(r"Charakteristik eines Geiger-Müller Zählrohrs")
 plt.savefig('7a.png')
