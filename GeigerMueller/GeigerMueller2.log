@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  25 JAN 2021 13:19
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  25 JAN 2021 17:22
  restricted system commands enabled.
 **GeigerMueller2.tex
 (./GeigerMueller2.tex
@@ -750,11 +750,11 @@ braces):
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            righthyphenmin	2
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	 on input line 10
+(polyglossia)            synonyms	
+(polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            lefthyphenmin	2 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -781,11 +781,11 @@ LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            righthyphenmin	2
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	 on input line 22
+(polyglossia)            synonyms	
+(polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            lefthyphenmin	2 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
 )
@@ -1019,13 +1019,13 @@ File: Spannung_Geiger.png Graphic file (type png)
 <use Spannung_Geiger.png>
 Package luatex.def Info: Spannung_Geiger.png  used on input line 37.
 (luatex.def)             Requested size: 250.95587pt x 277.75142pt.
-[3<./Aufbau_Geiger.png>] [4<./Spannung_Geiger.png>]
-<Charakteristik_Geiger.png, id=93, 507.39563pt x 301.125pt>
+[3<./Aufbau_Geiger.png>] [4<./Spannung_Geiger.png>] [5]
+<Charakteristik_Geiger.png, id=99, 507.39563pt x 301.125pt>
 File: Charakteristik_Geiger.png Graphic file (type png)
 <use Charakteristik_Geiger.png>
 Package luatex.def Info: Charakteristik_Geiger.png  used on input line 50.
 (luatex.def)             Requested size: 250.95587pt x 148.93556pt.
- [5] [6<./Charakteristik_Geiger.png>]
+ [6<./Charakteristik_Geiger.png>]
 <Apparatur_Geiger.png, id=107, 572.1375pt x 261.97874pt>
 File: Apparatur_Geiger.png Graphic file (type png)
 <use Apparatur_Geiger.png>
@@ -1045,44 +1045,44 @@ Overfull \hbox (55.2213pt too wide) in paragraph at lines 9--10
 [][] 
  []
 
-[9<./7a.png>] [10]
-Overfull \hbox (10.95pt too wide) in paragraph at lines 83--106
+[9] [10<./7a.png>] [11]
+Overfull \hbox (10.95pt too wide) in paragraph at lines 92--115
 []$[]$ 
  []
 
-<7d.png, id=143, 462.528pt x 346.896pt>
+<7d.png, id=150, 462.528pt x 346.896pt>
 File: 7d.png Graphic file (type png)
 <use 7d.png>
-Package luatex.def Info: 7d.png  used on input line 112.
+Package luatex.def Info: 7d.png  used on input line 123.
 (luatex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (55.2213pt too wide) in paragraph at lines 112--113
+Overfull \hbox (55.2213pt too wide) in paragraph at lines 123--124
 [][] 
  []
 
-[11] [12<./7d.png>]
-Overfull \hbox (6.5021pt too wide) in paragraph at lines 175--179
+[12] [13<./7d.png>]
+Overfull \hbox (6.5021pt too wide) in paragraph at lines 189--193
 []$\TU/lmtt/m/n/10.95 https://moodle.tu-[]dortmund.de/pluginfile.php/1502369/mod
 _folder/content/0/
  []
 
 
-Overfull \hbox (6.5021pt too wide) in paragraph at lines 175--179
+Overfull \hbox (6.5021pt too wide) in paragraph at lines 189--193
 []$\TU/lmtt/m/n/10.95 https://moodle.tu-[]dortmund.de/pluginfile.php/1502369/mod
 _folder/content/0/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--179
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
 
  []
 
-[13] [14]
+[14] [15] [16]
 Overfull \vbox (14.52277pt too high) has occurred while \output is active []
 
 
-[15]
-Overfull \hbox (10.95pt too wide) in paragraph at lines 236--259
+[17]
+Overfull \hbox (10.95pt too wide) in paragraph at lines 250--273
 []$[]$ 
  []
 
@@ -1120,30 +1120,26 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[16] (./GeigerMueller2.aux
+[18] (./GeigerMueller2.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 )
 Package rerunfilecheck Info: File `GeigerMueller2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 ))
 
 Here is how much of LuaTeX's memory you used:
- 21960 strings out of 479059
+ 21963 strings out of 479059
  100000,1144653 words of node,token memory allocated
  618 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 18 attribute, 65 glue_spec
 , 18 attribute_list, 1 write, 2 pdf_action nodes
-   avail lists: 1:1,2:675,3:342,4:47,5:508,6:72,7:8432,8:126,9:603,10:25,11:1053
+   avail lists: 1:2,2:675,3:342,4:49,5:524,6:72,7:8723,8:126,9:542,10:26,11:1094
 
  40577 multiletter control sequences out of 65536+600000
  71 fonts using 7613587 bytes
- 106i,11n,113p,10630b,774s stack positions out of 5000i,500n,10000p,200000b,200000s
+ 106i,11n,113p,10630b,804s stack positions out of 5000i,500n,10000p,200000b,200000s
 </home/timt/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-reg
 ular.otf></home/timt/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmr
 oman8-regular.otf></home/timt/.local/texlive/2020/texmf-dist/fonts/opentype/publ
@@ -1158,10 +1154,10 @@ live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/timt/.local
 ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/timt
 /.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/t
 imt/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on GeigerMueller2.pdf (16 pages, 289820 bytes).
+Output written on GeigerMueller2.pdf (18 pages, 290206 bytes).
 
-PDF statistics: 315 PDF objects out of 1000 (max. 8388607)
- 259 compressed objects within 3 object streams
- 52 named destinations out of 1000 (max. 131072)
+PDF statistics: 325 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 131072)
  193 words of extra memory for PDF output out of 10000 (max. 100000000)
 
