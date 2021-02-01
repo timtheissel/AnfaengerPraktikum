@@ -107,6 +107,26 @@ Der hier verwendete Weg zur ermittelnden Halbwertszeiten geht ueber die Messung 
 Es folgt also aus \ref{4} fuer $N_{\Delta t}(t)$:
 \begin{align}
     N_{\Delta t}(t)&=N_0e^{-\lambda t}-N_0e^{-\lambda(t+\Delta t)}=N_0(1-e^{-\lambda\Delta t})e^{-\lambda t} \nonumber \\
-    \ln(N_{\Delta t}(t))&=\ln N_0(1-e^{-\lambda\Delta t})-\lambda t
+    \ln(N_{\Delta t}(t))&=\ln N_0(1-e^{-\lambda\Delta t})-\lambda t \nonumber
 \end{align}
+Dies ist nun ueber eine Ausgleichsgerade bestimmbar, da $\ln(N_0(1-e^{-\lambda\Delta t}))$ konstant ist. Schwierigkeit ist dabei ein geeignetes $\Delta t$ zu waehlen, da zu kleine $\Delta t$ zu statistischen Fehlern und zu grosse $\Delta t$ zu systematischen Fehlern fuehren.
+\subsubsection{Silber}
+Da Silber natuerlicherweise zu $52,3\%$ aus \ce{^{107}Ag} und zu $48,7\%$ aus \ce{^{109}Ag} laufen zwei verschiedene Zerfallsprozesse ab, wenn das Silber aktiviert wird. Die Halbwertszeit von \ce{^{110}Ag} ist aber deutlich kuerzer, als die von \ce{^{108}Ag}, wodurch es moeglich ist, das langlebige Isotop erst zu betrachten, nachdem das kurzlebige Isotop bereits zerfallen ist. Die so gemessenen Ausschlaege fuer das langlebige Isotop koennen nun von der Gesamtzahl der Ausschlaege subtrahiert werden. Dadurch kann auch fuer das kurzlebige Isotop die Halbwertszeit mittels einer Ausgleichsgerade bestimmt werden.
+\subsubsection{Rhodium}
+Rhodium kommt nach der Aktivierung sowohl in der Form von \ce{^{104}Rh} (90\%), sowie \ce{^{104i}Rh} (10\%) vor. Zweiteres geht nach der Emission eines \gamma-Quants ebenfalls in ersteres Isotop ueber. Auch hier besteht also das Problem, dass zwei verschiedene Prozesse zur gleichen Zeit ablaufen. Um diese zu trennen wird nun die \gamma-Strahlung detektiert und somit kann in die beiden verschiedenen Zerfaelle aufgetrennt werden. Nun kann in langlebige und kurzlebige Isotope unterschieden werden.
+\section{Durchfuehrung}
+\subsection{Messapparatur}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{"Apparatur_Aktivierung.png"}
+    \caption{Schematischer Aufbau der Messapparatur\\Aus: Anleitung V702 Seite 217}
+    \label{Fig:Apparatur}
+\end{figure}
+Die oben beschriebenen Messungen werden mit der Apparatur in \ref{Fig:Apparatur} durchgefuehrt. Ein Geiger-Mueller-Zaehlrohr wird genutzt, um einen konstanten Teil der ausgestrahlten \beta- und \gamma-Strahlung zu detektieren. Eine Abschirmung aus Blei soll dabei den Nulleffekt reduzieren. Die Impulse werden verstaerkt und abwechselnd an die Zaehler 1 und 2 geleitet und dort gezaehlt. der Zeitgeber uebernimmt dabei den Wechsel zwischen den Zaehlern und definiert so das Zeitintervall $\Delta t$.
+\subsection{Nulleffekt}
+Natuerliche Radioaktivitaet und Hoehenstrahlung sorgen am Zaehlrohr fuer Ausschlaege, auch wenn sich keine Probe in der Apparatur befindet. Diese Impulse beeintraechtigen die Messung und muessen daher moeglichst genau bestimmt werden. Dazu wird mit einem Messintervall von t=300s sieben mal die Hintergrundstrahlung gemessen. Diese werden dann aus weiteren Messungen herausgerechnet.
+\subsection{Bestimmung der Halbwertszeit bei Vanadium}
+Als Beispiel fuer einfachen Zerfall dient in diesem Versuch Vanadium, welches in aktivierter Form in das Zaehlrohr gesteckt wird. Als Messintervalle wird $\Delta t$=30s festgelegt.
+\subsection{Bestimmung der Halbwertszeit bei Rhodium}
+Eine Halbwertszeitbestimmung eines Isotopengemischs wird am Beispiel von Rhodium durchgefuehrt. Die Messung erfolgt wie bei Vanadium, jedoch wird das Messintervall auf $\Delta t$=15s verringert.
 \end{document}
