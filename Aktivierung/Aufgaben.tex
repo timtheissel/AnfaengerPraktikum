@@ -1,0 +1,238 @@
+\documentclass[titlepage=firstcover, captions=tableheading]{scrartcl}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{polyglossia}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+\begin{document}
+
+\section{Bestimmung des Untergrundes}
+
+Zur Bestimmung des Untergrundes wurden 7 Messungen durchgeführt.
+Für die Messungen wurde das Zählrohr eingeschaltet ohne eine Probe auf das Zählrohr zu stecken.
+Die Messungen liefen jeweils 300s.
+
+\noindent Die enstanden Werte dieser Messungen sind in Tabelle \ref{tab:1} zu finden.
+
+\noindent Aus diesen Werten wird nun ein arithmetischer Mittelwert berechent.
+Dieser wird dann noch auf ein Zeitintervall von 30s skaliert, damit dieser Mittelwert in den Folgenden Aufgaben  ohne weitere Anpassung verwendet werden kann.
+
+\noindent Es ergibt sich eine Untergrundrate von $13.9 \approx 14 [N_U/30s]$.
+
+\section{Bestimmung der Halbwertszeit von Vanadium}
+
+In diesem Teil wurde  die aktivierte Vanadiumprobe umgehend auf das Geiger-Müller-Zählrohr gesteckt und es wurden die Impulse in einem Zeitintervall von 30s abgelesen.
+Diese Messdaten sind in Tabelle \ref{tab:2} zu finden. 
+Von diesen Werten wird der im letzten Teil berechnete Mittelwert abgezogen.
+Anschließend werden die entstehenden Werte mit Fehler in eimen halblogarithmischen Diagramm dargestellt.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{"22.png"}
+    \caption{Bestimmung der Halbwertszeit von Vanadium}
+    \label{Fig:Halbwertszeit}
+\end{figure}
+
+\noindent Als Ausgleichsfunktion wurde das Zerfallsgesetz verwendet.
+Dieses wurde für die Bestimmung der Halbwertszeit dann noch umgestellt.
+\begin{align}
+    N(t) &= N_0 * e^{-\lambda t} \nonumber \\
+    \frac{1}{2} N_0 &= N_0 * e^{-\lambda T} \nonumber \\
+    T &= \frac{\ln(2)}{\lambda} \nonumber
+\end{align}
+
+\noindent Für die erste Ausgleichsrechnung wurden alle gemessenen Werte verwendet.
+Mit der Python-Funktion "$scipy.optimize curve_fit$" ergibt sich:
+\begin{align}
+    N_0 &=  208.761825 \pm 6.069003 \nonumber \\
+    \lambda &= 0.002657 \pm 0.000106 \nonumber\\ 
+\end{align}
+
+Daraus lässt sich die Halbwertszeit berechnen zu:
+\begin{displaymath}
+    T_1 = 261 \pm 10 s 
+\end{displaymath}
+
+Bei der zweiten Ausgleichrechnung werden nun nur die Werte bis zur doppelten Halbwertszeit für die Ausgleichsrechnung verwendet.
+Also alle Messwerte bis zu einer Zeit von maximal 520s.
+Für die Parameter ergeben sich diesmal die Werte:
+
+\begin{align}
+    N_0 &=  218.126931 \pm 7.601301 \nonumber \\
+    \lambda &= 0.002937 \pm 0.000170 \nonumber\\ 
+\end{align}
+
+Die etstehende Halbwertszeit hat nun den Wert:
+
+\begin{displaymath}
+    T_2 = 236 \pm 14 s 
+\end{displaymath}
+
+\section{Halbwertszeit von Rhodium}
+
+Analog zu der Vorgehensweise bei Vanadium wird auch bei der Halbwertszeit zunächst ein halblogarithmisches Diagramm erstellt.
+Diesmal wird die Ungergrundrate wieder angepasst, da das Zeitintervall nun nur 15s beträgt.
+Die gemessenen Werte für Rhodium sind in Tabelle \ref{tab:3} zu sehen.
+
+Das entstehende Diagramm mit dem angepassten Untergrund und dem Fehler $\sqrt{N}$ sieht folgendermaßen aus:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{"3.png"}
+    \caption{Bestimmung der Halbwertszeit von Rhodium}
+    \label{Fig:HalbwertszeitRh}
+\end{figure}
+
+
+
+
+\section{Tabellen}
+\begin{minipage}{\linewidth}
+    \begin{table}[H]
+        \centering
+    
+    \begin{tabular}{c}
+        \toprule
+        $N_U$ [Imp/300s]\\
+        \midrule
+        129 \\
+        143 \\
+        144 \\
+        136 \\
+        139 \\
+        126 \\
+        158 \\
+        \bottomrule
+        
+    \end{tabular}
+    \captionof{table}{Messung zur Bestimmung des Untergrundes}
+    \label{tab:1}
+\end{table}
+\end{minipage}
+
+
+\begin{minipage}{\linewidth}
+    \begin{table}[H]
+        \centering
+    
+    \begin{tabular}{ll}
+        \toprule
+        t [s] & N [Imp] \\
+        \midrule
+        30	& 189 \\
+        60	& 197 \\
+        90	& 150 \\
+        120	& 159 \\
+        150	& 155 \\
+        180	& 132 \\
+        210	& 117 \\
+        240	& 107 \\
+        270	& 94 \\
+        300	& 100 \\
+        330	& 79 \\
+        360	& 69 \\
+        390	& 81 \\
+        420	& 46 \\
+        450	& 49 \\
+        480	& 61 \\
+        510	& 56 \\
+        540	& 40 \\
+        570	& 45 \\
+        600	& 32 \\
+        630	& 27 \\
+        660	& 43 \\
+        690	& 35 \\
+        720	& 19 \\
+        750	& 28 \\
+        780	& 27 \\
+        810	& 36 \\
+        840	& 25 \\
+        870	& 29 \\
+        900	& 18 \\
+        930	& 17 \\
+        960	& 24 \\
+        990	& 21 \\
+        1020 &	25 \\
+        1050 &	21 \\
+        1080 &	24 \\
+        1110 &	25 \\
+        1140 &	17 \\
+        1170 &	20 \\
+        1200 &	19 \\
+        1230 &	20 \\
+        1260 &	18 \\
+        1290 &	16 \\
+        1320 &	17 \\
+        \bottomrule
+        
+    \end{tabular}
+    \captionof{table}{Messwerte zur Bestimmung der Halbwertszeit von Vanadium}
+    \label{tab:2}
+\end{table}
+\end{minipage}
+
+
+\begin{minipage}{\linewidth}
+    \begin{table}[H]
+        \centering
+    
+    \begin{tabular}{ll}
+        \toprule
+        t [s] & N [Imp] \\
+        \midrule
+        15 &	 667 \\
+        30 &	 585 \\ 
+        45 &	 474 \\
+        60 &	 399 \\
+        75 &	 304 \\
+        90 &	 253 \\
+        105	&    213 \\
+        120	&    173 \\
+        135	&    152 \\
+        150	&    126 \\
+        165	&    111 \\
+        180	&     92 \\
+        195	&     79 \\
+        210	&     74 \\
+        225	&     60 \\
+        240	&     52 \\
+        255	&     56 \\
+        270	&     53 \\
+        285	&     41 \\
+        300	&     36 \\
+        315	&     37 \\
+        330	&     32 \\
+        345	&     36 \\
+        360	&     38 \\
+        375	&     34 \\
+        390	&     40 \\
+        405	&     21 \\
+        420	&     35 \\
+        435	&     33 \\
+        450	&     36 \\
+        465	&     20 \\
+        480	&     24 \\
+        495	&     30 \\
+        510	&     30 \\
+        525	&     26 \\
+        540	&     28 \\
+        555	&     23 \\
+        570	&     20 \\
+        585	&     28 \\
+        600	&     17 \\
+        615	&     26 \\
+        630	&     19 \\
+        645	&     13 \\
+        660	&     17 \\
+        \bottomrule
+        
+    \end{tabular}
+    \captionof{table}{Messwerte zur Bestimmung der Halbwertszeit von Rhodium}
+    \label{tab:3}
+\end{table}
+\end{minipage}
+\end{document}
