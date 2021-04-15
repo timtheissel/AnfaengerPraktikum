@@ -1,16 +1,18 @@
-\documentclass[titlepage=firstcover, captions=tableheading]{scrartcl}
-\usepackage{microtype}
-\usepackage{amsmath}
-\usepackage{polyglossia}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{siunitx}
-\usepackage{hyperref}
-\usepackage{caption}
-\usepackage{float}
-\begin{document}
+\section{Auswertung}
 
-\section{Bestimmung des Untergrundes}
+\subsection{Anmerkung zur Fehlerrechnung}
+
+Die Fehlerrechnungen in dieser Auswertung werden mit pythons 'ufloats' durchgeführt. Diese beziehen direkt den Fehler der eingesetzten Wert mit ein und berechnet den Gauß-Fehler. Die Gaußsche Fehlerfunktion sieht folgendermaßen aus:
+
+\begin{displaymath}
+    \Delta f = \sqrt{\left(\frac{\partial f}{\partial x}\right)^2 (\Delta x)² +
+                     \left(\frac{\partial f}{\partial y}\right)^2 (\Delta y)² + ... +
+                     \left(\frac{\partial f}{\partial z}\right)^2 (\Delta z)²
+    }
+\end{displaymath}
+
+
+\subsection{Bestimmung des Untergrundes}
 
 Zur Bestimmung des Untergrundes wurden 7 Messungen durchgeführt.
 Für die Messungen wurde das Zählrohr eingeschaltet ohne eine Probe auf das Zählrohr zu stecken.
@@ -19,11 +21,11 @@ Die Messungen liefen jeweils 300s.
 \noindent Die enstanden Werte dieser Messungen sind in Tabelle \ref{tab:1} zu finden.
 
 \noindent Aus diesen Werten wird nun ein arithmetischer Mittelwert berechent.
-Dieser wird dann noch auf ein Zeitintervall von 30s skaliert, damit dieser Mittelwert in den Folgenden Aufgaben  ohne weitere Anpassung verwendet werden kann.
+Dieser wird dann noch auf ein Zeitintervall von 30s/15s skaliert, damit diese Mittelwerte in den Folgenden Aufgaben ohne weitere Anpassung verwendet werden können.
 
-\noindent Es ergibt sich eine Untergrundrate von $13.9 \approx 14 [N_U/30s]$.
+\noindent Es ergibt sich eine Untergrundrate von $13.9 \approx 14$ [Imp/30s] bzw. $6.95 \approx 7$ [Imp/15s]
 
-\section{Bestimmung der Halbwertszeit von Vanadium}
+\subsection{Bestimmung der Halbwertszeit von Vanadium}
 
 In diesem Teil wurde  die aktivierte Vanadiumprobe umgehend auf das Geiger-Müller-Zählrohr gesteckt und es wurden die Impulse in einem Zeitintervall von 30s abgelesen.
 Diese Messdaten sind in Tabelle \ref{tab:2} zu finden. 
@@ -46,39 +48,41 @@ Dieses wurde für die Bestimmung der Halbwertszeit dann noch umgestellt.
 \end{align}
 
 \noindent Für die erste Ausgleichsrechnung wurden alle gemessenen Werte verwendet.
-Mit der Python-Funktion "$scipy.optimize curve_fit$" ergibt sich:
+Mit der Python-Funktion "scipy.optimize curve fit" ergibt sich:
 \begin{align}
-    N_0 &=  208.761825 \pm 6.069003 \nonumber \\
-    \lambda &= 0.002657 \pm 0.000106 \nonumber\\ 
+    N_0 &=  208.761825 \pm 6.069003 \; [\text{Imp}] \nonumber \\
+    \lambda &= 0.002657 \pm 0.000106 \; [1/s] \nonumber
 \end{align}
 
-Daraus lässt sich die Halbwertszeit berechnen zu:
+\noindent Daraus lässt sich die Halbwertszeit berechnen zu:
 \begin{displaymath}
-    T_1 = 261 \pm 10 s 
+    T_1 = (261 \pm 10) s 
 \end{displaymath}
 
-Bei der zweiten Ausgleichrechnung werden nun nur die Werte bis zur doppelten Halbwertszeit für die Ausgleichsrechnung verwendet.
+Diese Rechnung wurde, wie auch alle weiteren Rechnungen, in python mit 'ufloats' durchgeführt. Diese beziehen den Fehler der Werte, welche in die Formel eingesetzt werden, direkt mit ein und der dazugehörige Gauß-Fehler wird automatisch berechnet. 
+
+\noindent Bei der zweiten Ausgleichrechnung werden nun nur die Werte bis zur doppelten Halbwertszeit für die Ausgleichsrechnung verwendet.
 Also alle Messwerte bis zu einer Zeit von maximal 520s.
 Für die Parameter ergeben sich diesmal die Werte:
 
 \begin{align}
-    N_0 &=  218.126931 \pm 7.601301 \nonumber \\
-    \lambda &= 0.002937 \pm 0.000170 \nonumber\\ 
+    N_0 &=  218.126931 \pm 7.601301 \; [\text{Imp}] \nonumber \\
+    \lambda &= 0.002937 \pm 0.000170 \; [1/s] \nonumber 
 \end{align}
 
-Die etstehende Halbwertszeit hat nun den Wert:
+\noindent Die etstehende Halbwertszeit hat nun den Wert:
 
 \begin{displaymath}
-    T_2 = 236 \pm 14 s 
+    T_2 = (236 \pm 14) s 
 \end{displaymath}
 
-\section{Halbwertszeit von Rhodium}
+\subsection{Halbwertszeit von Rhodium}
 
 Analog zu der Vorgehensweise bei Vanadium wird auch bei der Halbwertszeit zunächst ein halblogarithmisches Diagramm erstellt.
 Diesmal wird die Ungergrundrate wieder angepasst, da das Zeitintervall nun nur 15s beträgt.
 Die gemessenen Werte für Rhodium sind in Tabelle \ref{tab:3} zu sehen.
 
-Das entstehende Diagramm mit dem angepassten Untergrund und dem Fehler $\sqrt{N}$ sieht folgendermaßen aus:
+\noindent Das entstehende Diagramm mit dem angepassten Untergrund und dem Fehler $\sqrt{N}$ sieht folgendermaßen aus:
 
 \begin{figure}[H]
     \centering
@@ -87,7 +91,102 @@ Das entstehende Diagramm mit dem angepassten Untergrund und dem Fehler $\sqrt{N}
     \label{Fig:HalbwertszeitRh}
 \end{figure}
 
+\noindent In diesem Diagramm sind bereits die benötigten Ausgleichsrechnunhen eingetragen.
+Zu erkennen sind die verschiedenen Steigungen der beiden Zerfälle.
+Für die Ausgleichsrechnung des langsamen Zerfalls muss der Zeitpunkt bestimmt werden, ab dem nur noch der langlebige Zerfall stattfindet.
+Dieser Zeitpunkt wurde auf $t* \approx 250s$ geschätzt.
+Um sicher zu sein, dass der exponentielle Zerfall möglichst keinen Einfluss mehr hat wurden bei der Ausgleichsrechnung alle Daten verwendet, die nach 300s oder später aufgenommen wurden.
 
+\noindent Mit dem Zerfallsgesetz als Ausgangsfunktion ergeben sich folgende Parameter:
+
+\begin{align}
+    A_0 &= 72.317788 \pm 16.092044 \; [\text{Imp}] \nonumber  \\
+    \lambda &= 0.002646 \pm 0.000501 \; [1/s] \nonumber
+\end{align}
+    
+
+
+\noindent Mit diesen Parametern entsteht die langlebige Ausgleichsgerade. 
+Dann wird das Intervall betrachtet, in dem der kurzlebige Zerfall stattfindet. 
+Um sicher zu gehen, dass der Einfluss des kurzlebigen Zerfalls wird das Intervall [0s;165s] betrachtet.
+Dann werden auf dem Intervall für alle Zeitpunkte des Intervall die zugehörigen Werte der Ausgleichsfunktion des langlebigen Zerfalls berechnet.
+Anschließend werden von den Werten, die im Diagramm aufgetragen sind die entsprechenden werte der Ausgleichsfunktion abgezogen.
+Mit den entstehenden Werten wird nun die Ausgleichsrechnung für den kurzlebigen Zerfall durchgeführt. 
+
+\noindent Mit dem Zerfallsgesetz als Ausgangsfunktion ergeben sich folgende Parameter:
+
+\begin{align}
+    A_0 &= 772.987833 \pm 20.717019 \; [\text{Imp}] \nonumber  \\
+    \lambda &= 0.015228 \pm 0.000551 \; [1/s] \nonumber
+\end{align}
+
+\noindent Der dritte Graph im Diagramm ist die Summme aus beiden Ausgleichsfunktionen.
+
+\noindent Nun lassen sich die Verschiedenen halbwertszeiten berechnen
+
+\begin{align}
+    T &= \frac{\ln(2)}{\lambda} \nonumber
+\end{align}
+
+\noindent Mit den Parametern lassen sich folgende Halbwertszeiten berechnen:
+
+\begin{tabular}{ll@{${}\pm{}$}l}
+    \toprule
+    Halbwertszeit & Wert [s] & Unsicherheit [s] \\
+    \midrule
+    $T_{lang}$ & 260 & 50 \\
+    $T_{kurz}$ & 45.5 & 1.6 \\
+    \bottomrule   
+\end{tabular}
+
+\section{Diskussion}
+
+\subsection{Vanadium}
+
+Die berechneten Halbwertszeiten für Vanaium betragen: 
+\begin{align}
+    T_1 &= 261 \pm 10 s \nonumber \\
+    T_2 &= 236 \pm 14 s \nonumber
+\end{align}
+
+\noindent Dabei ist T\textsubscript{1} die aus allen Werten berechnete Halbwertszeit und bei T\textsubscript{2} wurden die letzten sehr kleinen Werte weggelassen, da sie so klein sind, dass sie in den Untergrund übergehen. 
+
+\noindent Der Literaturwert beträgt $T_{lit}=224.4s$.
+Die prozentualen Abweichungen der Messwerte zu dem Literaturwert betragen für T\textsubscript{1} zu T\textsubscript{lit} $\approx 16.31 \%$ und für T\textsubscript{2} zu T\textsubscript{lit} $\approx 5.17 \%$
+
+\noindent Es fällt auf, dass T\textsubscript{2} deutlich näher an der tatsächlichen Halbwertszeit liegt als T\textsubscript{1}. 
+Daran ist deutlich zu erkennen, dass die kleinen Werte zu späteren Zeitpunkten die Rechnung negativ beeinflussen. Das liegt vor allem daran, dass diese Werte viel schwieriger zu messen sind. Es wird kaum noch Strahlung von der Probe ausgesendet. Damit ist kaum noch zu unterscheiden ob der gemessene Wert nicht einfach daran liegt, dass die Untergrundrate den Mittelwert überschritten hat. Das Problem existiert für alle anderen Werte zwar auch, aber weil dort mehr Strahlung von der Probe kommt und selbst eine hohe Untergrundrate daher einen geringeren Einfluss hat. Dennoch liegt die restliche Abweichung vom Literaturwert vermutlich auch an diesem Problem, dass die Untergrundrate nicht immer gleich ist. 
+Die geringere Abweichung vom Literaturwert der Methode zur Berechnung von T\textsubscript{2} lässt keinen Zweifel zu, dass diese Methode die bessere Wahl, da sie genauere Ergebnisse liefert. 
+
+\noindent Es gibt auch noch einen kleineren Ablesefehler. Allerdings liegt die Abweichung vom Literaturwert im Rahmen gewöhnlicher Messunsicherheiten. 
+
+\subsection{Rhodium}
+
+\noindent Die berechnete Halbwertszeit für den langlebigen Zerfall von Rhodium beträgt: $260 \pm 5s$.
+Der Literaturwert dieser Halbwertszeit liegt bei 260.4s.
+
+\noindent Diese Abweichung von gerade einmal 0.4s oder $\approx 0.15\%$ ist sehr gering. Das spricht für eine sehr gute Durchführung des Versuchs. Durch gewöhnliche unvermeidbare Messfehler ergibt sich noch eine Unsicherheit der berechneten Zeit. Bei diesem Experiment wurden allerdings sämtliche Fehlerquellen minimiert. 
+
+\noindent Für den kurzlebigen Zerfall gibt es folgende zu Vergleichende Werte:
+\begin{align}
+    T_{kurz} &= 45.5 \pm 1.6 \nonumber\\
+    T_{lit} &= 42.3  \nonumber
+\end{align}
+
+\noindent Der Wert von T\textsubscript{kurz} weist zwar mit $\approx 7.56\%$ eine größere Abweichung als T\textsubscript{lang} auf, aber diese ist auch nicht unerklärbar groß. Im Gegenteil, die Abweichung ist sogar sehr gering. Die Abweichung liegt hier an Fehlern durch die Ausgleichrechnung und der Unsicherheit von T\textsubscript{lang}. Denn T\textsubscript{kurz} wird mit T\textsubscript{lang} bestimmt und setzt somit die Unsicherheit weiter fort.   
+
+\noindent Zusammenfassend lässt sich über dieses Experiment sagen, dass es überaus erfolgreich war. Alle Abläufe die zu sehen sein sollten konnten dargestellt werden und die enstandenen Werte sind durch ihre geringe Abweichung auch von überaus hoher Qualität. Es gibt nur Abweichungen durch praktisch unvermeidbare Fehler. Diese fallen aber sehr klein aus und sind deshalb im Bereich der zu erwartenden Abweichung.
+
+\section{Literatur}
+
+Anleitung V702:\\
+\url{https://moodle.tu-dortmund.de/pluginfile.php/1502371/mod_folder/content/0/V702.pdf?forcedownload=1}\\
+DantenHinweiseGeigerMueller:\\
+\url{https://moodle.tu-dortmund.de/pluginfile.php/1502371/mod_folder/content/0/DatenHinweiseAktivierung.pdf?forcedownload=1}\\
+Literaturwert der Halbwertszeit von Vanadium:\\
+\url{https://www.internetchemie.info/chemische-elemente/vanadium-isotope.php}\\
+Literaturwerte der Halbwertszeiten von Rhodium:\\
+\url{https://www.internetchemie.info/chemische-elemente/rhodium-isotope.php}\\
 
 
 \section{Tabellen}
