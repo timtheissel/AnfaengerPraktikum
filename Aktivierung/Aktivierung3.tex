@@ -60,14 +60,14 @@ Die Neutronen werden in diesem Versuch durch Kernreaktionen erzeugt, da Neutrone
 \begin{equation}
     \ce{^{9}_4Be + ^{4}_{2}$\alpha$ -> ^{12}_{6}C + ^{1}_{0}n} \nonumber
 \end{equation}
-Die noetigen \alpha-Teilchen stammen aus dem Zerfall von $ \ce{^{226}Ra}$-Kernen. Sie haben ein kontinuierliches Energiespektrum bis zu 13,7MeV. Abgebremst werden sie durch das Diffundieren durch dickere Materialschichten aus Atomen mit leichten Kernen. Durch elastische Stoesse wird dabei Energie an die leichten Kerne abgegeben. Je aehnlicher die Massen der stossenden Massen, desto besser ist der Bremseffekt. Dadurch ergibt sich Wasserstoff als geeignetster Stosspartner fuer die Neutronen. 
+Die noetigen \alpha-Teilchen stammen aus dem Zerfall von $ \ce{^{226}Ra}$-Kernen. Sie haben ein kontinuierliches Energiespektrum bis zu 13,7 MeV. Abgebremst werden sie durch das Diffundieren durch dickere Materialschichten aus Atomen mit leichten Kernen. Durch elastische Stoesse wird dabei Energie an die leichten Kerne abgegeben. Je aehnlicher die Massen der stossenden Massen, desto besser ist der Bremseffekt. Dadurch ergibt sich Wasserstoff als geeignetster Stosspartner fuer die Neutronen. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{"Quelle_Neutronen.png"}
     \caption{Querschnitt durch die verwendete Quelle fuer Neutronen\\Aus: Anleitung V702 Seite 213}
     \label{Fig:Quelle}
 \end{figure}
-Aus diesem Grund wird die Neutronenquelle mit einem Mantel aus Paraffin umgeben, wie in \ref{Fig:Quelle} zu sehen ist. Durch die Stoesse mit den Kernen des Paraffins werden die Neutronen schliesslich auf eine Ernergie gebracht, die den Molekuelen ihrer Umgebung entspricht. Dies entspricht etwa 0,025eV bei 290K. Die Neutronengeschwindigkeit entspricht dabei 2,2km/s. Diese Neutronen nennen sich thermische Neutronen.
+\noindent Aus diesem Grund wird die Neutronenquelle mit einem Mantel aus Paraffin umgeben, wie in \ref{Fig:Quelle} zu sehen ist. Durch die Stoesse mit den Kernen des Paraffins werden die Neutronen schliesslich auf eine Ernergie gebracht, die den Molekuelen ihrer Umgebung entspricht. Dies entspricht etwa 0,025 eV bei 290 K. Die Neutronengeschwindigkeit entspricht dabei 2,2 km/s. Diese Neutronen nennen sich thermische Neutronen.
 \subsection{Untersuchung des Zerfalls instabiler Isotope}
 Durch Neutronenstrahlung koennen folgende stabile Isotope in instabile verwandelt werden:
 \begin{equation}
@@ -98,7 +98,7 @@ Die Zahl $N_0$ gibt die zum Zeitpunkt $t=0$ nicht zerfallenen Kerne an. \lambda 
 \end{equation}
 Daraus folgt schliesslich:
 \begin{equation}
-    T=\ln(\frac{2}{\lambda}) \nonumber
+    T=\frac{\ln(2)}{\lambda} \nonumber
 \end{equation}
 Der hier verwendete Weg zur ermittelnden Halbwertszeiten geht ueber die Messung der pro festem Zeitintervall \Delta t  zerfallenen Kerne $N_{\Delta t}(t)$ in Abhaengigkeit von der Zeit. $N_{\Delta t}(t)$ haengt dabei von der Zeit in exponentieller Beziehung ab. Der Definition entsprechend ist 
 \begin{equation}
@@ -110,8 +110,6 @@ Es folgt also aus \ref{4} fuer $N_{\Delta t}(t)$:
     \ln(N_{\Delta t}(t))&=\ln N_0(1-e^{-\lambda\Delta t})-\lambda t \nonumber
 \end{align}
 Dies ist nun ueber eine Ausgleichsgerade bestimmbar, da $\ln(N_0(1-e^{-\lambda\Delta t}))$ konstant ist. Schwierigkeit ist dabei ein geeignetes $\Delta t$ zu waehlen, da zu kleine $\Delta t$ zu statistischen Fehlern und zu grosse $\Delta t$ zu systematischen Fehlern fuehren.
-\subsubsection{Silber}
-Da Silber natuerlicherweise zu $52,3\%$ aus \ce{^{107}Ag} und zu $48,7\%$ aus \ce{^{109}Ag} laufen zwei verschiedene Zerfallsprozesse ab, wenn das Silber aktiviert wird. Die Halbwertszeit von \ce{^{110}Ag} ist aber deutlich kuerzer, als die von \ce{^{108}Ag}, wodurch es moeglich ist, das langlebige Isotop erst zu betrachten, nachdem das kurzlebige Isotop bereits zerfallen ist. Die so gemessenen Ausschlaege fuer das langlebige Isotop koennen nun von der Gesamtzahl der Ausschlaege subtrahiert werden. Dadurch kann auch fuer das kurzlebige Isotop die Halbwertszeit mittels einer Ausgleichsgerade bestimmt werden.
 \subsubsection{Rhodium}
 Rhodium kommt nach der Aktivierung sowohl in der Form von \ce{^{104}Rh} (90\%), sowie \ce{^{104i}Rh} (10\%) vor. Zweiteres geht nach der Emission eines \gamma-Quants ebenfalls in ersteres Isotop ueber. Auch hier besteht also das Problem, dass zwei verschiedene Prozesse zur gleichen Zeit ablaufen. Um diese zu trennen wird nun die \gamma-Strahlung detektiert und somit kann in die beiden verschiedenen Zerfaelle aufgetrennt werden. Nun kann in langlebige und kurzlebige Isotope unterschieden werden.
 \section{Durchfuehrung}
@@ -129,4 +127,5 @@ Natuerliche Radioaktivitaet und Hoehenstrahlung sorgen am Zaehlrohr fuer Ausschl
 Als Beispiel fuer einfachen Zerfall dient in diesem Versuch Vanadium, welches in aktivierter Form in das Zaehlrohr gesteckt wird. Als Messintervalle wird $\Delta t$=30s festgelegt.
 \subsection{Bestimmung der Halbwertszeit bei Rhodium}
 Eine Halbwertszeitbestimmung eines Isotopengemischs wird am Beispiel von Rhodium durchgefuehrt. Die Messung erfolgt wie bei Vanadium, jedoch wird das Messintervall auf $\Delta t$=15s verringert.
+\input{Aufgaben.tex}
 \end{document}
