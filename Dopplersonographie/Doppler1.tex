@@ -22,3 +22,37 @@ Connor Magnus Böckmann \\ email: \href{mailto:connormagnus.boeckmann@tu-dortmun
 In diesem Versuch wird die Stroemungsgeschwindigkeit und das Stroemungsprofil durch ein System mit Hilfe von Dopplersonographie gemessen und ausgewertet werden. 
 \section{Theoretische Grundlagen}
 \subsection{Der Doppler-Effekt}
+Der Doppler-Effekt beschreibt die Frequenzaenderung, welche auftritt, sollten sich die Quelle der Welle und der Beobachter relativ zueinander bewegen. Die Frequenz $\nu_0$ erhoeht sich zu $\nu_kl$, wenn sich die Quelle auf den Beobachter hinzu bewegt. Im Umkehrschluss verringert sich $\nu_0$ zu $\nu_gr$, wenn sich die Quelle und der Beobachter voneinander entfernen.\\
+Wenn sich die Quelle mit der Geschwindigkeit $v$ bewegt und der Beobachter still steht, ergibt sich:
+\begin{equation}
+    \nu_{kl/gr}=\frac{\nu_0}{1\mp\frac{v}{c}}
+\end{equation}
+Sollte sich der Beobachter bewegen und die Quelle stillstehen, ergibt sich dafuer nun:
+\begin{equation}
+    \nu_{kl/gr}=\nu_0(1\pm\frac{v}{c})
+\end{equation}
+\subsection{Anwendung in der Ultraschalltechnik}
+Der Doppler-Effekt kann genutzt werden, um Stroemungsgeschwindigkeiten durch ein System- zum Beispiel die Stroemungsgeschwindigkeit des Blutes durch Adern- zu messen. Die Frequenz der ausgesendetet Ultraschallwelle wird an einem Koerper, etwa an einem Blutkoerper, verschoben und reflektiert. In diesem Fall ergibt sich die Frequenzverschiebung $\Delta\nu$ mit der Geschwindigkeit des Koerpers $v$, der Schallgeschwindigkeit $c$ und den Winkeln $\alpha$ und $\beta$ zu:
+\begin{equation}
+    \Delta\nu=\nu_0\frac{v}{c}(\cos\alpha+\cos\beta)
+\end{equation}
+Das hier verwendete Impuls-Echo-Verfahren legt den Winkel der einlaufenden Welle $\alpha$ und der ruecklaufenden Welle $\beta$ auf $\alpha=\beta$. Es entsteht also folgende Formel zur Berechnung der Frequenzverschiebung:
+\begin{equation}
+    \Delta\nu=2\nu_0\frac{v}{c}\cos\alpha \label{4}
+\end{equation} \newpage
+\subsection{Die Erzeugung von Ultraschall}
+Eine der moeglichen Methoden zur Erzeugung von Ultraschall ist der piezo-elektrische Effekt. Ein elektrisches Wechselfeld regt dabei einen piezo-elektrischen Kristall zu Schwingungen an. Voraussetzung ist dafuer, dass eine polare Achse des kristalls in Richtung des E-Feldes zeigt. Sollte die Anregungsfrequenz mit der Eigenfrequenz des Kristalls uebereinstimmen, resoniert dieser Kristall und es koennen grosse Amplituden der Schwingungen erzeugt werden.
+Umgekehrt ist dieser Piezokristall auch als Empfaenger nutzbar, wenn Schallwellen den Kristall in Schwingung versetzen. Die am haeufigsten verwendeten Kristalle sind dabei Quarze, welche aber einen relativ schwachen Piezoeffekt haben. Sowohl der Empfaenger, als auch der Sender der Ultraschallwelllen sind in der im Versuch verwendeten Sonde enthalten. 
+\section{Aufbau}
+Der Versuchsaufbau besteht im wesentlichen aus einem Ultraschallgenerator mit integrierter Ultraschallsonde und einem Stroemungskreislauf. Die Sonde ist an einen Computer angeschlossen, welcher zur Analyse und Datenaufnahme verwendet wird. Die Stroemungsroehren sind mit einer Fluessigkeit aus Wasser, Glycerin und kleinen Glaskugeln gefuellt. Diese dienen als Reflektionskoerper. Die Fliessgeschwindigkeit kann an der angeschlossenen Pumpe zwischen 0-7 l/min eingestellt werden. Die Viskositaet ist so eingestellt, dass sich in den Roehren ein laminarer Fluss bildet.
+\section{Durchfuehrung}
+Die Stroemungsgeschwindigkeit und das Stroemungsprofil werden an drei verschiedenen Roehren (7mm, 10mm, 16mm Innendurchmesser) ermittelt. Zur Messung werden so genannte Doppler-Prismen benoetigt, welche je drei verschiedene Einschallwinkel haben. Jeder Rohrdurchmesser hat dabei ein eigenes passendes Prisma. Dadurch wird die Reproduzierbarkeit gewaehrleistet, da so der Abstand zur Fluessigkeit und der Einschallwinkel immer gleich sind.\\
+Der so genannte Doppler-Winkel $\alpha$ berechnet sich aus dem Brechungsgesetz mit der Schallgeschwindigkeit in der Fluessigkeit $c_L$ und der Schallgeschwindigkeit im Prismenmaterial $c_P$ zu:
+\begin{equation}
+    \alpha=90^\circ-\arcsin(\sin\theta*\frac{c_L}{C_P})
+\end{equation}
+\subsection{Bestimmung der Dopplerverschiebung}
+Zur Bestimmung der Dopplerverschiebung wird das Geraet auf SAMPLE VOLUME LARGE gestellt. Nun werden fuer jedes der drei Stroemungsrohre je fuenf Pumpleistungen eingestellt und mit dem passenden Prisma die drei Winkel durchgemessen. Der Computer gibt je eine Angabe fuer die Stroemungsgeschwindigkeit aus, mit der nun mit Hilfe von \ref{4} die Dopplerverschiebung errechnet werden kann.
+\subsection{Bestimmung des Stroemungsprofils}
+Zur Bestimmung des Stroemungsprofils wird das Geraet auf SAMPLE VOLUME SMALL gestellt, um die Messtiefe variieren zu koennen. Die genannte Messtiefe ist dabei in [$\mu s$] angegeben. In Acryl entspricht eine Messtiefe von $4\mu s=10mm$, wohingegen $4\mu s=6mm$ in der Dopplerfluessigkeit entsprechen. Mit einem Prismavorlauf von 30.7mm und einer Wandstaerke des gemessenen Rohrs von 2mm ergibt sich eine Mindestmesstiefe von $13.08\mu s$, um mit der Messung bis in die Fluessigkeit zu gelangen. Da das Rohr einen Innendurchmesser von 16mm hat, liegt der Bereich der Messtiefe zwischen $13.08\mu s$ und $23.75\mu s$, bis die gesamte Fluessigkeit durchgemessen wurde.
+\end{document}
