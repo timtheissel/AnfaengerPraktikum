@@ -8,7 +8,9 @@
 \usepackage{hyperref}
 \usepackage{caption}
 \usepackage{float}
-\usepackage[version=4]{mhchem}
+%\usepackage[version=4]{mhchem}
+\usepackage{chemformula}
+\let\ce\ch
 \setdefaultlanguage{german}
 \title{V703 Das Geiger-Mueller-Zaehlrohr}
 \author{
@@ -28,13 +30,13 @@ Auf die Wechselwirkung von Neutronen mit Kernen, die Erzeugung freier Neutronen,
 \subsection{Kernreaktionen mit Neutronen}
 Als Kernreaktionen werden alle Wechselwirkungen von Teilchen mit Atomkernen bezeichnet. Speziell die Reaktion von Neutronen mit dem Kern sind hier von Interesse fuer den Versuch. Absorbiert der Ursprungskern A ein Neutron bildet sich ein so genannter Compoundkern A*. Energetisch liegt dieser um die kinetische Energie und die Bindungsenergie des Neutron hoeher als A. Dabei wird die hinzugekommene Energie gleichmaessig auf die Nukleonen verteilt. Dies ruehrt von den starken Wechselwirkungen des neuen Neutron mit dem Kern her. Die Nukleonen werden dadurch in hoehere Energiezustaende versetzt. Es wird von einer so genannten Aufheizung von A* gesprochen. Haeufig ist der Kern dabei nicht in der Lage ein Nukleonen abzustossen, wenn die kinetische Energie des eintreffenden Neutronen nur gering war. Es laeuft eine Reaktion ab, bei der der Kern nach etwa $10^{-16}s$ unter Emission eines \gamma-Quants zurueck in den Grundzustand faellt. Die Reaktion laeuft dabei folgendermassen ab:
 \begin{equation}
-    \ce{^{m}_{z}A} + \ce{^{1}_{0}n} \rightarrow \ce{^{m+1}_{z}A^{*}} \rightarrow \ce{^{m+1}_{z}A}+\gamma \nonumber
+    \ce{^{m+}_zA + ^{1}_{0}C -> ^{m+1}_zA^{*} -> ^{m+1}_zA + \gamma} \nonumber
 \end{equation}
-Die Massenzahl wird dabei durch m ausgedrueckt. Der nun entstandene Kern \ce{^{m+1}_{z}A^{*} ist meistens nicht stabil, da dieser nun mehr Neutronen als ein normaler, stabiler Kern enthaelt. Dieser ist verhaeltnismaessig langlebig im Vergleich mit dem Zwischenkern, auf Grund des Energieverlustes ueber den \gamma-Quant. Der Kern wird nun in einen stabilen Kern umgewandelt. Die Emission eines Elektronen, welche dafuer benoetigt wird, erfolgt folgendermassen:
+Die Massenzahl wird dabei durch m ausgedrueckt. Der nun entstandene Kern $\ce{^{m+1}_{z}A^{*}}$ ist meistens nicht stabil, da dieser nun mehr Neutronen als ein normaler, stabiler Kern enthaelt. Dieser ist verhaeltnismaessig langlebig im Vergleich mit dem Zwischenkern, auf Grund des Energieverlustes ueber den \gamma-Quant. Der Kern wird nun in einen stabilen Kern umgewandelt. Die Emission eines Elektronen, welche dafuer benoetigt wird, erfolgt folgendermassen:
 \begin{equation}
-    \ce{^{m+1}_{z}A} \rightarrow \ce{^{m+1}_{z+1}C}}+\beta^{-}+E_{kin}+\bar{v_e} \nonumber
+    \ce{^{m+1}_zA -> ^{m+1}_{z+1}C + \beta^- + E_{kin}+\bar{v_e}} \nonumber
 \end{equation}
-\bar{v_e} stellt dabei ein Antineutrino dar. Die Summe der einzelnen Massen der Teilchen ist dabei geringfuegig kleiner, als die Masse des Kerns $\ce{^{m+1}_z}A}$. Der so genannte Massendefekt wird entsprechend der Einsteinschen Beziehung $\Delta E= \Delta mc^{2}$ in kinetische Energie und Antineutrino mgewandelt.\\
+\bar{v_e} stellt dabei ein Antineutrino dar. Die Summe der einzelnen Massen der Teilchen ist dabei geringfuegig kleiner, als die Masse des Kerns $\ce{^{m+1}_zA}$. Der so genannte Massendefekt wird entsprechend der Einsteinschen Beziehung $\Delta E= \Delta mc^{2}$ in kinetische Energie und Antineutrino umgewandelt.\\
 Entscheidend fuer die Wahrscheinlichkeit des Einfangens eines Neutrons ist der Wirkungsquerschnitt \sigma. Es ist die Flaeche, welche der Kern haben muesste, damit jedes auftreffende Neutron eingefangen wuerde. Wenn ein ein $1cm^2$-Stueck Folie mit der Dicke d und K Atomen pro $cm^3$ von n Neutronen pro Sekunde getroffen wird, wobei u Einfaenge geschehen, wird \sigma gegeben durch
 \begin{equation}
     \sigma =\frac{u}{nKd} \nonumber

@@ -1,0 +1,14 @@
+\selectlanguage *{german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theoretische Grundlagen}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Kernreaktionen mit Neutronen}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Erzeugung niederenergetischer Neutronen}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Untersuchung des Zerfalls instabiler Isotope}{6}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Silber}{7}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Rhodium}{7}{subsubsection.2.3.2}%
+\contentsline {section}{\numberline {3}Durchfuehrung}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Messapparatur}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Nulleffekt}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Bestimmung der Halbwertszeit bei Vanadium}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Bestimmung der Halbwertszeit bei Rhodium}{8}{subsection.3.4}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
