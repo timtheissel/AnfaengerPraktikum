@@ -62,4 +62,5 @@ plt.ylabel(r'$\Delta \nu / \cos(\alpha)$ [Hz]')
 plt.title(r"Dopplerwinkel 70.53$^{\circ}$")
 
 plt.legend()
+plt.savefig('2.png')
 plt.show()

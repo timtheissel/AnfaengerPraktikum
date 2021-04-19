@@ -9,10 +9,10 @@ import scipy.constants as const
 x = [np.pi/12, np.pi/6, (np.pi)/3]
 
 a = 90 - (np.arcsin(np.sin(x)*(1800/2700))*(180/np.pi))
-print(a)
+#print(a)
 
 b =  (a * np.pi) / 180
-print(b)
+#print(b)
 
 v, m1, m3, m6, d1, d3, d6, k1, k3, k6 = np.genfromtxt('daten.txt', unpack=True)
 
@@ -62,4 +62,5 @@ plt.ylabel(r'$\Delta \nu / \cos(\alpha)$ [Hz]')
 plt.title(r"Dopplerwinkel 80.064$^{\circ}$")
 
 plt.legend()
+plt.savefig('1.png')
 plt.show()
