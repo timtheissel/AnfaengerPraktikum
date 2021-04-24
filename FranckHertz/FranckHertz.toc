@@ -1,0 +1,9 @@
+\selectlanguage *{german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theoretische Grundlagen}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Aufbau und Funktionsweise des Franck-Hertz-Versuchs}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Einfluesse auf die Gestalt der Franck-Hertz-Kurve}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Das Kontaktpotential}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Das Energie-Spektrum der Elektronen}{6}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Der Dampfdruck}{6}{subsubsection.2.2.3}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
