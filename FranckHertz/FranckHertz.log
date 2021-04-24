@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  24 APR 2021 12:54
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  24 APR 2021 14:02
  restricted system commands enabled.
 **FranckHertz.tex
 (./FranckHertz.tex
@@ -826,11 +826,11 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
+(polyglossia)            hyphenation	
+(polyglossia)            synonyms	
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            hyphenation	
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	
 (polyglossia)            patterns	hyph-de-1901.pat.txt on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
@@ -859,11 +859,11 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
+(polyglossia)            hyphenation	
+(polyglossia)            synonyms	
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            hyphenation	
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	
 (polyglossia)            patterns	hyph-de-1996.pat.txt on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
@@ -1092,13 +1092,13 @@ LaTeX Info: Redefining \ttfamily on input line 1.
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 .1'
 ]
-<Ideal_FranckHertz.png, id=46, 419.31656pt x 301.125pt>
+<Ideal_FranckHertz.png, id=48, 419.31656pt x 301.125pt>
 File: Ideal_FranckHertz.png Graphic file (type png)
 <use Ideal_FranckHertz.png>
 Package luatex.def Info: Ideal_FranckHertz.png  used on input line 45.
 (luatex.def)             Requested size: 198.10892pt x 142.26378pt.
  [4<./Ideal_FranckHertz.png>]
-<Potential_FranckHertz.png, id=58, 712.16063pt x 365.11406pt>
+<Potential_FranckHertz.png, id=60, 712.16063pt x 365.11406pt>
 File: Potential_FranckHertz.png Graphic file (type png)
 <use Potential_FranckHertz.png>
 Package luatex.def Info: Potential_FranckHertz.png  used on input line 60.
@@ -1106,6 +1106,11 @@ Package luatex.def Info: Potential_FranckHertz.png  used on input line 60.
 
 Overfull \hbox (25.72447pt too wide) in paragraph at lines 60--61
  [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
+
  []
 
 [5
@@ -1135,12 +1140,18 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 .3'
-<Dampf_FranckHertz.png, id=69, 550.30594pt x 733.23938pt>
+<Dampf_FranckHertz.png, id=71, 550.30594pt x 733.23938pt>
 File: Dampf_FranckHertz.png Graphic file (type png)
 <use Dampf_FranckHertz.png>
 Package luatex.def Info: Dampf_FranckHertz.png  used on input line 89.
 (luatex.def)             Requested size: 256.25069pt x 341.43306pt.
 [6]
+<Schaltung_FranckHertz.png, id=82, 611.28375pt x 379.4175pt>
+File: Schaltung_FranckHertz.png Graphic file (type png)
+<use Schaltung_FranckHertz.png>
+Package luatex.def Info: Schaltung_FranckHertz.png  used on input line 106.
+(luatex.def)             Requested size: 366.72644pt x 227.62204pt.
+ [7<./Dampf_FranckHertz.png>]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1175,25 +1186,30 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [7<./Dampf_FranckHertz.png>] (./FranckHertz.aux
+ [8<./Schaltung_FranckHertz.png>]
+(./FranckHertz.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 )
 Package rerunfilecheck Info: File `FranckHertz.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 21893 strings out of 479058
+ 21907 strings out of 479058
  100000,1144653 words of node,token memory allocated
  598 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 17 attribute, 66 glue_spec
 , 17 attribute_list, 1 write nodes
-   avail lists: 1:1,2:221,3:112,4:52,5:355,6:27,7:5172,8:49,9:209,10:23,11:640
- 40542 multiletter control sequences out of 65536+600000
+   avail lists: 1:1,2:249,3:122,4:52,5:355,6:27,7:5172,8:49,9:209,10:23,11:640
+ 40549 multiletter control sequences out of 65536+600000
  71 fonts using 7613587 bytes
- 94i,7n,109p,10627b,749s stack positions out of 5000i,500n,10000p,200000b,200000s
+ 94i,7n,109p,10627b,774s stack positions out of 5000i,500n,10000p,200000b,200000s
 </home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmr
 oman10-regular.otf></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/ope
 ntype/public/lm/lmroman12-regular.otf></home/cptflashpoint/.local/texlive/2020/t
@@ -1209,10 +1225,10 @@ xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/cptflashp
 oint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></h
 ome/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb>
-Output written on FranckHertz.pdf (7 pages, 220734 bytes).
+Output written on FranckHertz.pdf (8 pages, 287722 bytes).
 
-PDF statistics: 156 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 131072)
- 57 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 170 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 131072)
+ 65 words of extra memory for PDF output out of 10000 (max. 100000000)
 

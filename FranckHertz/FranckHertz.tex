@@ -72,7 +72,7 @@ Der Ausdruck
 wird Kontaktpotential K genannt. Die Franck-Hertz-Kurve ist um eben jenes Kontaktpotential K verschoben.
 \subsubsection{Das Energie-Spektrum der Elektronen}
 Ausgang der bisherigen Betrachtung war immer, dass alle Elektronen nach der Beschleunigung die gleiche Energie haben. Diese Annahme ist aber nicht wahr. Die Leitungselektronen besitzen im Metall des Gluehdrahts bereits ein Spektrum an Energien (Fermi-Dirac-Verteilung), weshalb sie bei der Gluehemission bereits unterschiedliche Anfangsgeschwindigkeiten haben. Daher haben sie nach Durchlaufen der Beschleunigungsstrecke ebenfalls ein Spektrum an Energien. Die inelastischen Stoesse setzen also nicht mehr bei einer genau definierten Beschleunigungsspannung ein, sondern eher in einem gewissen Bereich. Aus diesem Grund steigt die Kurve im Vergleich zum Ideal in \ref{Fig:Ideal} nicht mehr so stark, wenn sie sich einem Maximum naehert und faellt danach nicht unstetig auf null ab, sondern naehert sich stetig einem Minimum an Strom $I_A$.\\
-Erwaehnenswert sind hier aber auch die elastischen Stoesse zwischen Elektronen und Hg-Atomen. Wie bereits genannt wird hierbei kaum Energie uebertragen, jedoch sorgen diese Stoesse unter Umstaenden fuer grosse Richtungsaenderungen der Elektronen. Zwischen Gluehdraht und Beschleunigerelektrode sind diese nicht weiter von Bedeutung. Die Richtungsaenderungen koennen jedoch zwischen Beschleunigerelektrode und Auffaengerelektrode zu einer Verteilung der z-Komponente der Geschwindigkeiten fuehren. Da aber das Ueberwinden des Gegenfeldes und damit das Erreichen der Auffaengerelektrode von $v_z$ abhaengt, wird hierdurch die Kurve flacher und breiter werden.
+Erwaehnenswert sind hier aber auch die elastischen Stoesse zwischen Elektronen und Hg-Atomen. Wie bereits genannt wird hierbei kaum Energie uebertragen, jedoch sorgen diese Stoesse unter Umstaenden fuer grosse Richtungsaenderungen der Elektronen. Zwischen Gluehdraht und Beschleunigerelektrode sind diese nicht weiter von Bedeutung. Die Richtungsaenderungen koennen jedoch zwischen Beschleunigerelektrode und Auffaengerelektrode zu einer Verteilung der z-Komponente der Geschwindigkeiten fuehren. Da aber das Ueberwinden des Gegenfeldes und damit das Erreichen der Auffaengerelektrode von $v_z$ abhaengt, wird hierdurch die Kurve flacher und breiter werden.\\
 \subsubsection{Der Dampfdruck}
 Entscheidend fuer den Erfolg des Franck-Hertz-Versuchs sind die Zusammenstoesse von Hg-Atomen und Elektronen. Die mittlere freie Weglaenge $\bar{w}$ muss also klein im Vergleich zur Strecke a zwischen Gluehdraht und Beschleunigerelektrode sein. $\bar{w}$ kann ueber den Saettigungsdampfdruck $p_{saet}$ eingestellt werden.
 \begin{equation}
@@ -92,5 +92,19 @@ Die gesamte, relevante Dampfdruckkurve ist in \ref{Fig:Dampf} dargestellt.
 \end{figure}
 Nun kann eine Temperatur bestimmt werden, bei der der Franck-Hertz-Effekt beobachtet werden kann. $\bar{w}$ sollte hierbei um den Faktor 1000 bis 4000 kleiner sein als a. a betraegt hier bei dieser Roehre etwa 1cm. Somit gibt es einen Dampfdruckbereich in dem die Roehre optimal arbeitet. Ist der Dampfdruck zu gering, laufen die Elektronen ohne Wechselwirkung mit dem Hg zur Auffaengerelektrode. Theoretisch ist es bei grossen Beschleunigungsspannungen moeglich das Hg-Atom hoeher als bis zum ersten Anregungszustand anzuregen, jedoch ist dies auf Grund der geringen Stosswahrscheinlichkeit selten zu beobachten.\\
 Wird $p_{saet}$ zu gross gewaehlt, kommt zu sehr vielen elastischen Stoessen, was zu einer starken Verringerung des Auffaengerstroms fuehrt. Dieser Effekt ruehrt daher, dass die elastischen Stoesse -wie bereits genannt- zu starken Richtungsaenderungen der Elektronen fuehrt.
-
+\subsection{Beschreibung der Apparatur}
+Die Apparatur besteht aus einem mit Hg-Dampf gefuellten Glasrohr. In diesem befinden sich der Gluehdraht, die Beschleunigerelektrode und die Auffaengerelektrode.\\
+Dieses Glasrohr ist in einem Metallgehaeuse untergebracht, welches beheizt und die Temperatur konstant gehalten werden kann. Gemessen und kontrolliert wird diese Temperatur ueber ein Thermometer, welches aus dem Gehaeuse rausragt.\\
+Der Gluehdraht wird von einem Konstantspannungsgeraet gespeist. Dieses kann praezise eingestellt werden und ermoeglicht so eine gute Elektronenemission durch den gluehelektrischen Effekt.\\
+Ein weiteres Spannungsgeraet liefert die Spannungen fuer die Beschleunigung und das Gegenfeld. Dieses kann sowohl $U_B$ als auch $U_A$ zeitproportional aendern in einem Bereich von $0\leq U_B\leq 60V$ fuer die Beschleunigungsspannung und $0\leq U_A\leq 11V$ fuer die Gegenspannung $U_A$.\\
+Der Strom $I_A$ an der Auffaengerelektrode wird mithilfe eines Picoamperemeters gemessen, da dieser sehr klein ist. Aus diesem Grund wird das Signal dessen von einem Gleichstromverstaerker proportional zum Eingangsstrom verstaerkt und ausgegeben.\\
+Schliesslich laesst sich die Franck-Hertz-Kurve mit einem so genannten XY-Schreiber auftragen, welcher auf der X-Achse mit der Beschleunigerspannung beschaltet wird und auf der Y-Achse mit einer Spannung, welche proportional zum Auffaengerstrom $I_A$ ist.\\
+Geschaltet wird die Apparatur entsprechend \ref{Fig:Schaltung}.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=8cm]{"Schaltung_FranckHertz.png"}
+    \captionbelow{Schaltplan der Franck-Hertz-Apparatur \\ Aus: Anleitung V601 Seite 124}
+    \label{Fig:Schaltung}
+\end{figure}
 \end{document}
