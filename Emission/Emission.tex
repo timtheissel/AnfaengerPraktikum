@@ -1,0 +1,141 @@
+\section{Zielsetzung}
+In diesem Versuch sollen freie Elektronen an einer Metalloberflaeche erzeugt werden durch Erwaermung des Metalls. Dieser so genannte gluehelektrische Effekt soll auf seine Temperaturabhaengigkeit untersucht werden. Ermittelt werden soll dabei die Austrittsarbeit der Elektronen, eine Materialkonstante. Diese soll hier fuer Wolfram bestimmt werden. Notwendig ist dafuer eine Hochvakuumdiode. Die Beschreibung ihres Verhaltens ist ebenfalls Teil dieses Experiments.
+\section{Theoretische Grundlagen}
+\subsection{Austrittsarbeit und die Energieverteilung der Leitungselektronen}
+Metalle sind sehr gute elektrische Leiter. Diese kommt von dem Umstand, dass quasi alle Atome ionisiert. Diese bilden ein periodisches raeumliches Gitter, welches von freigesetzten Elektronen umhuellt ist. Diese werden Leitungselektronen genannt und gehoeren zu keinem bestimmten Atom, sondern befinden sich in dem Kraftfeld aller Ionen. Das Gitterpotential kann grob genaehert als konstant angenommen werden und muss periodisch abhaengig vom Ort sein. Nah an den Gitterpunkten muss sie hohe positive Werte erreichen, weit entfernt aber wenig veraenderlich ist. Das Innere des Metalls kann als Gebiet positiven Potentials angenommen werden, welches um $\phi$ vom Aeusseren verschieden ist. Im Inneren koennen sich die Elektronen frei bewegen, muessen aber das Potential $\xi$ ueberwinden, um den so genannten Potentialtopf zu verlassen. 
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=5cm]{"potentialtopf_emission.png"}
+    \captionbelow{Potentialtopfmodell eines Metalls\\ Aus: Anleitung V504 Seite 93}
+    \label{Fig:Potentialtopf}
+\end{figure}
+Die aufzuwendende Energie nennt sich Austrittsarbeit $e_0\xi$ mit der Elektronenladung $e_0$. So tut sich die Frage auf, ob Elektronen das Metall spontan verlassen koennen.\\
+Nach dem Pauli-Verbot fuer Fermionen duerfen keine zwei Elektronen in allen Quantenzahlen uebereinstimmen, was dazu fuehrt, dass ein Energieniveau nur von zwei Elektronen mit entgegengesetztem Spin besetzt werden kann. Dieser Umstand sorgt fuer eine endliche Energie der Elektronen am absoluten Nullpunkt. Diese Energie bei T=0 bezeichnet man als Fermische Grenzenergie $\zeta$. Bei Zimmertemperatur ist $\zeta>> kT$ fuer alle Metalle. Die Wahrscheinlichkeit, dass ein Elektron die Energie E besitzt im thermischen Gleichgewicht, ist gegeben durch die so genannte Fermi-Diracsche Verteilung. Sie hat die Funktion 
+\begin{equation}
+    f(E)=\frac{1}{e^{\frac{E-\zeta}{kT}}+1} \nonumber
+\end{equation}
+Der Verlauf dieser Funktion ist in \ref{Fig:Verteilung} zu sehen. Das Elektron muss also die Energie $\zeta+e_0\phi$ haben, um das Metall zu verlassen. Mit der Naeherung 
+\begin{equation}
+    f(E)\approx e^{\frac{\zeta-E}{kT}} \label{Verteilung}
+\end{equation}
+kann fuer die Elektronen gerechnet werden, welche die Metalloberflaeche spontan verlassen koennen auf Grund ihrer hohen Energie.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=5cm]{"Fermi_emission.png"}
+    \captionbelow{Verlauf der Fermi-Diracschen Verteilung bei T=0 (durchgezogene Linie) und bei T>>0 (gestrichelte Linie)\\ Aus: Anleitung V504 Seite 94}
+    \label{Fig:Verteilung}
+\end{figure}
+\subsection{Die Saettigungsstromdichte}
+Im Folgenden soll die Saettigungsstromdichte $j_s(T)$ bestimmt werden. Grundlage dafuer liefert Gleichung \ref{Verteilung}. Die Saettigungsstromdichte stellt die Anzahl der Elektronen, die pro Zeit- und Flaecheneinheit aus dem Metall austreten, dar. Es wird ein Koordinatensystem geschaffen, dessen Z-Achse senkrecht zur Oberflaeche des Metalls steht. Die Zahl der Elektronen $d\alpha$ die aus dem Volumenelement $dp_xdp_ydp_z$ des Impulsraumes pro Zeit- und Flaecheneinheit aus der Oberflaeche austreten, wird beschrieben durch:
+\begin{equation}
+    d\alpha=v_zn(E)dp_xdp_ydp_z \label{3}\\
+\end{equation}
+Die Energie E laesst sich schreiben als:
+\begin{equation}
+    E=\frac{1}{2m_0}(p_x^2+p_y^2+p_z^2)=\frac{m_{e,0}}{2}(v_x^2+v_y^2+v_z^2)
+\end{equation}
+Daraus ergibt sich mit \ref{3}:
+\begin{equation}
+    d\alpha=\frac{\partial E}{\partial p_z}n(E)dp_xdp_ydp_z=n(E)dEdp_xdp_y \label{4}
+\end{equation}
+Fuer n(E) ergibt sich aufgrund des Volumens $h^3$ eines Quantenzustandes im sechsdimensionalen Phasenraum mit Hilfe von \ref{Verteilung}:
+\begin{align}
+    n(E)=\frac{2}{h^3}f(E) \label{5}\\
+    \text{h=Planksches Wirkungsquantum}\nonumber
+\end{align}
+Damit ist mit \ref{4} und \ref{5}:
+\begin{equation}
+    d\alpha=\frac{2}{h^3}e^{\frac{\zeta-E}{kT}}dp_xdp_ydE \nonumber
+\end{equation}
+Von dieser Anzahl an Elektronen koennen nun schliesslich alle Elektronen die Metalloberflaeche verlassen, welche diese Ungleichung erfuellen, also in z-Richtung eine genuegend grosse Geschwindigkeit haben. 
+\begin{equation}
+    \frac{p_z^2}{2m_0}>\zeta+e_0\phi \label{6}
+\end{equation}
+Die also zu Anfang gewuenschte Stromdicht $j_s(T)$ wird erhalten, wenn alle Elektronen, welche \ref{6} erfuellen, abzaehlt und mit der Elementarladung $e_0$ multipliziert. 
+\begin{align*}
+j_s(T)&=\frac{2e_0}{h^3}\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} dp_xdp_y \int_{\zeta+e_0\phi}^{\infty}e^{\frac{\zeta-\bigg(\frac{p_x^2+p_y^2+p_z^2}{2m_0}\bigg)}{kT}}d\Big(\frac{p_z^2}{2m_0}\Big)\\
+&=\frac{2e_0}{h^3}kTe^{\frac{-e_0\phi}{kT}}\int_{-\infty}^{\infty} \int_{-\infty}^{\infty}e^{\frac{-(p_x^2+p_y^2)}{2m_0kT}}dp_xdp_y
+\end{align*}
+Weil 
+\begin{equation}
+    \int_{-\infty}^{\infty}e^{-\lambda x^2}dx=\sqrt{\frac{\pi}{\lambda}}\nonumber
+\end{equation}
+folgt nun
+\begin{equation}
+    j_s(T)=4\pi\frac{e_0m_0k^2}{h^3}T^2e^{\frac{-e_0\phi}{kT}} \label{7}
+\end{equation}
+Diese Gleichung wird \textbf{Richardson-Gleichung} genannt und ist fuer dieses Experiment von zentraler Bedeutung.
+\section{Die Hochvakuum-Diode}
+Der Saettigungsstrom einer Metalloberflaeche wird aussschliesslich unter Hochvakuum statt, um Wechselwirkungen der Elektronen mit der Luft zu verhindern. Diese Apparatur nennt sich Hochvakuumdiode und besteht aus dem genannten vakuumierten Glasgefaess, in das ein Draht (Gluehkathode) eingeschmolzen ist, welcher durch eine angelegte Gleichspannung erhitzt werden kann. Die freie Elektronenwolke wird durch eine gegenueberliegende Anode beziehungsweise das angelegte elektrische Feld abgesaugt. 
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=5cm]{"Schema_emission.png"}
+    \captionbelow{Schematischer Plan einer Hochvakuumdiode und ihrer Beschaltung\\ Aus: Anleitung V504 Seite 96}
+    \label{Fig:Schema}
+\end{figure}
+\subsection{Langmuir-Schottkysche Raumladungsgesetz}
+Bei der Messung haengt der gemessene Anodenstrom bei gegebener Kathodentemperatur ausserdem von der Anodenspannung ab. Ist diese zu klein, erreichen einige emittierten Elektronen die Anode nicht. Erst durch ausreichend grosse Anodenspannung wird ein von der Spannung unabhaengiger Strom gemessen. Das ohmsche Gesetz ist hier aber nicht von Nutzen, da die Elektronen in Richtung der Anode hin beschleunigt werden, was zu einer Verringerung der Raumladungsdicht $\rho$ in Richtung der Anode fuehrt. Da die Stromdicht j an jeder Stelle konstant sein muss, stellt sich dieser Umstand ein.
+\begin{equation}
+    j=-\rho \label{8}
+\end{equation}
+Die Feldstaerke des E-Feldes wird durch die Raumladungsdichte von der Anode abgeschirmt, was zur Folge hat, dass manche emittierte Elektronen nicht vom Anodenfeld erfasst werden. Daher ist der Anodenstrom kleiner als nach der Richardson-Gleichung (\ref{7}) zu erwarten waere. Zur Bestimmung des quantitativen Umfangs dieser Beeinflussung im Raumladungsbereich, wird mit der Poisson-Gleichung gestartet.
+\begin{equation}
+    \nabla V=-\frac{1}{\epsilon_0}\rho \nonumber
+\end{equation}
+Fuer diese Erlaeuterungen seien sowohl die Anode, als auch die Kathode unendlich ausgedehnte Platten, welche den konstanten Abstand a von einander haben. Dafuer hat die Poisson-Gleichung die Formulierung 
+\begin{equation}
+    \frac{d^2V}{dx^2}=-\frac{\rho(x)}{\epsilon_0}
+\end{equation}
+Dies laesst sich mit \ref{8} vereinfachen:
+\begin{equation}
+    \frac{d^2V}{dx^2}=\frac{j}{\epsilon_0v(x)}
+\end{equation}
+Nun wird die Geschwindigkeit v(x) mit Hilfe der Energie $e_0V=\frac{m_0}{2}v^2$ substituiert:
+\begin{equation}
+    \frac{d^2V}{dx^2}=\frac{j}{\epsilon_0\sqrt{2e_0\frac{V}{m_0}}}
+\end{equation}
+Bei Integration dieses Ausdrucks ergibt sich 
+\begin{equation}
+    \sqrt[4]{V^3(x)}=\frac{3}{4}\sqrt{\frac{4j}{\epsilon_0\sqrt{\frac{2e_0}{m_0}}}}x \label{11}
+\end{equation}
+Abzulesen ist hier, dass das Potential nicht in linearem Zusammenhang mit dem Abstand x steht, sondern einem $\sqrt[3]{x^4}$-Gesetz folgt. Die nach $\vec{E}=-\nabla V$ aus dem Potential zu berechnende Feldstaerke, ist proportional zu $x^{\frac{1}{3}}$. Bei Erreichen der Anode, also $x=a$ hat E den Wert $\frac{4V(a)}{3a}$. Die Raumladungsdicht $\rho$ folgt letztlich einem $x^{-\frac{2}{3}}$-Gesetz. Veranschaulicht wird dies in \ref{Fig:Langmuir}. Ausserdem laesst sich der Zusammenhang aus Stromdicht j und Anodenspannung V in \ref{11} ablesen.
+\begin{equation}
+    j=\frac{4}{9}\epsilon_0\sqrt{\frac{2e_0}{m_0}}\frac{V^{\frac{3}{2}}}{a^2} \label{12}
+\end{equation}
+Diese Gleichung nennt sich \textbf{Langmuir-Schottkysches Raumladungsgesetz} und beinhaltet, dass j mit $V^{\frac{3}{2}}$ ansteigt, nicht wie beim ohmschen Gesetz proportional zu V. Der Bereich in dem dieses Gesetz gueltig ist nennt sich \textbf{Raumladungsgebiet}.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=5cm]{"Langmuir_emission.png"}
+    \captionbelow{Ortsabhaengigkeiten des Potentials V, der Feldstaerke E und der Raumladungsdichte \rho  im Raumladungsgebiet\\ Aus: Anleitung V504 Seite 98}
+    \label{Fig:Langmuir}
+\end{figure}
+\subsection{Das Anlaufstromgebiet}
+Aus der Gleichung des Langmuir-Schottkyschen Raumladungsgesetzes \ref{12} laesst sich erkennen, dass $j=0$ ist, wenn $V=0$ ist. Dem ist aber in der Realitaet nicht so und es laesst sich ein geringer Anodenstrom messen. Das ruehrt von der Eigengeschwindigkeit der Elektronen beim Verlassen der Metalloberflaeche her. Nach der Fermi-Dirac-Verteilung gibt es eine gewisse Anzahl an Elektronen, dessen Energie E gross genug ist, um das Metall zu verlassen. Der Energieueberschuss ist dann als kinetische Energie der Elektronen vorhanden. 
+\begin{equation}
+    \Delta E= E-(\zeta+e_{0\phi})
+\end{equation}
+Da sie mit dieser Energie auch gegen ein geringes Gegenfeld anlaufen koennen, nennt sich dieser Anlaufstrom. Das Anodenmaterial besitzt dabei meist eine groessere Austrittsarbeit $e_0\phi_A$ als das Kathodenmaterial $e_0\phi_K$. Durch die leitende Verbindung von Kathode und Anode ausserhalb der Diode, werden die Fermi-Oberflaechen auf die selbe Hoehe gebracht, jedoch bei Anlegen eines aeusseren Potentials V um $e_0V$ gegeneinander verschoben. Um also die Anode zu erreichen muss die Elektronenenergie groesser als $e_0\phi_A+e_0V$ sein. Die Abhaengigkeit der Anlaufstromstaerke vom aeusseren Potential ist folgender Natur:
+\begin{equation}
+    j(V)=j_0e^{-\frac{e_0\phi_A+e_0V}{kT}}=const e^{-\frac{e_0V}{kT}}
+\end{equation} 
+\section{Kennlinie einer Hochvakuumdiode}
+Als Kennlinie der Hochvakuumdiode bezeichnet man den Zusammenhang von Stromdichte j bzw. dem Anodenstrom $I_A$ und dem von Aussen angelegten Potential. Nach den bereits erlaeuterten Umstaenden laesst sich die Kennlinie in drei Bereiche teilen: Anlaufstrom-, Raumladungs- und Saettigungsstromgebiet. \\
+Ersteres wird durch den exponentiellen Zusammenhang von I und V bezeichnet und ist im Bereich $V<0$. Daraufhin folgt das Raumladungsgebiet, wo eine $\sqrt[]{V^3}$-Abhaengigkeit beobachtet werden kann. Darueber hinaus naehert sich der Anodenstrom einem Saettigungswert asymptotischen an. Das Raumladungsgebiet wird vom Saettigungsstromgebiet abgeloest. Typischerweise sieht eine Kennlinie wie in Abbildung \ref{Fig:Kennlinie} dargestellt aus.  
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=5cm]{"Kennlinie_emission.png"}
+    \captionbelow{Typische Kennlinie einer Hochvakuumdiode\\ Aus: Anleitung V504 Seite 100}
+    \label{Fig:Kennlinie}
+\end{figure}
+
+
+
+
+
+
+

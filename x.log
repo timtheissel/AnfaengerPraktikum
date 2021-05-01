@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  26 APR 2021 13:01
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  1 MAY 2021 09:41
  restricted system commands enabled.
-**V601.tex
-(/home/timt/.local/texlive/2020/texmf-dist/tex/latex/tools/x.tex
-LaTeX2e <2020-10-01> patch level 1
+**V504.tex
+(/home/cptflashpoint/.local/texlive/2020/texmf-dist/tex/latex/tools/x.tex
+LaTeX2e <2020-10-01>
 Lua module: luaotfload-main 2020-09-02 3.15 luaotfload entry point
 Lua module: luaotfload-init 2020-09-02 3.15 luaotfload submodule / initializatio
 n
@@ -13,11 +13,11 @@ Lua module: luaotfload-log 2020-09-02 3.15 luaotfload submodule / logging
 Lua module: luaotfload-parsers 2020-09-02 3.15 luaotfload submodule / parsers
 Lua module: luaotfload-configuration 2020-09-02 3.15 luaotfload submodule / conf
 ig file reader
-luaotfload | conf : Root cache directory is "/home/timt/.local/texlive/2020/texm
-f-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/cptflashpoint/.local/texlive/
+2020/texmf-var/luatex-cache/generic/names".
 luaotfload | init : Loading fontloader "fontloader-2020-08-31.lua" from kpse-res
-olved path "/home/timt/.local/texlive/2020/texmf-dist/tex/luatex/luaotfload/font
-loader-2020-08-31.lua".
+olved path "/home/cptflashpoint/.local/texlive/2020/texmf-dist/tex/luatex/luaotf
+load/fontloader-2020-08-31.lua".
 Lua-only attribute luaotfload@noligature = 1
 Lua-only attribute luaotfload@syllabe = 2
 luaotfload | init : Context OpenType loader version 0x1.8e353f7ced917p+1
@@ -39,8 +39,8 @@ Lua module: luaotfload-colors 2020-09-02 3.15 luaotfload submodule / color
 Lua-only attribute luaotfload_color_attribute = 3
 Lua module: luaotfload-resolvers 2020-09-02 3.15 luaotfload submodule / resolver
 s
-luaotfload | conf : Root cache directory is "/home/timt/.local/texlive/2020/texm
-f-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/home/cptflashpoint/.local/texlive/
+2020/texmf-var/luatex-cache/generic/names".
 Lua module: luaotfload-features 2020-09-02 3.15 luaotfload submodule / features
 Lua module: luaotfload-harf-define 2020-09-02 3.15 luaotfload submodule / HarfBu
 zz font loading
@@ -88,12 +88,12 @@ and deduce the truth by order and method.
 )
 
 Here is how much of LuaTeX's memory you used:
- 20 strings out of 479059
+ 20 strings out of 479058
  100000,383344 words of node,token memory allocated
  296 words of node memory still in use:
    1 hlist, 3 kern, 1 glyph, 1 attribute, 39 glue_spec, 1 attribute_list nodes
    avail lists: 2:10,3:3,4:1,5:1
- 19570 multiletter control sequences out of 65536+600000
+ 19571 multiletter control sequences out of 65536+600000
  24 fonts using 3127019 bytes
  13i,0n,15p,87b,15s stack positions out of 5000i,500n,10000p,200000b,200000s
 

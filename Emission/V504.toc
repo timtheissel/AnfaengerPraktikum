@@ -1,0 +1,10 @@
+\selectlanguage *{german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theoretische Grundlagen}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Austrittsarbeit und die Energieverteilung der Leitungselektronen}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Die Saettigungsstromdichte}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Die Hochvakuum-Diode}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Langmuir-Schottkysche Raumladungsgesetz}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Das Anlaufstromgebiet}{7}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Kennlinie einer Hochvakuumdiode}{8}{section.4}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
