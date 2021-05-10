@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  27 APR 2021 01:23
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.17)  8 MAY 2021 14:37
  restricted system commands enabled.
 **V601.tex
 (./V601.tex
@@ -749,12 +749,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
+(polyglossia)            righthyphenmin	2
+(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	
-(polyglossia)            patterns	hyph-de-1901.pat.txt on input line 10
+(polyglossia)            synonyms	 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -780,12 +780,12 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
+(polyglossia)            righthyphenmin	2
+(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	
-(polyglossia)            patterns	hyph-de-1996.pat.txt on input line 22
+(polyglossia)            synonyms	 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
 )
@@ -1007,13 +1007,13 @@ LaTeX Info: Redefining \ttfamily on input line 1.
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 .1'
 ]
-<Ideal_FranckHertz.png, id=72, 419.31656pt x 301.125pt>
+<Ideal_FranckHertz.png, id=74, 419.31656pt x 301.125pt>
 File: Ideal_FranckHertz.png Graphic file (type png)
 <use Ideal_FranckHertz.png>
 Package luatex.def Info: Ideal_FranckHertz.png  used on input line 24.
 (luatex.def)             Requested size: 198.10892pt x 142.26378pt.
  [4<./Ideal_FranckHertz.png>]
-<Potential_FranckHertz.png, id=84, 712.16063pt x 365.11406pt>
+<Potential_FranckHertz.png, id=86, 712.16063pt x 365.11406pt>
 File: Potential_FranckHertz.png Graphic file (type png)
 <use Potential_FranckHertz.png>
 Package luatex.def Info: Potential_FranckHertz.png  used on input line 39.
@@ -1043,83 +1043,88 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 .3'
-<Dampf_FranckHertz.png, id=95, 550.30594pt x 733.23938pt>
+<Dampf_FranckHertz.png, id=98, 550.30594pt x 733.23938pt>
 File: Dampf_FranckHertz.png Graphic file (type png)
 <use Dampf_FranckHertz.png>
 Package luatex.def Info: Dampf_FranckHertz.png  used on input line 68.
 (luatex.def)             Requested size: 256.25069pt x 341.43306pt.
 [6]
-<Schaltung_FranckHertz.png, id=107, 611.28375pt x 379.4175pt>
+<Schaltung_FranckHertz.png, id=110, 611.28375pt x 379.4175pt>
 File: Schaltung_FranckHertz.png Graphic file (type png)
 <use Schaltung_FranckHertz.png>
 Package luatex.def Info: Schaltung_FranckHertz.png  used on input line 85.
 (luatex.def)             Requested size: 366.72644pt x 227.62204pt.
  [7<./Dampf_FranckHertz.png>]) (./FrackHertzAusw.tex [8<./Schaltung_FranckHertz.
 png>]
-Underfull \hbox (badness 3780) in paragraph at lines 23--23
-[][]|\TU/lmr/m/n/10.95 mitlle-re freie Weg-län-ge und Ver-gleich mit dem Ab-sta
+Underfull \hbox (badness 3568) in paragraph at lines 12--12
+[][]|\TU/lmr/m/n/10.95 Mitlle-re freie Weg-län-ge und Ver-gleich mit dem Ab-sta
 nd Kathode-
  []
 
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 9--27
+Overfull \hbox (10.95pt too wide) in paragraph at lines 9--28
 []$[]$ 
  []
 
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 34--62
+Overfull \hbox (10.95pt too wide) in paragraph at lines 35--63
 []$[]$ 
  []
 
 [9]
-<8a1.png, id=129, 462.528pt x 346.896pt>
+<8a1.png, id=131, 462.528pt x 346.896pt>
 File: 8a1.png Graphic file (type png)
 <use 8a1.png>
-Package luatex.def Info: 8a1.png  used on input line 70.
+Package luatex.def Info: 8a1.png  used on input line 71.
 (luatex.def)             Requested size: 303.49796pt x 227.62204pt.
  [10]
-<8a2.png, id=136, 462.528pt x 346.896pt>
+<8a2.png, id=138, 462.528pt x 346.896pt>
 File: 8a2.png Graphic file (type png)
 <use 8a2.png>
-Package luatex.def Info: 8a2.png  used on input line 75.
+Package luatex.def Info: 8a2.png  used on input line 76.
 (luatex.def)             Requested size: 303.49796pt x 227.62204pt.
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 86--107
+Overfull \hbox (10.95pt too wide) in paragraph at lines 87--108
 []$[]$ 
  []
 
 [11<./8a1.png><./8a2.png>]
-Overfull \hbox (10.95pt too wide) in paragraph at lines 111--133
+Overfull \hbox (10.95pt too wide) in paragraph at lines 112--134
 []$[]$ 
  []
 
-[12] [13]
-Overfull \hbox (10.95pt too wide) in paragraph at lines 222--254
+
+Overfull \hbox (10.95pt too wide) in paragraph at lines 135--157
 []$[]$ 
  []
 
-<Energieverteilung.jpg, id=163, 614.295pt x 844.8363pt>
+[12] [13] [14]
+Overfull \hbox (10.95pt too wide) in paragraph at lines 249--281
+[]$[]$ 
+ []
+
+<Energieverteilung.jpg, id=170, 614.295pt x 844.8363pt>
 File: Energieverteilung.jpg Graphic file (type jpg)
 <use Energieverteilung.jpg>
-Package luatex.def Info: Energieverteilung.jpg  used on input line 259.
+Package luatex.def Info: Energieverteilung.jpg  used on input line 286.
 (luatex.def)             Requested size: 517.22281pt x 711.3189pt.
 
-Overfull \hbox (98.96725pt too wide) in paragraph at lines 259--260
+Overfull \hbox (98.96725pt too wide) in paragraph at lines 286--287
  [][] 
  []
 
-[14] [15]
+[15] [16]
 Overfull \vbox (115.51863pt too high) has occurred while \output is active []
 
 
-[16<./Energieverteilung.jpg>]
-<Energieverteilung2.jpg, id=177, 614.295pt x 844.8363pt>
+[17<./Energieverteilung.jpg>]
+<Energieverteilung2.jpg, id=184, 614.295pt x 844.8363pt>
 File: Energieverteilung2.jpg Graphic file (type jpg)
 <use Energieverteilung2.jpg>
-Package luatex.def Info: Energieverteilung2.jpg  used on input line 265.
+Package luatex.def Info: Energieverteilung2.jpg  used on input line 292.
 (luatex.def)             Requested size: 517.22281pt x 711.3189pt.
 
-Overfull \hbox (98.96725pt too wide) in paragraph at lines 265--266
+Overfull \hbox (98.96725pt too wide) in paragraph at lines 292--293
  [][] 
  []
 
@@ -1127,14 +1132,29 @@ Overfull \hbox (98.96725pt too wide) in paragraph at lines 265--266
 Overfull \vbox (115.51863pt too high) has occurred while \output is active []
 
 
-[17<./Energieverteilung2.jpg>]
-<Franck-Hertz Kurve.jpg, id=183, 614.295pt x 844.8363pt>
+[18<./Energieverteilung2.jpg>]
+<Franck-Hertz Kurve.jpg, id=190, 614.295pt x 844.8363pt>
 File: Franck-Hertz Kurve.jpg Graphic file (type jpg)
 <use Franck-Hertz Kurve.jpg>
-Package luatex.def Info: Franck-Hertz Kurve.jpg  used on input line 270.
+Package luatex.def Info: Franck-Hertz Kurve.jpg  used on input line 297.
 (luatex.def)             Requested size: 517.22281pt x 711.3189pt.
 
-Overfull \hbox (98.96725pt too wide) in paragraph at lines 270--271
+Overfull \hbox (98.96725pt too wide) in paragraph at lines 297--298
+ [][] 
+ []
+
+
+Overfull \vbox (115.51863pt too high) has occurred while \output is active []
+
+
+[19<./Franck-Hertz Kurve.jpg>]
+<Franckh2.jpeg, id=196, 614.295pt x 844.8363pt>
+File: Franckh2.jpeg Graphic file (type jpg)
+<use Franckh2.jpeg>
+Package luatex.def Info: Franckh2.jpeg  used on input line 302.
+(luatex.def)             Requested size: 517.22281pt x 711.3189pt.
+
+Overfull \hbox (98.96725pt too wide) in paragraph at lines 302--303
  [][] 
  []
 
@@ -1142,7 +1162,7 @@ Overfull \hbox (98.96725pt too wide) in paragraph at lines 270--271
 Overfull \vbox (115.51863pt too high) has occurred while \output is active []
 
 
-[18<./Franck-Hertz Kurve.jpg>]
+[20<./Franckh2.jpeg>]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1187,13 +1207,13 @@ Package rerunfilecheck Info: File `V601.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 22022 strings out of 479059
+ 22038 strings out of 479059
  100000,1144653 words of node,token memory allocated
  623 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 21 attribute, 66 glue_spec
 , 21 attribute_list, 1 write nodes
-   avail lists: 1:1,2:577,3:286,4:52,5:382,6:62,7:6556,8:49,9:420,10:25,11:649
- 40608 multiletter control sequences out of 65536+600000
+   avail lists: 1:1,2:593,3:298,4:52,5:386,6:65,7:6732,8:47,9:442,10:25,11:638
+ 40615 multiletter control sequences out of 65536+600000
  71 fonts using 7613587 bytes
  106i,14n,113p,10620b,774s stack positions out of 5000i,500n,10000p,200000b,200000s
 </home/timt/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-reg
@@ -1210,10 +1230,10 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/timt/.local/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/timt/.loca
 l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/timt/.
 local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on V601.pdf (18 pages, 3398205 bytes).
+Output written on V601.pdf (20 pages, 4397473 bytes).
 
-PDF statistics: 309 PDF objects out of 1000 (max. 8388607)
- 250 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 131072)
- 161 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 326 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 131072)
+ 169 words of extra memory for PDF output out of 10000 (max. 100000000)
 

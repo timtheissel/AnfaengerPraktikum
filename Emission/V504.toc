@@ -7,4 +7,13 @@
 \contentsline {subsection}{\numberline {3.1}Langmuir-Schottkysche Raumladungsgesetz}{6}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Das Anlaufstromgebiet}{7}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Kennlinie einer Hochvakuumdiode}{8}{section.4}%
+\contentsline {section}{\numberline {5}Auswertung}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Sättigungsstrom}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Exponent des Langmuir-Schottkyschen Raumladungsgesetzes}{9}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Anlaufstromgebiet und Kathodentemperatur}{10}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Kathodentemperaturen aus Heizleistung}{11}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Austrittsarbeit}{11}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Diskussion}{12}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Langmuir-Schottkysches Gesetz}{12}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Kathodentemperaturen}{12}{subsection.6.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
