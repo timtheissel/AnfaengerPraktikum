@@ -1,0 +1,130 @@
+\section{Auswertung}
+
+\subsection{Sättigungsstrom}
+
+Um den Sättigungsstrom zu bestimmen wird die Kennlinie der Hochvakuumdiode betrachtet. Es wird also der Anodenstrom gegen die angelegte Spannung geplottet. Dafür wurden bei verschiedenen Heizspannungen Wertepaare, bestehend aus einem Wert für den Anodenstrom und einem für die angelegte Spannung, genommen. Das Sättigungsstromgebiet ist dann das Gebiet, in dem die Steigung der Kennlinie kleiner wird. Die Kennlinie verläuft dann irgendwann asymptotisch zum Sättigungsstrom.
+
+\noindent Die Sättigungsströme sind nachfolgend in einer Tabelle dargestellt. Sie können aus den Graphen für die Kennlinien abgelesen werden.
+
+\begin{minipage}{\linewidth}
+    \begin{table}[H]
+        \centering
+    
+    \begin{tabular}{lllll}
+        \toprule
+        Heizstrom [A] & Sättigungsstrom [mA]\\
+        \midrule
+        2 & 0.11 \\
+        2.1 & 0.3 \\
+        2.2 & 0.63 \\
+        2.3 & 1.3 \\
+        2.5 & x \\
+        \bottomrule   
+    \end{tabular}
+    \captionof{table}{Sättigungsströme bei verschiedenen Heizströmen}
+    \label{tab:1}
+\end{table}
+\end{minipage}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=8cm]{"Kennlinie1.png"}
+\end{figure}
+
+\subsection{Exponent des Langmuir-Schottkyschen Raumladungsgesetzes}
+
+Zur Bestimmung des Exponenten wird die Kennlinie bei maximaler Heizleistung betrachtet. Diese Kennlinie bildet das gesamte Raumladungsgebiet ab ohne am ende bis in das Sättigungsgebiet vorzudringen. Deshalb kann zur Berstimmung des Exponenten einfach ein fit mit der Formel des Langmuir-Schottkyschen Raumladungsgesetzes (LS-Gesetz) verwendet werden. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=8cm]{"LS.png"}
+\end{figure}
+
+\noindent Diese Ausgleichsrechnung liefert als Exponenten für das LS-Gesetz a = 1.437$\pm$0.098.
+
+\subsection{Anlaufstromgebiet und Kathodentemperatur}
+
+Für das Anlaufstromgebiet wurde die angelegte Spannung umgepolt. Dann wird die angelegte Spannung langsam erhöht und der Strom wird gemessen. Wenn diese Werte in einem Diagramm aufgetragen werden kann durch eine Ausgleichsrechnung mit:
+\begin{displaymath}
+    j(V)= a*exp \left(-\frac{e_0 V}{kT} \right)
+\end{displaymath}
+\noindent die Kathodentemperatur bestimmt werden. Es entsteht folgender Graph.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=8cm]{"Anlauf.png"}
+\end{figure}
+
+\noindent Die Ausgleichsrechnung liefert eine Temperatur von 1900.685$\pm$85.927 K.
+
+\subsection{Kathodentemperaturen aus Heizleistung}
+
+Die Formel für die Temperatur abhängig von der Heizleistung lautet:
+\begin{displaymath}
+    T = \sqrt[4]{\frac{I_f U_f-N_{WL}}{f \eta \sigma}}
+\end{displaymath}
+
+\noindent Dabei ist N\textsubscript{WL} eine Schätzung für die Wärmeleitung und hat den Wert (0.95$\pm$0.05)W, $\sigma$ = 5.7$\cdot 10^{-12} \frac{W}{cm^2K^4}$ ist die Stefan-Boltzmannsche Strahlungskonstante, $\eta$ = 0.28 ist der Emissionsgrad der Oberfläche und f = 0.35cm$^2$ ist die Kathodenoberfläche. Eine Rechnung ergibt folgende Werte für die Kathodentemperaturen:
+
+\begin{minipage}{\linewidth}
+    \begin{table}[H]
+        \centering
+    
+    \begin{tabular}{lllll}
+        \toprule
+        Heizstrom [A] & Kathodentemperatur [K]\\
+        \midrule
+        2      & 1884.82$\pm$3.34 \\
+        2.1    & 1937.40$\pm$3.08 \\
+        2.2    & 2000.69$\pm$2.79 \\
+        2.3    & 2061.57$\pm$2.55 \\
+        2.5    & 2187.90$\pm$2.14 \\
+        \bottomrule   
+    \end{tabular}
+    \captionof{table}{Kathodentemperaturen}
+    \label{tab:2}
+\end{table}
+\end{minipage}
+
+\subsection{Austrittsarbeit}
+
+Die Austrittsarbeit lässt sich mit der Richardson-Gleichung berechnen, indem diese wie folgt umgestellt wird.
+
+\begin{displaymath}
+    W = \frac{-kT}{e_0} \ln\left(\frac{h^3I}{4\pi e_0m_0k^2T^2}\right) 
+\end{displaymath}
+
+Die Ergebnisse lauten:
+
+\begin{minipage}{\linewidth}
+    \begin{table}[H]
+        \centering
+    
+    \begin{tabular}{lllll}
+        \toprule
+        Kathodentemperatur [K] & \\
+        \midrule
+        1884.82$\pm$3.34 & 4.61$\pm$0.009 \\
+        1937.40$\pm$3.08 & 4.74$\pm$0.008 \\
+        2000.69$\pm$2.79 & 4.90$\pm$0.007 \\
+        2061.57$\pm$2.55 & 5.05$\pm$0.007 \\
+        2187.90$\pm$2.14 & 5.36$\pm$0.006 \\
+        \bottomrule   
+    \end{tabular}
+    \captionof{table}{Austrittsarbeit}
+    \label{tab:3}
+\end{table}
+\end{minipage}
+
+\section{Diskussion}
+
+Bei diesem Versuch gab es ein paar Schwierigkeiten. Eine davon war beispielsweise ein Nanovoltmeter, welches so empfindlich war, dass kleinste Bewegungen oder Vibrationen in der Nähe einen Ausschlag verursachten. 
+
+\subsection{Langmuir-Schottkysches Gesetz}
+
+\noindent Ab ungefähr 160V ist ein Wendepunkt in dem Graphen zu erkennen, deshalb ist der Bereich für die Gültigkeit des LS-Gesetzes dort begrenzt. Die Ausgleichsrechnugn liefert einen Wert der mit 1.437 sehr nah an den tatsächlichen 1.5 liegt. Die Abweichung lässt sich erklären durch gängige Messungenauigkeiten und einen zusätlichen Fehler, der durch graphisches Ablesen entsteht. Unter dieser Betrachtung liegt der berechnete Wert im akzeptablen Bereich.
+
+\subsection{Kathodentemperaturen}
+
+\noindent Die Kathodentemperaturen liegen alle insofern in realistischen Bereichen, dass sie den Schmelzpunkt von Wolfram nicht übersteigen. Allerdings ist zwischen Methoden der Berechnung der Kathodentemperaturen ein Unterschied zu erkennen. Bei der Kathodentemperatur bei maximaler Heizleistung ist ein Unterschied von fast 200K zu erkennen. Auch die entstehende Unsicherheit ist bei der ersten Methode geringer.
+
