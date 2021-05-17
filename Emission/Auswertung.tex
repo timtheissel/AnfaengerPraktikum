@@ -4,7 +4,7 @@
 
 Um den Sättigungsstrom zu bestimmen wird die Kennlinie der Hochvakuumdiode betrachtet. Es wird also der Anodenstrom gegen die angelegte Spannung geplottet. Dafür wurden bei verschiedenen Heizspannungen Wertepaare, bestehend aus einem Wert für den Anodenstrom und einem für die angelegte Spannung, genommen. Das Sättigungsstromgebiet ist dann das Gebiet, in dem die Steigung der Kennlinie kleiner wird. Die Kennlinie verläuft dann irgendwann asymptotisch zum Sättigungsstrom.
 
-\noindent Die Sättigungsströme sind nachfolgend in einer Tabelle dargestellt. Sie können aus den Graphen für die Kennlinien abgelesen werden.
+\noindent Die Sättigungsströme sind nachfolgend in einer Tabelle dargestellt. Sie können aus den Graphen für die Kennlinien abgeschätzt werden.
 
 \begin{minipage}{\linewidth}
     \begin{table}[H]
@@ -18,7 +18,7 @@ Um den Sättigungsstrom zu bestimmen wird die Kennlinie der Hochvakuumdiode betr
         2.1 & 0.3 \\
         2.2 & 0.63 \\
         2.3 & 1.3 \\
-        2.5 & x \\
+        2.5 & 3.2 \\
         \bottomrule   
     \end{tabular}
     \captionof{table}{Sättigungsströme bei verschiedenen Heizströmen}
@@ -33,7 +33,11 @@ Um den Sättigungsstrom zu bestimmen wird die Kennlinie der Hochvakuumdiode betr
 
 \subsection{Exponent des Langmuir-Schottkyschen Raumladungsgesetzes}
 
-Zur Bestimmung des Exponenten wird die Kennlinie bei maximaler Heizleistung betrachtet. Diese Kennlinie bildet das gesamte Raumladungsgebiet ab ohne am ende bis in das Sättigungsgebiet vorzudringen. Deshalb kann zur Berstimmung des Exponenten einfach ein fit mit der Formel des Langmuir-Schottkyschen Raumladungsgesetzes (LS-Gesetz) verwendet werden. 
+Zur Bestimmung des Exponenten wird die Kennlinie bei maximaler Heizleistung betrachtet. Diese Kennlinie bildet das gesamte Raumladungsgebiet ab ohne am ende bis in das Sättigungsgebiet vorzudringen. Deshalb kann zur Berstimmung des Exponenten einfach ein fit mit der Formel des Langmuir-Schottkyschen Raumladungsgesetzes \ref{11}(LS-Gesetz) verwendet werden. Dabei werden der Einachheit halber alle konstanten Faktoren zu einem (b) zusammengefasst. Es ensteht folgende Gleichung für den fit:
+
+\begin{displaymath}
+    y = b * V^a
+\end{displaymath}
 
 \begin{figure}[H]
     \centering
@@ -48,7 +52,7 @@ Für das Anlaufstromgebiet wurde die angelegte Spannung umgepolt. Dann wird die 
 \begin{displaymath}
     j(V)= a*exp \left(-\frac{e_0 V}{kT} \right)
 \end{displaymath}
-\noindent die Kathodentemperatur bestimmt werden. Es entsteht folgender Graph.
+\noindent die Kathodentemperatur bestimmt werden. Dabei ist $e_0$ die Elementarladung, k die Boltzmann-Konstante, V die spannung und T der zu bestimmende Parameter, die Kathodentemperatur. Es entsteht folgender Graph.
 
 \begin{figure}[H]
     \centering
@@ -102,13 +106,15 @@ Die Ergebnisse lauten:
     
     \begin{tabular}{lllll}
         \toprule
-        Kathodentemperatur [K] & \\
+        Kathodentemperatur [K] & Austrittsarbeit [eV]\\
         \midrule
         1884.82$\pm$3.34 & 4.61$\pm$0.009 \\
         1937.40$\pm$3.08 & 4.74$\pm$0.008 \\
         2000.69$\pm$2.79 & 4.90$\pm$0.007 \\
         2061.57$\pm$2.55 & 5.05$\pm$0.007 \\
         2187.90$\pm$2.14 & 5.36$\pm$0.006 \\
+        \midrule
+        Mittelwert & 4.932$\pm$0.007\\
         \bottomrule   
     \end{tabular}
     \captionof{table}{Austrittsarbeit}
@@ -122,9 +128,12 @@ Bei diesem Versuch gab es ein paar Schwierigkeiten. Eine davon war beispielsweis
 
 \subsection{Langmuir-Schottkysches Gesetz}
 
-\noindent Ab ungefähr 160V ist ein Wendepunkt in dem Graphen zu erkennen, deshalb ist der Bereich für die Gültigkeit des LS-Gesetzes dort begrenzt. Die Ausgleichsrechnugn liefert einen Wert der mit 1.437 sehr nah an den tatsächlichen 1.5 liegt. Die Abweichung lässt sich erklären durch gängige Messungenauigkeiten und einen zusätlichen Fehler, der durch graphisches Ablesen entsteht. Unter dieser Betrachtung liegt der berechnete Wert im akzeptablen Bereich.
+\noindent Ab ungefähr 160V ist ein Wendepunkt in dem Graphen zu erkennen, deshalb ist der Bereich für die Gültigkeit des LS-Gesetzes dort begrenzt. Die Ausgleichsrechnugn liefert einen Wert der mit 1.437 sehr nah an den tatsächlichen 1.5 liegt. Die Abweichung lässt sich erklären durch gängige Messungenauigkeiten und einen zusätlichen Fehler, der durch graphisches Ablesen entsteht. Unter dieser Betrachtung liegt der berechnete Wert im akzeptablen Bereich. Der Fehler liegt hier nämlich gerade mal bei 4.2\%.
 
 \subsection{Kathodentemperaturen}
 
-\noindent Die Kathodentemperaturen liegen alle insofern in realistischen Bereichen, dass sie den Schmelzpunkt von Wolfram nicht übersteigen. Allerdings ist zwischen Methoden der Berechnung der Kathodentemperaturen ein Unterschied zu erkennen. Bei der Kathodentemperatur bei maximaler Heizleistung ist ein Unterschied von fast 200K zu erkennen. Auch die entstehende Unsicherheit ist bei der ersten Methode geringer.
+\noindent Die Kathodentemperaturen liegen alle insofern in realistischen Bereichen, dass sie den Schmelzpunkt von Wolfram nicht übersteigen. Allerdings ist zwischen Methoden der Berechnung der Kathodentemperaturen ein Unterschied zu erkennen. Bei der Kathodentemperatur bei maximaler Heizleistung ist ein Unterschied von fast 200K zu erkennen. Auch die entstehende Unsicherheit ist bei der ersten Methode geringer. Dies liegt vermutlich daran, dass bei der ersten Methode der Bestimmung der Kathodentemperatur diese über einen rechnerischen Ansatz bestimmt wurden. Es gibt zwar Ungenauigkeiten bei den benötigten Messwerten allerdings sind Rechnungen bis auf die Fortpflanzung des Fehlers exakt. Bei der zweiten Methode ist die Kathodentemperatur auch noch abhängig von einer Schätzung und dann wird durch weitere Rechnung noch ein Messfehler durchgezogen. Dies könnte die hohe Abweichung erklären.
 
+\subsection{Austrittsarbeit}
+
+Die Austrittsarbeit von Wolfram beträgt ungefähr 4.5eV. Der berechnete Wert liegt bei 4.932$\pm$0.007 eV. Damit ergibt sich eine Abweichung von 9.6\%. Das ist eine Abweichung die durch die bereits beschriebene Abweichung der Kathodentemperatur zu erklären ist. Der bereits entstandene Fehler pflanzt sich hier weiter fort. Unter diesen Umständen sind knapp 10\% Abweichung ein Wert, der gut erklärbar und damit nicht außergewöhnlich ist. 
