@@ -40,3 +40,5 @@ print(E)
 
 F = E/-e
 print(F)
+
+print(np.mean(F))

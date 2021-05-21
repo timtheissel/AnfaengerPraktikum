@@ -1,0 +1,55 @@
+\section{Zielsetzung}
+In diesem Versuch soll der Compton-Effekt genauer beleuchtet und untersucht werden. Ausserdem wird die Compton-Wellenlaenge $\lambda_C$ bestimmt.
+\section{Theoretische Grundlagen}
+\subsection{Der Compton-Effekt}
+Bei Wechselwirkung eines $\gamma$-Quants mit einem Elektron wird die Wellenlaenge des Quants in Richtung von laengeren Wellenlaengen verschoben. Dieser Umstand nennt sich Compton-Effekt. Bei einem inelastischen Stoss zwischen einem $\gamma$-Quant und einem Elektron wird das Photon dem Compton-Effekt folgend gestreut. Dabei gibt es einen Teil der eigenen Energie an das getroffene Elektron ab. Der Streuungswinkel nennt sich $\theta$. Die Wellenlaengenlaengung des Photons ruehrt daher, dass es Energie abgegeben hat, aber nicht langsamer werden kann, da es immer Lichtgeschwindigkeit hat. Somit muss nach $E=h\cdot\frac{c}{\lambda}$ die Wellenlaenge $\lambda$ groesser werden.\\
+Der Energie- und Impulserhaltung folgend laesst sich eine Wellenlaengendifferenz $\Delta\lambda$ zwischen der einfallenden Welle $\lambda_1$ und der Compton-gestreuten Welle $\lambda_2$ berechnen:
+\begin{equation}
+    \Delta\lambda=\frac{h}{m_ec}(1-cos\theta)
+\end{equation}
+\theta wird dabei ist dabei der Winkel zwischen der urspruenglichen Flugrichtung des Photons und der Ausbreitungsrichtung des gestreuten Photons. Die in diser Formel enthaltene Konstante $\lambda_C=\frac{h}{m_ec}$ nennt sich Compton-Wellenlaenge. Die Wellenlaengenverschiebung reicht von $\Delta\lambda=0$ fuer $\theta=0$ bis $\Delta\lambda=2\lambda_C$ fuer einen Streuwinkel $\theta=180^{\circ}$.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Schema_Compton.png"}
+    \captionbelow{Schematische Darstellung des Compton-Effekt\\ Aus: Anleitung V603 Seite 1}
+    \label{Fig:Schema}
+\end{figure}
+\newpage \subsection{Erzeugung von Roentgenstrahlen}
+Zur Erzeugung von Roentgenstrahlen werden Elektronen mittels des gluehelektrischen Effekts aus einem Draht freigesetzt und mit einer Beschleunigungsspannung beschleunigt und auf eine Anode geschossen. Beim Eintritt in die Anode entsteht Roentgenstrahlung, welche sich aus den charakteristischen Peaks der Roentgenstrahlung und dem kontinuierlichen Spektrum der Bremsstrahlung zusammensetzt.\\
+Das Bremsspektrum entsteht, wie der Name vermuten laesst, beim Abbremsen der Elektronen in der Anode, da beschleunigte Ladungen strahlen, wozu auch das Abbremsen gehoert. Diese ausgesendeten Roentgenquanten haben genau die Energie des Energieverlusts des Elektrons. Es handelt sich um ein kontinuierliches Spektrum, da die Energie beim Eintritt in die Anode teilweise oder auch komplett abgegeben werden kann und so die Energie der Roentgenquanten nicht diskret ist.\\
+Die Existenz der charakteristischen Peaks im Spektrum einer Roentgenroehre folgt aus dem Umstand, dass die Elektronen das Anodenmaterial ionisieren und die Elektronen der Anode auf ein hoeheres Energieniveau heben koennen. Beim Herabfallen von diesem erhoehten Energieniveau in den Grundzustand wird die Energiedifferenz zwischen den beiden Niveaus als Roentgenquant wieder frei. Es bilden sich diskrete Peaks, da die Energieniveaus ebenfalls diskret sind. Diese Linien sind charakteristisch fuer das verwendete Anodenmaterial.
+\subsection{Bestimmung der Compton-Wellenlaenge}
+Die Eigenschaften der Transmission und Absorption in Aluminium wird sich hier zu Nutze gemacht zur Bestimmung der Compton-Wellenlaenge. Die Transmission einer Welle durch ein Material ist von der Wellenlaenge eben jener Welle abhaengig. Je laenger die Wellenlaenge, desto schlechter transmittiert die Welle durch ein Material. Die Compton-gestreute Welle transmitiert also schlechter durch das Aluminium als die Roentgenstrahlen aus der Roentgenroehre. Ein Material der Dicke d absorbiert dabei die einfallende Intensitaet $I_0$ folgendermassen:
+\begin{equation}
+    I=I_0e^{-\mu d}
+\end{equation}
+Dieses Gesetz heisst Delamber'sches Gesetz und enthaelt des Absorptionskoeffizienten $\mu$. Dieser setzt sich aus den Koeffizienten fuer die Paarbildung $\mu_{Paar}$, den Photoeffekt $\mu_{Photo}$ und den Comptoneffekt $\mu_{Compton}$ zusammen, also:
+\begin{equation}
+    \mu=\mu_{Paar}+\mu_{Photo}+\mu_{Compton}
+\end{equation}
+\newpage \section{Aufbau des Experiments}
+Der Aufbau des Experiments beinhaltet eine Kupfer-Roentgenroehre, einen LiF-Kristall bzw. Plexiglasstreukoerper und ein Geiger-Mueller-Zaehlrohr (GMZ). Es empfiehlt sich die Bestimmung des Emissionsspektrums und die Transmission am Rechner aufzunehmen, wohingegen die Bestimmung der Compton-Wellenlaenge von Hand zu empfehlen ist.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=8cm]{"Aufbau_Compton.png"}
+    \captionbelow{Versuchsapparatur des Compton-Effekts\\ Aus: Anleitung V603 Seite 3}
+    \label{Fig:Aufbau}
+\end{figure}
+\noindent Wird das Experiment ueber den PC gesteuert, so ist das Programm measure zu benutzen, in welchem unter dem Menuepunkt Messgeraete die Roentgenroehre anzuwaehlen ist. Nun kann also die Messart, der Drehmodus, der anzufahrende
+Kristallwinkel sowie die Integrationszeit gewaehlt werden und die Messung starten. Bei
+manuellem Betrieb muss das Geraet auf Manuell umgestellt werden. Die manuellen Einstellungen erfolgen ueber den Einstellknopf
+9 und muessen durch Druecken der ENTER-Taste bestaetigt werden. Die Zaehlrate leuchtet in der oberen Anzeigenleiste des Roentgengeraetes auf und kann dort auch abgelesen werden.
+\newpage \section{Durchfuehrung}
+Bei allen Messungen ist die Beschleunigungsspannung der Roentgenroehre auf 35kV bei einem Emissionsstrom von 1mA einzustellen.
+\subsection{Aufnahme des Emissionsspektrums}
+Fuer diese Messung wird der LiF-Kristall in der Halterung befestigt und eine 2mm-Blende vor der Roentgenroehre angebracht. Nun wird das Roentgenspektrum in $0.2^{\circ}$-Schritten gemessen. Die Messzeit sollte dabei etwa zwischen 5s und 10s betragen.
+\subsection{Messung der Transmission}
+Nun soll die Transmission des Al-Absorbers bestimmt werden. Dazu wird der Absorber vor die Blende gesetzt und die Zaehlrate $N_{Al}(\theta)$ mit dem Absorber gemessen. Nun wird die Zaehlrate $N_0(\theta)$ erneut gemessen, aber ohne den Absorber. Beide Messungen sollen mit einer Messzeit von $t=100s$ durchgefuehrt werden. Desweiteren soll diese gemessene Zaehlrate in einem Bereich von $7^{\circ}$ bis $10^{\circ}$ korregiert werden. Die Totzeit $\tau$ des Geiger-Zaehlers betraegt $\tau=90\mu s$. Die Intensitaet betraegt dann:
+\begin{equation}\label{tot}
+    I=\frac{N}{1-(\tau\cdot N)}
+\end{equation}
+Daraus folgt die Transmission mit $T=\frac{I_{Al}}{I_0}$.
+Die Intensitaet der Roentgenroehre $I_0$ wird mit einer 2mm und dem Plexiglasstreuer statt dem LiF-Kristall ermittelt. Dazu wird manuell der Streuer auf $45^{\circ}$ und der Geiger-Zaehler auf $90^{\circ}$ eingestellt.
+Nun wird die Transmission $T_1=\frac{I_1}{I_0}$ der nicht gestreuten Strahlung gemessen, in dem der Absorber zwischen Streukoerper und Roentgenroehre platziert wird. Ausserdem wird die Transmission $T_2=\frac{I_2}{I_0}$ gemessen, wobei der Absorber nun zwischen Streukoerper und Geiger-Mueller-Zaehlrohr platziert wird. Die Messzeit betrage dabei $t=300s$.

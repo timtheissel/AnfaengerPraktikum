@@ -1,0 +1,43 @@
+\documentclass[titlepage=firstcover, captions=tableheading]{scrartcl}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{polyglossia}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[version=4]{mhchem}
+\setdefaultlanguage{german}
+\title{V703 Das Geiger-Mueller-Zaehlrohr}
+\author{
+Connor Magnus Böckmann \\ email: \href{mailto:connormagnus.boeckmann@tu-dortmund.de}{connormagnus.boeckmann@tu-dortmund.de}
+\and Tim Theissel \\ email: \href{mailto:tim.theissel@tu-dortmund.de}{tim.theissel@tu-dortmund.de}}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{Zielsetzung}
+Der folgende Versuch dient der experimentellen Bestimmung der Halbwertszeiten und Zerfallskurven von verschiedenen radioaktiven Isotopen und Isotopengemische mit Hilfe von Neutronenstrahlung.
+\section{Theoretische Grundlagen}
+Die Stabilitaet, des aus Protonen und Neutronen bestehenden Kerns eines Atoms, haengt von dem Verhaeltnis zwischen Neutronen und Protonen ab. Sollte bei einem Kern das Verhaeltnis ausserhalb des Stabilitaetsbereichs liegen, wandelt sich der Kern mit einer bestimmten Wahrscheinlichkeit in einen stabilen oder in einen instabilen Kern um. Dieser instabile Kern zerfaellt dann weiter. Die Zerfallswahrscheinlichkeit wird durch die Halbwertszeit T ausgedrueckt. Diese Halbwertszeit ist der Zeitraum, in dem von einer grossen Anzahl an Kernen gerade die Haelfte zerfallen ist. Dieses Zeitintervall kann dabei sehr unterschiedliche Laengen annehmen. Die Variation erstreckt sich dabei ueber 23 Zehnerpotenzen. Kernphysikalisch ist T eine bedeutsame Groesse, weshalb es entscheidend ist, diese zu bestimmen. Dafuer gibt es verschiedene Methoden.\\
+Die im Folgenden benutzte Methode ermoeglicht eine Bestimmung im Bereich von Sekunden bis Stunden. Um eine akkurate Messung zu ermoeglichen, muessen die Nuklide direkt vor der Messung hergestellt werden, um die Messung nicht zu verfaelschen. Eine einfache und verlaessliche Methode dafuer stellt der Beschuss von stabilen Kernen mit Neutronen dar. Vorteil dieser Methode ist die fehlende elektrische Ladung der Neutronen, weshalb sie nicht die Coulomb-Barriere ueberwinden muessen. \\
+Auf die Wechselwirkung von Neutronen mit Kernen, die Erzeugung freier Neutronen, sowie das Messverfahren zur Bestimmung der Halbwertszeit samt geeignetem Messaufbau soll in den folgenden Abschnitten tiefer eingegangen werden.
+\subsection{Kernreaktionen mit Neutronen}
+Als Kernreaktionen werden alle Wechselwirkungen von Teilchen mit Atomkernen bezeichnet. Speziell die Reaktion von Neutronen mit dem Kern sind hier von Interesse fuer den Versuch. Absorbiert der Ursprungskern A ein Neutron bildet sich ein so genannter Compoundkern A*. Energetisch liegt dieser um die kinetische Energie und die Bindungsenergie des Neutron hoeher als A. Dabei wird die hinzugekommene Energie gleichmaessig auf die Nukleonen verteilt. Dies ruehrt von den starken Wechselwirkungen des neuen Neutron mit dem Kern her. Die Nukleonen werden dadurch in hoehere Energiezustaende versetzt. Es wird von einer so genannten Aufheizung von A* gesprochen. Haeufig ist der Kern dabei nicht in der Lage ein Nukleonen abzustossen, wenn die kinetische Energie des eintreffenden Neutronen nur gering war. Es laeuft eine Reaktion ab, bei der der Kern nach etwa $10^{-16}s$ unter Emission eines \gamma-Quants zurueck in den Grundzustand faellt. Die Reaktion laeuft dabei folgendermassen ab:
+\begin{equation}
+    \ce{^{m}_{z}A} + \ce{^{1}_{0}n} \rightarrow \ce{^{m+1}_{z}A^{*}} \rightarrow \ce{^{m+1}_{z}A}+\gamma \nonumber
+\end{equation}
+Die Massenzahl wird dabei durch m ausgedrueckt. Der nun entstandene Kern \ce{^{m+1}_{z}A^{*} ist meistens nicht stabil, da dieser nun mehr Neutronen als ein normaler, stabiler Kern enthaelt. Dieser ist verhaeltnismaessig langlebig im Vergleich mit dem Zwischenkern, auf Grund des Energieverlustes ueber den \gamma-Quant. Der Kern wird nun in einen stabilen Kern umgewandelt. Die Emission eines Elektronen, welche dafuer benoetigt wird, erfolgt folgendermassen:
+\begin{equation}
+    \ce{^{m+1}_{z}A} \rightarrow \ce{^{m+1}_{z+1}C}}+\beta^{-}+E_{kin}+\bar{v_e} \nonumber
+\end{equation}
+\bar{v_e} stellt dabei ein Antineutrino dar. Die Summe der einzelnen Massen der Teilchen ist dabei geringfuegig kleiner, als die Masse des Kerns $\ce{^{m+1}_z}A}$. Der so genannte Massendefekt wird entsprechend der Einsteinschen Beziehung $\Delta E= \Delta mc^{2}$ in kinetische Energie und Antineutrino mgewandelt.\\
+Entscheidend fuer die Wahrscheinlichkeit des Einfangens eines Neutrons ist der Wirkungsquerschnitt \sigma. Es ist die Flaeche, welche der Kern haben muesste, damit jedes auftreffende Neutron eingefangen wuerde. Wenn ein ein $1cm^2$-Stueck Folie mit der Dicke d und K Atomen pro $cm^3$ von n Neutronen pro Sekunde getroffen wird, wobei u Einfaenge geschehen, wird \sigma gegeben durch
+\begin{equation}
+    \sigma =\frac{u}{nKd} \nonumber
+\end{equation}
+gegeben. Der Wirkungsquerschnitt hat die Einheit $10^{-24}cm^2=:1 barn$.
+\end{document}
