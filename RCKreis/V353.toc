@@ -1,0 +1,13 @@
+\selectlanguage *{german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theoretische Grundlagen}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Die Relaxationsgleichung}{3}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Entladevorgang}{3}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Aufladevorgang}{4}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Relaxation bei Anregung mit einer periodischen Auslenkung}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}RC-Kreis als Integrator}{6}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Durchfuehrung}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Ermittlung der Zeitkonstante}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Kondensatorspannung in Abhaengigkeit von der Frequenz}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Bestimmung der Phasenverschiebung}{7}{subsection.3.3}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

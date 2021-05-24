@@ -1,1 +1,116 @@
 \section{Zielsetzung}
+In diesem Versuch wird das Relaxationsverhalten eines RC-Kreises untersucht. Es soll eine Relaxationsgleich hergeleitet und untersucht werden. Ausserdem wird die Funktion eines RC-Kreises als Integrator betrachtet.
+\section{Theoretische Grundlagen}
+\subsection{Die Relaxationsgleichung}
+Relaxation bezeichnet das Zurueckkehren von einem angeregten Zustand in den Ausgangszustand unter nicht-oszillatorischen Umstaenden. Die Aenderung der Groesse A ist dabei in den meisten Faellen im Punkt t abhaengig von einer Abweichung von A zum Grundzustand A($\infty$). Dieser ist haeufig nur asymptotisch erreichbar.
+\begin{equation}
+    \frac{dA}{dt}=c[A(t)-A(\infty)]
+\end{equation}
+Aufloesen durch Integration dieser Gleichung liefert somit schliesslich:
+\begin{equation}
+    A(t)=A(\infty)+[A(0)-A(\infty)]e^{ct}
+\end{equation}
+Die hier betrachtete Relaxation ist gegeben durch den Auf- bzw. Entladevorgang eines Kondensator C ueber einen Widerstandes R.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Schema_RCKreis.png"}
+    \captionbelow{Schematische Darstellung des Aufbaus eines RC-Kreises\\ Aus: Anleitung V353 Seite 276}
+    \label{Fig:Schema}
+\end{figure}
+\subsubsection{Entladevorgang}
+Mit einem Kondensator der Kapazitaet C und der sich darauf befindlichen Ladung Q, liegt zwischen den Platten die Spannung $U_C=\frac{Q}{C}$. Das ohmsche Gesetz liefert fuer diese Spannung den Strom $I=\frac{U_C}{R}$ am Widerstand R. Dieser sorgt fuer einen Ladungsausgleich. Die Ladung aendert sich dabei mit $Idt$ im Zeitintervall $dt$. 
+\begin{equation}
+    dQ=-Idt
+\end{equation}
+Es ergibt sich die Differentialgleichung fuer den zeitlichen Verlauf der Ladung:
+\begin{equation}
+    \frac{dQ}{dt}=-\frac{1}{RC}Q(t)
+\end{equation}
+Mit der Randbedingung, dass $Q(\infty)=0$ ist, ergibt sich fuer die Loesung 
+\begin{equation}
+    Q(t)=Q(0)e^{-\frac{t}{RC}}
+\end{equation}
+\subsubsection{Aufladevorgang}
+Auch der Aufladevorgang laesst sich dementsprechend beschreiben. Unterschiedlich sind dabei jedoch die Randbedingungen $Q(0)=0$ und $Q(\infty)=CU_0$. Hierbei ist $U_0$ die angelegte Ladespannung. 
+Der Aufladevorgang wird also durch die Gleichung 
+\begin{equation}
+    Q(t)=CU_0(1-e^{-\frac{t}{RC}})
+\end{equation}
+beschreiben.\\
+RC wird dabei Zeitkonstante genannt und ist ein Mass fuer die Geschwindigkeit der Relaxation des RC-Kreises. Waehrend des Zeitraums $\Delta T=RC$ veraendert sich die Ladung um den Faktor $\frac{Q(t=RC)}{Q(0)}=\frac{1}{e}\approx 0.368$.
+\subsection{Relaxation bei Anregung mit einer periodischen Auslenkung}
+Analog zur Mechanik laesst sich auch die Relaxation nach periodischer Auslenkung beschreiben. Wenn die Kreisfrequenz $\omega$ der Spannung U(t) mit $U(t)=U_0cos(\omega t)$ gering genug ist, also $\omega <<\frac{1}{RC}$, ist die Spannung $U_C(t)$ am Kondensator gleich $U(t)$. Bei Erhoehung der Frequenz der Anregungsspannung haengt das Auf- und Entladen jedoch immer weiter hinter der Anregung hinterher. Es stellt sich eine Phasenverschiebung $\phi$ zwischen den beiden Spannungen ein. Ausserdem wird die Amplitude A der Kondensatorspannung verringert. 
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Wechsel_RCKreis.png"}
+    \captionbelow{Schaltungsbeispiel mit periodischer Auslenkung\\ Aus: Anleitung V353 Seite 276}
+    \label{Fig:Wechsel}
+\end{figure}
+Es wird der Ansatz 
+\begin{equation}
+    U_C(t)=A(\omega)cos(\omega t+\phi(\omega))
+\end{equation}
+verwendet. Das zweite Kirchhoff'sche Gesetz liefert fuer den Stromkreis $U(t)=U_R(t)+U_C(t)$ bzw. $U_0cos(\omega t)=I(t)R+A(\omega)cos(\omega t+\phi)$ in ausfuehrlicherer Schreibweise. Mit $I(t)=\frac{dQ}{dt}=C\frac{dU_C}{dt}$ folgt 
+\begin{equation}
+    U_0cos(\omega t)=-A\omega RCsin(\omega t+\phi)+A(\omega)cos(\omega t+\phi)
+\end{equation}
+Da diese Gleichung fuer alle t gilt, folgt zum Beispiel fuer $\omega t=2\pi$
+\begin{equation}
+    0=-\omega RCsin(\frac{\pi}{2}+\phi)+cos(\frac{\pi}{2}+\phi)
+\end{equation}
+Es folgt fuer die Phasenverschiebung in Abhaengigkeit von der Frequenz:
+\begin{equation}
+    \phi(\omega)=arctan(-\omega RC)
+\end{equation}
+Fuer die Amplitude in Abhaengigkeit von der Frequenz stellt sich die Beziehung
+\begin{equation}
+    A(\omega)=\frac{U_0}{\sqrt{1+\omega^2R^2C^2}}
+\end{equation}
+Auf Grund ihrer Eigenchaften werden RC-Kreise als Tiefpaesse verwendet, da sie niedrige Frequenzen durchlassen und bei Frequenzen $\omega>>\frac{1}{RC}$ wird die Amplitude immer weiter heruntergeteilt. 
+\subsection{RC-Kreis als Integrator}
+Unter bestimmten Vorraussetzungen kann der RC-Kreis als Integrator fungieren, also eine zeitlich veraenderliche Spannung U(t) zu integrieren. Die Spannung am Kondensator ist proportional zu $\int U(t)dt$, falls $\omega>>\frac{1}{RC}$. Wird in $U(t)=U_R(t)+U_C(t)=I(t)\cdot R+U_C(t)$ mit $I(t)=C\frac{dU_C}{dt}$ ersetzt, ergibt sich $U(t)=RC\frac{dU_C}{dt}+U_C(t)$. Schliesslich ergibt sich:
+\begin{equation}
+    U_C(t)=\frac{1}{RC}\int_{0}^{t} U(t') \,dt'
+\end{equation}
+\section{Durchfuehrung}
+\subsection{Ermittlung der Zeitkonstante}
+Zur Ermittlung der Zeitkonstante RC genuegt die in \ref{Fig:Zeitk} dargestellte Schaltung.Beobachtet wird dabei die Spannung am Kondensator $U_C(t)$ in Abhaengigkeit von der Zeit. Wenn die angelegte Spannung von 0 unstetig auf ihren Maximalwert ansteigt, beginnt der Ladevorgang des Kondensators. Der Aufladevorgang endet, durchs Verharren auf dem Maximalwert der Spannung. Beim unstetigen Abfall in ihren Ausgangszustand beginnt der Entladeprozess, welcher so lange anhaelt, wie die Rechtecksspannung auf 0 bleibt.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=5cm]{"Zeit_RCKreis.png"}
+    \captionbelow{Schaltungsbeispiel zur Bestimmung der Zeitkonstante\\ Aus: Anleitung V353 Seite 281}
+    \label{Fig:Zeitk}
+\end{figure}
+Das Oszilloskop sollte dabei so eingestellt werden, dass der gesamte Auf- oder Entladeprozess zu sehen ist und moeglichst praezise abgelesen werden kann. Die Einstellung erfolgt ueber die Drehregler direkt am Oszilloskop.
+\subsection{Kondensatorspannung in Abhaengigkeit von der Frequenz}
+Zur Bestimmung der Kondensatorspannung in Abhaengigkeit von der Frequenz wird die in \ref{Fig:Frequenz} dargestellte Zeichnung verwendet. Gemessen werden soll dabei die Kondensatorspannungsamplitude in Abhaengigkeit von der Frequenz bis 10000Hz. 
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=5cm]{"Frequenz_RCKreis.png"}
+    \captionbelow{Schaltungsbeispiel zur Bestimmung der Frequenzabhaengigkeit\\ Aus: Anleitung V353 Seite 282}
+    \label{Fig:Frequenz}
+\end{figure}
+\subsection{Bestimmung der Phasenverschiebung}
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=5cm]{"Phase_RCKreis.png"}
+    \captionbelow{Schaltungsbeispiel zur Bestimmung der Phasenverschiebung\\ Aus: Anleitung V353 Seite 282}
+    \label{Fig:Phase}
+\end{figure}
+Diese Schaltung wird zur Bestimmung der Phasenverschiebung genutzt. Dabei gibt man die Kondensatorspannung $U_C(t)$ an den $Y_B$-Eingang und die Generatorspannung $U_G(t)$ an den $Y_A$-Eingang des Zwei-Eingang-Oszilloskops. Bei einer Phase $\phi>0$, sieht das Bild auf dem Schirm in etwa aus wie in \ref{Fig:Schirm}. Zu Messen sind hierbei die Zeiten a und b. Die Phase errechnet sich dann nach:
+\begin{align}
+    \phi&=\frac{a}{b}\cdot 360\\
+    \phi&=\frac{a}{b}\cdot 2\pi
+\end{align}
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=5cm]{"Schirm_RCKreis.png"}
+    \captionbelow{Beispielbild zur Messung der Phasenverschiebung\\ Aus: Anleitung V353 Seite 282}
+    \label{Fig:Schirm}
+\end{figure}
