@@ -1,0 +1,15 @@
+[0] Config.pm:312> INFO - This is Biber 2.15
+[0] Config.pm:315> INFO - Logfile is 'V400.blg'
+[52] biber:330> INFO - === Di Mai 25, 2021, 11:55:49
+[62] Biber.pm:415> INFO - Reading 'V400.bcf'
+[126] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[139] Biber.pm:4334> INFO - Processing section 0
+[147] Biber.pm:4523> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[147] bibtex.pm:1682> INFO - LaTeX decoding ...
+[148] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
+[165] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[165] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[165] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[165] Biber.pm:4168> INFO - No sort tailoring available for locale 'de-DE'
+[169] bbl.pm:651> INFO - Writing 'V400.bbl' with encoding 'UTF-8'
+[169] bbl.pm:754> INFO - Output to V400.bbl

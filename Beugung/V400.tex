@@ -9,6 +9,10 @@
 \usepackage{caption}
 \usepackage{float}
 \usepackage{caption}
+
+\usepackage[backend=biber,]{biblatex}
+\addbibresource{lit.bib}
+
 \setdefaultlanguage{german}
 \title{V400}
 \author{
@@ -23,6 +27,10 @@ Connor Magnus Böckmann \\ email: \href{mailto:connormagnus.boeckmann@tu-dortmun
 
 \input{Beugung.tex}
 \input{Auswertung.tex}
+
+\nocite{*}
+
+\printbibliography
 
 
 \end{document}
