@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  1 JUN 2021 08:44
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  1 JUN 2021 08:47
  restricted system commands enabled.
 **V204.tex
 (./V204.tex
@@ -826,12 +826,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            hyphenation	
+(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            synonyms	
-(polyglossia)            righthyphenmin	2 on input line 10
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -845,3 +845,41 @@ Package polyglossia Info: Option: German, script=latin.
 sh.def
 File: babelsh.def 2019/09/30 Babel common definitions for shorthands
  Taken verbatim from babel files (2019/09/27 v3.34)
+)
+Package polyglossia Info: Making " an active character on input line 177.
+)
+Package polyglossia Info: Default language is german.
+
+
+LaTeX Warning: Unused global option(s):
+    [titlepage=firstcover].
+
+(./V204.aux
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 <
+   <<<<<< HEAD
+? x
+
+
+Here is how much of LuaTeX's memory you used:
+ 20035 strings out of 479058
+ 100000,1144653 words of node,token memory allocated 496 words of node memory still in use:
+   4 hlist, 1 rule, 1 local_par, 1 dir, 1 glue, 3 kern, 1 glyph, 5 attribute, 64
+ glue_spec, 5 attribute_list, 1 temp, 1 write nodes
+   avail lists: 1:1,2:26,3:2,4:1,5:1,7:28,9:1,11:3
+ 38883 multiletter control sequences out of 65536+600000
+ 26 fonts using 3390395 bytes
+ 94i,1n,109p,10620b,272s stack positions out of 5000i,500n,10000p,200000b,200000s
+
+warning  (pdf backend): no pages of output.
+
+PDF statistics: 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+
