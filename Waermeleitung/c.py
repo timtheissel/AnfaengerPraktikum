@@ -18,3 +18,23 @@ plt.ylabel('T [$^\circ$C]')
 plt.title('Temperaturverlauf von T7 und T8')
 plt.savefig('steel.png')
 plt.show()
+
+
+
+k = [262.80, 181.80, 260.78, 164.43, 249.84, 222.31, 283.85, 246.60, 254.70, 262.80]
+
+print(np.std(k))
+
+k2 = [142.88,
+200.03,
+153.43,
+169.64,
+160.96,
+148.36,
+178.32,
+163.56,
+195.70,
+202.63,]
+
+print(np.std(k2))
+
