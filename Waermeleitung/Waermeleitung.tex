@@ -29,3 +29,25 @@ Das Amplitudenverhaeltnis von $A_{nah}$ und $A_{fern}$ an zwei Messtellen $x_{na
     \kappa=\frac{\rho c (\Delta x)^2}{2\Delta t ln(\frac{A_{nah}}{A_{fern}})}
 \end{equation}
 $\Delta t$ entspricht der Phasendifferenz der Welle und $\Delta x$ entspricht dem Abstand der beiden Messpunkte.
+\section{Versuchsaufbau}
+Der Aufbau ist in \ref{Fig:Aufbau} zu sehen. Die Apparatur besteht aus einer Grundplatte, auf welcher Staebe aus drei verschiedenen Materialien aufgebracht sind. Es handelt sich dabei um Aluminium, Messing (2x) und Edelstahl. Die beiden Messingstaebe haben jeweils andere Abmessungen. Alle Staebe werden beim Anlegen einer Spannung von einem Peltierelement je nach Schalterstellung gekuehlt oder erhitzt. Jeder Stab hat zwei Messstellen, an denen die Temperatur gemessen wird und per Temperature Array an einen Datalogger uebertragen wird. Alle acht Temperaturen koennen so simultan gemessen und dargestellt werden. 
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Aufbau_Waermeleitung.png"}
+    \captionbelow{Aufbau der Messapparatur\\ Aus: Anleitung V204 Seite 3}
+    \label{Fig:Aufbau}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Logger_Waermeleitung.png"}
+    \captionbelow{Der Datalogger\\ Aus: Anleitung V204 Seite 5}
+    \label{Fig:Logger}
+\end{figure}
+\section{Durchfuehrung}
+\subsection{Statische Methode}
+Hierbei werden an den zwei Messstellen pro Stab die Temperatur in Abhaengigkeit von der Zeit gemessen, um die Waermeleitfaehigkeit der Staebe zu untersuchen. Dazu wird die Abtastrate des Dataloggers auf $\Delta t_{Data} = \frac{10}{s}$ eingestellt. Die Stromversorgung der Apparatur wird auf $U_P= 5V$ eingestellt bei maximalem Strom. Die Apparatur wird auf 'HEAT' umgestellt. Gemessen wird dabei bis $t=700s$. Alle Messwerte werden schliesslich im Datalogger tabelliert und ueber einen USB-Stick gesichert.
+\subsection{Dynamische Methode}
+Bei der dynamischen bzw. Angstroem-Methode werden die Staebe periodisch gekuehlt und erhitzt. Dadurch soll die Waermeleitfaehigkeit anhand der Ausbreitungsgeschwindigkeit der Temperaturwelle bestimmt werden. Hierzu wird die Abtastrate auf $\Delta t_{Data}=\frac{2}{s}$. Fuer die folgenden beiden Messreihen wird die Spannung auf $U_P=8V$ umgestellt. Nun werden die Staebe mit einer Periode von 80s geheizt, also 40s auf 'Heat' und 40s auf 'Cool'. Es werden zehn Perioden, also 800s gemesen. Die Staebe muessen zwischen allen Messungen wieder abgekuehlt werden.\\
+Fuer die letzte Messreihe wird die vorherige Messreihe mit einer Periodendauer von 200s wiederholt. Hier sollen 1000s bzw. fuenf Perioden gemessen werden.

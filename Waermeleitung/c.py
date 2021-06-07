@@ -38,3 +38,17 @@ k2 = [142.88,
 
 print(np.std(k2))
 
+t = 80
+t2 = 200
+
+w = 2* np.pi / t 
+w2 = 2* np.pi / t2
+
+pb = 8.73
+pa = 2.7
+
+kb = ufloat(171.51, 20.67)
+ka= ufloat(238.99, 36.27)
+
+print((200-ka)/200)
+print((120-kb)/120)
