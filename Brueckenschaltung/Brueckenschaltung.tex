@@ -1,0 +1,37 @@
+\section{Zielsetzung}
+Ziel des Versuchs ist die Auseinandersetzung mit den verschiedenen Arten von Brueckenschaltungen zur Ermittlung von Widerstaenden, Kapazitaeten und Induktivitaeten.
+\section{Theoretische Grundlagen}
+\subsection{Funktionsweise einer Brueckenschaltung}
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Schema_Brueckenschaltung.png"}
+    \captionbelow{Schematische Darstellung einer Brueckenschaltung\\ Aus: Anleitung V302 Seite 216}
+    \label{Fig:Schema}
+\end{figure}
+Eine Breuckenschaltung dient der Untersuchung einer Potentialdifferenz auf zwei von einander getrennten Leiter, welche von Strom durchflossen werden. Diese wird in Abhaengigkeit ihrer Widerstandverhaeltnisse betrachtet. Eine schematische Darstellung ist in \ref{Fig:Schema} zu finden. 
+Die Spannung U zwischen den Punkten A und B nennt sich Brueckenspannung und laesst sich mit Hilfe der Kirchhoffschen Gesetze berechnen.
+\subsubsection{1. Kirchhoffsches Gesetz}
+Die Summe aller Stroeme in einem Knoten ist gleich 0. Also sind alle zufliessenden Stroeme (I>0) genauso gross wie alle abfliessenden Stroeme. 
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Kirchhoff1_Brueckenschaltung.png"}
+    \captionbelow{Stroeme in einem Knoten\\ Aus: Anleitung V302 Seite 217}
+    \label{Fig:Kirchhoff1}
+\end{figure}
+\subsubsection{2. Kirchhoffsches Gesetz}
+Die Summe der Spannungsabfaelle ueber die Widerstaende innerhalb einer Masche entspricht der Ursprungsspannung.
+\begin{equation}
+    \sum_{i=1}^n U_i=\sum_{i=1}^n I_i\cdot R_i=\sum_{k=1}^m U_{0,k}
+\end{equation}
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Kirchhoff2_Brueckenschaltung.png"}
+    \captionbelow{Darstellung einer Masche\\ Aus: Anleitung V302 Seite 217}
+    \label{Fig:Kirchhoff2}
+\end{figure}
+Bei einer Flussrichtung im Uhrzeigersinn ist das Vorzeichen von $I_kR_k$ positiv, ansonsten negativ.
+\subsection{Komplexe Widerstaende}
+Bauteile wie Spulen und Kapazitaeten benoetigen zur Beschreibung einen komplexen Widerstand 
