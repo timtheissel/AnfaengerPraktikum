@@ -6,7 +6,7 @@ Ziel des Versuchs ist die Auseinandersetzung mit den verschiedenen Arten von Bru
     \centering
     \captionsetup{justification=centering}
     \includegraphics[height=7cm]{"Schema_Brueckenschaltung.png"}
-    \captionbelow{Schematische Darstellung einer Brueckenschaltung\\ Aus: Anleitung V302 Seite 216}
+    \captionbelow{Schematische Darstellung einer Brueckenschaltung\\ Aus: Anleitung V302 Seite 216.}
     \label{Fig:Schema}
 \end{figure}
 Eine Breuckenschaltung dient der Untersuchung einer Potentialdifferenz auf zwei von einander getrennten Leiter, welche von Strom durchflossen werden. Diese wird in Abhaengigkeit ihrer Widerstandverhaeltnisse betrachtet. Eine schematische Darstellung ist in \ref{Fig:Schema} zu finden. 
@@ -17,7 +17,7 @@ Die Summe aller Stroeme in einem Knoten ist gleich 0. Also sind alle zufliessend
     \centering
     \captionsetup{justification=centering}
     \includegraphics[height=7cm]{"Kirchhoff1_Brueckenschaltung.png"}
-    \captionbelow{Stroeme in einem Knoten\\ Aus: Anleitung V302 Seite 217}
+    \captionbelow{Stroeme in einem Knoten\\ Aus: Anleitung V302 Seite 217.}
     \label{Fig:Kirchhoff1}
 \end{figure}
 \subsubsection{2. Kirchhoffsches Gesetz}
@@ -29,9 +29,101 @@ Die Summe der Spannungsabfaelle ueber die Widerstaende innerhalb einer Masche en
     \centering
     \captionsetup{justification=centering}
     \includegraphics[height=7cm]{"Kirchhoff2_Brueckenschaltung.png"}
-    \captionbelow{Darstellung einer Masche\\ Aus: Anleitung V302 Seite 217}
+    \captionbelow{Darstellung einer Masche\\ Aus: Anleitung V302 Seite 217.}
     \label{Fig:Kirchhoff2}
 \end{figure}
 Bei einer Flussrichtung im Uhrzeigersinn ist das Vorzeichen von $I_kR_k$ positiv, ansonsten negativ.
 \subsection{Komplexe Widerstaende}
-Bauteile wie Spulen und Kapazitaeten benoetigen zur Beschreibung einen komplexen Widerstand 
+Bauteile wie Spulen und Kapazitaeten benoetigen zur Beschreibung einen komplexen Widerstandsoperator. Dieser setzt sich zusammen aus dem leistungsverbrauchenden Wirkwiderstand X und dem komplexen Blindwiderstand Y.
+Die Widerstandoperatoren einer Kapazitaet, eines Kondensators sowie eines gewoehnlichen ohmschen Widerstandes lauten:
+\begin{align}
+    Z_C&=-\frac{i}{\omega}C,
+    Z_L&=i\omega L,
+    Z_R&=R
+\end{align}
+Da eine Brueckenschaltung mit vier komplexen Widerstaenden nur ausgeglichen ist, wenn $Z_1Z_4=Z_2Z_3$ gilt und komplexe Zahlen nur gleich sind, wenn sowohl Realteil, als auch Imaginaerteil identisch sind. Somit muss die Brueckenspannung in Phase und Betrag verschieden. Jede Brueckenschaltung hat somit zwei unabhaengige Stellglieder.
+\subsection{Spezielle Brueckenschaltungen}
+\subsubsection{Wheatstonesche Bruecke}
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Wheatstone_Brueckenschaltung.png"}
+    \captionbelow{Wheatstone Brueckenschaltung\\ Aus: Anleitung V302 Seite 219.}
+    \label{Fig:Wheatstone}
+\end{figure}
+Die Abgleichbedingung der Wheatstoneschen Bruecke lautet 
+\begin{equation}
+    R_X=R_2\frac{R_3}{R_4}
+\end{equation}
+\subsection{Kapazitaetsmessbruecke}
+Die Kapazitaetsmessbruecke dient der Bestimmung unbekannter Kapazitaeten. Ein realer Kondensator wandelt auf Grund von dielektrischen Verlusten, Teile der Energie in Waerme um. Dies wird in Schaltplaenen durch einen eingezeichneten, fiktiven ohmschen Widerstand dargestellt.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Kapazitaet_Brueckenschaltung.png"}
+    \captionbelow{Kapazitaetsmessbruecke\\ Aus: Anleitung V302 Seite 219.}
+    \label{Fig:Kapazitaet}
+\end{figure}
+Die Abgleichbedingungen der Kapazitaetsmessbruecke lauten 
+\begin{align}
+    R_X&=R_2\frac{R_3}{R_4}
+    C_X&=C_2\frac{R_4}{R_3}
+\end{align}
+\subsection{Induktivitaetsmessbruecke}
+Analog zu einer Kapazitaet wandelt auch eine Spule Teile ihre Feldenergie in Waerme um. Auch hier wird im Schaubild ein fiktiver ohmscher Widerstand eingezeichnet. Somit wird der Widerstandsoperator einer verlustbehafteten Induktivitaet dargestellt durch:
+\begin{equation}
+    Z_{L,real}=R+i\omega L
+\end{equation}
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Induktivitaet_Brueckenschaltung.png"}
+    \captionbelow{Messbruecke zur Bestimmung verlustbehafteter Induktivitaeten\\ Aus: Anleitung V302 Seite 221.}
+    \label{Fig:Induktivitaet}
+\end{figure}
+Es folgen also die Abgleichbedingungen:
+\begin{align}
+    R_X&=R_2\frac{R_3}{R_4},
+    L_X&=L_2\frac{R_3}{R_4}
+\end{align}
+\subsection{Maxwell-Bruecke}
+Ebenfalls eine Messbruecke zur Bestimmung von Induktivitaeten, ist die Maxwell-Bruecke. Sie hat den Vorteil, dass sie eine leichter eine gute Praezision aufweist, verglichen mit der vorher genannten Induktionsmessbruecke.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Maxwell_Brueckenschaltung.png"}
+    \captionbelow{Maxwellmessbruecke\\ Aus: Anleitung V302 Seite 222.}
+    \label{Fig:Maxwell}
+\end{figure}
+Fuer die MAxwellbruecke ergeben sich die Ausgleichsbedingungen 
+\begin{align}
+    R_X&=\frac{R_2R_3}{R_4},
+    L_X&=R_2R_3C_4
+\end{align}
+Von besonderer Wichtigkeit ist die Wahl der passenden Speisungsfrequenz $\omega$. Laut den Abgleichbedingungen spielt die Frequenz eigentlich keine Rolle, was jedoch nicht der Wirklichkeit entspricht. Bei zu hoher Frequenz werden die Streukapazitaeten zu gross und die Bruecke laesst sich nicht mehr abgleichen. Niedrige Frequenzen sind theoretisch moeglich, jedoch aud Grund von Einschwingvorgaengen fuer Messungen unpraktisch.
+\subsection{Frequenzabhaengige Brueckenschaltung}
+\subsubsection{Wien-Robinson-Bruecke}
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Wien_Brueckenschaltung.png"}
+    \captionbelow{Wien-Robinson-Bruecke\\ Aus: Anleitung V302 Seite 223.}
+    \label{Fig:Wien}
+\end{figure}
+Die Wien-Robinson-Bruecke enthaelt keine Abgleichelemente. Sie kann in der Elektronik als selektiver Filter verwendet werden. Der Betrag des Verhaeltnisses von Speise- und Brueckenspannung ergibt sich zu:
+\begin{equation}
+    |\frac{\upsilon_{Br}}{\upsilon_S}|^2=\frac{(\omega^2R^2C^2-1)^2}{9((1-\omega^2R^2C^2)^2+9\omega^2R^2C^2)}
+\end{equation}
+Daraus laesst sich ablesen, dass die Brueckenspannung verschwindet, wenn $\omega_0=\frac{1}{RC}$ ist. Somit entfernt die Wien-Robinson-Bruecke also diese Frequenz und schwaecht die darum liegenden Frequenzen ab.
+Ausserdem kann eine solche Bruecke genutzt werden, um den so genannten Klirrfaktor zu ermitteln. Dieser ist ein Mass fuer die Qualitaet eines Frequenzgenerator und und gibt ein Verhaeltnis von Oberwellen zur Grundwelle an. Je kleiner also der Klirrfaktor, desto hochwertiger ist der Sinusgenerator. 
+\section{Durchfuehrung}
+\subsection{Wheatstonesche Bruecke}
+Es wird eine Wheatstonesche Bruecke aufgebaut. Die verwendete Abstimmvorrichtung stellt ein Potentiometer mit einem Gesamtwiderstand von 1000 Ohm dar. Das Verhaeltnis von $R_3$ zu $R_4$ laesst sich mit dem Drehknopf in 1 Ohm-Schritten einstellen. Betrieben wird die Bruecke mit einem Wechselstrom der Frequenz von $\omega=76 Hz$. Der verwendete Nullindikator wird durch ein Oszilloskop dargestellt. Vor dieses muss ein Tiefpass geschaltet werden. Nun wird das Stellglied so lange angepasst bis die Brueckenspannung 0V betraegt. Es sollen zwei Widerstaende vermessen werden.
+\subsection{Kapazitaetsmessbruecke}
+Prinzipell wird hier vorgegangen wie bei der Wheatstonebruecke. Das Hauptstellglied wird hier jedoch ergaenzt durch einen weiteren einstellbaren Widerstand $R_2$, siehe \ref{Fig:Kapazitaet}. Es werden also $R_2$ und $\frac{R_3}{R_4}$ abwechselnd justiert, bis sich eine Brueckenspannung von 0V einstellt. Auch hier wird eine Frequenz von $\omega=76Hz$ betrieben. Es sollen zwei unbekannte Kondensatoren vermessen werden. 
+\subsection{Induktivitaetsmessbruecke}
+Nach dem selben Prinzip der verschwindenden Brueckenspannung wird hier eine Spule mit \ref{Fig:Induktivitaet} vermessen. Die Speisungsfrequenz muss hierbei auf $\omega=1076Hz$ erhoeht werden.
+\subsection{Maxwellbruecke}
+Hierbei soll die gleiche Spule wie bei der Induktivitaetsmessbruecke gemessen werden, jedoch mit der in \ref{Fig:Maxwell} zu sehenden Maxwellbruecke. Dabei wird ebenfalls $\omega=1076Hz$ verwendet. Stellglieder sind hierbei $R_3$ und $R_4$.
+\subsection{Wien-Robinson-Bruecke}
+Zu Untersuchen ist hier die Frequenzabhaengigkeit einer Wien-Robinson-Bruecke (\ref{Fig:Wien}). Dazu wird die Speisefrequenz in nicht-equidistanten Schritten erhoeht und die Brueckenspannung notiert. 
