@@ -23,7 +23,7 @@ i = (0.01**4)/12
 ir = (np.pi*0.005**4)/4
 #print(ir)
 Ekee = (9.81*1.0543)/(2*i*lkee)
-#print(Ekee)
+print(Ekee)
 
 Ebee = (9.81*1.0543)/(2*i*lbee)
 #print(Ebee)
