@@ -35,7 +35,7 @@ Egre = (9.81*0.552)/(2*ir*lgre)
 
 
 Ebebl = (9.81*2.3408)/(48*i*lbebl)
-#print(Ebebl)
+print(Ebebl)
 
 Ekebl = (9.81*2.3408)/(48*i*lkebl)
 #print(Ekebl)
