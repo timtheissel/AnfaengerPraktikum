@@ -35,25 +35,27 @@ Egre = (9.81*0.552)/(2*ir*lgre)
 
 
 Ebebl = (9.81*2.3408)/(48*i*lbebl)
-print(Ebebl)
+#print(Ebebl)
 
 Ekebl = (9.81*2.3408)/(48*i*lkebl)
-print(Ekebl)
+#print(Ekebl)
 
 Egrbl = (9.81*2.3408)/(48*ir*lgrbl)
-print(Egrbl)
+#print(Egrbl)
 
 Ekrbl = (9.81*1.7294)/(48*ir*lkrbl)
-print(Ekrbl)
+#print(Ekrbl)
 
 Ebebr = (9.81*2.3408)/(48*i*lbebr)
-print(Ebebr)
+#print(Ebebr)
 
 Ekebr = (9.81*2.3408)/(48*i*lkebr)
-print(Ekebr)
+#print(Ekebr)
 
 Egrbr = (9.81*2.3408)/(48*ir*lgrbr)
-print(Egrbr)
+#print(Egrbr)
 
 Ekrbr = (9.81*1.7294)/(48*ir*lkrbr)
-print(Ekrbr)
+#print(Ekrbr)
+
+print((np.pi*0.005**2*0.602))
