@@ -1,4 +1,66 @@
 \section{Zielsetzung}
 Im folgenden Versuch soll der Wellencharakter des Lichts anhand der Beugung an einem Einfach- sowie Doppelspalt untersucht werden. Das Interferenzmuster ist dabei von besonderer Wichtigkeit.
 \section{Theoretische Grundlagen}
-Beugung ist im Kontext von Lichtstrahlen die Abweichung von der geometrischen Optik beim Passieren von Schlitzen duenner als der Strahldurchmesser des Lichtstrahls. Wie bereits beschrieben benoetigt es die Auffassung des Lichts als Welle, um die auftretenden Phaenomene zu beschreiben. Diese Auffassung wird dem Licht in der Natur eigentlich nicht gerecht, das Modell genuegt zur Beschreibung dieses Experiments aber. Besonders entscheidend ist dabei das so genannte Huygenssche Prinzip. Dieses besagt, dass jeder Punkt einer Wellenfront Quelle einer neuen Elementarwelle ist. Die Einhuellende dieser Elementarwellen bildet dann die neue Wellenfront. 
+Beugung ist im Kontext von Lichtstrahlen die Abweichung von der geometrischen Optik beim Passieren von Schlitzen duenner als der Strahldurchmesser des Lichtstrahls. Wie bereits beschrieben benoetigt es die Auffassung des Lichts als Welle, um die auftretenden Phaenomene zu beschreiben. Diese Auffassung wird dem Licht in der Natur eigentlich nicht gerecht, das Modell genuegt zur Beschreibung dieses Experiments aber. Besonders entscheidend ist dabei das so genannte Huygenssche Prinzip. Dieses besagt, dass jeder Punkt einer Wellenfront Quelle einer neuen Elementarwelle ist. Die Einhuellende dieser Elementarwellen bildet dann die neue Wellenfront. Dies wird hier an einem Spalt demonstriert. Es soll dabei die Intensitaet in Abhaengigkeit von der Ausbreitungsrichtung $\phi$. Dann soll ein allgemeiner Zusammenhang zwischen der Form des Beugungsobjektes und der Amplitudenverteilung hergestellt werden. Die Aperturfunktion und die Amplitudenfunktion lassen sich mit Hilfe von Fourier-Transformationen in einander ueberfuehren.
+\subsection{Versuchsanordnungen nach Fresnel und Fraunhofer}
+Das Experiment laesst sich sowohl mit der Anordnung nach Fresnel, sowie der Anordnung nach Fraunhofer durchfuehren. Die Fresnelsche Anordnung hat sowohl die Lichtquelle, als auch den Beobachtungspunkt P im Endlichen. Dadurch interferieren die Strahlen mit anderen Strahlen, welche unter einem anderen Winkel gestreut werden. Im Unterschied dazu verlegt die Fraunhofer Anordnung die Quelle und den Beobachtungspunkt P mit Hilfe einer Sammellinse ins Unendliche, wodurch nur Strahlen interferieren, welche unter dem selben Winkel $\phi$ gebeugt werden. Dieser Umstand sorgt fuer eine mathematisch einfachere Darstellung und wird daher im folgenden verwendet.
+\subsection{Mathematische Betrachtung}
+Es falle eine Welle mit der Feldstaerke $A(z,t)=A_0e^{i\omega t-2\pi z/\lambda}$ pro Laengeneinheit aus der Z-Richtung ein. Dies wird mit einem Laser realisiert, welcher auch die Vorraussetzung der Kohaerenz und der Monochromatie des Lichts erfuellt. Der Beobachtungsschirm wird in einer Entfernung aufgestellt, welche sehr gross gegenueber der Spaltbreite ist. 
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Schema_BeugungSpalt.png"}
+    \captionbelow{Schematische Darstellung zur Ableitung der Phasenbeziehung zwischen zwei Lichtstrahlen\\ Aus: Anleitung V406 Seite 32.}
+    \label{Fig:Schema}
+\end{figure}
+Unter Beruecksichtigung des Huygenschen Prinzips bei den Beugungserscheinungen am Spalt, laesst sich erkennen, dass das Licht sich nicht nur in die urspruengliche Ausbreitungsrichtung ausbreitet, da es sich ja in Kugelwellen von jedem Punkt der Spaltoeffnung her aus ausbreitet. Zur Berechnung der Amplitude in Richtung $\phi$ muss also ueber alle Strahlenbuendel in der entsprechenden Richtung aus saemtlichen Punkten der Spaltoeffnung summiert werden. Von besonderer Bedeutung ist dabei die Phasendifferenz zweier Lichtstrahlen, welche von zwei Stellen mit Abstand x von einander in der Spaltoeffnung ausgehen. Aufgrund des in \ref{Fig:Schema} zu erkennenden Wegunterschiedes stellt sich die Phasendifferenz zu $\delta=\frac{2\pi s}{\lambda}=\frac{2\pi x sin\phi}{\lambda}$ ein. Durch die infinitesimal kleinen Breiten der Strahlen, ergibt sich die Summation zu einer Integration:
+\begin{equation*}
+    B(z, t, \phi)=A_0\int_0^be^{(i(\omega t-\frac{2z\pi}{\lambda}+\delta))}dx
+\end{equation*}
+Geloest wird dieser Ausdruck durch Ausfuehren der Integration, Ausklammern des Faktors $e^{\pi ibsin\phi/\lambda}$ und Benutzung der Eulerschen Formel:
+\begin{equation*}
+    B(z, t, \phi)=A_0e^{i(\omega t-\frac{2\pi z}{\lambda})}\cdot e^{\frac{\pi ibsin\phi}{\lambda}}\cdot\frac{\lambda}{\pi sin\phi}sin\frac{\pi bsin\phi}{\lambda}
+\end{equation*}
+Mit der Abkuerzung $\eta:=\frac{\pi bsin\phi}{\lambda}$ und dem Weglassen der Faktoren, welche keinen Einfluss auf die Intensitaetsmessung haben, ergibt sich:
+\begin{equation*}
+    B(\phi)=A_0b\frac{sin\eta}{\eta}
+\end{equation*}
+Diese Funktion hat unendlich viele Nulldurchgaenge, sowie lokale Maxima und Minima, dessen Betraege mit wachsendem $\eta$ gegen Null gehen. Diese Nullstellen liegen bei $sin\phi_n=\pm n\frac{\lambda}{b}$.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Amplitude_BeugungSpalt.png"}
+    \captionbelow{Amplitude einer gebeugten, ebenen Welle am Parallelspalt\\ Aus: Anleitung V406 Seite 33.}
+    \label{Fig:Amplitude}
+\end{figure}
+Durch die hohe Frequenz des Lichts von etwa $\omega=10^{14}$ bis $10^15$Hz ist die Amplitude nicht direkt zugaenglich, weshalb die zeitlich gemittelte Intensitaet genuegen muss. Die Intensitaet $I(\phi)$ des gebeugten Lichts wird dann durch 
+\begin{equation*}
+    I(\phi)\varpropto B(\phi)^2=A_0^2b^2{\frac{\lambda}{\pi bsin\phi}}^2\cdot sin^2{\frac{\pi bsin\phi}{\lambda}}
+\end{equation*}
+Diese nicht-negative Beugungsfigur hat Minima bei den Nulldurchgaengen der Amplitudenfunktion. Die Maxima dazwischen nehmen etwa mit dem Quadrat des Beugungswinkels ab.
+\subsection{Beugung am Spalt}
+Die Intensitaetsverteilung $I(\phi)$ beim Doppelspalt laesst sich dazu analog berechnen. Die Beugung ist dabei die Ueberlagerung zweier Einfach-Spalte mit einer Breite b welche sich in einem Abstand s befinden. Die Intensitaetsverteilung des Lichts mit der Wellenlaenge $\lambda$ bei der Beugung an einem Doppelspalt liefert
+\begin{equation*}
+    I(\phi)\varpropto B(\phi)^2=4cos^2(\frac{\pi ssin\phi}{\lambda})\cdot(\frac{\lambda}{\pi bsin\phi})^2\cdot sin^2(\frac{\pi bsin\phi}{\lambda})
+\end{equation*}
+Diese Intensitaetsverteilung setzt sich aus der Intensitats des Einfach-Spalts und einer $cos^2$-Verteilung zusammen. Zusaetzlich zu den Minima erster Ordnung der einzelnen Spalte koennen Minima an den Stellen
+\begin{equation*}
+    \phi(k)=arcsin(\frac{2k+1}{2s})\lambda
+\end{equation*} 
+haben, was mit den Nullstellen der $cos^2$-Verteilung zusammenfaellt.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Doppelspalt_BeugungSpalt.png"}
+    \captionbelow{Beugung am Doppelspalt\\ Aus: Anleitung V406 Seite 34.}
+    \label{Fig:Doppelspalt}
+\end{figure}
+\section{Aufbau}
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Aufbau_BeugungSpalt.png"}
+    \captionbelow{Versuchsaufbau zur Messung der Beugungsfigur\\ Aus: Anleitung V406 Seite 36.}
+    \label{Fig:Aufbau}
+\end{figure}
+Als Lichtquelle fungiert ein roter Laser der Wellenlaenge $\lambda=633nm$, mit welcher eine geschlitzte Folie beleuchtet wird. Hinter dem Spalt ist ein lichtempindlicher Detektor aufgebau, welcher auf einer Messtrommel angebracht, mit welcher es moeglich ist, den Detektor sehr genau zu verschieben. Der Detektor ist senkrecht zur Strahlrichtung angebracht und besteht aus einer Photodiode, welche das Beugungsbild aufzeichnen kann durch Verschiebung des Detektors in kleinen Schritten. Ausserdem ist es von Noeten den Dunkelstrom $I_{du}$ zu bestimmen. Dafuer wird der Strom den der Detektor abgibt mit abgedeckter Detektorblende gemessen.
