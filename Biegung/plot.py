@@ -24,6 +24,13 @@ plt.ylabel('D(x) [m]')
 plt.savefig('kee.png')
 plt.show()
 
+
+
+
+
+
+
+
 plt.figure()
 plt.plot(X, bee/1000, 'g.', label=r'braun eckig')
 plt.plot(X, linear(X, 0.027832, 0.000093), 'b', label=r'fit')
@@ -32,6 +39,8 @@ plt.xlabel('$Lx^2-x^3/3$  [m$^3$] ')
 plt.ylabel('D(x) [m]')
 plt.savefig('bee.png')
 plt.show()
+
+
 
 plt.figure()
 plt.plot(X2, gre/1000, 'g.', label=r'golden rund')
@@ -69,6 +78,8 @@ plt.ylabel('D(x) [m]')
 plt.savefig('beb.png')
 plt.show()
 
+
+
 plt.figure()
 plt.plot(Xl, keb/1000, 'r.', label=r'kupfern eckig')
 plt.plot(Xl, linear(Xl, 0.003316, -0.000008), 'b', label=r'fit')
@@ -77,6 +88,8 @@ plt.xlabel('$Lx^2-x^3/3$  [m$^3$] ')
 plt.ylabel('D(x) [m]')
 plt.savefig('keb.png')
 plt.show()
+
+
 
 plt.figure()
 plt.plot(Xl, grb/1000, 'r.', label=r'golden rund')
@@ -87,6 +100,8 @@ plt.ylabel('D(x) [m]')
 plt.savefig('grb.png')
 plt.show()
 
+
+
 plt.figure()
 plt.plot(Xl, krb/1000, 'r.', label=r'kupfern rund')
 plt.plot(Xl, linear(Xl, 0.002602, -0.000080), 'b', label=r'fit')
@@ -95,6 +110,8 @@ plt.xlabel('$Lx^2-x^3/3$  [m$^3$] ')
 plt.ylabel('D(x) [m]')
 plt.savefig('krb.png')
 plt.show()
+
+
 
 
 x, beb, keb, kee, bee, grb, krb, x2, gre, kre = np.genfromtxt('beidrechts.txt', unpack=True)
@@ -111,6 +128,14 @@ plt.ylabel('D(x) [m]')
 plt.savefig('beb2.png')
 plt.show()
 
+from scipy.optimize import curve_fit
+params, covariance_matrix = curve_fit(linear, Xr, beb/1000)
+
+uncertainties = np.sqrt(np.diag(covariance_matrix))
+
+for name, value, uncertainty in zip('abc', params, uncertainties): 
+    print(f'{name} = {value:8.6f} ± {uncertainty:.6f}')
+
 plt.figure()
 plt.plot(Xr, keb/1000, 'r.', label=r'kupfern eckig')
 plt.plot(Xr, linear(Xr, 0.003524, 0.000021), 'b', label=r'fit')
@@ -120,6 +145,14 @@ plt.ylabel('D(x) [m]')
 plt.savefig('keb2.png')
 plt.show()
 
+from scipy.optimize import curve_fit
+params, covariance_matrix = curve_fit(linear, Xr, keb/1000)
+
+uncertainties = np.sqrt(np.diag(covariance_matrix))
+
+for name, value, uncertainty in zip('abc', params, uncertainties): 
+    print(f'{name} = {value:8.6f} ± {uncertainty:.6f}')
+
 plt.figure()
 plt.plot(Xr, grb/1000, 'r.', label=r'golden rund')
 plt.plot(Xr, linear(Xr, 0.009583, 0.000094), 'b', label=r'fit')
@@ -128,6 +161,14 @@ plt.xlabel('$Lx^2-x^3/3$  [m$^3$] ')
 plt.ylabel('D(x) [m]')
 plt.savefig('grb2.png')
 plt.show()
+
+from scipy.optimize import curve_fit
+params, covariance_matrix = curve_fit(linear, Xr, grb/1000)
+
+uncertainties = np.sqrt(np.diag(covariance_matrix))
+
+for name, value, uncertainty in zip('abc', params, uncertainties): 
+    print(f'{name} = {value:8.6f} ± {uncertainty:.6f}')
 
 plt.figure()
 plt.plot(Xr, krb/1000, 'r.', label=r'kupfern rund')
@@ -145,3 +186,4 @@ uncertainties = np.sqrt(np.diag(covariance_matrix))
 
 for name, value, uncertainty in zip('abc', params, uncertainties): 
     print(f'{name} = {value:8.6f} ± {uncertainty:.6f}')
+

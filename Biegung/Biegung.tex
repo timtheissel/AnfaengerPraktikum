@@ -1,44 +1,45 @@
 \section{Zielsetzung}
-Im folgenden Versuch soll an Hand der Biegung von Metallstaeben die Materialkonstante des Elastizitaetsmoduls ermittelt werden. Dies wird jeweils mit einseitiger, sowie mit beidseitiger Auflage erfolgen.
+Im folgenden Versuch soll an Hand der Biegung von Metallstäben die Materialkonstante des Elastizitätsmoduls ermittelt werden. Dies wird jeweils mit einseitiger, sowie mit beidseitiger Auflage erfolgen.
 \section{Theoretische Grundlagen}
-Kraefte an einem Koerper fuehren zu Volumen- und Gestaltsveraenderungen. Bezogen auf eine Flaeche wird diese physikalische Groesse Spannung genannt. Unterschieden wird dabei in die Normalspannung $\sigma$ und die parallel zur Oberflaeche stehende Tangentialspannung bzw. Schubspannung. Bei kleiner Gestaltaenderung $\Delta L/L$ so kann ein linearer Zusammenhang zwischen der angreifenden Spannung $\sigma$ und der Deformation $\Delta L/L$ erkannt werden. Dieser Zusammenhang wird als Hooksches Gesetz bezeichnet:
+Kräfte an einem Körper führen zu Volumen- und Gestaltsveränderungen. Bezogen auf eine Fläche wird diese physikalische Größe Spannung genannt. Unterschieden wird dabei in die Normalspannung $\sigma$ und die parallel zur Oberfläche stehende Tangentialspannung bzw. Schubspannung. Bei kleiner Gestaltänderung $\Delta L/L$ so kann ein linearer Zusammenhang zwischen der angreifenden Spannung $\sigma$ und der Deformation $\Delta L/L$ erkannt werden. Dieser Zusammenhang wird als Hooksches Gesetz bezeichnet
 \begin{equation}
     \sigma=E\frac{\Delta L}{L}.
 \end{equation}
-Der Faktor E wird als Elastizitaetsmoduls bezeichnet und stellt einen Proportionalitaetsfaktor dar. Hierbei handelt es sich um eine Materialkonstante. Dieses koennte durch Stauchung oder Dehnung ermittelt werden, was jedoch sehr praezise Messapparaturen voraussetzen wuerden, da $\Delta L$ dort sehr klein ist. Dieses Problem laesst sich umgehen, wenn statt einer Dehnung oder Stauchung, die Biegung betrachtet wird. Hier ist die Verformung bei gleicher Kraft und gleichem Stab deutlich groesser.
+Der Faktor E wird als Elastizitätsmoduls bezeichnet und stellt einen Proportionalitätsfaktor dar. Hierbei handelt es sich um eine Materialkonstante. Dieses könnte durch Stauchung oder Dehnung ermittelt werden, was jedoch sehr präzise Messapparaturen voraussetzen würden, da $\Delta L$ dort sehr klein ist. Dieses Problem lässt sich umgehen, wenn statt einer Dehnung oder Stauchung, die Biegung betrachtet wird. Hier ist die Verformung bei gleicher Kraft und gleichem Stab deutlich größer.
 \subsection{Biegung eines einseitig eingespannten Stabes}
-Bei der Biegung laesst sich die Verformung auf eine Dehnung zurueckfuehren, welche jedoch nicht ueber den Querschnitt des Stabes konstant ist. 
+Bei der Biegung lässt sich die Verformung auf eine Dehnung zurückführen, welche jedoch nicht über den Qürschnitt des Stabes konstant ist. 
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[height=7cm]{"Einseitig_Biegung.png"}
-    \captionbelow{Biegung bei einseitiger Einspannung\\ Aus: Anleitung V103 Seite 107.}
+    \captionbelow{Biegung eines Stabes bei einseitiger Einspannung.\\ Aus: \cite{V103}}
     \label{Fig:Einseitig}
 \end{figure}
-Die Formel der Durchbiegung D(x), also die Verschiebung des Oberflaechenpunktes an der Stelle x zwischen unbelastetem und belastetem Zustand, enthaelt das Elastizitaetsmodul. Somit kann dieses berechnet werden, wenn D(x) bekannt ist. Die aufgebrachte Kraft F uebt auf den Querschnitt Q mit Abstand x das Drehmoment $M_F$ aus, welches den Querschnitt Q aus einer vertikalen Lage verdreht. Die oberen Schichten werden hierbei gedehnt und die unteren Schichten gestaucht. Durch die elastischen Eigenschaften des Stabes widersteht der Stab der Verformung durch die in ihm auftretenden Normalspannungen. Es stellt sich ein Gleichgewichtszustand ein. Bei dieser ist dann die bei der angelegten Kraft maximale Auslenkung erreicht. Die Schicht des Stabes in der weder Zugspannungen, noch Druckspannungen auftreten, welche also ihre vorherige Lage beibehaelt, nennt sich die neutrale Faser. Diese ist in \ref{Fig:Einseitig} gestrichelt eingezeichnet.
-Durch die Zug- und Druckspannungen ensteht ein Drehmoment, welches durch Integration ueber den Querschnitt berechnet werden kann:
+Die Formel der Durchbiegung D(x), also die Verschiebung des Oberflächenpunktes an der Stelle x zwischen unbelastetem und belastetem Zustand, enthält das Elastizitätsmodul. Somit kann dieses berechnet werden, wenn D(x) bekannt ist. Die aufgebrachte Kraft F übt auf den Qürschnitt Q mit Abstand x das Drehmoment $M_F$ aus, welches den Qürschnitt Q aus einer vertikalen Lage verdreht. Die oberen Schichten werden hierbei gedehnt und die unteren Schichten gestaucht. Durch die elastischen Eigenschaften des Stabes widersteht der Stab der Verformung durch die in ihm auftretenden Normalspannungen. Es stellt sich ein Gleichgewichtszustand ein. Bei dieser ist dann die bei der angelegten Kraft maximale Auslenkung erreicht. Die Schicht des Stabes in der weder Zugspannungen, noch Druckspannungen auftreten, welche also ihre vorherige Lage beibehält, nennt sich die neutrale Faser. Diese ist in Abbildung \ref{Fig:Einseitig} gestrichelt eingezeichnet.
+Durch die Zug- und Druckspannungen ensteht ein Drehmoment, welches durch Integration über den Qürschnitt 
 \begin{equation}
     M_{\sigma}=\int_Qy\sigma(y)dq
 \end{equation}
-Der Wert y ist dabei der Abstand von der neutralen Faser. Die Drehmomente gleichen sich bei der Deformation also aus ($M_F=M_{\sigma}$). Das Drehmoment $M_F$ entspricht dabei $M_F=F(L-x)$, da die Kraft F am Hebel der Laenge L-x angreift. Nach Einsetzen des Hookschen Gesetzes fuer ein kleines Stabstueck der Laenge $\Delta x$, also $\sigma(y)=E\frac{\delta x}{\Delta x}$, und Ausnutzung der Geometrie fuer geringe Verkruemmungen des Stabes, ergibt sich die Momentengleichung zu 
+berechnet werden kann.
+Der Wert y ist dabei der Abstand von der neutralen Faser. Die Drehmomente gleichen sich bei der Deformation also aus ($M_F=M_{\sigma}$). Das Drehmoment $M_F$ entspricht dabei $M_F=F(L-x)$, da die Kraft F am Hebel der Länge $L-x$ angreift. Nach Einsetzen des Hookschen Gesetzes für ein kleines Stabstück der Länge $\Delta x$, also $\sigma(y)=E\frac{\delta x}{\Delta x}$, und Ausnutzung der Geometrie für geringe Verkrümmungen des Stabes, ergibt sich die Momentengleichung zu 
 \begin{equation}
     E\frac{d^2D}{dx^2}\int_Qy^2dq = F(L-x).
 \end{equation}
-Der hier verwendete Ausdruck $\int_Qy^2dq$ wird, in Analogie zum Massentraegheitsmoment, Flaechentraegheitsmoment I genannt. Nach Durchfuehrung der Integration wird die Beziehung 
+Der hier verwendete Ausdruck $\int_Qy^2dq$ wird, in Analogie zum Massenträgheitsmoment, Flächenträgheitsmoment I genannt. Nach Durchführung der Integration wird die Beziehung 
 \begin{equation}
     D(x)=\frac{F}{2EI}(Lx^2-\frac{x^3}{3})
 \end{equation}
 erhalten. Die Integrationskonstanten entfallen, da $D(0)=0$, also der Stab horizontal eingespannt ist, und da $\frac{dD}{dx}(0)=0$, also die Durchbiegung an der Einspannstelle null ist.
 \subsection{Biegung eines beidseitig eingespannten Stabes}
-Eine Biegung kann auch, wie in \ref{Fig:Beidseitig} zu sehen, erzeugt werden.
+Eine Biegung kann auch, wie in Abbildung \ref{Fig:Beidseitig} zu sehen, erzeugt werden.
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
     \includegraphics[height=7cm]{"Beidseitig_Biegung.png"}
-    \captionbelow{Biegung bei beidseitiger Einspannung\\ Aus: Anleitung V103 Seite 110.}
+    \captionbelow{Biegung eines Stabes bei beidseitiger Einspannung.\\ Aus: \cite{V103}.}
     \label{Fig:Beidseitig}
 \end{figure}
-Dabei greift die Kraft an der Stabmitte an. Das Drehmoment $M_F$ im Bereich $0\leq x \leq\frac{L}{2}$ ist dann $M_F=-\frac{F}{2}x$. Dementsprend ist $M_F$ fuer $\frac{L}{2}\leq x\leq L$ $M_F=-\frac{F}{2}(L-x)$.
+Dabei greift die Kraft an der Stabmitte an. Das Drehmoment $M_F$ im Bereich $0\leq x \leq\frac{L}{2}$ ist dann $M_F=-\frac{F}{2}x$. Dementsprend ist $M_F$ für $\frac{L}{2}\leq x\leq L$ $M_F=-\frac{F}{2}(L-x)$.
 Die Momentengleichungen sind also 
 \begin{align*}
     \frac{d^2D}{dx^2}&=-\frac{F}{EI}\frac{x}{2},\\
@@ -47,15 +48,15 @@ Die Momentengleichungen sind also
 \end{align*}
 Integration dieser Gleichung liefert 
 \begin{align*}
-    \frac{dD}{dx}&=-\frac{F}{EI}\frac{x^2}{4}+C\text{  fuer  }0\leq x \leq\frac{L}{2},\\
+    \frac{dD}{dx}&=-\frac{F}{EI}\frac{x^2}{4}+C\text{  für  }0\leq x \leq\frac{L}{2},\\
     \text{bzw.}\\
-    \frac{dD}{dx}&=-\frac{F}{2EI}(Lx-\frac{x^2}{2})=C'\text{  fuer  }\frac{L}{2}\leq x\leq L.
+    \frac{dD}{dx}&=-\frac{F}{2EI}(Lx-\frac{x^2}{2})=C'\text{  für  }\frac{L}{2}\leq x\leq L.
 \end{align*}
-Unter der Annahme, dass die Tangente des Stabes in der Stabmitte horizontal ist, liefert dies fuer $C=\frac{FL^2}{16EI}$ und $C'=\frac{3FL^2}{16EI}$. Eine weitere Integration liefert nun mit $D(0)=0$ fuer die linke Stabhaelfte
+Unter der Annahme, dass die Tangente des Stabes in der Stabmitte horizontal ist, liefert dies für $C=\frac{FL^2}{16EI}$ und $C'=\frac{3FL^2}{16EI}$. Eine weitere Integration liefert nun mit $D(0)=0$ für die linke Stabhälfte
 \begin{equation*}
     D(x)=\frac{F}{48EI}(3L^2x-4x^3)
 \end{equation*}.
-Entsprechend gilt fuer die rechte Stabhaelfte ($\frac{L}{2}\leq x\leq L$) mit $D(L)=0$ 
+Entsprechend gilt für die rechte Stabhälfte ($\frac{L}{2}\leq x\leq L$) mit $D(L)=0$ 
 \begin{equation*}
     D(x)=\frac{F}{48EI}(4x^3-12Lx^2+9L^2x-L^3)
 \end{equation*}
@@ -65,7 +66,7 @@ In \ref{Fig:Aufbau} ist der schematische Aufbau der Versuchsapparatur zur Ermitt
     \centering
     \captionsetup{justification=centering}
     \includegraphics[height=7cm]{"Aufbau_Biegung.png"}
-    \captionbelow{Biegung bei beidseitiger Einspannung\\ Aus: Anleitung V103 Seite 111.}
+    \captionbelow{Schematische Darstellung der Messaparatur zur Biegung elastischer Stäbe.\\ Aus: \cite{V103}.}
     \label{Fig:Aufbau}
 \end{figure}
-Die Staebe werden hier in die Spannvorrichtung C eingespannt oder fuer die Messung mit beidseitiger Auflage auf A und B aufgelegt. Die Kraft wird aufgebracht durch Anhaengen von Gewichten an der Stabmitte bzw. dem Stabende. Die Durchbegiegung wird hierbei mit zwei Messuhren bestimmt, welche vor jeder Messung genullt werden muessen. Die Nullung der Uhr vor jeder Messung ist erforderlich, da nicht davon ausgegangen werden kann, dass der Stab exakt gerade ist und horizontal eingespannt wurde. Die Messuhren messen mit Hilfe eines gefederten Messstabes die Auslenkung aus einer Null-Lage. Ein Teilstrich stellt dabei 10$\mu m$ dar. Das angehaengte Gewicht sollte gross genug sein, um eine hinreichend grosse Durchbiegung zu erreichen.
+Die Stäbe werden hier in die Spannvorrichtung C eingespannt oder für die Messung mit beidseitiger Auflage auf A und B aufgelegt. Die Kraft wird aufgebracht durch Anhängen von Gewichten an der Stabmitte bzw. dem Stabende. Die Durchbegiegung wird hierbei mit zwei Messuhren bestimmt, welche vor jeder Messung genullt werden müssen. Die Nullung der Uhr vor jeder Messung ist erforderlich, da nicht davon ausgegangen werden kann, dass der Stab exakt gerade ist und horizontal eingespannt wurde. Die Messuhren messen mit Hilfe eines gefederten Messstabes die Auslenkung aus einer Null-Lage. Ein Teilstrich stellt dabei \SI{10}{\micro\metre} dar. Das angehängte Gewicht sollte groß genug sein, um eine hinreichend große Durchbiegung zu erreichen.
