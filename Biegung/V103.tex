@@ -9,6 +9,10 @@
 \usepackage{caption}
 \usepackage{float}
 \usepackage{caption}
+
+\usepackage[backend=biber,]{biblatex}
+\addbibresource{lit.bib}
+
 \setdefaultlanguage{german}
 \title{V103 Biegung elastischer Staebe}
 \author{
@@ -23,4 +27,9 @@ Connor Magnus Böckmann \\ email: \href{mailto:connormagnus.boeckmann@tu-dortmun
 
 \input{Biegung.tex}
 \input{Auswertung.tex}
+
+\nocite{*}
+
+\printbibliography[heading=bibintoc]{}
+
 \end{document}

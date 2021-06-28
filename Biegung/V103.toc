@@ -1,20 +1,41 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
 \selectlanguage *{german}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Theoretische Grundlagen}{3}{section.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Biegung eines einseitig eingespannten Stabes}{3}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Biegung eines beidseitig eingespannten Stabes}{5}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Versuchsaufbau}{6}{section.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Auswertung}{7}{section.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Eckige Stäbe, einseitige Einspannung}{7}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}runde Stäbe, einseitige Einspannung}{9}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}eckige Stäbe, beidseitige Einspannung}{12}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}runde Stäbe, beidseitige Einspannung}{16}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Materialbestimmung durch Dichte}{21}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}brauner, eckiger Stab}{21}{subsubsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}kupferner, eckiger Stab}{21}{subsubsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.3}kupferner, runder Stab}{21}{subsubsection.4.5.3}%
-\contentsline {subsubsection}{\numberline {4.5.4}goldener, runder Stab}{21}{subsubsection.4.5.4}%
-\contentsline {section}{\numberline {5}Diskussion}{22}{section.5}%
-\contentsline {section}{\numberline {6}Literatur}{24}{section.6}%
-\contentsline {section}{\numberline {7}Messwerte}{24}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}runde Stäbe, beidseitige Einspannung}{17}{subsection.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5}Materialbestimmung durch Dichte}{22}{subsection.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.1}brauner, eckiger Stab}{22}{subsubsection.4.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.2}kupferner, eckiger Stab}{22}{subsubsection.4.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.3}kupferner, runder Stab}{22}{subsubsection.4.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.4}goldener, runder Stab}{22}{subsubsection.4.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Diskussion}{23}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Messwerte}{25}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Literatur}{26}{section*.22}%
+\defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
