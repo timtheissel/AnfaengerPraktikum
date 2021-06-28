@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.6.19)  28 JUN 2021 14:57
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.6.19)  28 JUN 2021 15:41
  restricted system commands enabled.
 **V103.tex
 (./V103.tex
@@ -858,12 +858,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            hyphenation	
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            synonyms	
+(polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1901.tex on input line 10
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            patterns	hyph-de-1901.pat.txt on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 3 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -891,12 +891,12 @@ LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            hyphenation	
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            synonyms	
+(polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1996.tex on input line 26
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            patterns	hyph-de-1996.pat.txt on input line 26
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 26
 )
@@ -1928,22 +1928,22 @@ Package siunitx Info: Option "range-units = brackets" has been deprecated in
 (siunitx)             Use "range-units = bracket" as a replacement.
 
  [23] [24]
-Overfull \hbox (10.95pt too wide) in paragraph at lines 326--350
+Overfull \hbox (10.95pt too wide) in paragraph at lines 324--348
 []$[]$ 
  []
 
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 351--375
+Overfull \hbox (10.95pt too wide) in paragraph at lines 349--373
 []$[]$ 
  []
 
 [25])
-Overfull \hbox (10.95pt too wide) in paragraph at lines 376--30
+Overfull \hbox (10.95pt too wide) in paragraph at lines 374--30
 []$[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--30
+Underfull \hbox (badness 10000) in paragraph at lines 374--30
 
  []
 
@@ -2017,7 +2017,7 @@ Here is how much of LuaTeX's memory you used:
  697 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 25 attribute, 74 glue_spec
 , 25 attribute_list, 1 write, 3 pdf_action nodes
-   avail lists: 1:4,2:720,3:261,4:118,5:441,6:53,7:5677,8:94,9:672,10:11,11:500
+   avail lists: 1:4,2:884,3:261,4:118,5:425,6:53,7:5491,8:94,9:876,10:11,11:484
  49605 multiletter control sequences out of 65536+600000
  61 fonts using 5976183 bytes
  108i,10n,115p,10620b,2327s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2038,7 +2038,7 @@ msfonts/cm/cmr6.pfb></home/timth/.local/texlive/2021/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmr8.pfb></home/timth/.local/texlive/2021/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb></home/timth/.local/texlive/2021/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on V103.pdf (26 pages, 419232 bytes).
+Output written on V103.pdf (26 pages, 419243 bytes).
 
 PDF statistics: 398 PDF objects out of 1000 (max. 8388607)
  304 compressed objects within 4 object streams
