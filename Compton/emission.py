@@ -8,8 +8,8 @@ import scipy.constants as const
 
 t, I = np.genfromtxt('EmissionCu.dat', unpack=True)
 
-k_a = ufloat(22.6, 0.2)
-k_b = ufloat(20.3, 0.2)
+k_a = ufloat(22.5, 0.2)
+k_b = ufloat(20.2, 0.2)
 
 plt.plot(t, I, 'r.', label=r'Daten')
 plt.scatter([11.1], [420.0], s=20, marker='o', color='blue')

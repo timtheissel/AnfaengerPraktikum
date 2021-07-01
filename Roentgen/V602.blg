@@ -1,0 +1,18 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'V602.blg'
+[66] biber:340> INFO - === Thu Jul  1, 2021, 02:12:21
+[80] Biber.pm:415> INFO - Reading 'V602.bcf'
+[137] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[148] Biber.pm:4340> INFO - Processing section 0
+[157] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[166] bibtex.pm:1689> INFO - LaTeX decoding ...
+[174] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
+[197] Utils.pm:395> WARN - Entry 'Eabs' (lit.bib): Invalid format '2021-28-06' of date field 'urldate' - ignoring
+[198] Utils.pm:395> WARN - Entry 'Ryd' (lit.bib): Invalid format '2021-28-06' of date field 'urldate' - ignoring
+[213] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[213] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[213] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[214] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[220] bbl.pm:654> INFO - Writing 'V602.bbl' with encoding 'UTF-8'
+[221] bbl.pm:757> INFO - Output to V602.bbl
+[226] Biber.pm:128> INFO - WARNINGS: 2
