@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  5 JUL 2021 12:37
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  6 JUL 2021 15:21
  restricted system commands enabled.
 **V606.tex
 (./V606.tex
@@ -826,12 +826,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	
 (polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            righthyphenmin	2 on input line 10
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	
+(polyglossia)            lefthyphenmin	2 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -859,12 +859,12 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	
 (polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            righthyphenmin	2 on input line 22
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	
+(polyglossia)            lefthyphenmin	2 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
 )
@@ -1080,16 +1080,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 x.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 20.
 
- (./V606.toc
-LaTeX Info: Redefining \rmfamily on input line 1.
-LaTeX Info: Redefining \sffamily on input line 1.
-LaTeX Info: Redefining \ttfamily on input line 1.
-)
+ (./V606.toc)
 \tf@toc=\write4
 
 \openout4 = V606.toc
  [2] (./Paramagnetismus.tex
-<Vektor_Paramagnetismus.png, id=30, 411.03563pt x 325.215pt>
+<Vektor_Paramagnetismus.png, id=21, 411.03563pt x 325.215pt>
 File: Vektor_Paramagnetismus.png Graphic file (type png)
 <use Vektor_Paramagnetismus.png>
 Package luatex.def Info: Vektor_Paramagnetismus.png  used on input line 26.
@@ -1121,7 +1117,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--41
 
  []
 
-[4<./Vektor_Paramagnetismus.png>])
+[4<./Vektor_Paramagnetismus.png>]
+
+LaTeX Warning: Reference `Fig:Bruecke' on page 5 undefined on input line 57.
+
+<Bruecke_Paramagnetismus.png, id=49, 299.61937pt x 285.31593pt>
+File: Bruecke_Paramagnetismus.png Graphic file (type png)
+<use Bruecke_Paramagnetismus.png>
+Package luatex.def Info: Bruecke_Paramagnetismus.png  used on input line 61.
+(luatex.def)             Requested size: 209.1515pt x 199.16928pt.
+
+LaTeX Warning: Citation `V606' on page 5 undefined on input line 62.
+
+
+LaTeX Warning: Citation `V606' on page 5 undefined on input line 62.
+
+[5]
+
+LaTeX Warning: Reference `Fig:Bruecke' on page 6 undefined on input line 66.
+
+
+LaTeX Warning: Reference `21' on page 6 undefined on input line 81.
+
+
+LaTeX Warning: Reference `22' on page 6 undefined on input line 81.
+
+[6<./Bruecke_Paramagnetismus.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+
+ []
+
+
+LaTeX Warning: Reference `21' on page 7 undefined on input line 97.
+
+
+LaTeX Warning: Reference `22' on page 7 undefined on input line 97.
+
+) [7]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1156,7 +1188,7 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [5] (./V606.aux
+ [8] (./V606.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
@@ -1167,18 +1199,21 @@ Package rerunfilecheck Info: File `V606.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 21858 strings out of 479058
+ 21883 strings out of 479058
  100000,1144653 words of node,token memory allocated
- 576 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 14 attribute, 64 glue_spec
-, 14 attribute_list, 1 write nodes
-   avail lists: 1:1,2:322,3:132,4:54,5:414,6:24,7:5883,8:37,9:430,10:28,11:635
- 40517 multiletter control sequences out of 65536+600000
+ 623 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 26 attribute, 62 glue_spec
+, 26 attribute_list, 1 write nodes
+   avail lists: 1:1,2:298,3:155,4:48,5:409,6:24,7:5797,8:37,9:429,10:25,11:599
+ 40527 multiletter control sequences out of 65536+600000
  71 fonts using 7613587 bytes
- 94i,7n,109p,10620b,764s stack positions out of 5000i,500n,10000p,200000b,200000s
+ 94i,9n,109p,10620b,774s stack positions out of 5000i,500n,10000p,200000b,200000s
 </home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmr
 oman10-bold.otf></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/openty
 pe/public/lm/lmroman8-regular.otf></home/cptflashpoint/.local/texlive/2020/texmf
@@ -1188,17 +1223,19 @@ ptflashpoint/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-bo
 ld.otf></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmex10.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmmi10.pfb></home/cptflashpoint/.local/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/cptflashpoint/.local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/cptflashpoin
-t/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/
-cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb>
-Output written on V606.pdf (5 pages, 127080 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/cptflashpoint/.local/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/cptflashpoin
+t/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home
+/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+6.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></home/cptflashpoint/.local/texlive/2020/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/cptflashpoint/.local/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on V606.pdf (8 pages, 171185 bytes).
 
-PDF statistics: 130 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 131072)
- 33 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 171 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 131072)
+ 73 words of extra memory for PDF output out of 10000 (max. 100000000)
 

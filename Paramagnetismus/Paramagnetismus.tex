@@ -41,3 +41,67 @@ Diese Regeln werden benötigt, um nach Gleichung \ref{Chi} die Suszeptibilität 
 \begin{equation*}
     g_j(Pr^{3+})=\frac{3\cdot 4\cdot 5+1\cdot 2-5\cdot 6}{2\cdot 4\cdot 5}=0.8
 \end{equation*}.
+\section{Beschreibung und Aufbau einer Apparatur zur Messung der Suszeptibilität}
+Die Induktivität einer langen Spule beträgt  
+\begin{equation}
+    L=\mu_0\frac{n^2F}{l} \label{21}
+\end{equation} 
+mit der Windungszahl n, der Länge l und dem Querschnitt F der Spule. Da es meist nicht gelingt das Innere der Spule vollständig mit Materie zu füllen ergibt sich für eine mit Materie gefüllte Spule mit dem Probenquerschnitt Q der Ausdruck
+\begin{equation*}
+    L_M=\mu_0\frac{n^2F}{l}+\chi\mu_0\frac{n^2Q}{l} 
+\end{equation*}.
+So kann mit einer Messung der Differenz die Suszeptibilität bestimmt werden. Diese Differenz ist aber sehr gering, nämlich 
+\begin{equation}
+    \Delta L=\mu_0\chi\frac{Qn^2}{l} \label{22}
+\end{equation}
+Um diesen Umstand zu umgehen muss eine möglichst gute Messapparatur verwendet werden mit möglichst gleichen Spulen, welche nach Abbildung \ref{Fig:Bruecke} zu einer Brückenschaltung verbunden werden. 
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Bruecke_Paramagnetismus.png"}
+    \captionbelow{Brückenschaltung zur Bestimmung von Suszeptibilitäten\\ Aus: \cite{V606}}
+    \label{Fig:Bruecke}
+\end{figure}
+Mit diesem Aufbau lässt sich die Suszeptibilität auf zwei Arten bestimmen. Bei der ersten Art wird die Brücke abgeglichen und die Brückenspannung $U_Br$ gemessen, welche entsteht, wenn die Probe in die Spule geschoben wird. Die zweite Art beruht darauf die Brücke mit Probe abzugleichen und mit der Aenderung der Abgleichelemente $\chi$ zu bestimmen.\\
+Bei der in Abbildung \ref{Fig:Bruecke} skizzierten Brücke ergibt sich die Abgleichbedingung zu 
+\begin{equation*}
+    U_{Br}=\frac{r_4r_1-r_3r_2}{(r_1+r_2)(r_3+r_4)}U_{Sp}
+\end{equation*}
+Die komplexen Widerstände $r_i$ ergeben sich zu 
+\begin{align*}
+    r_1&=R_M+j\omega L_M
+    \frac{1}{r_2}&=\frac{1}{R_p}+\frac{1}{R+j\omega L}
+    r_3=R_3
+    r_4=R_4
+\end{align*}
+Mit den vereinfachenden Näherungen, dass $R_p>>R$, $R_p>>\omega L$, $R_3\approx R_4$ und $R\approx R_M$ lässt sich der Betrag der Brückenspannung schreiben als 
+\begin{equation*}
+    U_{Br}=\frac{\omega \Delta L\cdot U_{Sp}}{4\sqrt{R^2+\omega^2L^2}}
+\end{equation*}
+Mit den Gleichungen \ref{21} und \ref{22} ergibt sich nach Einsetzen und Umformen
+\begin{equation*}
+    \chi=\frac{U_{Br}\cdot 4l\sqrt{R^2+\omega^2(\mu_0\frac{n^2F}{l})^2}}{U_{Sp}\cdot\omega\mu_0n^2Q}
+\end{equation*}.
+Daher ist die Suszeptibilität $\chi$ für grosse Frequenzen $(\omega^2L^2>>R^2)$
+\begin{equation*}
+    \chi=\frac{4F\cdot U_{Br}}{Q\cdot U_{Sp}}
+\end{equation*}\\\\
+Die Abgleichbedingung der Brücke ohne Probe ist $r_1R_4=r_2R_3$ mit $R_3\approx R_4$. Nach Einbau der Probe muss $R_3$ sich um den Wert $\Delta R$ ändern, um wieder abgeglichen zu sein. Mit $R_3+R_4=const$ lautet die Abgleichbedingung dann 
+\begin{equation*}
+    (R_M)+j\omega L_M)(R_3-\Delta R)=(R+j\omega L)(R_3+\Delta R)
+\end{equation*}
+Der Imaginärteil ergibt sich dann zu $\Delta R=\frac{R_3(L_M-L)}{L+L_M}$ und mit der Ersetzung $L_M=L+\Delta L$ zu 
+\begin{equation*}
+    \Delta R=\frac{R_3\Delta L}{2L+\Delta L}\approx\frac{\Delta LR_3}{2L}
+\end{equation*}
+Mit den Gleichungen \ref{21} und \ref{22} ergibt sich nach Einsetzen und Umformen schliesslich
+\begin{equation*}
+    \chi=2\frac{\Delta R\cdot F}{R_3Q}
+\end{equation*}
+\section{Unterdrückung der Störspannungen}
+Da die Störspannungen verglichen mit der zu messenden Spannung verhältnismässig gross sind, ist es von Nöten diese herauszufiltern. Dies wird mit einem Selektivverstärker realisiert. Da die Signalspannung monofrequent ist, reicht es wenn nur diese Frequenz die Selektion passieren kann. Dieser Selektivverstärker hat eine Filterkurve, welche einer gausssche Glockenkurve entspricht, welche einem Verhältnis aus Ausgangsspannung $U_A$ zu Eingangsspannung $U_E$ entspricht. Die Wirksamkeit dieser Unterdrückung ungewollter Frequenzen wird an der Breite dieser Kurve gemessen. Die so genannte Güte entspricht dabei $Q=\frac{v_0}{v_+-V_-}$. Die Frequenzen $v_-$ und $v_+$ ensprechen den Frequenzen, bei denen das Verhältnis von $U_A$ zu $U_E$ auf $\frac{1}{\sqrt{2}}$ gesunken ist. Es ist somit auch leicht abzusehen, dass ein solcher Filter die Störspannungen nicht vollständig entfernen kann. Stattdessen werden Frequenzen, die nah an $v_0$ liegen, abgeschwächt, aber können trotzdem passieren.
+\section{Durchführung}
+\subsection{Messung der Filterkurve des Selektivverstärkers}
+Zur Bestimmung der Filterkurve wird mit einem Frequenzgenerator eine bestimmte Frequenz generiert und durch den Selektivverstärker in ein Millivoltmeter gespeist. Die angezeigte Spannung wird notiert und aufgetragen gegen die Frequenz. Vorallem um $v_0$ sollten vermehrt Messungen durchgeführt werden.
+\subsection{Experimentelle Bestimmung der Suszeptibilität}
+Der an die Brückenschaltung angeschlossene Frequenzgenerator wird möglichst exakt auf die Durchlassfrequenz $v_0$ des Selektivverstärkers eingestellt. Die Güte wird auf $Q=20$ eingestellt. Nun wird die Brücke möglichst genau abgeglichen mit Hilfe der Abgleichelemente, also so, dass die Brückenspannung möglichst $U_{Br}=0$ ist. Nun werden die Einstellungen der Abgleichelemente und die Restspannung notiert. Daraufhin wird eine Probe in die Spule geschoben und die enstandene Brückenspannung für die erste Methode der Bestimmung der Suszeptibilität notiert. Schliesslich wird nun die Brücke für die zweite Methode mit der Probe in der Spule abgeglichen und auch hier die Einstellung der Abgleichelemente notiert.
