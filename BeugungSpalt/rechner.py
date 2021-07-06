@@ -13,7 +13,7 @@ D = 10e-9
 L = 1.05
 l = 633*10e-9
 b = 0.15*10e-3
-p = (x/100)/L
+p = (x/1000)/L
 
 I1 = (es*1e-6)-10e-9
 I2 = (ds*1e-6)-10e-9
@@ -35,26 +35,28 @@ def doppel(phi,b,s):
 
 
 
-params, covariance =curve_fit(einzel,p,I1,p0=[0.00015,70])
-errors = np.sqrt(np.diag(covariance))
-print('breite des Spaltes:', params[0],'+-',errors[0])
-#print('Abweichung', a(params[0],0.00015))
-print('A_0:', params[1],'+-',errors[1])
-#def einzel(phi,b,lamda,A_0)
+from scipy.optimize import curve_fit
+params, covariance_matrix = curve_fit(einzel, p, I1)
 
-params2, covariance2 =curve_fit(doppel,p,I2,p0=[0.00015, 0.00065])
-errors2 = np.sqrt(np.diag(covariance2))
-print('breite des Spaltes:', params2[0],'+-',errors2[0])
-#print('Abweichung', a(params2[0],0.00015))
-print('A_0:', params2[1],'+-',errors2[1])
-#print(params2[2], '+-', errors2[2])
+uncertainties = np.sqrt(np.diag(covariance_matrix))
+
+for name, value, uncertainty in zip('ab', params, uncertainties): 
+    print(f'{name} = {value:8.3f} ± {uncertainty:.3f}')
+
+from scipy.optimize import curve_fit
+params, covariance_matrix = curve_fit(doppel, p, I2)
+
+uncertainties = np.sqrt(np.diag(covariance_matrix))
+
+for name, value, uncertainty in zip('ab', params, uncertainties): 
+    print(f'{name} = {value:8.3f} ± {uncertainty:.3f}')
 
 x2 = np.linspace(-0.2, 0.2, 50)
 
 
 plt.figure()
 plt.plot(p, (es*1e-6)-10e-9, 'rx', label=r'Messwerte')
-plt.plot(x2, einzel(x2, 0.000146, 74.499), 'b-', label=r'fit')
+plt.plot(x2, einzel(x2, 1, 4.744), 'b-', label=r'fit')
 plt.legend()
 plt.xlabel('$ \phi \; [^\circ]$')
 plt.ylabel('$ I-I_{Dunkel} \; [A]$')

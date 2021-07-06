@@ -14,40 +14,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Aufbau}{4}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Auswertung}{5}{section.3}%
+\contentsline {section}{\numberline {3}Durchfuehrung}{5}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Bragg-Bedingung}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Ueberpruefung der Bragg-Bedingung}{5}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Emissionsspektrum der Kupfer-Röntgenröhre}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Analyse des Emissionsspektrums}{5}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Analyse der Absorptionsspektren}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Analyse der Absorptionsspektren}{5}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Brom}{8}{subsubsection.3.3.1}%
+\contentsline {section}{\numberline {4}Auswertung}{5}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Gallium}{11}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {4.1}Bragg-Bedingung}{5}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Rubidium}{11}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {4.2}Emissionsspektrum der Kupfer-Röntgenröhre}{6}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.4}Strontium}{14}{subsubsection.3.3.4}%
+\contentsline {subsection}{\numberline {4.3}Analyse der Absorptionsspektren}{8}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.5}Zink}{14}{subsubsection.3.3.5}%
+\contentsline {subsubsection}{\numberline {4.3.1}Brom}{9}{subsubsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.6}Zirkonium}{16}{subsubsection.3.3.6}%
+\contentsline {subsubsection}{\numberline {4.3.2}Gallium}{9}{subsubsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Rydbergenergie}{16}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.3}Rubidium}{12}{subsubsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Diskussion}{19}{section.4}%
+\contentsline {subsubsection}{\numberline {4.3.4}Strontium}{12}{subsubsection.4.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Bragg-Bedingung}{19}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.3.5}Zink}{15}{subsubsection.4.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Emissionspektrum der Kupfer Röntgenröhre}{19}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.3.6}Zirkonium}{15}{subsubsection.4.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Abschirmkonstanten}{19}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Rydbergenergie}{17}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Rydbergenergie}{20}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Diskussion}{20}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Messwerte}{22}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Bragg-Bedingung}{20}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\nonumberline Literatur}{27}{section*.21}%
+\contentsline {subsection}{\numberline {5.2}Emissionspektrum der Kupfer Röntgenröhre}{20}{subsection.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Abschirmkonstanten}{20}{subsection.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4}Rydbergenergie}{21}{subsection.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Messwerte}{23}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Literatur}{28}{section*.21}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
