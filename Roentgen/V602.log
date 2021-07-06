@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.6.19)  1 JUL 2021 02:20
+||||||| d0b4375
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  30 JUN 2021 10:19
+=======
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  30 JUN 2021 10:20
+>>>>>>> a49ac5f3e9e60275c525502d547e574af37b3a76
  restricted system commands enabled.
 **V602.tex
 (./V602.tex
@@ -858,12 +864,30 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
+<<<<<<< HEAD
 (polyglossia)            synonyms	
 (polyglossia)            righthyphenmin	2
+||||||| d0b4375
+(polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
+=======
+(polyglossia)            loader	loadhyph-de-1901.tex
+>>>>>>> a49ac5f3e9e60275c525502d547e574af37b3a76
 (polyglossia)            patterns	hyph-de-1901.pat.txt
+<<<<<<< HEAD
 (polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	 on input line 10
+||||||| d0b4375
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	 on input line 10
+=======
+(polyglossia)            hyphenation	
+(polyglossia)            synonyms	
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2 on input line 10
+>>>>>>> a49ac5f3e9e60275c525502d547e574af37b3a76
 Module polyglossia Info: Language german was not yet loaded; created with id 3 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -891,12 +915,30 @@ LaTeX Info: Redefining \rmfamily on input line 26.
 LaTeX Info: Redefining \sffamily on input line 26.
 LaTeX Info: Redefining \ttfamily on input line 26.
 Module polyglossia Info: Language data for ngerman
+<<<<<<< HEAD
 (polyglossia)            synonyms	
 (polyglossia)            righthyphenmin	2
+||||||| d0b4375
+(polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
+=======
+(polyglossia)            loader	loadhyph-de-1996.tex
+>>>>>>> a49ac5f3e9e60275c525502d547e574af37b3a76
 (polyglossia)            patterns	hyph-de-1996.pat.txt
+<<<<<<< HEAD
 (polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	 on input line 26
+||||||| d0b4375
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	 on input line 26
+=======
+(polyglossia)            hyphenation	
+(polyglossia)            synonyms	
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2 on input line 26
+>>>>>>> a49ac5f3e9e60275c525502d547e574af37b3a76
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 26
 )

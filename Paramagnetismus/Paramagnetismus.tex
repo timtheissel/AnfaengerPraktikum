@@ -1,0 +1,43 @@
+\section{Zielsetzung}
+Im folgenden Experiment sollen die magnetischen Eigenschaften stark paramagnetischer Stoffe untersucht werden. Diese stark paramagnetischen Stoffe sind seltene Erden wie Neodym oder Gadolinium. Besonderes Augenmerk soll dabei auf die Ermittlung der Suszeptibilität $\chi$ aus atomaren Größen, sowie der experimentellen Ermittlung von $\chi$ mit Hilfe einer Brückenschaltung, gelegt werden. Diese Brückenschaltung und die dafür notwendigen Apparaturen sollen in mehr Detail beschrieben werden.
+\section{Theoretische Grundlagen}
+\subsection{Berechnung der Suszeptibilität}
+Die magnetische Flussdichte $\vec{B}$ und die magnetische Feldstärke $\vec{H}$ hängen im Vakuum über die Induktionskonstante $\mu_0$ zusammen. Somit ergibt sich für $\vec{B}=\mu_0\vec{H}$.. In Anwesenheit von Materie verändert sich dieser Ausdruck um die Magnetisierung $\vec{M}$ zu $\vec{B}=\mu_0\vec{H}+\vec{M}$ mit $\vec{M}=\mu_0\chi\vec{H}$. Hierin stellt der Faktor $\chi$ die sogenannte Suszeptibilität dar.\\
+Eines der magnetischen Phänomene, welches sich bei allen atomen zeigt, ist der Diamagnetismus. Dabei wird in einem Material ein magnetisches Moment induziert, welches dem äusseren Magnetfeld entgegen gerichtet ist. Daher ist in diesem Fall $\chi<0$. Im Unterschied dazu steht der Paramagnetismus, welcher nur bei Atomen mit nicht verschwindendem Drehimpuls auftritt. Diese Größe ist temperaturabhängig. Die Herleitung erfolgt über die atomare Größe des Gesamtdrehimpulses $\vec{J}$. Dieser setzt sich zusammen aus dem Gesamtbahndrehimpuls $\vec{L}$ und dem Gesamtspin $\vec{S}$, also $\vec{J}=\vec{L}+\vec{S}$. Die magnetischen Momente zu $\vec{L}$ und $\vec{S}$ ergeben sich zu 
+\begin{equation*}
+    \vec{\mu_L}=-\frac{\mu_B}{\hbar}\vec{L}
+\end{equation*}
+und
+\begin{equation*}
+    \vec{\mu_S}=-g_S\frac{\mu_B}{\hbar}\vec{S}
+\end{equation*}.
+Die Konstante $\mu_B:=\frac{e_0\hbar}{2m_0}$ ist das sogenannte Bohrsche Magneton mit der Ruhemasse des Elektrons $m_0$, dem gyromagnetischen Verhältnis des freien Elektrons $g_S$ und dem reduzierten plankschen Wirkungsquantum $\hbar=\frac{h}{2\pi}$. Für die Beträge der Momente ergebn sich zu 
+\begin{equation*}
+    |\vec{\mu_L}|=\mu_B\sqrt{L(L+1)}
+\end{equation*}
+und
+\begin{equation*}
+    |\vec{\mu_L}|=g_S\mu_B\sqrt{S(S+1)}
+\end{equation*}.
+Mit diesen Gleichungen kann nun für das magnetische Moment $|\vec{\mu_J}|$ des Gesamtdrehimpulses entsprechend des Vektordiagramms Abb \ref{Fig:Vektor} der Zusammenhang $|\vec{\mu_J}|=|\vec{\mu_S}|cos\alpha+|\vec{\mu_L}cos\beta$ hergestellt werden.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=7cm]{"Vektor_Paramagnetismus.png"}
+    \captionbelow{Vektordiagramm der Drehimpulsvektoren der Elektronenhülle und ihrer magnetischen Momente \\ Aus: \cite{V606}}
+    \label{Fig:Vektor}
+\end{figure}
+Unter Ausnutzung des Cosinussatzes, Einsetzen der vorherigen Gleichungen und der Vereinfachung der Größe $g_S$ auf den Wert 2, ergibt sich $|\vec{\mu_J}|\approx\mu_Bg_J\sqrt{J(J+1)}$ mit dem Land\'{e}-Faktor $g_j:=\frac{3J(J+1)+[S(S+1)-L(L+1)]}{2J(J+1)}$. Durch das Phänomen der Richtungsquantelung aus der Quantenmechanik ist nicht jede räumliche Orientierung möglich, sondern nur solche, bei denen beispielweise die Komponente $\mu_{Jz}$ von $\vec{\mu_J}$ ein ganzzahliges Vielfaches von $\mu_Bg_J$ darstellt, also $\mu_Jz=-\mu_Bg_Jm$. mist hierbei die Orientierungsquantenzahl. Für die potentielle Energie zu einem bestimmten m ergibt sich $E_m=\mu_Bg_JmB$. Nach dem Zeeman-Effekt spaltet sich ein Energieniveau in $2J+1$ Unterniveaus auf. Nun muss zur Berechnung der Magnetisierung die Häufigkeit mit der eine Orientierung auftritt mit dem Betrag des magnetischen Moments für diese Orientierung multiplizieren und über alle Orientierungen summieren. Nach Durchführung dieser komplizierten Rechnungen unter Verwendung von etwa der Hochtemperaturnäherung ergibt sich für die letztlich gesuchte Suszeptibilität $\chi$
+\begin{equation}
+    \chi=\frac{\mu_0\mu_b^2g_j^2NJ(J+1)}{3kT} \label{Chi}
+\end{equation}.
+Dies lässt sich für sehr hohe Temperaturen zum Curieschen Gesetz des Paramagnetismus vereinfachen mit $\chi\approx\frac{1}{T}$.
+\subsection{Berechnung der Suszeptibilität seltener Erd-Verbindungen}
+Seltene Erd-Ionen müssen grosse Drehimpulse der Hüllenelektronen haben, da sie einen starken Paramagnetismus zeigen. Diese Ionen haben eine gesättigte Xe-Hülle und 2 6s-Elektronen, welche aber für die Berechnungen keine Rolle spielen. Vielmehr sind die 4f-Elektronen entscheidend. Diese sind erst vom Cer (z=58) an zu finden. Die nachfolgenden Atome im Periodensystem haben bis zum Ytterbium (z=70) immer jeweils ein 4f-Elektron mehr als der Vorgänger. Die Anordnung dieser 4f-Elektronen wird durch die Hundschen Regeln festgelegt.\\\\
+\textbf{Erste Hundsche Regel:} Die Spins $\vec{s_i}$ addieren sich zum maximalen Gesamtspin $\vec{S}=\sum\vec{s_i}$, welcher durch das Pauliprinzip erlaubt wird.\\\\
+\textbf{Zweite Hundsche Regel:} Die Bahndrehimpuls $\vec{l_i}$ ergeben sich so, dass der maximale Drehimpuls $\vec{L}=\sum\vec{l_i}$ entsteht, welcher pauli-verträglich ist und Regel 1 nicht verletzt.\\\\
+\textbf{Dritte Hundsche Regel:} Der Gesamtdrehimpuls ist $\vec{J}=\vec{L}+\vec{S}$, wenn die Schale mehr als halb voll ist und $\vec{J}=\vec{L}-\vec{S}$, wenn sie nicht zu mehr als der Hälfte gefüllt ist.\\\\
+Diese Regeln werden benötigt, um nach Gleichung \ref{Chi} die Suszeptibilität zu berechnen. Es muss also der Drehimpuls J sowie der Lande-Faktor bestimmt werden. Dies wird hier am Beispiel der $Pr^{3+}$-Hülle demonstriert. Es besitzt drei 4f-Elektronen und zwei 6s-Elektronen. Durch die Ionisierung fehlen zwei 6s-Elektronen und ein 4f-Elektron. Nach der ersten Hundschen Regel stellen sich die Spins der übrig gebliebenen 4f-Elektronen parallel, also $S=\frac{1}{2}+\frac{1}{2}=1$. $l_{max}=3$ ergibt sich daher, dass es sich um eine f-Schale handelt. Nach der zweiten Regle kann aber nur ein Elektron den Bahndrehimpuls $l=3$ haben, weshalb das andere dann $l=2$ hat und so $L=3+2=5$ ist. Die 4f-Schale ist zu weniger als der Hälfte gefüllt, wodurch die dritte Regel diktiert, dass $J=L-S=5-1=4$. Mit $L=5$, $S=1$ und $J=4$ ist der Lande-Faktor dann 
+\begin{equation*}
+    g_j(Pr^{3+})=\frac{3\cdot 4\cdot 5+1\cdot 2-5\cdot 6}{2\cdot 4\cdot 5}=0.8
+\end{equation*}.
