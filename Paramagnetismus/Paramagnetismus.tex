@@ -83,9 +83,9 @@ Mit den Gleichungen \ref{21} und \ref{22} ergibt sich nach Einsetzen und Umforme
     \chi=\frac{U_{Br}\cdot 4l\sqrt{R^2+\omega^2(\mu_0\frac{n^2F}{l})^2}}{U_{Sp}\cdot\omega\mu_0n^2Q}
 \end{equation*}.
 Daher ist die Suszeptibilität $\chi$ für grosse Frequenzen $(\omega^2L^2>>R^2)$
-\begin{equation*}
+\begin{equation}\label{XU}
     \chi=\frac{4F\cdot U_{Br}}{Q\cdot U_{Sp}}
-\end{equation*}\\\\
+\end{equation}\\\\
 Die Abgleichbedingung der Brücke ohne Probe ist $r_1R_4=r_2R_3$ mit $R_3\approx R_4$. Nach Einbau der Probe muss $R_3$ sich um den Wert $\Delta R$ ändern, um wieder abgeglichen zu sein. Mit $R_3+R_4=const$ lautet die Abgleichbedingung dann 
 \begin{equation*}
     (R_M)+j\omega L_M)(R_3-\Delta R)=(R+j\omega L)(R_3+\Delta R)
@@ -95,9 +95,9 @@ Der Imaginärteil ergibt sich dann zu $\Delta R=\frac{R_3(L_M-L)}{L+L_M}$ und mi
     \Delta R=\frac{R_3\Delta L}{2L+\Delta L}\approx\frac{\Delta LR_3}{2L}
 \end{equation*}
 Mit den Gleichungen \ref{21} und \ref{22} ergibt sich nach Einsetzen und Umformen schliesslich
-\begin{equation*}
+\begin{equation}\label{XR}
     \chi=2\frac{\Delta R\cdot F}{R_3Q}
-\end{equation*}
+\end{equation}
 \section{Unterdrückung der Störspannungen}
 Da die Störspannungen verglichen mit der zu messenden Spannung verhältnismässig gross sind, ist es von Nöten diese herauszufiltern. Dies wird mit einem Selektivverstärker realisiert. Da die Signalspannung monofrequent ist, reicht es wenn nur diese Frequenz die Selektion passieren kann. Dieser Selektivverstärker hat eine Filterkurve, welche einer gausssche Glockenkurve entspricht, welche einem Verhältnis aus Ausgangsspannung $U_A$ zu Eingangsspannung $U_E$ entspricht. Die Wirksamkeit dieser Unterdrückung ungewollter Frequenzen wird an der Breite dieser Kurve gemessen. Die so genannte Güte entspricht dabei $Q=\frac{v_0}{v_+-V_-}$. Die Frequenzen $v_-$ und $v_+$ ensprechen den Frequenzen, bei denen das Verhältnis von $U_A$ zu $U_E$ auf $\frac{1}{\sqrt{2}}$ gesunken ist. Es ist somit auch leicht abzusehen, dass ein solcher Filter die Störspannungen nicht vollständig entfernen kann. Stattdessen werden Frequenzen, die nah an $v_0$ liegen, abgeschwächt, aber können trotzdem passieren.
 \section{Durchführung}

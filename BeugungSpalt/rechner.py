@@ -13,7 +13,7 @@ D = 10e-9
 L = 1.05
 l = 633*10e-9
 b = 0.15*10e-3
-p = (x/1000)/L
+p = (x/100)/L
 
 I1 = (es*1e-6)-10e-9
 I2 = (ds*1e-6)-10e-9
@@ -55,8 +55,8 @@ x2 = np.linspace(-0.2, 0.2, 50)
 
 
 plt.figure()
-plt.plot(p, (es*1e-6)-10e-9, 'rx', label=r'Messwerte')
-plt.plot(x2, einzel(x2, 1, 4.744), 'b-', label=r'fit')
+plt.plot(p, (es*1e-5)-10e-9, 'rx', label=r'Messwerte')
+plt.plot(x2, einzel(x2, 0.000146, 235.499), 'b-', label=r'fit')
 plt.legend()
 plt.xlabel('$ \phi \; [^\circ]$')
 plt.ylabel('$ I-I_{Dunkel} \; [A]$')

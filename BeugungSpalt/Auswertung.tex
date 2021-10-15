@@ -2,7 +2,7 @@
 
 \subsection{Vergleichswerte}
 
-Vor der Druchführung des Experiments wurden folgende Werte für den Vergleich mit den zu bestimmenden Werten aufgenommen:
+Vor der Durchführung des Experiments werden folgende Werte für den Vergleich mit den zu bestimmenden Werten aufgenommen:
 
 \begin{align*}
     Abstand Detektor-Spalt \; \;  L &= 1.05m \\
@@ -10,12 +10,12 @@ Vor der Druchführung des Experiments wurden folgende Werte für den Vergleich m
     Spaltbreite (Doppelspalt)\; \; b_d &= 0.15*10^{-3}m \\
     Spaltabstand\; \; s &= 0.5*10^{-3}m \\
     Dunkelstrom\; \; I_{Dunkel} &= 1*10^{-8}A\\
-    Wellenlänge Laserlicht\; \; \lambda &= 633*10^{-9}m 
+    Wellenlaenge Laserlicht\; \; \lambda &= 633*10^{-9}m 
 \end{align*}
 
 \subsection{Einzelspalt}
 
-Für die Beugung am Einzelspalt wurden folgende Werte gemessen:
+Die Werte für die Messung am Einzelspalt sind in Tabelle \ref{tab:1} zu finden.
 
 \begin{minipage}{\linewidth}
     \begin{table}[H]
@@ -80,7 +80,7 @@ Für die Beugung am Einzelspalt wurden folgende Werte gemessen:
 \end{table}
 \end{minipage}
 
-Von den Werten für die Intensität wurde der Dunkelstrom abgezogen. Anschließend werden die entstehenden Werte graphisch dargestellt. Dabei wird auf der x-Achse der Beugungswinkel $\phi$ dargestellt. Dieser berechnet sich ungefähr durch $\phi = \frac{x-x_0}{L}$. Es wurde eine Ausgleichsrechnung mit folgender Formel durchgeführt:
+Von den Werten für die Intensität wird der Dunkelstrom abgezogen. Anschließend werden die entstehenden Werte graphisch dargestellt. Dabei wird auf der x-Achse der Beugungswinkel $\phi$ dargestellt. Dieser berechnet sich ungefähr durch $\phi = \frac{x-x_0}{L}$. Es wird eine Ausgleichsrechnung mit folgender Formel durchgeführt:
 
 \begin{align*}
     I=A_0^2\cdot b^2\cdot (\dfrac{\lambda}{\pi \ b \ \sin{\psi}})^2 \cdot \sin{\pi \ b \ (\sin{\dfrac{\phi}{\lambda}}})^2.
@@ -102,7 +102,7 @@ Diese Ausgleichsrechnung liefert nun einen Wert für die Breite des Spaltes:
 
 \subsection{Doppelspalt}
 
-Für die Beugung am Doppelspalt wurden folgende Werte Aufgenommen:
+Die Werte für die Beugung am Doppelspalt sind in Tabelle \ref{tab:2}.
 
 \begin{minipage}{\linewidth}
     \begin{table}[H]
@@ -191,18 +191,41 @@ Die Ausgleichsrechnung liefert dabei einen Wert für die Spaltbreite und den Spa
 
 \subsection{Vergleich}
 
-Abschließend wird die x-Achse so skaliert, dass die beiden Funktionen ähnliche Amplituden haben um die Funktionen vergleichen zu können. Dabei entsteht folgendes Bild.
+Beim Vergleich der beiden Kurven entsteht das Bild in Abbildung \ref{fig:Vergleich}.
 
 \begin{figure}[H]
     \centering
     \includegraphics{vergleich.png}
     \captionof{figure}{Vergleich der Beugungsmessungen.}
+    \label{fig:Vergleich}
 \end{figure}
 
 
 \section{Diskussion}
 
-Die durch die Ausgleichsrechnungen entstandenen Werte werden mit den angegebenen Werten verglichen. Dabei entstehen folgende Abweichungen:
+Das Experiment liefert die Werte
+
+\begin{align*}
+    b_e = (0.146\pm 0.000127)*10^{-3}m \\
+    b_d = (0.1335\pm 0.0001)* 10^{-3}m  \\
+    s = (0.659\pm 0.000195)* 10^{-3}m.
+\end{align*}
+
+Die theoretischen Werte sind
+
+\begin{align*}
+    b_e = 0.15*10^{-3}m \\
+    b_d = 0.15* 10^{-3}m  \\
+    s = 0.5* 10^{-3}m.
+\end{align*}
+
+Die durch die Ausgleichsrechnungen entstehenden Werte werden mit den angegebenen Werten verglichen. 
+
+\begin{equation*}
+    \Delta \% = \frac{x_{Theo}-x_{Exp}}{x_{Theo}}
+\end{equation*}
+
+Dabei entstehen folgende Abweichungen:
 
 \begin{align*}
 b_e \; \; & \text{weicht um} \; \; 2.67\% \; \; \text{ab} \\
@@ -210,16 +233,16 @@ b_d \; \; & \text{weicht um} \; \; 11.00\% \; \; \text{ab} \\
 s \; \; & \text{weicht um} \; \; 31.8\% \; \; \text{ab}  \\
 \end{align*}
 
-Dieses Experiment hat einige fehlerquellen. Diese sind zum Beispiel die Ausrichtung des Lasers und des Detektors. Diese werden vor der messung per Hand und mit bloßem Auge ausgerichtet. Es ist also äußerst wahrscheinlich das bereits hierbei kleinere fehler entstanden sind.
+Dieses Experiment hat einige Fehlerquellen. Diese sind zum Beispiel die Ausrichtung des Lasers und des Detektors. Diese werden vor der messung per Hand und mit bloßem Auge ausgerichtet. Es ist also äußerst wahrscheinlich das bereits hierbei kleinere fehler entstanden sind.
 
 Da die Messwerte von einem analogen Messgerät abgelesen werden ist die während des Experiments herrschende Dunkelheit ein Faktor der einen ohnehin schon vorhandenen Fehler beim Ablesen noch vergrößert. Denn eine Lichtquelle zum Ablesen der Werte würde die Messung der Intensität beeinflussen.
 
-Die Dunkelheit liefert allerdings eine weitere Ungenuigkeit. Denn es ist nicht möglich den Raum vollständig abzudunkeln. Dies würde widerum auch ein ablesen der Werte völlig unmöglich machen. Zwar wurde diese Ungenauigkeit versucht mit dem Dunkelstrom wieder auszugleichen jedoch war es dadurch, dass dieser so klein ist auch sehr schwer seinen genauen Wert zu bestimmen.
+Die Dunkelheit liefert allerdings eine weitere Ungenauigkeit. Denn es ist nicht möglich den Raum vollständig abzudunkeln. Dies würde widerum auch ein ablesen der Werte völlig unmöglich machen. Zwar wurde diese Ungenauigkeit versucht mit dem Dunkelstrom wieder auszugleichen jedoch war es dadurch, dass dieser so klein ist auch sehr schwer seinen genauen Wert zu bestimmen.
 
-Das Messgerät selbst lieferte auch eine zusätzliche Fehlerquelle. Nämlich hat das Wechseln der Messbereiche zu leichten Veränderungen der Werte geführt. Um den Fehler dabei zu minimieren wurde so gut wie möglich versucht den Messbereich beizubehalten, dies war aufgrund von großen Schwankungen der werte nicht immer möglich.
+Das Messgerät selbst lieferte auch eine zusätzliche Fehlerquelle. Nämlich hat das Wechseln der Messbereiche zu leichten Veränderungen der Werte geführt. Um den Fehler dabei zu minimieren wurde so gut wie möglich versucht den Messbereich beizubehalten, dies war aufgrund von großen Schwankungen der Werte nicht immer möglich.
 
 Weiterhin gab es die Fehlerquelle, dass die Spalte eingeklemmt werden mussten. Dies geschah per Hand und daher ist auch hier Fehler zu erwarten. Es war weder gegeben, dass der Spalt genau gerade ausgerichtet war, noch das der Laser genau mittig durch die Spalte schien und außerdem besteht durch eine starke Abnutzung der Klemmvorrichtung auch die Möglichkeit, dass die Spalte leicht verrutscht sind.
 
-Die Ausgleichsrechnungen sind hier auch eine fehlerquelle, die Auflösung der Minima und Maxima ist durch die begrenzte Anzahl an Messwerten klein. Es wurden zwar 50 Messwerte genommen aber gerade in der Nähe des Hauptmaximums wären noch mehr werte nötig gewesen um noch bessere Ausgleichsrechnungen zu erhalten.
+Die Ausgleichsrechnungen sind hier auch eine Fehlerquelle, die Auflösung der Minima und Maxima ist durch die begrenzte Anzahl an Messwerten klein. Es wurden zwar 50 Messwerte genommen aber gerade in der Nähe des Hauptmaximums wären noch mehr werte nötig gewesen um noch bessere Ausgleichsrechnungen zu erhalten.
 
 Zuletzt sei noch zu dem Vergleich des Beugungsbilds vom Einzelspalt mit dem vom Doppelspalt gesagt, dass, wie in der Abbildung zu erkennen, bis auf einige Ausnahmen die Kurve für den Einzelspalt, die Einhüllende für die Kurve des Doppelspaltes darstellt.

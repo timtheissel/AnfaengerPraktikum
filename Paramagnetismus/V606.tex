@@ -9,6 +9,10 @@
 \usepackage{caption}
 \usepackage{float}
 \usepackage{caption}
+
+\usepackage[backend=biber,]{biblatex}
+\addbibresource{lit.bib}
+
 \setdefaultlanguage{german}
 \title{V606 Suszeptibilitaet paramagnetischer Stoffe}
 \author{
@@ -22,5 +26,10 @@ Connor Magnus Böckmann \\ email: \href{mailto:connormagnus.boeckmann@tu-dortmun
 
 
 \input{Paramagnetismus.tex}
+\input{Auswertung.tex}
+
+\nocite{*}
+
+\printbibliography[heading=bibintoc]{}
 
 \end{document}
