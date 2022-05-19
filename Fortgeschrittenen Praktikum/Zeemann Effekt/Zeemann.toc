@@ -11,7 +11,10 @@
 \contentsline {subsection}{\numberline {2.5}Der Zeeman Effekt}{6}{subsection.2.5}%
 \contentsline {subsubsection}{\numberline {2.5.1}Der normale Zeeman Effekt}{7}{subsubsection.2.5.1}%
 \contentsline {subsubsection}{\numberline {2.5.2}Anormaler Zeeman Effekt}{8}{subsubsection.2.5.2}%
-\contentsline {section}{\numberline {3}Vorbereitungsaufgaben}{8}{section.3}%
-\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Eichung des Elektromagneten}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {2.6}Die Lummer-Gehrcke-Platte}{8}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Der Versuchsaufbau}{9}{section.3}%
+\contentsline {section}{\numberline {4}Die Durchführung}{10}{section.4}%
+\contentsline {section}{\numberline {5}Vorbereitungsaufgaben}{10}{section.5}%
+\contentsline {section}{\numberline {6}Auswertung}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Eichung des Elektromagneten}{10}{subsection.6.1}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

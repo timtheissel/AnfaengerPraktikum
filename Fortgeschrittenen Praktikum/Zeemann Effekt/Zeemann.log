@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  19 MAY 2022 12:29
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.10.8)  19 MAY 2022 15:16
  restricted system commands enabled.
 **Zeemann.tex
 (./Zeemann.tex
@@ -869,12 +869,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            synonyms	
 (polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            righthyphenmin	2 on input line 10
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -902,12 +902,12 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            synonyms	
 (polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            righthyphenmin	2 on input line 22
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 3 
 on input line 22
 )
@@ -1137,25 +1137,47 @@ LaTeX Info: Redefining \ttfamily on input line 1.
 
 \openout4 = Zeemann.toc
  [2] (./Theorie.tex [3] [4]
-<Energieniveaus.png, id=74, 347.04657pt x 191.9672pt>
+<Energieniveaus.png, id=78, 347.04657pt x 191.9672pt>
 File: Energieniveaus.png Graphic file (type png)
 <use Energieniveaus.png>
 Package luatex.def Info: Energieniveaus.png  used on input line 70.
 (luatex.def)             Requested size: 257.2076pt x 142.26378pt.
  [5]
-<Zeeman_Energieniveaus.png, id=87, 232.61906pt x 259.7203pt>
+<Zeeman_Energieniveaus.png, id=91, 232.61906pt x 259.7203pt>
 File: Zeeman_Energieniveaus.png Graphic file (type png)
 <use Zeeman_Energieniveaus.png>
 Package luatex.def Info: Zeeman_Energieniveaus.png  used on input line 86.
 (luatex.def)             Requested size: 127.4191pt x 142.26378pt.
  [6<./Energieniveaus.png>]
-<Aufspaltungsbild.png, id=95, 312.41719pt x 181.42781pt>
+<Aufspaltungsbild.png, id=99, 312.41719pt x 181.42781pt>
 File: Aufspaltungsbild.png Graphic file (type png)
 <use Aufspaltungsbild.png>
 Package luatex.def Info: Aufspaltungsbild.png  used on input line 94.
 (luatex.def)             Requested size: 244.98106pt x 142.26378pt.
- [7<./Zeeman_Energieniveaus.png><./Aufspaltungsbild.png>])
-(./Auswertung.tex)
+ [7<./Zeeman_Energieniveaus.png><./Aufspaltungsbild.png>]
+<Anormaler_Zeeman.png, id=109, 352.31625pt x 292.09125pt>
+File: Anormaler_Zeeman.png Graphic file (type png)
+<use Anormaler_Zeeman.png>
+Package luatex.def Info: Anormaler_Zeeman.png  used on input line 107.
+(luatex.def)             Requested size: 308.89955pt x 256.0748pt.
+<Lummer_Platte.png, id=111, 625.58719pt x 249.18094pt>
+File: Lummer_Platte.png Graphic file (type png)
+<use Lummer_Platte.png>
+Package luatex.def Info: Lummer_Platte.png  used on input line 117.
+(luatex.def)             Requested size: 357.17068pt x 142.26378pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--120
+
+ []
+
+[8<./Anormaler_Zeeman.png>]
+<Aufbau.png, id=122, 645.91313pt x 267.24844pt>
+File: Aufbau.png Graphic file (type png)
+<use Aufbau.png>
+Package luatex.def Info: Aufbau.png  used on input line 140.
+(luatex.def)             Requested size: 343.85013pt x 142.26378pt.
+ [9<./Lummer_Platte.png>]) (./Auswertung.tex
+[10<./Aufbau.png>])
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1190,7 +1212,7 @@ braces):
 >  {german/babelname}  =>  {ngerman}
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [8] (./Zeemann.aux
+ [11] (./Zeemann.aux
 LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
@@ -1200,15 +1222,17 @@ Package rerunfilecheck Info: File `Zeemann.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 22075 strings out of 479058
+ 22121 strings out of 479058
  100000,1144653 words of node,token memory allocated
- 639 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 25 attribute, 66 glue_spec
-, 25 attribute_list, 1 write nodes
-   avail lists: 1:1,2:425,3:214,4:38,5:410,6:47,7:6080,8:46,9:533,10:23,11:657
- 40611 multiletter control sequences out of 65536+600000
+ 663 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 31 attribute, 66 glue_spec
+, 31 attribute_list, 1 write nodes
+   avail lists: 1:1,2:465,3:242,4:38,5:410,6:53,7:6080,8:46,9:533,10:23,11:657
+ 40632 multiletter control sequences out of 65536+600000
  71 fonts using 6804131 bytes
  94i,13n,109p,10623b,772s stack positions out of 5000i,500n,10000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'subsection.5.1'
 {/home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit
 .enc}{/home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-m
 athsy.enc}{/home/cptflashpoint/.local/texlive/2020/texmf-dist/fonts/enc/dvips/lm
@@ -1226,10 +1250,10 @@ e/2020/texmf-dist/fonts/type1/public/lm/lmr8.pfb></home/cptflashpoint/.local/tex
 live/2020/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></home/cptflashpoint/.lo
 cal/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></home/cptflashpoin
 t/.local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Zeemann.pdf (8 pages, 280900 bytes).
+Output written on Zeemann.pdf (11 pages, 513203 bytes).
 
-PDF statistics: 205 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 131072)
- 121 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 251 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 131072)
+ 145 words of extra memory for PDF output out of 10000 (max. 100000000)
 
