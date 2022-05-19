@@ -1,5 +1,17 @@
 \selectlanguage *{german}
-\contentsline {section}{\numberline {1}Vorbereitungsaufgaben}{3}{section.1}%
-\contentsline {section}{\numberline {2}Auswertung}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Eichung des Elektromagneten}{3}{subsection.2.1}%
+\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Magnetisches Moment und die Drehimpulse des Elektrons}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Spin-Bahn-Kopplung und Wechselwirkung der Drehimpulse}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Der Mechanismus der LS-Kopplung}{4}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}jj-Kopplung}{4}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Die Energieniveauaufspaltung unter Einfluss eines homogenen Magnetfelds}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Übersicht über die Auswahlregeln für optische Übergänge}{6}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Auswahlregel für die magnetische Quantenzahl}{6}{subsubsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.5}Der Zeeman Effekt}{6}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Der normale Zeeman Effekt}{7}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Anormaler Zeeman Effekt}{8}{subsubsection.2.5.2}%
+\contentsline {section}{\numberline {3}Vorbereitungsaufgaben}{8}{section.3}%
+\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Eichung des Elektromagneten}{8}{subsection.4.1}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

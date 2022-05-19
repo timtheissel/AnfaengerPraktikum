@@ -1,0 +1,103 @@
+\section{Einleitung}
+Das Ziel dieses Versuches ist es, die Polarisation von Spektrallinien und ihre Auspaltung bei Atomen mit besonderem Augenmerk auf den Zeeman-Effekt zu untersuchen.
+
+\section{Theorie}
+Zur Erklärung des Zeeman-Effekt der Atomphysik, welcher für die Aufspaltung der Spektrallinien eines Atoms führt, muss zuerst die Entartung der Energieniveaus auf Grund eines Magnetfeldes verstanden werden. Hierzu werden zuerst Energieniveaus und ihre physikalische Bedeutung erklärt. Hierzu ist ein Verständnis der im Atom wirkenden Drehmomente, magnetische Momente und der Einfluss des Spins von Nöten. Im Anschluss daran werden die Energieniveauübergänge mit den entsprechenden Auswahlregeln erläutert und der titelgebende Zeeman-Effekt schlussendlich verstanden werden kann. 
+Wichtige Bestandteile für die praktische Umsetzung des Versuchs wie die verwendete Lummer-Gehrcke-Platte werden im Anschluss daran erläutert und ihre Funktionsweise erklärt.
+
+\subsection{Magnetisches Moment und die Drehimpulse des Elektrons}
+Die Drehimpulse eines jeden Hüllenelektrons eines Atoms bestehen aus dem Eigendrehimpuls $\vec{s}$, auch Spin genannt, und dem Bahndrehimpuls $\vec{l}$. Diese Drehimpulse stehen in ihren Beträgen in direkter Abhängigkeit zu der Quantenzahlen des Spins s und der Nebenquantenzahl l. Die Spinquantenzahl s ist abhängig vom Spin des Teilchens. In diesem Fall handelt es sich um ein Elektron, weshalb sie die Werte $s=\pm \frac{1}{2}$ annehmen kann. \linebreak
+Die Nebenquantenzahl l hingegen ist aussschliesslich abhängig von der Hauptquantenzahl n und ergibt sich zu $0\leq l\leq n-1$. Somit nehmen die Beträge des Bahndrehimpulses und des Spins diese Werte an.
+\begin{align}
+    |\vec{l}|=h\cdot\sqrt{l(l+1)}\\
+    |\vec{s}|=h\cdot\sqrt{s(s+1)}
+\end{align}
+Diesen Drehimpulsen lässt sich ein magnetisches Moment zuordnen, da das Elektron ein geladenes Teilchen ist. Die Ladung des Elektrons entspricht der Elementarladung $e_0$. Nun kann das Bohrsche Magneton $\mu_B = -\frac{1}{2}\frac{\hbar}{m_0}e_0$ herangezogen werden, um die Zuordnung des magnetischen Moments der Drehimpulse zu vollziehen.
+\begin{align}
+    &\vec{\mu_s}=-g_s\cdot\frac{\mu_b\cdot \vec{s}}{\hbar}=-g_s\mu_B\sqrt{s(s+1)}\cdot\vec{s_e}&\\
+   & \vec{\mu_l}=-\frac{\mu_b\cdot \vec{l}}{\hbar}=-\mu_B\sqrt{l(l+1)}\cdot\vec{l_e}&
+\end{align}
+Bei den Vektoren $\vec{l_e}$ und $\vec{s_e}$ handelt es sich um die Einheitsvektoren in die Richtung der Drehmomente. Ein weiterer wichtiger Faktor ist der Lande-Faktor $g_s$ bei der Bestimmung des magnetischen Moments des Spins. Für das hier betrachtete Elektron beträgt dieser Faktor ungefähr $g_s\approx 2$. Bei dem Lande-Faktor handelt es sich um eine quantenmechanische Korrektur und stellt den Quotient aus tatsächlich gemessenem magnetischem Moment und dem klassisch zu erwartenden magnetischen Moment dar für ein gegebenes Drehmoment. Dieser Faktor existiert theoretisch also auch für die Berechnung des magnetischen Moments beim Bahndrehimpuls. Dort stimmen aber der tatsächlich gemessene Wert und der Erwartungswert nach der klassischen Physik überein, also gilt $g_l=1$. 
+\subsection{Spin-Bahn-Kopplung und Wechselwirkung der Drehimpulse}
+Der Spin eines Elektrons und der Bahndrehimpuls koppeln aneinander. Es findet also eine ständige Wechselwirkung zwischen diesen Drehimpulsen statt. Da diese Wechselwirkung sich in Mehrelektronatomen nur auf komplizierte Art und Weise erklären lässt, sollen im folgenden nur zwei passende Grenzfälle betrachtet werden. Dabei handelt es sich um den Fall besonders hoher Ordnungzahlen und den Fall für besonders niedrige Ordnungszahlen.
+\subsubsection{Der Mechanismus der LS-Kopplung}
+Die LS-Kopplung stellt den Grenzfall für Atome niedriger Ordnungszahl dar, also für leichte Atome. Besonders interessant ist dabei die Möglichkeit die Wechselwirkung auf die Wechselwirkung zwischen den Hüllenelektronen zu reduzieren. Die Näherung erlaubt das Zusammenfassen der einzelnen Drehimpulse zu einem einzigen Drehimpuls
+\begin{align}
+    \vec{L}=\sum \limits_{i}^n \vec{l_i},\qquad |\vec{L}|=\hbar \cdot \sqrt{L(L+1)}\\
+    \vec{S}=\sum \limits_{i}^n \vec{s_i},\qquad |\vec{S}|=\hbar \cdot \sqrt{S(S+1)}.
+\end{align}
+Dabei ergibt sich $\vec{L}$ immer zu einem ganzzahligen Wert, wohingegen durch die halbzahligen Spins der Wert für $\vec{S}$ auch halbzahlige Werte annehmen kann. Nun kann aus Drehimpulsen der Gesamtdrehimpuls und dessen Betrag 
+berechnet werden.
+\begin{equation}
+    \vec{J}=\vec{L}+\vec{S},\qquad |\vec{J}|=\hbar\cdot\sqrt{J(J+1)}
+\end{equation}
+Diese Addition zu einem Gesamtdrehimpuls nennt sich LS-Kopplung, beziehungsweise Russel-Sanders-Kopplung,
+\subsubsection{jj-Kopplung}
+Der Grenzfall, welcher hier betrachtet wird, geht von sehr schweren Atomen aus, also Atomen mit hohen Ordnungszahlen. Hierbei wird davon ausgegangen, dass die Wechselwirkungen zwischen Elektronen der Hülle gering sind, da diese Hülle groß ist. Stattdessen liegt der Fokus auf der Wechselwirkung zwischen Spin und Bahndrehimpuls der einzelnen Elektronen. Es kann für jedes Elektron ein Gesamtdrehimpuls 
+\begin{equation}
+    \vec{J_i}=\vec{l_i}+\vec{s_i}
+\end{equation}
+angegeben werden, welche sich zum Gesamtdrehimpuls der Atomhülle summieren.
+\begin{equation}
+    \vec{J}=\sum \limits_i^n \vec{j_i}
+\end{equation}
+\subsection{Die Energieniveauaufspaltung unter Einfluss eines homogenen Magnetfelds}
+Hier wird nun das magnetische Moment $\vec{\mu_j}$ des Gesamtdrehimpulses $\vec{J}$ berechnet. Dieses bedarf im Vergleich zu den magnetischen Momenten des Spins und des Bahndrehimpulses etwas mehr Aufwand.\\
+Die erste Annahme, die hierzu getroffen wird, ist die einer Summation der magnetischen Momente von Bahndrehimpuls und Spin:
+\begin{equation}
+    \vec{\mu_J}=\vec{\mu_L}+\vec{\mu_S}.
+\end{equation}
+Dieser Ausgangspunkt berücksichtigt nun aber nicht, dass die Richtungen von $\vec{\mu}$ und $\vec{J}$ nicht zusammen fallen, weshalb eine Aufteilung in eine senkrechte Komponente $\mu_\perp$ und eine parallele Komponente $\mu_\parallel$ benötigt wird. Diese Bezeichnungen über Orthogonalität und Parallelität beziehen sich auf den Gesamtdrehimpuls $\vec{J}$. Durch quantenmechanische Einflüsse verschwindet hier die senkrechte Komponente, so dass sich für den Betrag 
+\begin{equation}
+    |\vec{\mu_J}|=\sqrt{J(J+1)}\cdot g_J\cdot \mu_B
+\end{equation}
+ergibt. Der Lande-Faktor $g_J$ ist für diesen Fall
+\begin{equation}
+    g_J=\frac{3J(J+1)+S(S+1)-L(L+1)}{2J(J+1)}.
+\end{equation}
+Nun sorgt die Richtungsquantelung, welche durch das äußere Magnetfeld hervorgerufen wird, dafür, dass der Winkel zwischen $\vec{\mu_J}$ und $\vec{B}$ durch ein Vielfaches des oben beschriebenen Bohrschen Magnetons beschrieben wird. Für die wichtige z-Komponente parallel zum Magnetfeld gilt:
+\begin{equation}
+    \mu_{J_z}=-m\cdot g_j\cdot\mu_B,\qquad -J\leq m\leq J.
+\end{equation}
+Das dort verwendete Zeichen $m$ nennt sich Orientierungsquantenzahl und nimmt ganzzahlige Werte von J an. Dem System wird durch das äußere Magnetfeld also Energie hinzugefügt.
+\begin{equation}
+    E_{mag}=-\vec{\mu_J}\cdot\vec{B}=m\cdot g_J\mu_B\cdot B
+\end{equation}
+Daher ergeben sich äuquidistante Energieniveaus, in welche aufgespaltet wird. Es handelt sich hierbei um $2J+1$. 
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=5cm]{"Energieniveaus.png"}
+    \captionbelow{Energieaufspaltung für einen Gesamtdrehimpuls J=2\\}
+    \label{Fig:Energieniveaus}
+\end{figure}
+\subsection{Übersicht über die Auswahlregeln für optische Übergänge}
+Als optische Übergänge werden Übergänge zwischen Energieniveaus genannt, bei denen ein Photon abgestrahlt oder aufgenommen wird. Jedoch gibt es Auswahlregeln, welche festlegen, welche Übergänge tatsächlich möglich sind. Entscheidende Kriterien sind dabei Symmetrieregeln, Energieerhaltung und Drehimpulserhaltung.
+\subsubsection{Auswahlregel für die magnetische Quantenzahl}
+Für polarisiertes Licht gilt die Auswahlregel der magnetischen Quantenzahl m. Sowohl der Fall der Absorption, als auch der Emission wird durch diese Auswahlregel abgedeckt. Bei einem Übergang von $E_i$ nach $E_k$ gilt im allgemeinen $\Delta m=m_i-m_k$, wobei die Auswahlregel vorhersagt, dass für zirkular polarisiertes Licht $\Delta m=\pm 1$ ist, wohingegen $\Delta m=0$ ist, sollte das Licht linear polarisiert ist. Entscheidend hierfü ist die Drehimpulserhaltung des Atom-Photon-Systems. Zirkular polarisiertes Licht hat einen Drehimpuls des Photons von $\pm\hbar$, wodurch sich bei der Absorption der Gesamtdrehimpuls des Atoms ändert. Das linear polarisierte Licht ist dagegen eine Überlagerung aus beiden Drehrichtungen des zirkularen Lichts, auch $\sigma^+$ und $\sigma^-$ genannt. Der Photonendrehimpuls ist dementsprechend Null, weshalb kein Drehimpuls an das Atom abgegeben wird. Die magnetische Orientierungsquantenzahl m ändert sich also nicht.\\
+Das eben beschriebene $\sigma^{\pm}$-Licht kann sowohl in transversaler, als auch in longitudinaler Richtung zum Magnetfeld beobachtet werden, wohingegen das linear polarisierte $\pi$-Licht nur in transversaler Richtung beobachtet werden kann. Mit Hilfe von Filtern kann das Licht in bestimmte Teile bestimmter Polarisation zerlegt werden.
+\subsection{Der Zeeman Effekt}
+Der Zeeman Effekt erklärt die Aufspaltung von Spektrallinien eines Atoms unter Einfluss eines äußeren Magnetfelds. Dabei wird unterschieden zwischen dem normalen und dem anormalen Zeeman Effekt. Die Bezeichnung hat dabei historische Gründe. Im folgenden Abschnitt soll auf beide Arten des Zeeman Effekts eingegangen werden.
+\subsubsection{Der normale Zeeman Effekt}
+Eine anfängliche Vorraussetzung fü die Existenz des normalen Zeeman Effekts ist ein Spin von $S=0$, wodurch sich der Lande-Faktor zu $g_s=1$ ergibt. Außerdem entfällt die Abhängigkeit von $J$ und $L$. Die Verschiebung der verschiedenen Energieniveaus ergibt sich dadurch zu $\Delta E=m\mu_B B$. Die Aufspaltung ist dabei ebenfalls äquidistant und es bilden sich $2J+1$-Unterniveaus.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=5cm]{"Zeeman_Energieniveaus.png"}
+    \captionbelow{Zeeman Effekt bei $\Delta m=0,\pm 1$\\}
+    \label{Fig:Zeeman_Energieniveaus}
+\end{figure}
+Schematisch lässt sich die Aufspaltung darstellen wie in Abbildung \ref{Fig:Zeeman_Energieniveaus}. Hierbei ergeben sich drei Spektrallinien mit den Werten $\Delta =0,\pm 1$. Bei der Beobachtung ist hier definitiv die Beobachtungsrichtung. So ist in Transversalrichtung alle drei Spektrallinien des Zeeman-Tripletts zu sehen, wobei in longitudinaler Richtung nur die $\sigma^\pm$-Linien sichtbar sind.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[height=5cm]{"Aufspaltungsbild.png"}
+    \captionbelow{Schema der Aufspaltung der Spektrallinien abhängig von der Betrachtungsrichtung\\}
+    \label{Fig:Aufspaltung}
+\end{figure}
+\newpage \subsubsection{Anormaler Zeeman Effekt}
+Der Spin wird beim anormalen Zeeman Effekt nun auch berücksichtigt. Dieser deckt also den Fall für $S\neq 0$ ab. Dadurch wird auch die Energiedifferenz abhängig vom Spin. Der Lande-Faktor ist nun nicht mehr $g_s=1$. Es ergeben sich deutlich mehr Spektrallinien nach 
+\begin{equation}
+    \Delta E=E_i-E_k=\Delta E_{mag}(g_{lJ}),
+\end{equation}
+ welches die Energiedifferenz $\Delta E$ bestimmt. Allgemein wird das Spektrum deutlich linienreicher.
