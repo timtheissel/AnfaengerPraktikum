@@ -1,20 +1,44 @@
 \selectlanguage *{german}
-\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}%
-\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Magnetisches Moment und die Drehimpulse des Elektrons}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Spin-Bahn-Kopplung und Wechselwirkung der Drehimpulse}{4}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Der Mechanismus der LS-Kopplung}{4}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}jj-Kopplung}{4}{subsubsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}Die Energieniveauaufspaltung unter Einfluss eines homogenen Magnetfelds}{5}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Übersicht über die Auswahlregeln für optische Übergänge}{6}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Auswahlregel für die magnetische Quantenzahl}{6}{subsubsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.5}Der Zeeman Effekt}{6}{subsection.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}Der normale Zeeman Effekt}{7}{subsubsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}Anormaler Zeeman Effekt}{8}{subsubsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.6}Die Lummer-Gehrcke-Platte}{8}{subsection.2.6}%
-\contentsline {section}{\numberline {3}Der Versuchsaufbau}{9}{section.3}%
-\contentsline {section}{\numberline {4}Die Durchführung}{10}{section.4}%
-\contentsline {section}{\numberline {5}Vorbereitungsaufgaben}{10}{section.5}%
-\contentsline {section}{\numberline {6}Auswertung}{10}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Eichung des Elektromagneten}{10}{subsection.6.1}%
+\contentsline {section}{\numberline {1}Einleitung}{4}{section.1}%
+\contentsline {section}{\numberline {2}Theorie}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Magnetisches Moment und die Drehimpulse des Elektrons}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Spin-Bahn-Kopplung und Wechselwirkung der Drehimpulse}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Der Mechanismus der LS-Kopplung}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}jj-Kopplung}{5}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Die Energieniveauaufspaltung unter Einfluss eines homogenen Magnetfelds}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Übersicht über die Auswahlregeln für optische Übergänge}{7}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Auswahlregel für die magnetische Quantenzahl}{7}{subsubsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.5}Der Zeeman Effekt}{7}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Der normale Zeeman Effekt}{8}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Anormaler Zeeman Effekt}{9}{subsubsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.6}Die Lummer-Gehrcke-Platte}{9}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Der Versuchsaufbau}{10}{section.3}%
+\contentsline {section}{\numberline {4}Die Durchführung}{11}{section.4}%
+\contentsline {section}{\numberline {5}Vorbereitungsaufgaben}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Energiestruktur eines Atoms}{11}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Welche Quantenzahlen definieren den Zustand eines Elektrons im Wasserstoffatom?}{11}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Was ist die Feinstruktur (Spin-Bahn-Kopplung)?}{11}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Beschreiben sie die LS-Kopplung und die jj-Kopplung.}{12}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Magnetisches Moment des Atoms}{12}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Wie ist der Zusammenhang zwischen dem Magnetischen Moment eines Elektrons und seinen Drehimpulsquantenzahlen?}{12}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Was ist der Unterschied zwischen dem gyromagnetischen Verhältnis für den Elektronenspin und demjenigen für den Drehimpuls?}{12}{subsubsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.3}Aufspaltung des Energieniveaus eines Atoms im homogenen Feld}{12}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}In wie viele Niveaus spaltet sich der Zustand mit Gesamtdrehimpuls J?}{12}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Wie ändert sich die Aufspaltung mit der Magnetfeldstärke?}{12}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Was versteht man unter dem Paschen-Bach-Effekt}{12}{subsubsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.4}Optische Übergänge zwischen Zeemanaufgespaltenen Energieniveaus}{13}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Optische Übergänge in Cd-Atomen}{13}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Berechnen sie die Lande Faktoren g\textsubscript {i} und die Aufspaltung $\Delta E$ der Zeeman Linien}{13}{subsubsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.6}Dispersionsgebiet und Auflösungsvermögen}{13}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Auswertung}{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Eichung des Elektromagneten}{14}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Wellenlängenaufspaltung des Cd-Spektrums}{15}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Bestimmung des geeigneten Magnetfelds für die Aufnahme der Wellenlängenaufspaltung}{15}{subsubsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.3}Wellenlängenaufspaltung der roten Linie}{16}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Zeemanaufspaltung der blauen Linie}{17}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Diskussion}{17}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Allgemeine Fehlerquellen bei der Durchführung und dem Aufbau}{17}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Abweichung der Werte}{18}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Literatur}{18}{section.8}%
+\contentsline {section}{\numberline {9}Messwerte}{19}{section.9}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
