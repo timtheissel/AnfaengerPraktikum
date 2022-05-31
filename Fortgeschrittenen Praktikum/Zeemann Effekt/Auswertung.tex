@@ -1,11 +1,116 @@
 \section{Vorbereitungsaufgaben}
 
+\subsection{Energiestruktur eines Atoms}
+
+\subsubsection{Welche Quantenzahlen definieren den Zustand eines Elektrons im Wasserstoffatom?}
+
+Der Zstand des Elektrons im Wasserstoffatom wird definiert durch 4 Quantenzahlen:
+
+-Die Hauptquantenzahl n gibt die Schale an.
+
+-Die nebenquantenzahl l gibt das Unterniveau an.
+
+-Die Magnetquantenzahl m gibt die Orientierung des Bahndrehimpulses an.
+
+und die Spinquantenzahl s.
+
+\subsubsection{Was ist die Feinstruktur (Spin-Bahn-Kopplung)?}
+
+Die Feinstruktur ist die Aufspaltung der Energieniveaus über die Hauptniveaus hinaus.
+
+Bei der Spin-Bahn-Kopplung handelt es sich um eine Wechselwirkung zwischen dem Spin und dem eigenen Magnetfeld. Der Gesamtdrehimpuls ergibt sich hierbei aus der Summe des Bahndrehimpulses mit dem Spin.
+
+\subsubsection{Beschreiben sie die LS-Kopplung und die jj-Kopplung.}
+
+Die LS-Kopplung tritt bei leichten Atomen (Ordnungszahl Z<50) auf. Die LS-Kopplung ist die Kopplung zwischen den Bahndrehimpulsen und den Spins der Elektronen. Bei den leichten Atomen ist diese Kopplung stärker als die Spin-Bahn-Kopplung und eine gute Näherung
+
+Bei schwereren Atomen wird die Spin-Bahn-Kopplung stärker und dann ist die jj-Kopplung eine gute Näherung für die Energiezustände des Atoms. 
+
+\subsection{Magnetisches Moment des Atoms}
+
+\subsubsection{Wie ist der Zusammenhang zwischen dem Magnetischen Moment eines Elektrons und seinen Drehimpulsquantenzahlen?}
+
+Der Zusammenhang ist das gyromagnetische Verhältnis. Dieses beschreibt den Faktor zwischen dem Drehimpuls und dem magnetischen Moment eines Teilchens.
+
+\subsubsection{Was ist der Unterschied zwischen dem gyromagnetischen Verhältnis für den Elektronenspin und demjenigen für den Drehimpuls?}
+
+Das gyromagnetische Verhältnis unterscheidet sich um einen g-Faktor, dieser ist beim Bahndrehimpuls 1 und verändert das Verhältnbis somit nicht. Für den Spin ist dieser g-Faaktor allerdings 2 und deshalb unterscheiden sich die Verhältnisse um einen Faktor 2.
+
+\subsection{Aufspaltung des Energieniveaus eines Atoms im homogenen Feld}
+
+Der Lande Faktor ist das Verhältnis zwischen dem Drehimpuls und dem magnetischen Moment.
+
+\subsubsection{In wie viele Niveaus spaltet sich der Zustand mit Gesamtdrehimpuls J?}
+
+Ein Zustand mit Gesamtdrehimpuls J spaltet sich in 2J+1 äquidistante Niveaus auf.
+
+\subsubsection{Wie ändert sich die Aufspaltung mit der Magnetfeldstärke?}
+
+Bei kleinen Feldstärken tritt der Zeeman Effekt auf. In dieser Auspaltung entstehen äquidistante Energieniveaus und die Spin-Bahn-Kopplung ist vorherrschend.
+
+Bei großen Feldstärken ist die LS-Kopplung gestört. Die Energieniveaus sind bei dieser Aufspaltung nicht mehr äquidistant und der Paschen-Bach-Effekt kommt hinzu.
+
+\subsubsection{Was versteht man unter dem Paschen-Bach-Effekt}
+
+Bei großen Magnetfeldstärken tritt der Paschen-Bach-Effekt auf. Durch die großen äußeren Magnetfelder wird die LS-Kopplung gestört. Bei der Betrachtung der Spektrallinien sieht der eigentlich auftretende annormale Zeeman Effekt aus wie der normale Zeeman Effekt.
+
+\subsection{Optische Übergänge zwischen Zeemanaufgespaltenen Energieniveaus}
+
+Optische Übergänge sind Übergänge die mit Photonenemission oder -absorption funktionieren. Dabei verändert sich die Magnetquantenzahl m. Erlaubte Übergänge sind Übergänge bei denen gilt, dass die Differenz aus der alten und neuen Quantenzahl m 0, 1 oder -1 ist. Also:
+
+\begin{align}
+    m_alt - m_neu = \Delta m = [-1,0,1]
+\end{align}
+
+Es werden bei dem annormalen Zeeman Effekt mehr Spektrallinien beobachtet als beim normalen Zeeman Effekt. Dabei sind die Spektrallinien zirkular polarisiert wenn $\Delta m =  [-1,+1]$ und linear polarisiert, wenn $\Delta m = 0 $.   
+
+\subsection{Optische Übergänge in Cd-Atomen}
+
+\subsubsection{Termschema}
+
+\subsubsection{Berechnen sie die Lande Faktoren g\textsubscript{i} und die Aufspaltung $\Delta E$ der Zeeman Linien}
+
+Mit der Formel,
+
+\begin{align}
+    g_i = 1 + \frac{j(j + 1) - l(l+1) + s(s+1)}{2j(j+1)}
+\end{align}
+
+wobei j die Gesamtdrehimpulsquantenzahl, l die Bahndrehimpulsquantenzahl und s die Spinquantenzahl ist, lassen sich die Lande Faktoren berechnen.
+Für die Zustände $^1p_1$, $^1D_2$, $^3p_1$ und $^3s_1$ ergeben sich folgende Lande Faktoren:
+
+\begin{minipage}{\linewidth}
+    \begin{table}[H]
+        \centering
+    \captionof{table}{Lande Faktoren}
+    \begin{tabular}{ll}
+        \toprule
+        Zustand & Lande Faktor \\
+        \midrule
+        $^1p_1$ & 1.0 \\
+        $^1D_2$ & 1.0 \\
+        $^3p_1$ & 1.5 \\
+        $^3s_1$ & 2.0 \\
+        \bottomrule   
+    \end{tabular}
+    
+    \label{tab:1}
+\end{table}
+\end{minipage}
+
+Die Aufspaltung $\Delta E$ wird mit folgender Formel berechnet:
+
+\begin{align}
+    \Delta E = (mg_{i,2}-m_1g_{i,1})
+\end{align}
+
+
 \section{Auswertung}
 
 \subsection{Eichung des Elektromagneten}
 
 Für die Eichung des Elektromagneten wird eine Hallsonde verwendet. Diese wird mithilfe eines Stativs zwischen die Polschuhe des Elektromagneten gebracht. Nun wird das Magnetfeld in Abhängigkeit von der Stromstärke gemessen.
-Die Ergebnisse dieser Messung sind in ? zu sehen und noch einmal in ? graphisch dargestellt. Diese graphische Darstellung ist erweitert um eine lineare Regression der Form:
+Die Ergebnisse dieser Messung sind in \ref{tab:2} zu sehen und noch einmal in ? graphisch dargestellt. Diese graphische Darstellung ist erweitert um eine lineare Regression der Form:
 
 \begin{align}
     B(I) = m * I + b.
@@ -17,3 +122,48 @@ Diese lineare Regression wurde mit Python durchgeführt. Dabei entstehen folgend
     m = \SI[separate-uncertainty=true]{12}{m\tesla \per \ampere} \\
     m = \SI[separate-uncertainty=true]{12}{m\tesla}
 \end{align}
+
+
+\section{Messwerte}
+
+\begin{minipage}{\linewidth}
+    \begin{table}[H]
+        \centering
+    \captionof{table}{Messreiehe zur Eichung des Elektromagneten}
+    \begin{tabular}{ll}
+        \toprule
+        Zustand & Lande Faktor \\
+        \midrule
+        0   & 0 \\
+        0.2 & 14 \\
+        0.4 & 30 \\
+        0.6 & 49 \\
+        0.8 & 68 \\
+        1   & 90 \\
+        1.2 & 109 \\
+        1.4 & 129 \\
+        1.6 & 149 \\
+        1.8 & 169 \\
+        2   & 190 \\
+        2.4 & 227 \\
+        2.8 & 266 \\
+        3.2 & 302 \\
+        3.6 & 336 \\
+        4   & 396 \\
+        4.4 & 400 \\
+        4.8 & 429 \\
+        5.2 & 455 \\
+        5.6 & 479 \\
+        6   & 500 \\
+        6.4 & 516 \\
+        6.8 & 530 \\
+        7.2 & 543 \\
+        7.6 & 555 \\
+        8.0 & 566 \\
+        8.2 & 569 \\
+        \bottomrule   
+    \end{tabular}
+    
+    \label{tab:2}
+\end{table}
+\end{minipage}
